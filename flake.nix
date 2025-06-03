@@ -1,0 +1,46 @@
+{
+  description = "My System Configuration in NixOS";
+
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    home-manager = {
+      url = "github:nix-community/home-manager/release-25.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = { self, nixpkgs, home-manager }:
+  let                                     # Variables for the outputs
+    system = "x86_64-linux";
+    
+    pkgs = import nixpkgs {
+       inherit system;                    # Build for x86_64-linux
+
+       config = {
+        allowUnfree = true;
+       };
+
+    };
+  in
+  {
+
+   nixosConfigurations = {
+    main = nixpkgs.lib.nixosSystem {      # configuration "main" starts here letsgooo
+     specialArgs = {inherit system; };
+     
+     modules = [
+     ./nixos/configuration.nix            # Config for configuration "main" -> you can do multiple
+     ];
+    };
+   };
+
+  homeConfigurations = {
+    main = home-manager.lib.homeManagerConfiguration {
+     inherit pkgs;
+     modules = [
+     ./home-manager/home.nix
+     ];
+    };
+  };
+ };
+}
