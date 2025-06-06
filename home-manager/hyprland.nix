@@ -34,6 +34,12 @@ gestures = {
 ####### LOOK AND FEEL #######
 #############################
 
+monitor = [
+
+"HDMI-A-2, 1920x1080@60, 0x0, 1"
+
+];
+
 bezier = [
 
 "easeOutQuint, 0.23,1,0.32,1"
@@ -75,9 +81,34 @@ dwindle = {
 
 };
 
+general = {
 
+"border_size" = 0;
+"gaps_in" = 2;
+"gaps_out" = 5;
+"allow_tearing" = false;
 
+};
 
+decoration = {
+
+rounding = 6;
+"rounding_power" = "3.0";
+"active_opacity" = "0.79";
+"inactive_opacity" = "0.49";
+"fullscreen_opacity" = "1.0";
+
+blur = {
+
+enabled = true;
+size = 3;
+passes = 5;
+"ignore_opacity" = true;
+brightness = "2.0";
+vibrancy = "0.5";
+
+}; ## blurend
+}; ## decorationend
 
 
 
@@ -104,6 +135,13 @@ bind = [
 "$mod, V, togglefloating"
 "$mod, R, exec, $launcher"
 "$mod, F, fullscreen"
+
+#### Move windows with arrow keys
+
+"$mod SHIFT, left, swapwindow, l"
+"$mod SHIFT, right, swapwindow, r"
+"$mod SHIFT, up, swapwindow, u"
+"$mod SHIFT, down, swapwindow, d"
 
 #### Moving focus with arrows
 

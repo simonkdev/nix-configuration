@@ -49,6 +49,7 @@
    fastfetch
    git
    nnn
+   gh
  ];
 
  services.openssh.enable = true; # Enable SSH
