@@ -47,8 +47,13 @@
         cd ~
     '')
     (pkgs.writeShellScriptBin "nixswitch" ''
-       sudo nixos-rebuild switch --flake /home/simonkdev/nixsys/#main
-     '')
+        cd ~/nixsys
+        git add .
+        git commit -m "rebuilt system"
+        git push
+        sudo nixos-rebuild switch --flake /home/simonkdev/nixsys/#main
+        cd ~
+    '')
     (pkgs.writeShellScriptBin "homeconf" ''
        nano /home/simonkdev/nixsys/home-manager/home.nix
      '')
