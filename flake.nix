@@ -7,6 +7,10 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    stylix = {
+      url = "github:nix-community/stylix/release-25.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager }:
@@ -29,6 +33,7 @@
      specialArgs = {inherit system; };
      
      modules = [
+     stylix.nixosModules.stylix
      ./nixos/configuration.nix            # Config for configuration "main" -> you can do multiple
      ];
     };
