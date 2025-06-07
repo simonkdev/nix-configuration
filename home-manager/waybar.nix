@@ -137,8 +137,6 @@ let
       on-click = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
     };
   };
-
-  };
 in
 
 {
