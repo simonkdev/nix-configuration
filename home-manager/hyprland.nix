@@ -198,6 +198,15 @@ bindel = [
 
 ];
 
+#########################
+##### WINDOW RULES ######
+#########################
+
+windowrule = [
+"opacity[1.0], class:kitty"
+];
+
+
   }; ## endsettings
  }; ## endhyprland
 
