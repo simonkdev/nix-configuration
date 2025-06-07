@@ -61,4 +61,6 @@
 
   system.stateVersion = "25.05"; # Just dont change it.
 
+ stylix.enable = true;
+
 }
