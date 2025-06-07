@@ -205,14 +205,5 @@ in
       #tray menu               { font-family: sans-serif; }
       #scratchpad.empty        { background: transparent; }
     '';
-
-    # Needed binaries for modules
-    extraPackages = with pkgs; [
-      wireplumber
-      cava
-      playerctl
-      brightnessctl
-      upower
-    ];
   };
 }
