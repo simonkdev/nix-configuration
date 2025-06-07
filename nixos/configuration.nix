@@ -61,6 +61,8 @@
 
   system.stateVersion = "25.05"; # Just dont change it.
 
- stylix.enable = true;
-
+ stylix = {
+   enable = true;
+   image = ../wallpapers/wallpaper.jpg;
+   polarity = "dark";
 }
