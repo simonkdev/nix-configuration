@@ -84,8 +84,8 @@ dwindle = {
 general = {
 
 "border_size" = 0;
-"gaps_in" = 2;
-"gaps_out" = 5;
+"gaps_in" = 4;
+"gaps_out" = 7;
 "allow_tearing" = false;
 
 };
