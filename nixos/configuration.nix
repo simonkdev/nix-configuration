@@ -52,6 +52,11 @@
    gh
  ];
 
+ fonts.packages = with pkgs; [
+   nerd-fonts.droid-sans-mono
+ ];
+
+
  services.openssh.enable = true; # Enable SSH
 
   system.stateVersion = "25.05"; # Just dont change it.

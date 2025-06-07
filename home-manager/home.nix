@@ -6,8 +6,11 @@
   home.username = "simonkdev";
   home.homeDirectory = "/home/simonkdev";
   
+  ## This directory is ~/nixsys/home-manager :)
+
   imports = [
    ./hyprland.nix
+   ./kitty.nix
   ];
   
   # This value determines the Home Manager release that your configuration is
@@ -49,6 +52,9 @@
      '')
     (pkgs.writeShellScriptBin "hyprconf" ''
        nano /home/simonkdev/nixsys/home-manager/hyprland.nix
+     '')
+    (pkgs.writeShellScriptBin "kittyconf" ''
+       nano /home/simonkdev/nixsys/home-manager/kitty.nix
      '')
 
 
