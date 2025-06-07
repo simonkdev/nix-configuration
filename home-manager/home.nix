@@ -39,8 +39,13 @@
     # # configuration. For example, this adds a command 'my-hello' to your
     # # environment:
     (pkgs.writeShellScriptBin "homeswitch" ''
-       home-manager switch --flake /home/simonkdev/nixsys/#main
-     '')
+        cd ~/nixsys
+        git add .
+        git commit -m "rebuilt"
+        git push
+        home-manager switch --flake /home/simonkdev/nixsys/#main
+        cd ~
+    '')
     (pkgs.writeShellScriptBin "nixswitch" ''
        sudo nixos-rebuild switch --flake /home/simonkdev/nixsys/#main
      '')
