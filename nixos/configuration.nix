@@ -65,4 +65,5 @@
    enable = true;
    image = ../wallpapers/wallpaper.jpg;
    polarity = "dark";
+ };
 }
