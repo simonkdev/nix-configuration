@@ -115,7 +115,7 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  stylix = {
+  programs.stylix = {
    enable = true;
    image = ../wallpapers/wallpaper.jpg;
    polarity = "dark";
