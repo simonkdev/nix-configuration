@@ -138,12 +138,6 @@ let
     };
   };
 
-  # A second bar on HDMI-A-1 (e.g. external monitor)
-  waybarSettingsHDMI = waybarSettings // {
-    outputs        = [ "HDMI-A-1" ];
-    modules-left   = [ "hyprland/workspaces" "hyprland/submap" "hyprland/scratchpad" ];
-    modules-center = [ "clock" ];
-    modules-right  = [ "hyprland/window" ];
   };
 in
 
@@ -153,7 +147,7 @@ in
     package = pkgs.waybar;
 
     # Apply both bars
-    settings = [ waybarSettings waybarSettingsHDMI ];
+    settings = [ waybarSettings ];
 
     # Inline CSS: layout only, no colors
     style = ''
