@@ -33,7 +33,7 @@
      specialArgs = {inherit system; };
      
      modules = [
-     stylix.nixosModules.stylix
+     inputs.stylix.nixosModules.stylix
      ./nixos/configuration.nix            # Config for configuration "main" -> you can do multiple
      ];
     };
@@ -43,8 +43,7 @@
     main = home-manager.lib.homeManagerConfiguration {
      inherit pkgs;
      modules = [
-     stylix.homeModules.stylix
-     ./home-manager/home.nix
+      ./home-manager/home.nix
      ];
     };
   };
