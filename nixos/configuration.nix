@@ -70,8 +70,5 @@
  };
 
  programs.home-manager.enable = true;
- programs.home-manager.sharedModules = {
-  stylix.enable = true;
- };
 
 }
