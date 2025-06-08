@@ -33,7 +33,7 @@
      specialArgs = {inherit system; };
      
      modules = [
-     inputs.stylix.nixosModules.stylix
+     stylix.nixosModules.stylix
      ./nixos/configuration.nix            # Config for configuration "main" -> you can do multiple
      ];
     };
