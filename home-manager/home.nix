@@ -119,6 +119,5 @@
    "stylix.enable = true"
    "stylix.image = ../wallpapers/wallpaper.jpg"
    "stylix.polarity = 'dark'"
-   };
  ];
 }
