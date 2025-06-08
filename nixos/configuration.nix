@@ -68,4 +68,9 @@
    polarity = "dark";
    autoEnable = true;
  };
+
+ home-manager.sharedModules = [
+  stylix.enable = true;
+ ];
+
 }
