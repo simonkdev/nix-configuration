@@ -63,7 +63,8 @@
 
  stylix = {
    enable = true;
-   image = ../wallpapers/wallpaper.jpg;
+   ##image = ../wallpapers/wallpaper.jpg;
+   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
    polarity = "dark";
    autoEnable = true;
  };
