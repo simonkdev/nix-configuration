@@ -9,6 +9,7 @@
   ## This directory is ~/nixsys/home-manager :)
 
   imports = [
+   inputs.stylix.homeManagerModules.stylix
    ./hyprland.nix
    ./kitty.nix
    ./waybar.nix
@@ -114,10 +115,9 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
- home-manager.sharedModules = [  
-   "stylix.enable = true"
-   "stylix.image = ../wallpapers/wallpaper.jpg"
-   "stylix.polarity = 'dark'"
- ];
+  
+  stylix = {
+   enable = true;
+   autoEnable = true;
+  };
 }
