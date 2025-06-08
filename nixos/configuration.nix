@@ -69,8 +69,8 @@
    autoEnable = true;
  };
 
- home-manager.sharedModules = [
+ home-manager.sharedModules = {
   stylix.enable = true;
- ];
+ };
 
 }
