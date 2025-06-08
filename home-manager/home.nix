@@ -114,7 +114,7 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-  home-manager.sharedModules = {
+  programs.home-manager.sharedModules = {
    stylix.enable = true;
   };
 }
