@@ -9,7 +9,6 @@
   ## This directory is ~/nixsys/home-manager :)
 
   imports = [
-   inputs.stylix.homeManagerModules.stylix
    ./hyprland.nix
    ./kitty.nix
    ./waybar.nix
