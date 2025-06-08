@@ -116,10 +116,9 @@
   programs.home-manager.enable = true;
 
  home-manager.sharedModules = [  
-   stylix = {
-    enable = true;
-    image = ../wallpapers/wallpaper.jpg;
-    polarity = "dark";
+   stylix.enable = true;
+   stylix.image = ../wallpapers/wallpaper.jpg;
+   stylix.polarity = "dark";
    };
  ];
 }
