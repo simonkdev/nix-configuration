@@ -50,6 +50,7 @@
    git
    nnn
    gh
+   pamixer
  ];
 
  fonts.packages = with pkgs; [
