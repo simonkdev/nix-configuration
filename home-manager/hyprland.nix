@@ -14,6 +14,10 @@
 "$fileManager" = "dolphin";
 "$launcher" = "wofi";
 
+"exec-once" = [
+waybar
+];
+
 
 
 #######################
@@ -36,7 +40,7 @@ gestures = {
 
 monitor = [
 
-"HDMI-A-2, 1920x1080@60, 0x0, 0.85"
+"HDMI-A-2, 1920x1080@60, 0x0, 0.8"
 
 ];
 
