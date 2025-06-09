@@ -129,4 +129,15 @@
    name = "Bibata-Modern-Ice";
    size = 14;
   };
+  stylix.fonts.sizes = {
+  applications = 9;
+  terminal = 9;
+  desktop = 9;
+  };
+  stylix.targets.gtk.cursorSize = 16;
+  home.sessionVariables = {
+   GDK_SCALE = "1";
+   QT_SCALE_FACTOR = "1";
+  };
+
 }
