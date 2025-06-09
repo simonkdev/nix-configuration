@@ -24,7 +24,7 @@
 	margin: 2px 0;
 	border-radius: 6px;
     };
-  ''
+  '';
   };
 
 }
