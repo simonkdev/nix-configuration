@@ -138,4 +138,13 @@
    GDK_SCALE = "1";
    QT_SCALE_FACTOR = "1";
   };
+
+  gtk = {
+   enable = true;
+   iconTheme = {
+     name = "Qogir";
+     package = pkgs.qogir-icon-theme;
+   };
+  };
+
 }
