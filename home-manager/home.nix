@@ -119,4 +119,5 @@
   programs.home-manager.enable = true;
   stylix.enable = true;
   stylix.image = ../wallpapers/wallpaper.jpg;
+  stylix.autoEnable = true;
 }
