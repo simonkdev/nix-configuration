@@ -60,7 +60,14 @@
    xfce.thunar
    qogir-icon-theme
    gvfs
+   mangohud
+   protonup
  ];
+
+ environment.sessionVariables = {
+  STEAM_EXTRA_COMPAT_TOOLS_PATHS =
+    "/home/simonkdev/.steam/root/compatibilitytools.d";
+  };
 
  fonts.packages = with pkgs; [
    nerd-fonts.fira-code
@@ -82,4 +89,20 @@
  };
 
  programs.steam.enable = true;
+ programs.steam.gamescopeSession.enable = true;
+ programs.gamemode.enable = true; 
+ 
+
+ hardware.opengl = {
+   enable = true;
+   driSupport = true;
+   driSupport32Bit = true;
+ };
+ 
+ services.xserver.videoDrivers = [ "nvidia" ];
+ hardware.nvidia.modesetting.enable = true; 
+
+
+
 }
+
