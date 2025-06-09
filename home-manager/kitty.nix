@@ -6,7 +6,7 @@
      enable = true;
      font = {
     ##  name = "nerdfonts droid-sans-mono";
-      size = lib.mkForce  8;
+      size = lib.mkForce  9;
       };     
   
   settings = {
