@@ -53,6 +53,7 @@
    pamixer
    cmatrix
    cbonsai
+   gedit
  ];
 
  fonts.packages = with pkgs; [
