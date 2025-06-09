@@ -124,4 +124,8 @@
   stylix.targets = {
    btop.enable = true;
   };
+  stylix.cursor = {
+   package = pkgs.bibata-cursors;
+   name = "Bibata-Original-Classic";
+   size = 20;
 }
