@@ -127,6 +127,6 @@
   stylix.cursor = {
    package = pkgs.bibata-cursors;
    name = "Bibata-Original-Classic";
-   size = 20;
+   size = 17;
   };
 }
