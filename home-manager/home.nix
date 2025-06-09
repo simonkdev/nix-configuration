@@ -117,6 +117,8 @@
  
   stylix = {
    enable = true;
+   targets = {
+    kitty.enable = true;
   };
 
 }
