@@ -57,6 +57,7 @@
    hyprshot
    xfce.thunar
    qogir-icon-theme
+   gvfs
  ];
 
  fonts.packages = with pkgs; [
