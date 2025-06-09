@@ -56,6 +56,7 @@
    gedit
    hyprshot
    xfce.thunar
+   qogir-icon-theme
  ];
 
  fonts.packages = with pkgs; [
