@@ -46,7 +46,6 @@
       stylix.homeModules.stylix
       ./home-manager/home.nix
      ];
-     stylix.enable = true;
     };
   };
  };
