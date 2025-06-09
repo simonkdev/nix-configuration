@@ -25,8 +25,6 @@
         "tray"
         "network"
         "custom/divider"
-        "backlight"
-        "custom/divider"
         "pulseaudio"
         "custom/divider"
         "battery"
@@ -52,16 +50,6 @@
         format = "  {}%";
         format-alt = " {used:0.1f}G";
         max-length = 10;
-      };
-      backlight = {
-        format = "󰖨 {}";
-        device = "acpi_video0";
-      };
-      "custom/weather" = {
-        tooltip = true;
-        format = "{}";
-        restart-interval = 300;
-        exec = "/home/roastbeefer/.cargo/bin/weather";
       };
       tray = {
         icon-size = 13;
