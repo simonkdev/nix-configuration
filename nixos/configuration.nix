@@ -41,6 +41,7 @@
 
  programs.firefox.enable = true;
  programs.hyprland.enable = true;
+ programs.btop.enable = true;
 
  environment.systemPackages = with pkgs; [
    wget
@@ -52,7 +53,6 @@
    gh
    pamixer
    cmatrix
-   btop
    cbonsai
  ];
 
