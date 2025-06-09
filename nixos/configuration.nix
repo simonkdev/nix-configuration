@@ -98,9 +98,9 @@
    driSupport32Bit = true;
  };
  
- hardware.nvidia.open = false;
- services.xserver.videoDrivers = [ "nvidia" ];
- hardware.nvidia.modesetting.enable = true; 
+## hardware.nvidia.open = false;
+## services.xserver.videoDrivers = [ "nvidia" ];
+##hardware.nvidia.modesetting.enable = true; 
 ## hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
 
 
