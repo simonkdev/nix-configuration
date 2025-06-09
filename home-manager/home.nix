@@ -147,4 +147,6 @@
    };
   };
 
+  programs.steam.enable = true;
+
 }
