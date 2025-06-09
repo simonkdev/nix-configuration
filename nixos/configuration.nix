@@ -55,6 +55,7 @@
    cbonsai
    gedit
    hyprshot
+   xfce.thunar
  ];
 
  fonts.packages = with pkgs; [
