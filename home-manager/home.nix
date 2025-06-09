@@ -72,6 +72,9 @@
     (pkgs.writeShellScriptBin "kittyconf" ''
        nano /home/simonkdev/nixsys/home-manager/kitty.nix
      '')
+    (pkgs.writeShellScriptBin "waybarconf" ''
+       nano /home/simonkdev/nixsys/home-manager/waybar.nix
+     '')
 
 
 
