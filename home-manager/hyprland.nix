@@ -15,7 +15,7 @@
 "$launcher" = "wofi";
 
 "exec-once" = [
-waybar
+"waybar"
 ];
 
 
