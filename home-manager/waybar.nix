@@ -10,7 +10,7 @@
       exclusive = true;
       passtrough = false;
       gtk-layer-shell = true;
-      height = 0;
+      height = 20;
       modules-left = [
         "hyprland/workspaces"
         "custom/divider"
