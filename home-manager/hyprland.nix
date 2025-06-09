@@ -40,7 +40,7 @@ gestures = {
 
 monitor = [
 
-"HDMI-A-2, 1920x1080@60, 1920x0, 0.8"
+"HDMI-A-2, preferred, 1920x0, 1"
 
 ];
 
