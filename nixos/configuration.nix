@@ -51,6 +51,8 @@
    nnn
    gh
    pamixer
+   cmatrix
+   btop
  ];
 
  fonts.packages = with pkgs; [
