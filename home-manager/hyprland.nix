@@ -214,7 +214,9 @@ windowrule = [
 "rounding [12], class:wofi"
 "roundingpower [10.0], class:wofi"
 ];
-
+layerrule = [
+"noanim, wofi"
+];
 
   }; ## endsettings
  }; ## endhyprland
