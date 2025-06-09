@@ -9,7 +9,6 @@
 
 window {
 margin: 0px;
-border-radius: 12px;
 border: 2px solid;
 }
 
