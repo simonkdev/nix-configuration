@@ -12,7 +12,7 @@
 
 "$term" = "kitty";
 "$fileManager" = "dolphin";
-"$launcher" = "wofi";
+"$launcher" = "wofi --show drun";
 
 "exec-once" = [
 "waybar"
@@ -126,6 +126,7 @@ vibrancy = "0.5";
 ###########################
 
 "$mod" = "SUPER"; # Windows key is "mod"
+
 
 bind = [
 
