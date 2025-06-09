@@ -43,6 +43,7 @@
     main = home-manager.lib.homeManagerConfiguration {
      inherit pkgs;
      modules = [
+      stylix.homeManagerModules.stylix
       ./home-manager/home.nix
      ];
     };
