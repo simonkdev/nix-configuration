@@ -5,43 +5,51 @@
   programs.wofi = {
    enable = true;
    style = ''
-     /* for noobs like me, just copy and paste this into ~/.config/wofi/style.css. that is if you can do that... (no judging m8) */  
+    /* CUSTOM ROUND - CUSTOM THEME WITH ROUNDING*/
+
+window {
+margin: 0px;
+border: 2px solid #a7ffbc;
+background-color: #1e2623;
+border-radius: 12px;
+}
+
 #input {
 margin: 5px;
-border: none;
-color: #d8dee9;
-background-color: #1e1e1e;
+border: 0px solid #a7ffbc;
+color: #D3C6AA;
+background-color: #27332e;
+border-radius: 12px;
 }
 
 #inner-box {
 margin: 5px;
+border-radius: 12px;
 border: none;
-background-color: #1e1e1e; 
+background-color: #1e2623;
 }
 
 #outer-box {
 margin: 5px;
 border: none;
-background-color: #1e1e1e;
+border-radius: 12px;
+background-color: #1e2622;
 }
 
 #scroll {
 margin: 0px;
-border: 1e1e1e;
+border: none;
 }
 
 #text {
 margin: 5px;
 border: none;
-color: #c4c4c4;
+color: #aad3b2;
 }
 
 #entry:selected {
-background-color: #1e1e1e;
-}
-/* Add rounded corners to the Wofi window */
-window {
-    border-radius: 10px; /* 10px radius for rounded corners */
+border-radius: 12px;
+background-color: #27332f;
 }
 
   '';
