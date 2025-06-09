@@ -79,4 +79,5 @@
    autoEnable = true;
  };
 
+ programs.steam.enable = true;
 }

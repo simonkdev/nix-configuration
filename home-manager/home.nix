@@ -146,7 +146,4 @@
      package = pkgs.qogir-icon-theme;
    };
   };
-
-  programs.steam.enable = true;
-
 }
