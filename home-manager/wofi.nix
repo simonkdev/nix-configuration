@@ -45,6 +45,7 @@ border-radius: 12px;
 border-radius: 12px;
 }
 
+#entry:nth-child(even),
 #entry:nth-child(odd) {
 background-color: transparent;
 }
