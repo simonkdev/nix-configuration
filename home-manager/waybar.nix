@@ -30,7 +30,7 @@
         "clock"
       ];
       "hyprland/window" = { format = "{}"; };
-      "wlr/workspaces" = {
+      "hyprland/workspaces" = {
         on-scroll-up = "hyprctl dispatch workspace e+1";
         on-scroll-down = "hyprctl dispatch workspace e-1";
         all-outputs = true;
