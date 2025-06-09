@@ -45,6 +45,7 @@ border-radius: 12px;
 
 #entry:selected {
 border-radius: 12px;
+border: 2px solid;
 }
 
 #entry:nth-child(even),
