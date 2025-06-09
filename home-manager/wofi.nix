@@ -15,6 +15,7 @@ border-radius: 12px;
 #input {
 margin: 5px;
 border-radius: 12px;
+background-color: transparent;
 }
 
 #inner-box {
