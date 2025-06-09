@@ -37,6 +37,10 @@ margin: 5px;
 border: none;
 }
 
+#entry {
+border-radius: 12px;
+}
+
 #entry:selected {
 border-radius: 12px;
 }
