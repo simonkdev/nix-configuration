@@ -28,6 +28,8 @@
         "battery"
         "custom/divider"
         "clock"
+	"custom/divider"
+	"custom/powerbutton"
       ];
       "hyprland/window" = { format = "{}"; };
       "hyprland/workspaces" = {
@@ -97,6 +99,12 @@
         interval = "once";
         tooltip = false;
       };
+      "custom/powerbutton" = {
+	format = "⏼";
+	tooltip = false;
+	on-click = "bash ~/nixsys/home-manager/wofi-power-menu.sh";
+      };
+
       "custom/endright" = {
         format = "_";
         interval = "once";
