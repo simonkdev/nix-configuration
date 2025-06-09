@@ -141,6 +141,7 @@ bind = [
 "$mod, V, togglefloating"
 "$mod, R, exec, $launcher"
 "$mod, F, fullscreen"
+", Print, exec, hyprshot -rs -m active -m output"
 
 #### Move windows with arrow keys
 
