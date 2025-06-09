@@ -207,7 +207,7 @@ bindel = [
 #########################
 
 windowrule = [
-"opacity[1.0], class:kitty"
+"opacity [1.0], class:kitty"
 "rounding [12], class:wofi"
 ];
 
