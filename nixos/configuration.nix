@@ -54,6 +54,7 @@
    cmatrix
    cbonsai
    gedit
+   hyprshot
  ];
 
  fonts.packages = with pkgs; [
