@@ -115,4 +115,5 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
   stylix.enable = true;
+  stylix.image = ../wallpapers/wallpaper.jpg;
 }
