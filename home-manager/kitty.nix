@@ -4,10 +4,10 @@
   programs.kitty = {
 
      enable = true;
-    ## font = {
+     font = {
     ##  name = "nerdfonts droid-sans-mono";
-    ##  size = 9;
-    ##  };     
+      size = lib.mkDefault  9;
+      };     
   
   settings = {
      "enable_audio_bell" = "no";
