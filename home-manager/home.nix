@@ -120,5 +120,5 @@
    targets = {
     kitty.enable = true;
   };
-
+  };
 }
