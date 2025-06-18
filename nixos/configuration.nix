@@ -29,7 +29,7 @@
   services.printing.enable = true; # Enable Printing
 
   services.pulseaudio.enable = false; # Enable Audio
-  services.pavucontrol.enable = true; # Enable Audio Control GUI
+  programs.pavucontrol.enable = true; # Enable Audio Control GUI
   
   services.libinput.enable = true; # Enab[e Touchpad
 
