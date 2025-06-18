@@ -70,7 +70,7 @@
         format = "{icon} {volume}%";
         tooltip = false;
         format-muted = " Muted";
-        on-click = "bash /home/simonkdev/nixsys/home-manager/pavu-float.sh";
+        on-click = "env GDK_BACKEND=x11 pavucontrol";
         on-scroll-up = "pamixer -i 5";
         on-scroll-down = "pamixer -d 5";
         scroll-step = 5;
