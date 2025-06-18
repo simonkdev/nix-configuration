@@ -213,7 +213,7 @@ windowrule = [
 "opacity [2.0 2.0], class:kitty"
 "rounding [12], class:wofi"
 "roundingpower [10.0], class:wofi"
-"float, class:pavucontrol"
+## "float, class:pavucontrol"
 ];
 layerrule = [
 "noanim, wofi"
