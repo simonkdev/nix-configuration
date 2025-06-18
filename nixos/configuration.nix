@@ -64,6 +64,7 @@
    protonup
    pavucontrol
    jq
+   docker_28
  ];
 
  environment.sessionVariables = {
