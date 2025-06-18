@@ -64,7 +64,7 @@
    protonup
    pavucontrol
    jq
-   docker_28
+##   docker_28
  ];
 
  environment.sessionVariables = {
@@ -100,6 +100,8 @@
    enable = true;
    driSupport32Bit = true;
  };
+
+ virtualisation.docker.enable = true;
  
 ## hardware.nvidia.open = false;
 ## services.xserver.videoDrivers = [ "nvidia" ];
