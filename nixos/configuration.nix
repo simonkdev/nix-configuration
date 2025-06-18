@@ -29,7 +29,6 @@
   services.printing.enable = true; # Enable Printing
 
   services.pulseaudio.enable = false; # Enable Audio
-  programs.pavucontrol.enable = true; # Enable Audio Control GUI
   
   services.libinput.enable = true; # Enab[e Touchpad
 
@@ -63,6 +62,7 @@
    gvfs
    mangohud
    protonup
+   pavucontrol
  ];
 
  environment.sessionVariables = {
