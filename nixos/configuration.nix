@@ -63,6 +63,7 @@
    mangohud
    protonup
    pavucontrol
+   jq
  ];
 
  environment.sessionVariables = {
