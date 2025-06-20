@@ -102,6 +102,16 @@
  };
 
  virtualisation.docker.enable = true;
+
+ services.xserver.libinput = {
+   enable = true;
+   mouse = {
+     accelProfile = "flat";
+   };
+   touchpad = {
+     accelProfile = "flat";
+   };
+ }; 
  
 ## hardware.nvidia.open = false;
 ## services.xserver.videoDrivers = [ "nvidia" ];
