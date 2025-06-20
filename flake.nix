@@ -6,10 +6,10 @@
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
-      winapps = {
+    };      
+    winapps = {
         url = "github:winapps-org/winapps";
         inputs.nixpkgs.follows = "nixpkgs";
-      };
     };
     stylix = {
       url = "github:nix-community/stylix/release-25.05";
