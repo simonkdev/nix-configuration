@@ -62,7 +62,7 @@
    protonup
    pavucontrol
    jq
-##   docker_28
+   todoist-electron
  ];
 
  environment.sessionVariables = {
