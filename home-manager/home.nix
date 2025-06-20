@@ -119,6 +119,15 @@
   programs.wofi.enable = true;
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+ 
+  programs.vscode = {
+     enable = true;
+     package = pkgs.vscode.fhs;
+  };
+
+
+
+
   stylix.enable = true;
   stylix.image = ../wallpapers/wallpaper.jpg;
   stylix.targets = {
@@ -134,10 +143,15 @@
   terminal = 9;
   desktop = 9;
   };
+
+
+
   home.sessionVariables = {
    GDK_SCALE = "1";
    QT_SCALE_FACTOR = "1";
   };
+
+
 
   gtk = {
    enable = true;
