@@ -67,7 +67,7 @@
    discord
    notion-app
    spotify
-   whatsapp-for-mac
+   wasistlos
  ];
 
  environment.sessionVariables = {
