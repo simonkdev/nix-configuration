@@ -100,7 +100,7 @@ decoration = {
 rounding = 6;
 "rounding_power" = "3.0";
 "active_opacity" = "0.85";
-"inactive_opacity" = "0.6";
+"inactive_opacity" = "0.7";
 "fullscreen_opacity" = "1.0";
 
 blur = {
