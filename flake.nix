@@ -6,6 +6,10 @@
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
+      winapps = {
+        url = "github:winapps-org/winapps";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
     };
     stylix = {
       url = "github:nix-community/stylix/release-25.05";
@@ -13,7 +17,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager }:
+  outputs = { self, nixpkgs, stylix, home-manager, winapps }:
   let                                     # Variables for the outputs
     system = "x86_64-linux";
     
@@ -35,6 +39,12 @@
      modules = [
      stylix.nixosModules.stylix
      ./nixos/configuration.nix            # Config for configuration "main" -> you can do multiple
+     (
+        environment.systemPackages = [
+           winapps.packages."${system}".winapps
+           winapps.packages."${system}".winapps-launcher
+        ];
+     )
      ];
     };
    };
