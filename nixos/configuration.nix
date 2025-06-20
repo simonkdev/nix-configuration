@@ -29,8 +29,6 @@
   services.printing.enable = true; # Enable Printing
 
   services.pulseaudio.enable = false; # Enable Audio
-  
-  services.libinput.enable = true; # Enab[e Touchpad
 
   users.users.simonkdev = {
    isNormalUser = true;
