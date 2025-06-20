@@ -63,8 +63,7 @@
    pavucontrol
    jq
    todoist-electron
-   vscode-with-extensions
-   vscode-extension-update
+   vscode.fhs
  ];
 
  environment.sessionVariables = {
