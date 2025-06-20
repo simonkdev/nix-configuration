@@ -40,10 +40,12 @@
      stylix.nixosModules.stylix
      ./nixos/configuration.nix            # Config for configuration "main" -> you can do multiple
      (
+      {
         environment.systemPackages = [
            winapps.packages."${system}".winapps
            winapps.packages."${system}".winapps-launcher
         ];
+      }
      )
      ];
     };
