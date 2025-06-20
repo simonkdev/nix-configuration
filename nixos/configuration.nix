@@ -103,7 +103,7 @@
 
  virtualisation.docker.enable = true;
 
- services.xserver.libinput = {
+ services.libinput = {
    enable = true;
    mouse = {
      accelProfile = "flat";
