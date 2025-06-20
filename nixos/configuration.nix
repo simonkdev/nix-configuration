@@ -63,6 +63,10 @@
    pavucontrol
    jq
    todoist-electron
+   discord
+   notion-app
+   spotify
+   whatsapp-for-mac
  ];
 
  environment.sessionVariables = {
