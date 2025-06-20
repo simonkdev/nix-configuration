@@ -64,6 +64,7 @@
    jq
    todoist-electron
    vscode-with-extensions
+   vscode-extension-update
  ];
 
  environment.sessionVariables = {
