@@ -130,6 +130,7 @@
        github.copilot-chat
        github.copilot
        vscodevim.vim
+     ];
  };
 
 
