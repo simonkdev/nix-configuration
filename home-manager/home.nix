@@ -122,10 +122,15 @@
  
   programs.vscode = {
      enable = true;
-     package = pkgs.vscode.fhs;
-     mutableExtensionsDir = true;
-     extensionsDir = "~/.vscode/extensions";
-  };
+     extensions = with pkgs.vscode-extensions; [
+       catppuccin.catppuccin-vsc
+       catppuccin.catppuccin-vsc-icons
+       esbenp.prettier-vscode
+       vscjava.vscode-java-pack
+       github.copilot-chat
+       github.copilot
+       vscodevim.vim
+ };
 
 
 
