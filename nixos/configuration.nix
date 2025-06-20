@@ -68,6 +68,7 @@
    notion-app
    spotify
    wasistlos
+   obsidian
  ];
 
  environment.sessionVariables = {
