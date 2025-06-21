@@ -120,12 +120,15 @@
    };
  }; 
  
-hardware.nvidia.open = false;
-services.xserver.videoDrivers = [ "nvidia" ];
-hardware.nvidia.modesetting.enable = true; 
-##hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
-hardware.nvidia.nvidiaSettings = true;
-hardware.nvidia.powerManagement.enable = true;
+ hardware.nvidia = {
+   modesetting.enable = true;
+   powerManagement.enable = false;
+   nvidiaSettings = true;
+   package = config.boot.kernelPackages.nvidiaPackages.stable;
+   open = false;
+ };
+
+ services.xserver.videoDrivers = [ "nvidia" ];
 
 }
 
