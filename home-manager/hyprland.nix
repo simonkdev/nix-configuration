@@ -38,8 +38,6 @@ gestures = {
 ####### LOOK AND FEEL #######
 #############################
 
-"use_experimental_backends" = true;
-
 monitor = [
 
 "HDMI-A-2, preferred, 1920x0@75, 1.0"
