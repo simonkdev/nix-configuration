@@ -55,7 +55,11 @@ bezier = [
 
 ];
 
+cursor = {
 
+"inactive_timeout" = 20;
+
+};
 
 animation = [
 
