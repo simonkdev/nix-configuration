@@ -31,7 +31,7 @@
     };
  
   fileSystems."/external/s" =
-    { device = "/dev/disk/by-uuid/9E2A72262A71FB99"
+    { device = "/dev/disk/by-uuid/9E2A72262A71FB99";
       fsType = "ntfs-3g";
       options = [ "rwx" "uid=1000" "gid=100" ];
     };
