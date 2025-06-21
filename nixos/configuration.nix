@@ -121,15 +121,20 @@
    };
  }; 
  
-# hardware.nvidia = {
-#   modesetting.enable = true;
-#   powerManagement.enable = false;
-#   nvidiaSettings = true;
-#   package = config.boot.kernelPackages.nvidiaPackages.stable;
-#   open = true;
-# };
+ hardware.nvidia = {
+   modesetting.enable = true;
+   powerManagement.enable = false;
+   nvidiaSettings = true;
+   package = config.boot.kernelPackages.nvidiaPackages.stable;
+   open = true;
+   prime = {
+     sync.enable = true;
+     intelBusId = "PCI:0:2:0";
+     nvidiaBusId = "PCI:1:0:0";
+   };
+ };
 
-# services.xserver.videoDrivers = [ "nvidia" ];
+ services.xserver.videoDrivers = [ "nvidia" ];
 
 }
 
