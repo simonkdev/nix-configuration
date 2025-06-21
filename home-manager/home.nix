@@ -115,6 +115,10 @@
   home.sessionVariables = {
      EDITOR = "nano";
      WLR_NO_HARDWARE_CURSORS=1;
+       MOZ_ENABLE_WAYLAND = "1";
+  LIBVA_DRIVER_NAME = "nvidia";
+  EGL_PLATFORM = "wayland";
+  __GLX_VENDOR_LIBRARY_NAME = "nvidia";
   };
   programs.btop.enable = true;
   programs.wofi.enable = true;
