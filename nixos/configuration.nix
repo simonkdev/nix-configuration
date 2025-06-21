@@ -87,7 +87,15 @@
  environment.sessionVariables = {
   STEAM_EXTRA_COMPAT_TOOLS_PATHS =
     "/home/simonkdev/.steam/root/compatibilitytools.d";
-  };
+  __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+  WLR_NO_HARDWARE_CURSORS = "1";
+  WLR_RENDERER_ALLOW_SOFTWARE = "1";
+  LIBVA_DRIVER_NAME = "nvidia";
+  GBM_BACKEND = "nvidia-drm";
+  __GL_GSYNC_ALLOWED = "1";
+  __GL_VRR_ALLOWED = "1";
+  WLR_DRM_NO_ATOMIC = "1"; # sometimes helps on NVIDIA 
+ };
 
  fonts.packages = with pkgs; [
    nerd-fonts.fira-code
