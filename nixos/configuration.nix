@@ -18,7 +18,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.kernelPackages = pkgs.linuxPackages_6_14; # Use latest kernel Package
+  boot.kernelPackages = pkgs.linuxPackages_zen; # Use latest kernel Package
 
   boot.supportedFilesystems = [ "ntfs" ];
 
@@ -144,11 +144,15 @@
    modesetting.enable = true;
    powerManagement.enable = false;
    nvidiaSettings = true;
-   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_550;
-#   package = config.boot.kernelPackages.nvidiaPackages.stable;
+#   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_550;
+   package = config.boot.kernelPackages.nvidiaPackages.stable;
    open = false;
    prime = {
      sync.enable = true;
+     offload = {
+       enable = false;
+       enableOffloadCmd = false;
+     };
      allowExternalGpu = true;
      intelBusId = "PCI:0:2:0";
      nvidiaBusId = "PCI:1:0:0";
