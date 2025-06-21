@@ -10,11 +10,17 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowUnsupportedSystem = true;
 
+  security.polkit.enable = true;
+  services.udisks2.enable = true;
+  xdg.portal.enable = true;
+
   services.dbus.enable = true;  
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.kernelPackages = pkgs.linuxPackages_6_14; # Use latest kernel Package
+
+  boot.supportedFilesystems = [ "ntfs" ];
 
   networking.hostName = "nixTUF"; # Define your hostname.
   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -36,7 +42,7 @@
 
   users.users.simonkdev = {
    isNormalUser = true;
-   extraGroups = [ "wheel" "docker"]; # Enable ‘sudo’ for the user.
+   extraGroups = [ "wheel" "docker" "networkmanager" "storage" "plugdev" ]; # Enable ‘sudo’ for the user.
    packages = with pkgs; [
    tree
    kitty
@@ -73,7 +79,10 @@
    wasistlos
    obsidian
    lshw
+   ntfs3g
  ];
+
+
 
  environment.sessionVariables = {
   STEAM_EXTRA_COMPAT_TOOLS_PATHS =
