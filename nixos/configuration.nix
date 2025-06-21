@@ -25,7 +25,7 @@
   boot.kernelParams = [ "i915.modeset=1" ];
 
   networking.hostName = "nixTUF"; # Define your hostname.
-  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+#  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   
   time.timeZone = "Europe/Berlin";
 
