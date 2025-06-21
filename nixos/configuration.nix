@@ -9,7 +9,8 @@
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowUnsupportedSystem = true;
-  
+
+  services.dbus.enable = true;  
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -21,6 +22,8 @@
   time.timeZone = "Europe/Berlin";
 
   i18n.defaultLocale = "en_US.UTF-8";
+  i18n.extraLocales = [ "en_US.UTF-8/UTF-8" ];
+
   console = {
     font = "Lat2-Terminus16";
     keyMap = lib.mkForce "de";
