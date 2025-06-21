@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.kernelPackages = pkgs.linuxPackages_6_9; # Use latest kernel Package
+  boot.kernelPackages = pkgs.linuxPackages_6_14; # Use latest kernel Package
 
   networking.hostName = "nixTUF"; # Define your hostname.
   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
