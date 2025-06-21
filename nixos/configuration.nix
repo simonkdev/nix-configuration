@@ -22,6 +22,8 @@
 
   boot.supportedFilesystems = [ "ntfs" ];
 
+  boot.kernelParams = [ "i915.modeset=1" ];
+
   networking.hostName = "nixTUF"; # Define your hostname.
   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   
@@ -81,6 +83,8 @@
    lshw
    ntfs3g
    glxinfo
+
+
    vulkan-tools
  ];
 
@@ -126,6 +130,14 @@
  hardware.graphics = {
    enable = true;
    enable32Bit = true;
+   extraPackages = with pkgs; [
+      libvdpau
+      vaapiVdpau
+      libva
+      vulkan-loader
+      vulkan-validation-layers
+      nvidia-vaapi-driver
+    ];
  };
 
  virtualisation.docker.enable = true;
@@ -143,20 +155,18 @@
  hardware.nvidia = {
    modesetting.enable = true;
    powerManagement.enable = false;
+   powerManagement.finegrained = false;
    nvidiaSettings = true;
 #   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_550;
    package = config.boot.kernelPackages.nvidiaPackages.stable;
    open = false;
    prime = {
-     sync.enable = true;
-     offload = {
-       enable = false;
-       enableOffloadCmd = false;
-     };
-     allowExternalGpu = true;
-     intelBusId = "PCI:0:2:0";
-     nvidiaBusId = "PCI:1:0:0";
+    sync.enable = true; 
+    intelBusId = "PCI:0:2:0";
+    nvidiaBusId = "PCI:1:0:0";
    };
+   dynamicBoost.enable = true;
+   nvidiaPersistenced = true;
  };
 
  services.xserver.videoDrivers = [ "nvidia" ];
