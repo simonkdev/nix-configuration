@@ -124,7 +124,7 @@
    modesetting.enable = true;
    powerManagement.enable = false;
    nvidiaSettings = true;
-   package = lib.mkForce config.boot.kernelPackages.nvidiaPackages.production;
+   package = lib.mkForce config.boot.kernelPackages.nvidiaPackages.beta;
    open = lib.mkForce false;
  };
 
