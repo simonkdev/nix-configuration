@@ -126,7 +126,7 @@
    powerManagement.enable = false;
    nvidiaSettings = true;
    package = config.boot.kernelPackages.nvidiaPackages.stable;
-   open = true;
+   open = false;
    prime = {
      sync.enable = true;
      allowExternalGpu = true;
