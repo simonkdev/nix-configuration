@@ -72,6 +72,7 @@
    spotify
    wasistlos
    obsidian
+   nvidia-x11
  ];
 
  environment.sessionVariables = {
