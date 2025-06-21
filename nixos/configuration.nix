@@ -54,7 +54,7 @@
  programs.firefox.enable = true;
  programs.hyprland.enable = true;
 
- programs.gdm.enable = true;
+ services.gdm.enable = true;
  programs.gnome.enable = true;
 
 
