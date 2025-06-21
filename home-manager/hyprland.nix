@@ -41,8 +41,8 @@ gestures = {
 monitor = [
 
 "HDMI-A-2, preferred, 1920x0@75, 1.0"
-#"eDP-1, preferred, 0x0@144, 1"
- "eDP-1, disable"
+"eDP-1, preferred, 0x0@144, 1"
+# "eDP-1, disable"
 ];
 
 bezier = [
