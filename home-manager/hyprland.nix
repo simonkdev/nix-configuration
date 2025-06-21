@@ -40,7 +40,7 @@ gestures = {
 
 monitor = [
 
-"HDMI-A-2, preferred, 1920x0, 1.0, mirror, eDP-1"
+"HDMI-A-2, preferred, 1920x0@75, 1.0, mirror, eDP-1"
 ## "eDP-1, preferred, 0x0, 1"
 "eDP-1, disable"
 ];
