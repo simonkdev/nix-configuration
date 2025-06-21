@@ -114,6 +114,7 @@
   #
   home.sessionVariables = {
      EDITOR = "nano";
+     WLR_NO_HARDWARE_CURSORS=1;
   };
   programs.btop.enable = true;
   programs.wofi.enable = true;
