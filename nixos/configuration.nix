@@ -54,6 +54,10 @@
  programs.firefox.enable = true;
  programs.hyprland.enable = true;
 
+ programs.gdm.enable = true;
+ programs.gnome.enable = true;
+
+
  environment.systemPackages = with pkgs; [
    wget
    home-manager
