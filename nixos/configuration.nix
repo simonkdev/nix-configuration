@@ -120,7 +120,7 @@
    };
  }; 
  
- hardware.nvidia = {
+# hardware.nvidia = {
 #   modesetting.enable = true;
 #   powerManagement.enable = false;
 #   nvidiaSettings = true;
@@ -132,10 +132,10 @@
 #      settingsSha256   = "sha256-9wqoDEWY4I7weWW05F4igj1Gj9wjHsREFMztfEmqm10=";
 #      persistencedSha256 = "sha256-d0Q3Lk80JqkS1B54Mahu2yY/WocOqFFbZVBh+ToGhaE=";
 #    };
-   open = lib.mkForce false;
- };
+#   open = lib.mkForce false;
+# };
 
- services.xserver.videoDrivers = [ "nvidia" ];
+# services.xserver.videoDrivers = [ "nvidia" ];
 
 }
 
