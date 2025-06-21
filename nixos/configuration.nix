@@ -163,7 +163,7 @@
    nvidiaSettings = true;
 #   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_550;
    package = config.boot.kernelPackages.nvidiaPackages.stable;
-   open = false;
+   open = true;
    prime = {
     sync.enable = true; 
     intelBusId = "PCI:0:2:0";
