@@ -72,7 +72,6 @@
    spotify
    wasistlos
    obsidian
-   nvidia-x11
  ];
 
  environment.sessionVariables = {
@@ -121,7 +120,7 @@
    };
  }; 
  
-hardware.nvidia.open = true;
+hardware.nvidia.open = false;
 services.xserver.videoDrivers = [ "nvidia" ];
 hardware.nvidia.modesetting.enable = true; 
 ##hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
