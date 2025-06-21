@@ -124,8 +124,8 @@
    modesetting.enable = true;
    powerManagement.enable = false;
    nvidiaSettings = true;
-   package = config.boot.kernelPackages.nvidiaPackages.stable;
-   open = false;
+   package = lib.mkForce config.boot.kernelPackages.nvidiaPackages.stable;
+   open = lib.mkForce false;
  };
 
  services.xserver.videoDrivers = [ "nvidia" ];
