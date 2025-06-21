@@ -141,11 +141,11 @@
   stylix.targets = {
    btop.enable = true;
   };
-#  stylix.cursor = {
-#   package = pkgs.bibata-cursors;
-#   name = "Bibata-Modern-Ice";
-#   size = 14;
-#  };
+  stylix.cursor = {
+   package = pkgs.bibata-cursors;
+   name = "Bibata-Modern-Ice";
+   size = 14;
+  };
   stylix.fonts.sizes = {
   applications = 9;
   terminal = 9;
