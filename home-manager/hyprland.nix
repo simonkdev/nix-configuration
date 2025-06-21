@@ -4,6 +4,7 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
+    nvidiaPatches = true;    
 
     settings = {
 ###############################
@@ -225,5 +226,15 @@ layerrule = [
 
   }; ## endsettings
  }; ## endhyprland
+
+########################
+
+env = [
+"LIBVA_DRIVER_NAME,nvidia"
+"__GLX_VENDOR_LIBRARY_NAME,nvidia"
+"__NV_PRIME_RENDER_OFFLOAD,1"
+"WLR_NO_HARDWARE_CURSORS,1"
+];
+
 
 }

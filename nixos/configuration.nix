@@ -73,7 +73,6 @@
    wasistlos
    obsidian
    lshw
-   mesa-utils
  ];
 
  environment.sessionVariables = {
