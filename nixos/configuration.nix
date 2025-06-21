@@ -73,7 +73,6 @@
    wasistlos
    obsidian
    lshw
-   ntfs3
  ];
 
  environment.sessionVariables = {
