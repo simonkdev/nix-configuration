@@ -144,7 +144,8 @@
    modesetting.enable = true;
    powerManagement.enable = false;
    nvidiaSettings = true;
-   package = config.boot.kernelPackages.nvidiaPackages.stable;
+   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_550;
+#   package = config.boot.kernelPackages.nvidiaPackages.stable;
    open = false;
    prime = {
      sync.enable = true;
