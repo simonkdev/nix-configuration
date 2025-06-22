@@ -93,7 +93,7 @@
    networkmanagerapplet
    protonvpn-gui
    unison
-   whatsapp-for-mac
+   whatsie
  ];
 
 
