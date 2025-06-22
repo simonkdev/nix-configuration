@@ -82,7 +82,6 @@
    discord
    notion-app
    spotify
-   wasistlos
    obsidian
    lshw
    ntfs3g
@@ -93,7 +92,6 @@
    networkmanagerapplet
    protonvpn-gui
    unison
-   whatsie
    altus
  ];
 
