@@ -182,7 +182,8 @@
 
  services.xserver.videoDrivers = [ "nvidia" ];
 
-
+ xdg.portal.enable = true;
+ xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
 }
 
