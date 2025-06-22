@@ -95,6 +95,7 @@
    protonvpn-gui
    unison
    altus
+   cowsay
  ];
 
 
