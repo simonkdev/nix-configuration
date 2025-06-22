@@ -16,6 +16,7 @@
 
 "exec-once" = [
 "waybar"
+"nm-applet"
 ];
 
 
