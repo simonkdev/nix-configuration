@@ -51,7 +51,7 @@
   };
 
   fileSystems."/home/simonkdev/k1nas/Obsidian" = {
-    device = "192.168.2.138:/SimonSKP/home/.Qsync/Simon_Obsidian";
+    device = "192.168.2.138:/SimonSKP/home/.Qsync";
     fsType = "cifs";
     options = [
       "credentials=/home/simonkdev/.smbcredentials"
