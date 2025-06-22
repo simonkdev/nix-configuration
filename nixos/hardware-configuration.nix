@@ -37,7 +37,7 @@
     };
 
   fileSystems."/home/simonkdev/k1nas/Fotos" = {
-    device = "//192.168.2.138/SimonSKP/Public/02_SKP";
+    device = "192.168.2.138:/SimonSKP/Public/02_SKP";
     fsType = "cifs";
     options = [
       "credentials=/home/simonkdev/.smbcredentials"
@@ -51,7 +51,7 @@
   };
 
   fileSystems."/home/simonkdev/k1nas/Obsidian" = {
-    device = "//192.168.2.138/SimonSKP/home/.Qsync/Simon_Obsidian";
+    device = "192.168.2.138:/SimonSKP/home/.Qsync/Simon_Obsidian";
     fsType = "cifs";
     options = [
       "credentials=/home/simonkdev/.smbcredentials"
