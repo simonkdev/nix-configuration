@@ -94,6 +94,7 @@
    protonvpn-gui
    unison
    whatsie
+   altus
  ];
 
 
