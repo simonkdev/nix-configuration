@@ -87,6 +87,7 @@
    ntfs3g
    glxinfo
    vulkan-tools
+   iwd
  ];
 
 
