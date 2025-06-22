@@ -91,6 +91,7 @@
    iwd
    networkmanager
    networkmanagerapplet
+   protonvpn-gui
  ];
 
 
