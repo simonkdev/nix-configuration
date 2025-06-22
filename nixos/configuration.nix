@@ -25,8 +25,9 @@
   boot.kernelParams = [ "i915.modeset=1" ];
 
   networking.hostName = "nixTUF"; # Define your hostname.
-  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  
+  networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
+  networking.networkmanager.enable = true; 
+ 
   time.timeZone = "Europe/Berlin";
 
   i18n.defaultLocale = "en_US.UTF-8";
@@ -88,6 +89,8 @@
    glxinfo
    vulkan-tools
    iwd
+   networkmanager
+   networkmanagerapplet
  ];
 
 
