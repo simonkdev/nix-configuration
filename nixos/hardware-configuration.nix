@@ -36,6 +36,34 @@
       options = [ "rwx" "uid=1000" "gid=100" ];
     };
 
+  fileSystems."/home/simonkdev/k1nas/Fotos" = {
+    device = "//192.168.2.138/SimonSKP/Public/02_SKP";
+    fsType = "cifs";
+    options = [
+      "credentials=/home/simonkdev/.smbcredentials"
+      "uid=1000"
+      "gid=100"
+      "vers=3.0"
+      "iocharset=utf8"
+      "nofail"
+      "_netdev"
+    ];
+  };
+
+  fileSystems."/home/simonkdev/k1nas/Obsidian" = {
+    device = "//192.168.2.138/SimonSKP/home/.Qsync/Simon_Obsidian";
+    fsType = "cifs";
+    options = [
+      "credentials=/home/simonkdev/.smbcredentials"
+      "uid=1000"
+      "gid=100"
+      "vers=3.0"
+      "iocharset=utf8"
+      "nofail"
+      "_netdev"
+    ];
+  };
+
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/67025277-dc72-435f-b315-8ce5923913af"; }
