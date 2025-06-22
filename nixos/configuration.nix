@@ -92,6 +92,7 @@
    networkmanager
    networkmanagerapplet
    protonvpn-gui
+   unison
  ];
 
 
