@@ -98,6 +98,7 @@
    altus
    cowsay
    heroic
+   lutris
  ];
 
 
