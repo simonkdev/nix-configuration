@@ -97,6 +97,7 @@
    unison
    altus
    cowsay
+   heroic
  ];
 
 
