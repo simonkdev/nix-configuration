@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
     ];
   nix.settings.experimental-features = [ "nix-command" "flakes"];
+  nix.settings.trusted-users = [ "root" "simonkdev" ];
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowUnsupportedSystem = true;
