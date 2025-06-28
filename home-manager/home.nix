@@ -135,6 +135,9 @@
        github.copilot-chat
        github.copilot
        vscodevim.vim
+       ms-python.python
+       ms-python.vscode-pylance
+       
      ];
  };
 
