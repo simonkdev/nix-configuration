@@ -98,6 +98,7 @@
    cowsay
    libffi
    libffi.dev
+   devenv
  ];
 
 
