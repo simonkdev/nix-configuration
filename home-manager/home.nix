@@ -36,6 +36,11 @@
     pkgs.playerctl
     pkgs.brightnessctl
     pkgs.upower
+    pkgs.python3
+    pkgs.python3Packages.pip
+    pkgs.python3Packages.virtualenv
+
+
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
