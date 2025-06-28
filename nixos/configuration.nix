@@ -96,6 +96,8 @@
    unison
    altus
    cowsay
+   libffi
+   libffi.dev
  ];
 
 
