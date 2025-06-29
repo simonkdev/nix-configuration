@@ -139,7 +139,6 @@
        vscjava.vscode-java-pack
        github.copilot-chat
        github.copilot
-       vscodevim.vim
        ms-python.python
        ms-python.vscode-pylance
        jnoortheen.nix-ide
