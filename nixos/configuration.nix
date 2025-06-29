@@ -100,6 +100,7 @@
    libffi
    libffi.dev
    devenv
+   7z
  ];
 
 
