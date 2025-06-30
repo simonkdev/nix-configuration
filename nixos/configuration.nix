@@ -101,6 +101,7 @@
    libffi.dev
    devenv
    _7zz
+   mpris-timer
  ];
 
 
