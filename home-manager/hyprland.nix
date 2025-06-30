@@ -143,10 +143,12 @@ bind = [
 "$mod, Q, exec, $term"
 "$mod, C, killactive"
 "$mod, M, exit"
-"$mod, E, exec, $fileManager"
+"$mod, E, exec, thunar"
 "$mod, V, togglefloating"
 "$mod, R, exec, $launcher"
 "$mod, F, fullscreen"
+"$mod, Ä, exec, discord"
+"$mod, X, exec, firefox"
 ", Print, exec, hyprshot -m output -m HDMI-A-2 -o ~/screenshots"
 
 #### Move windows with arrow keys
