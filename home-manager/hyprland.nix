@@ -147,7 +147,7 @@ bind = [
 "$mod, V, togglefloating"
 "$mod, R, exec, $launcher"
 "$mod, F, fullscreen"
-"$mod, Ä, exec, discord"
+"$mod, S, exec, discord"
 "$mod, X, exec, firefox"
 ", Print, exec, hyprshot -m output -m HDMI-A-2 -o ~/screenshots"
 
