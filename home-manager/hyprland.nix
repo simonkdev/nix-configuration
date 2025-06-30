@@ -149,6 +149,7 @@ bind = [
 "$mod, F, fullscreen"
 "$mod, S, exec, discord"
 "$mod, X, exec, firefox"
+"$mod, A, exec, steam"
 ", Print, exec, hyprshot -m output -m HDMI-A-2 -o ~/screenshots"
 
 #### Move windows with arrow keys
