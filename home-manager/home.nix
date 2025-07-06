@@ -151,7 +151,7 @@
 
   stylix.enable = true;
 #  stylix.image = ../wallpapers/wallpaper.jpg;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/darcula.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/darktooth.yaml";
 ## ashes, brewer, catppuccin-mocha
 
 
