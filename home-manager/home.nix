@@ -151,7 +151,7 @@
 
   stylix.enable = true;
 #  stylix.image = ../wallpapers/wallpaper.jpg;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/brewer.yaml";
 ## ashes, 
 
 
