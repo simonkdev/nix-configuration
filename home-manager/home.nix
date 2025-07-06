@@ -143,7 +143,8 @@
        ms-python.vscode-pylance
        jnoortheen.nix-ide
        arrterian.nix-env-selector       
-     ];
+       jdinhlife.gruvbox 
+    ];
  };
 
 
