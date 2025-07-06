@@ -151,7 +151,7 @@
 
   stylix.enable = true;
 #  stylix.image = ../wallpapers/wallpaper.jpg;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/classic-dark.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/codeschool.yaml";
 ## ashes, brewer, catppuccin-mocha
 
 
