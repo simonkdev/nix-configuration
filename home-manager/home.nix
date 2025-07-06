@@ -151,7 +151,7 @@
 
   stylix.enable = true;
 #  stylix.image = ../wallpapers/wallpaper.jpg;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-medium.yaml";
 ## ashes, brewer, catppuccin-mocha, darktooth, dracula
 
 
