@@ -123,7 +123,8 @@
    nerd-fonts.fira-code
    nerd-fonts.droid-sans-mono
    nerd-fonts.jetbrains-mono
- ];
+   otf-font-awesome 
+];
 
 
  services.openssh.enable = true; # Enable SSH
