@@ -150,7 +150,7 @@
 
 
   stylix.enable = true;
-  stylix.image = ../wallpapers/wallpaper.jpg;
+  stylix.image = ../wallpapers/wallpaper.png;
   stylix.targets = {
    btop.enable = true;
   };
