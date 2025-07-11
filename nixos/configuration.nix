@@ -77,6 +77,7 @@
    xfce.thunar
    qogir-icon-theme
    gvfs
+   gvfs-ptp
    mangohud
    protonup
    pavucontrol
