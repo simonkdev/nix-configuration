@@ -472,7 +472,6 @@ programs.waybar = {
           }
 
           #tray {
-            margin-right: 8px;
             margin-top: 1px;
             margin-bottom: 4px;;
                    }
