@@ -287,7 +287,7 @@ programs.waybar = {
             margin-left: 12px;
 
             padding-right: 18px;
-            padding-left: 14px;
+            padding-left: 0px;
 
             font-size: 20px;
 
