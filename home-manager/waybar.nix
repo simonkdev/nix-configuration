@@ -188,6 +188,7 @@ programs.waybar = {
             border: none;
             border-radius: 0;
             min-height: 0;
+            height: 40px !important;
           }
 
           window#waybar {
