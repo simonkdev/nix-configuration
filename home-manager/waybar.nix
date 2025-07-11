@@ -5,7 +5,7 @@ programs.waybar = {
 	package = pkgs.waybar;
 	settings = {
         mainBar = {
-            height = 40;
+            height = 20;
             layer = "top";
             modules-left = ["custom/launcher" "cpu" "memory" "custom/weather" "hyprland/workspaces"];
             modules-center = ["mpris"];
@@ -172,7 +172,7 @@ programs.waybar = {
 
           "custom/launcher" = {
             format = "󱄅";
-            on-click = "wofi --show drun &";
+            on-click = "rofi -show drun &";
           };
 
           "custom/wallpaper" = {
@@ -185,7 +185,7 @@ programs.waybar = {
                   * {
             /* `otf-font-awesome` is required to be installed for icons */
             font-family: Material Design Icons, JetBrainsMono Nerd Font, Iosevka Nerd Font ;
-            font-size: 4px;
+            font-size: 14px;
             border: none;
             border-radius: 0;
             min-height: 0;
@@ -235,7 +235,7 @@ programs.waybar = {
             padding: 2px 10px;
             background-color: #252733;
             border-radius: 8px;
-            font-size: 6px;
+            font-size: 16px;
 
             margin-left: 4px;
             margin-right: 4px;
@@ -272,7 +272,7 @@ programs.waybar = {
             padding-right: 5px;
             font-family: Iosevka Nerd Font;
             font-weight: bold;
-            font-size: 2px;
+            font-size: 12px;
             margin-left: 0em;
             margin-right: 0em;
             transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
@@ -294,7 +294,7 @@ programs.waybar = {
             padding-right: 18px;
             padding-left: 14px;
 
-            font-size: 12px;
+            font-size: 22px;
 
             color: #7a95c9;
 
@@ -309,7 +309,7 @@ programs.waybar = {
             background-color: #252733;
             padding: 0em 2em;
 
-            font-size: 4px;
+            font-size: 14px;
 
             padding-left: 7.5px;
             padding-right: 7.5px;
@@ -320,26 +320,26 @@ programs.waybar = {
             margin-top: 7px;
             margin-bottom: 7px;
             
-            font-size: 10px;
+            font-size: 20px;
           }
 
           #pulseaudio {
             color: #81A1C1;
             padding-left: 9px;
-            font-size: 12px;
+            font-size: 22px;
           }
 
           #pulseaudio.muted {
             color: #fb958b;
             padding-left: 9px;
-            font-size: 12px;
+            font-size: 22px;
           }
 
           #backlight {
             color: #ecd3a0;
             padding-right: 5px;
             padding-left: 8px;
-            font-size: 13px;
+            font-size: 21.2px;
           }
 
           #network {
@@ -348,7 +348,7 @@ programs.waybar = {
             border-radius: 8px 0px 0px 8px;
             padding-left: 14px;
             padding-right: 14px;
-            font-size: 12px;
+            font-size: 20px;
           }
 
           #network.disconnected {
@@ -361,7 +361,7 @@ programs.waybar = {
             border-radius: 8px 0px 0px 8px;
             padding-left: 14px;
             padding-right: 14px;
-            font-size: 12px;
+            font-size: 20px;
           }
 
           #bluetooth.disconnected {
@@ -374,7 +374,7 @@ programs.waybar = {
             border-radius: 0px 8px 8px 0px;
             padding-right: 12px;
             padding-left: 12px;
-            font-size: 14px;
+            font-size: 22px;
           }
 
           #battery.critical,
@@ -384,18 +384,18 @@ programs.waybar = {
             color: #8fbcbb;
             padding-left: 12px;
             padding-right: 12px;
-            font-size: 14px;
+            font-size: 22px;
           }
 
           #battery.charging { 
-            font-size: 10px;
+            font-size: 18px;
             padding-right: 12px;
             padding-left: 12px;
           }
 
           #battery.full,
           #battery.plugged {
-            font-size: 14.5px;
+            font-size: 22.5px;
             padding-right: 12px;
           }
 
@@ -457,7 +457,7 @@ programs.waybar = {
             background-color: #252733;
             padding: 0em 2em;
 
-            font-size: 9px;
+            font-size: 17px;
 
             padding-left: 7.5px;
             padding-right: 7.5px;
@@ -489,7 +489,7 @@ programs.waybar = {
             margin-right: 8px;
             margin-top: 7px;
             margin-bottom: 7px;
-            font-size: 22px;
+            font-size: 30px;
 
           }
 
@@ -517,7 +517,7 @@ programs.waybar = {
 
           #custom-weather {
             font-family: Iosevka Nerd Font;
-            font-size: 11px;
+            font-size: 19px;
             color: #8a909e;
           }
 
