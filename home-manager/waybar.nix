@@ -192,7 +192,6 @@ programs.waybar = {
 
           window#waybar {
             background-color: rgba(26, 27, 38, 0.5);
-            color: #ffffff;
             transition-property: background-color;
             transition-duration: 0.5s;
           }
@@ -201,11 +200,8 @@ programs.waybar = {
             opacity: 0.1;
           }
 
-          #window {
-            color: #64727d;
-          }
-
-          #clock,
+          #window 
+             #clock,
           #temperature,
           #mpris, 
           #cpu,
@@ -229,8 +225,7 @@ programs.waybar = {
           #custom-weather.showyIcyDay,
           #custom-weather.snowyIcyNight,
           #custom-weather.default {
-            color: #e5e5e5;
-            border-radius: 6px;
+                        border-radius: 6px;
             padding: 2px 10px;
             background-color: #252733;
             border-radius: 8px;
@@ -244,16 +239,10 @@ programs.waybar = {
           #temperature{
             color: #7a95c9;
           }
-          #cpu {
-            color: #fb958b;
-          }
-
-          #memory {
-            color: #a1c999;
-          }
+          #cpu
+            #memory 
 
           #workspaces button {
-            color: #7a95c9;
             box-shadow: inset 0 -3px transparent;
 
             padding-right: 3px;
@@ -264,7 +253,6 @@ programs.waybar = {
           }
 
           #workspaces button.active {
-            color: #ecd3a0;
             padding-left: 1px;
             padding-right: 5px;
             font-family: Iosevka Nerd Font;
@@ -291,7 +279,6 @@ programs.waybar = {
 
             font-size: 20px;
 
-            color: #7a95c9;
 
             margin-top: 1px;
             margin-bottom: 4px;
@@ -301,7 +288,6 @@ programs.waybar = {
           #battery,
           #pulseaudio,
           #network {
-            background-color: #252733;
             padding: 0em 2em;
 
             
@@ -317,36 +303,30 @@ programs.waybar = {
                       }
 
           #pulseaudio {
-            color: #81A1C1;
             padding-left: 9px;
           }
 
           #pulseaudio.muted {
-            color: #fb958b;
             padding-left: 9px;
                     }
 
           #backlight {
-            color: #ecd3a0;
             padding-right: 5px;
             padding-left: 8px;
           }
 
           #network {
             padding-left: 0.2em;
-            color: #5E81AC;
             border-radius: 8px 0px 0px 8px;
             padding-left: 14px;
             padding-right: 14px;
                     }
 
-          #network.disconnected {
-            color: #fb958b;
-          }
+          #network.disconnected
+          
 
           #bluetooth {
             padding-left: 0.2em;
-            color: #5E81AC;
             border-radius: 8px 0px 0px 8px;
             padding-left: 14px;
             padding-right: 14px;
@@ -408,7 +388,6 @@ programs.waybar = {
             margin-bottom: 4px;;
           }
           #clock {
-            color: #8a909e;
             font-family: Iosevka Nerd Font;
             font-weight: bold;
             margin-top: 1px;
