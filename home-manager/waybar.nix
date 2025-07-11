@@ -7,8 +7,8 @@ programs.waybar = {
         mainBar = {
             height = 5;
             layer = "top";
-            modules-left = ["cpu" "memory" "custom/weather" "hyprland/workspaces"];
-            modules-center = ["mpris" "clock" "custom/cava"];
+            modules-left = ["cpu" "memory" "hyprland/workspaces"];
+            modules-center = ["clock" ];
             modules-right = ["pulseaudio" "tray" "custom/powermenu"];
 
           "custom/cava" = {
