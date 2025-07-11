@@ -262,6 +262,7 @@ programs.waybar = {
 
             margin-left: 0.1em;
             margin-right: 0em;
+            transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
           }
 
           #workspaces button.active {
@@ -273,6 +274,7 @@ programs.waybar = {
             font-size: 12px;
             margin-left: 0em;
             margin-right: 0em;
+            transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
           }
 
           /* If workspaces is the leftmost module, omit left margin */
