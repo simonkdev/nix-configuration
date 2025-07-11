@@ -10,7 +10,7 @@ programs.waybar = {
             modules-left = ["cpu" "memory" "custom/weather" "hyprland/workspaces"];
             modules-center = ["mpris" "clock" "custom/cava"];
             modules-right = ["network" "pulseaudio" "tray" "custom/powermenu"];
-          "custom/cava": {
+          "custom/cava" =  {
             exec =  "~/test/cava-waybar.sh";
             interval = 0.05;
             format =  "{output}",
