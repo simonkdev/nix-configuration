@@ -9,7 +9,7 @@ programs.waybar = {
             layer = "top";
             modules-left = ["cpu" "memory" "custom/weather" "hyprland/workspaces"];
             modules-center = ["mpris" "clock" "custom/cava"];
-            modules-right = ["network" "pulseaudio" "tray" "custom/powermenu"];
+            modules-right = ["pulseaudio" "tray" "custom/powermenu"];
 
           "custom/cava" = {
             exec =  "~/test/cava-waybar.sh";
@@ -262,7 +262,6 @@ programs.waybar = {
 
             margin-left: 0.1em;
             margin-right: 0em;
-            transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
           }
 
           #workspaces button.active {
@@ -274,7 +273,6 @@ programs.waybar = {
             font-size: 12px;
             margin-left: 0em;
             margin-right: 0em;
-            transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
           }
 
           /* If workspaces is the leftmost module, omit left margin */

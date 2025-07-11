@@ -234,8 +234,7 @@ programs.waybar = {
             padding: 2px 10px;
             background-color: #252733;
             border-radius: 8px;
-            font-size: 16px;
-
+            
             margin-left: 4px;
             margin-right: 4px;
 
@@ -285,7 +284,7 @@ programs.waybar = {
             margin-right: 0;
           }
 
-          #custom-launcher {
+          #custom-powermenu {
             margin-left: 12px;
 
             padding-right: 18px;
