@@ -239,7 +239,7 @@ programs.waybar = {
             margin-right: 4px;
 
             margin-top: 1px;
-            margin-bottom: 2px;
+            margin-bottom: 4px;;
           }
           #temperature{
             color: #7a95c9;
@@ -294,7 +294,7 @@ programs.waybar = {
             color: #7a95c9;
 
             margin-top: 1px;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
           }
           #bluetooth,
           #backlight,
@@ -312,7 +312,7 @@ programs.waybar = {
             padding-bottom: 3px;
 
             margin-top: 1px;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
             
                       }
 
@@ -405,14 +405,14 @@ programs.waybar = {
             padding: 0 15px 0 15px;
             margin-left: 7px;
             margin-top: 1px;
-            margin-bottom: 2px;
+            margin-bottom: 4px;;
           }
           #clock {
             color: #8a909e;
             font-family: Iosevka Nerd Font;
             font-weight: bold;
             margin-top: 1px;
-            margin-bottom: 2px;
+            margin-bottom: 4px;;
           }
           #language {
             color: #8a909e;
@@ -420,7 +420,7 @@ programs.waybar = {
             font-weight: bold;
             border-radius : 8px 0 0 8px;
             margin-top: 1px;
-            margin-bottom: 2px;
+            margin-bottom: 4px;;
           }
 
           #custom-power-menu {
@@ -430,7 +430,7 @@ programs.waybar = {
             padding: 0 6px 0 6.8px;
             border-radius: 0 8px 8px 0;
             margin-top: 1px;
-            margin-bottom: 2px;
+            margin-bottom: 4px;;
           }
           #custom-wallpaper {
             color: #8a909e;
@@ -452,7 +452,7 @@ programs.waybar = {
             padding-bottom: 3px;
 
             margin-top: 1px;
-            margin-bottom: 2px;
+            margin-bottom: 4px;;
           }
 
           tooltip {
@@ -474,7 +474,7 @@ programs.waybar = {
           #tray {
             margin-right: 8px;
             margin-top: 1px;
-            margin-bottom: 2px;
+            margin-bottom: 4px;;
                    }
 
           #tray > .passive {
