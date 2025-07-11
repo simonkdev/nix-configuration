@@ -39,7 +39,7 @@ programs.waybar = {
             separate-outputs = true;
           };
           "tray" = {
-            spacing = 10;
+            #spacing = 10;
           };
           "clock" = {
             format = "{:%H:%M}";
