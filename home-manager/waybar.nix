@@ -160,7 +160,7 @@ programs.waybar = {
           };
 
           "custom/powermenu" = {
-            format = "󱄅 ";
+            format = "󱄅   ";
             on-click = "bash ~/nixsys/home-manager/wofi-power-menu.sh";
           };
 
