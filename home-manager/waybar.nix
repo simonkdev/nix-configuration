@@ -159,9 +159,9 @@ programs.waybar = {
             tooltip = false;
           };
 
-          "custom/launcher" = {
+          "custom/powermenu" = {
             format = "󱄅";
-            on-click = "rofi -show drun &";
+            on-click = "bash ~/nixsys/home-manager/wofi-power-menu.sh";
           };
 
           "custom/wallpaper" = {
