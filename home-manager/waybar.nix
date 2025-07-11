@@ -290,7 +290,7 @@ programs.waybar = {
             padding-right: 18px;
             padding-left: 14px;
 
-            font-size: 22px;
+            font-size: 20px;
 
             color: #7a95c9;
 
