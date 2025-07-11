@@ -216,7 +216,7 @@ programs.waybar = {
           #custom-lock,
           #workspaces,
           #idle_inhibitor,
-          #custom-launcher,
+          #custom-powermenu,
           #custom-spotify,
           #custom-weather,
           #custom-weather.severe,
@@ -238,9 +238,7 @@ programs.waybar = {
             margin-left: 4px;
             margin-right: 4px;
 
-            margin-top: 8.5px;
-            margin-bottom: 8.5px;
-          }
+                     }
           #temperature{
             color: #7a95c9;
           }
@@ -293,9 +291,7 @@ programs.waybar = {
 
             color: #7a95c9;
 
-            margin-top: 8.5px;
-            margin-bottom: 8.5px;
-          }
+                      }
           #bluetooth,
           #backlight,
           #battery,
@@ -311,9 +307,7 @@ programs.waybar = {
             padding-top: 3px;
             padding-bottom: 3px;
 
-            margin-top: 7px;
-            margin-bottom: 7px;
-            
+                        
                       }
 
           #pulseaudio {
@@ -404,24 +398,18 @@ programs.waybar = {
             color: #ecd3a0;
             padding: 0 15px 0 15px;
             margin-left: 7px;
-            margin-top: 7px;
-            margin-bottom: 7px;
-          }
+                      }
           #clock {
             color: #8a909e;
             font-family: Iosevka Nerd Font;
             font-weight: bold;
-            margin-top: 7px;
-            margin-bottom: 7px;
-          }
+                      }
           #language {
             color: #8a909e;
             font-family: Iosevka Nerd Font;
             font-weight: bold;
             border-radius : 8px 0 0 8px;
-            margin-top: 7px;
-            margin-bottom: 7px;
-          }
+                      }
 
           #custom-power-menu {
             color: #8a909e;
@@ -429,9 +417,7 @@ programs.waybar = {
             border-radius: 8px;
             padding: 0 6px 0 6.8px;
             border-radius: 0 8px 8px 0;
-            margin-top: 7px;
-            margin-bottom: 7px;
-          }
+                     }
           #custom-wallpaper {
             color: #8a909e;
             padding-right: 7;
@@ -451,8 +437,6 @@ programs.waybar = {
             padding-top: 3px;
             padding-bottom: 3px;
 
-            margin-top: 7px;
-            margin-bottom: 7px;
           }
 
           tooltip {
@@ -461,7 +445,6 @@ programs.waybar = {
             padding: 15px;
             background-color: #1f232b;
           }
-
           tooltip label {
             font-family: Iosevka Nerd Font;
             padding: 5px;
@@ -473,8 +456,6 @@ programs.waybar = {
 
           #tray {
             margin-right: 8px;
-            margin-top: 7px;
-            margin-bottom: 7px;
                    }
 
           #tray > .passive {
