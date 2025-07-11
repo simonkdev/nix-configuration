@@ -9,7 +9,7 @@ programs.waybar = {
             layer = "top";
             modules-left = ["custom/launcher" "cpu" "memory" "custom/weather" "hyprland/workspaces"];
             modules-center = ["mpris" "clock"];
-            modules-right = ["network" "pulseaudio" "tray" "custom/power-menu"];
+            modules-right = ["network" "pulseaudio" "tray" "custom/powermenu"];
 
           "hyprland/workspaces" = {
             format = "{name}";
