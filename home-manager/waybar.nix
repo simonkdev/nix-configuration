@@ -188,8 +188,7 @@ programs.waybar = {
             border: none;
             border-radius: 0;
             min-height: 0;
-            height: 40px !important;
-          }
+           }
 
           window#waybar {
             background-color: rgba(26, 27, 38, 0.5);
@@ -270,7 +269,6 @@ programs.waybar = {
             padding-right: 5px;
             font-family: Iosevka Nerd Font;
             font-weight: bold;
-            font-size: 12px;
             margin-left: 0em;
             margin-right: 0em;
           }
@@ -306,8 +304,7 @@ programs.waybar = {
             background-color: #252733;
             padding: 0em 2em;
 
-            font-size: 14px;
-
+            
             padding-left: 7.5px;
             padding-right: 7.5px;
 
@@ -317,26 +314,22 @@ programs.waybar = {
             margin-top: 7px;
             margin-bottom: 7px;
             
-            font-size: 20px;
-          }
+                      }
 
           #pulseaudio {
             color: #81A1C1;
             padding-left: 9px;
-            font-size: 22px;
           }
 
           #pulseaudio.muted {
             color: #fb958b;
             padding-left: 9px;
-            font-size: 22px;
-          }
+                    }
 
           #backlight {
             color: #ecd3a0;
             padding-right: 5px;
             padding-left: 8px;
-            font-size: 21.2px;
           }
 
           #network {
@@ -345,8 +338,7 @@ programs.waybar = {
             border-radius: 8px 0px 0px 8px;
             padding-left: 14px;
             padding-right: 14px;
-            font-size: 20px;
-          }
+                    }
 
           #network.disconnected {
             color: #fb958b;
@@ -358,8 +350,7 @@ programs.waybar = {
             border-radius: 8px 0px 0px 8px;
             padding-left: 14px;
             padding-right: 14px;
-            font-size: 20px;
-          }
+                    }
 
           #bluetooth.disconnected {
             color: #fb958b;
@@ -371,8 +362,7 @@ programs.waybar = {
             border-radius: 0px 8px 8px 0px;
             padding-right: 12px;
             padding-left: 12px;
-            font-size: 22px;
-          }
+                   }
 
           #battery.critical,
           #battery.warning,
@@ -381,8 +371,7 @@ programs.waybar = {
             color: #8fbcbb;
             padding-left: 12px;
             padding-right: 12px;
-            font-size: 22px;
-          }
+                   }
 
           #battery.charging { 
             font-size: 18px;
@@ -486,9 +475,7 @@ programs.waybar = {
             margin-right: 8px;
             margin-top: 7px;
             margin-bottom: 7px;
-            font-size: 30px;
-
-          }
+                   }
 
           #tray > .passive {
             -gtk-icon-effect: dim;
@@ -514,8 +501,7 @@ programs.waybar = {
 
           #custom-weather {
             font-family: Iosevka Nerd Font;
-            font-size: 19px;
-            color: #8a909e;
+                      color: #8a909e;
           }
 
           #custom-weather.severe {
