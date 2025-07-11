@@ -184,7 +184,7 @@ programs.waybar = {
                   * {
             /* `otf-font-awesome` is required to be installed for icons */
             font-family: Material Design Icons, JetBrainsMono Nerd Font, Iosevka Nerd Font ;
-            font-size: 11px;
+            font-size: 13px;
             border: none;
             border-radius: 0;
             min-height: 0;
