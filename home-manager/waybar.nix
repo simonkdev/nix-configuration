@@ -8,8 +8,8 @@ programs.waybar = {
             height = 5;
             layer = "top";
             modules-left = ["custom/launcher" "cpu" "memory" "custom/weather" "hyprland/workspaces"];
-            modules-center = ["mpris"];
-            modules-right = ["network" "pulseaudio" "backlight" "battery" "clock" "tray" "hyprland/language" "custom/wallpaper" "custom/power-menu"];
+            modules-center = ["mpris" "clock"];
+            modules-right = ["network" "pulseaudio" "backlight" "battery" "tray" "hyprland/language" "custom/wallpaper" "custom/power-menu"];
 
           "hyprland/workspaces" = {
             format = "{name}";
