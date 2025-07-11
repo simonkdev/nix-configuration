@@ -15,7 +15,7 @@ programs.waybar = {
             interval = 0.05;
             format =  "{output}";
             tooltip = false;
-            on-click = "pkill -USR1 cava; sleep 0.1; cava -p ~/.config/cava/config &"
+            on-click = "pkill -USR1 cava; sleep 0.1; cava -p ~/.config/cava/config &";
           };
           
           "hyprland/workspaces" = {
