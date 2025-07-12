@@ -248,7 +248,7 @@ programs.waybar = {
             padding-right: 3px;
             padding-left: 4px;
 
-            margin-left: 0.1em;
+            margin-left: 0em;
             margin-right: 0em;
           }
 
