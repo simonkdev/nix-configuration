@@ -67,6 +67,8 @@
  services.gvfs.enable = true;
 
  environment.systemPackages = with pkgs; [
+   libmtp
+   mtpfs
    wget
    home-manager
    nano
