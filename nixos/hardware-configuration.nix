@@ -24,13 +24,13 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."~/external/l" =
+  fileSystems."/home/simonkdev/external/l" =
     { device = "/dev/disk/by-uuid/CA084DA8084D947B";
       fsType = "ntfs-3g";
       options = [ "rwx" "uid=1000" "gid=100" ];
     };
  
-  fileSystems."~/external/s" =
+  fileSystems."/home/simonkdev/external/s" =
     { device = "/dev/disk/by-uuid/9E2A72262A71FB99";
       fsType = "ntfs-3g";
       options = [ "rwx" "uid=1000" "gid=100" ];
