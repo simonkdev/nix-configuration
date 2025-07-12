@@ -21,7 +21,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.kernelPackages = pkgs.linuxPackages_zen; # Use latest kernel Package
+  boot.kernelPackages = pkgs.linuxPackages_fsync; # Use latest kernel Package
 
   boot.supportedFilesystems = [ "ntfs" ];
 
@@ -109,6 +109,12 @@
    devenv
    _7zz
    mpris-timer
+   
+   wine
+   wineStaging
+   winetricks
+   dxvk
+
  ];
 
 
