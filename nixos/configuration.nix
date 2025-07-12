@@ -174,10 +174,6 @@
  virtualisation.docker = {
    enable = true;
    storageDriver = "overlay2";
-   rootless = {
-      enable = true;
-      setSocketVariable = true;     # Exposes DOCKER_HOST for rootless clients :contentReference[oaicite:1]{index=1}
-    };
    };
  virtualisation.docker.daemon.settings = {
     "dns" = [ "8.8.8.8" "1.1.1.1" ];
