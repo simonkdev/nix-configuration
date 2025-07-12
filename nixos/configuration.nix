@@ -67,6 +67,7 @@
  services.gvfs.enable = true;
 
  environment.systemPackages = with pkgs; [
+   digikam
    libmtp
    mtpfs
    wget
