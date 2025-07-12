@@ -64,6 +64,8 @@
  programs.thunar.enable = true;
  programs.thunar.plugins = with pkgs.xfce; [ thunar-volman ];
 
+ services.gvfs.enable = true;
+
  environment.systemPackages = with pkgs; [
    wget
    home-manager
@@ -78,7 +80,6 @@
    gedit
    hyprshot
    qogir-icon-theme
-   gvfs
    gphoto2
    mangohud
    protonup
