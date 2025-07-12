@@ -178,6 +178,12 @@
       enable = true;
       setSocketVariable = true;     # Exposes DOCKER_HOST for rootless clients :contentReference[oaicite:1]{index=1}
     };
+    daemon = {
+      settings = {
+        "storage-driver" = "devicemapper";
+        "storage-opts" = [ "dm.thinpooldev=/dev/mapper/docker-thinpool" ];
+      };
+    };
    };
  virtualisation.docker.daemon.settings = {
     "dns" = [ "8.8.8.8" "1.1.1.1" ];
