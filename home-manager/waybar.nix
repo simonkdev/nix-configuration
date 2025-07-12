@@ -253,8 +253,9 @@ programs.waybar = {
           }
 
           #workspaces button.active {
-            padding-left: 1px;
-            padding-right: 5px;
+            padding-left: 4px;
+            padding-right: 3px;
+            font-size: 15px;
             font-family: Iosevka Nerd Font;
             font-weight: bold;
             margin-left: 0em;

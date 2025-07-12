@@ -194,6 +194,5 @@
 
  services.xserver.videoDrivers = [ "nvidia" ];
 
- hardware.udev.extraRules = lib.mkForce '' ACTION=="add", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="31bc", ENV{ID_GPHOTO2}="1", ENV{UDISKS_FILESYSTEM_SHARED}="1" '';
 }
 
