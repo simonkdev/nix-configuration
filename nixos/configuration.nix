@@ -111,7 +111,8 @@
    mpris-timer
    
    wine
-   wineStaging
+   wine-staging
+   wine-wayland
    winetricks
    dxvk
 
