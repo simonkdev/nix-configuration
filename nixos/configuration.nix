@@ -61,6 +61,9 @@
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
 
+ programs.thunar.enable = true;
+ programs.thunar.plugins = with pkgs.xfce; [ thunar-volman ];
+
  environment.systemPackages = with pkgs; [
    wget
    home-manager
@@ -74,10 +77,8 @@
    cbonsai
    gedit
    hyprshot
-   xfce.thunar
    qogir-icon-theme
    gvfs
-   xfce.thunar-volman
    gphoto2
    mangohud
    protonup
