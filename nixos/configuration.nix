@@ -48,7 +48,7 @@
 
   users.users.simonkdev = {
    isNormalUser = true;
-   extraGroups = [ "wheel" "docker" "networkmanager" "storage" "plugdev" ]; # Enable ‘sudo’ for the user.
+   extraGroups = [ "wheel" "docker" "networkmanager" "storage" "plugdev" "camera"]; # Enable ‘sudo’ for the user.
    packages = with pkgs; [
    tree
    kitty
@@ -77,7 +77,8 @@
    xfce.thunar
    qogir-icon-theme
    gvfs
-   gvfs-ptp
+   xfce.thunar-volman
+   gphoto2
    mangohud
    protonup
    pavucontrol
