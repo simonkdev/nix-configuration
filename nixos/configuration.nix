@@ -27,7 +27,7 @@
 
   boot.supportedFilesystems = [ "ntfs" ];
 
-  boot.kernelParams = [ "i915.modeset=1" ];
+  boot.kernelParams = [ "i915.modeset=1" "intel=iommu=on"];
 
   networking.hostName = "nixTUF"; # Define your hostname.
   networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
