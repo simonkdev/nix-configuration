@@ -52,7 +52,7 @@
        nano /home/simonkdev/nixsys/nixos/configuration.nix
      '')
     (pkgs.writeShellScriptBin "hyprconf" ''
-       nano /home/simonkdev/nixsys/home-manager/hyprland.nix
+       nano /home/simonkdev/nixsys/home-manager/modules/hyprland.nix
      '')
     (pkgs.writeShellScriptBin "kittyconf" ''
        nano /home/simonkdev/nixsys/home-manager/kitty.nix
