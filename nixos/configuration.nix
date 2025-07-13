@@ -120,7 +120,6 @@
    dxvk
 
    virtiofsd
-   win-virtio
  ];
 
 
