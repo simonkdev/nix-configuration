@@ -119,7 +119,8 @@
    winetricks
    dxvk
 
-   darktable
+   virtiofsd
+   win-virtio
  ];
 
 
