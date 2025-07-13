@@ -14,6 +14,8 @@
   security.polkit.enable = true;
   services.udisks2.enable = true;
 
+  virtualisation.libvirtd.enable = true;
+
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
@@ -48,12 +50,13 @@
 
   users.users.simonkdev = {
    isNormalUser = true;
-   extraGroups = [ "wheel" "docker" "networkmanager" "storage" "plugdev" "camera" "kvm" "libvirt"]; # Enable ‘sudo’ for the user.
+   extraGroups = [ "wheel" "docker" "networkmanager" "storage" "plugdev" "camera" "kvm" "libvirtd"]; # Enable ‘sudo’ for the user.
    packages = with pkgs; [
    tree
    kitty
    ];
 };
+
 
  programs.firefox.enable = true;
  programs.hyprland.enable = true;
