@@ -34,7 +34,7 @@
         git add .
         git commit -m "rebuilt"
         git push
-        home-manager switch --flake /home/simonkdev/nixsys/#main
+        home-manager switch --impure --flake /home/simonkdev/nixsys/#main
         cd ~
     '')
     (pkgs.writeShellScriptBin "nixswitch" ''
