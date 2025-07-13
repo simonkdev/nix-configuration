@@ -94,6 +94,7 @@
        jnoortheen.nix-ide
        arrterian.nix-env-selector       
        jdinhlife.gruvbox 
+       adpyke.codesnap
     ];
  };
 
