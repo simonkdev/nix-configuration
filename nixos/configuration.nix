@@ -177,17 +177,6 @@
 
  programs.virt-manager.enable = true;
 
- virtualisation.docker = {
-   enable = true;
-   storageDriver = "overlay2";
-   };
-   
- virtualisation.docker.daemon.settings = {
-    "dns" = [ "8.8.8.8" "1.1.1.1" ];
-        "storage-driver" = "devicemapper";
-        "storage-opts" = [ "dm.thinpooldev=/dev/mapper/docker-thinpool" ];
-      };
-
  services.libinput = {
    enable = true;
    mouse = {
