@@ -172,6 +172,8 @@
     ];
  };
 
+ programs.virt-manager.enable = true;
+
  virtualisation.docker = {
    enable = true;
    storageDriver = "overlay2";
