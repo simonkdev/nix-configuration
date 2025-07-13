@@ -116,6 +116,7 @@
    winetricks
    dxvk
 
+   darktable
  ];
 
 
