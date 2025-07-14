@@ -102,6 +102,9 @@
   cmatrix
   cbonsai
 
+
+  python313Packages.tkinter
+
  ];
 
  fonts.packages = with pkgs; [
