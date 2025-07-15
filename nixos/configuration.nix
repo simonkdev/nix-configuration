@@ -67,7 +67,7 @@
   glxinfo
   vulkan-tools
   unison
-  _7zz
+  p7zip
   virtiofsd
 
   # --- Development Tools ---
