@@ -74,7 +74,7 @@
       };
 
       "org/gnome/desktop/interface" = {
-        color-scheme           = "prefer-dark";
+        color-scheme           = lib.mkForce "prefer-dark";
         cursor-size            = 16;
         cursor-theme           = "Bibata-Modern-Ice";
         document-font-name     = "DejaVu Serif 11";
