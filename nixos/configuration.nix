@@ -94,7 +94,7 @@
   unison
   p7zip
   virtiofsd
-  onlyoffice-bin
+  onlyoffice-desktopeditors
 
   # --- Development Tools ---
   git
