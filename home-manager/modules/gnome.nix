@@ -77,7 +77,7 @@
         color-scheme           = lib.mkForce "prefer-dark";
         cursor-size            = 16;
         cursor-theme           = "Bibata-Modern-Ice";
-        document-font-name     = "DejaVu Serif 11";
+        document-font-name     = lib.mkForce "DejaVu Serif 11";
         font-name              = "DejaVu Sans 12";
         gtk-theme              = "adw-gtk3";
         icon-theme             = "Qogir";
