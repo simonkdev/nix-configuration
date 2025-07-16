@@ -1,0 +1,93 @@
+{ config, lib, pkgs, ... }:
+
+{
+  imports =
+    [ 
+      /home/simonkdev/nixsys/nixos/tp-hardware.nix
+      /home/simonkdev/nixsys/nixos/modules/stylix.nix
+      /home/simonkdev/nixsys/nixos/modules/networking.nix
+      /home/simonkdev/nixsys/nixos/modules/misc.nix
+      /home/simonkdev/nixsys/nixos/modules/tp-boot.nix
+    ];
+
+  users.users.simonkdev = {
+   isNormalUser = true;
+   extraGroups = [ "wheel" "docker" "networkmanager" "storage" "plugdev" "camera" "kvm" "libvirtd"]; # Enable ‘sudo’ for the user.
+   packages = with pkgs; [
+   tree
+   kitty
+   ];
+  };
+
+  programs = { 
+   firefox.enable = true;
+   localsend.enable = true;
+   thunar = { 
+     enable = true;
+     plugins = with pkgs.xfce; [ thunar-volman ];
+   };
+  };
+
+  services = { 
+     gvfs.enable = true;
+     xserver = {
+     enable = true;
+     displayManager.gdm.enable = true;
+     desktopManager.gnome.enable = true;
+     };
+     printing.enable = true; # Enable Printing
+     pulseaudio.enable = false; # Enable Audio
+     udisks2.enable = true;
+     dbus.enable = true;  
+  };
+
+ environment.systemPackages = with pkgs; [
+
+  # --- Networking & Connectivity ---
+  iwd
+  networkmanager
+  networkmanagerapplet
+  protonvpn-gui
+
+  # --- File Management & Utilities ---
+  wget
+  nano
+  fastfetch
+  nnn
+  lshw
+  ntfs3g
+  p7zip
+
+  # --- Development Tools ---
+  git
+  gh
+  jq
+  libffi
+  libffi.dev
+  devenv
+  home-manager
+
+  # --- Productivity & Notes ---
+  todoist-electron
+  obsidian
+  altus
+
+  # --- Communication / Media  ---
+  discord
+  spotify
+
+  # --- Desktop & UI ---
+  cowsay
+  cmatrix
+  cbonsai
+ ];
+
+ fonts.packages = with pkgs; [
+   nerd-fonts.fira-code
+   nerd-fonts.droid-sans-mono
+   nerd-fonts.jetbrains-mono
+   font-awesome 
+];
+
+}
+

@@ -49,6 +49,14 @@
      )
      ];
     };
+    thinkpad = nixpkgs.lib.nixosSystem {
+    specialArgs = {inherit system; };
+
+     modules = [
+     stylix.nixosModules.stylix
+     /home/simonkdev/nixsys/nixos/tp-config.nix
+    ];
+    };
    };
 
   homeConfigurations = {
@@ -57,6 +65,13 @@
      modules = [
       stylix.homeModules.stylix
       ./home-manager/home.nix
+     ];
+    };
+    thinkpad = home-manager.lib.homeManagerConfiguration {
+     inherit pkgs;
+     modules = [
+      stylix.homeModules.stylix
+      /home/simonkdev/nixsys/home-manager/tp-home.nix
      ];
     };
   };
