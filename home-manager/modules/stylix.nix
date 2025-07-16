@@ -14,13 +14,13 @@
       cursor = {
         package = pkgs.bibata-cursors;
         name = "Bibata-Modern-Ice";
-        size = 14;
+        size = 16;
       };
       
       fonts.sizes = {
-       applications = 9;
-       terminal = 9;
-       desktop = 9;
+       applications = 12;
+       terminal = 12;
+       desktop = 12;
       };
 
   };
