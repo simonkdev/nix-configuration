@@ -196,7 +196,7 @@
         toggle-quick-settings   = [];
       };
       "org/gnome/shell/world-clocks" = { locations = []; };
-     ];
     };
+   ];
   };
 }
