@@ -9,6 +9,7 @@
   imports = [
    ~/nixsys/home-manager/modules/kitty.nix
    ~/nixsys/home-manager/modules/stylix.nix
+   ~/nixsys/home-manager/modules/gnome.nix
   ];
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
