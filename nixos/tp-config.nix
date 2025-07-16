@@ -41,6 +41,32 @@
      dbus.enable = true;  
   };
 
+
+ environment.gnome.excludePackages = with pkgs; [
+  baobab
+  cheese
+  eog
+  epiphany
+  gedit
+  simple-scan
+  totem
+  yelp
+  evince
+  geary
+  seahorse
+  gnome-calendar
+  gnome-characters
+  gnome-contacts
+  gnome-maps
+  gnome-music
+  gnome-photos
+  gnome-weather
+  gnome-disk-utility
+  gnome-connections
+  gnome-terminal
+  gnome-tour
+ ];
+
  environment.systemPackages = with pkgs; [
 
   # --- Networking & Connectivity ---
@@ -57,6 +83,7 @@
   lshw
   ntfs3g
   p7zip
+  onlyoffice-desktopeditors
 
   # --- Development Tools ---
   git

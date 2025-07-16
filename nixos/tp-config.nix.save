@@ -3,14 +3,11 @@
 {
   imports =
     [ 
-      ./hardware-configuration.nix
-      /home/simonkdev/nixsys/nixos/modules/virtualisation.nix
+      /home/simonkdev/nixsys/nixos/tp-hardware.nix
       /home/simonkdev/nixsys/nixos/modules/stylix.nix
       /home/simonkdev/nixsys/nixos/modules/networking.nix
       /home/simonkdev/nixsys/nixos/modules/misc.nix
-      /home/simonkdev/nixsys/nixos/modules/graphics.nix
-      /home/simonkdev/nixsys/nixos/modules/gaming.nix
-      /home/simonkdev/nixsys/nixos/modules/boot.nix
+      /home/simonkdev/nixsys/nixos/modules/tp-boot.nix
     ];
 
   users.users.simonkdev = {
@@ -24,7 +21,6 @@
 
   programs = { 
    firefox.enable = true;
-   hyprland.enable = true;
    localsend.enable = true;
    thunar = { 
      enable = true;
@@ -37,6 +33,7 @@
      xserver = {
      enable = true;
      displayManager.gdm.enable = true;
+     desktopManager.gnome.enable = true;
      };
      printing.enable = true; # Enable Printing
      pulseaudio.enable = false; # Enable Audio
@@ -44,12 +41,9 @@
      dbus.enable = true;  
   };
 
+  
+
  environment.systemPackages = with pkgs; [
-  # --- Media & Photography ---
-  digikam
-  libmtp
-  mtpfs
-  gphoto2
 
   # --- Networking & Connectivity ---
   iwd
@@ -64,12 +58,7 @@
   nnn
   lshw
   ntfs3g
-  glxinfo
-  vulkan-tools
-  unison
   p7zip
-  virtiofsd
-  onlyoffice-desktopeditors
 
   # --- Development Tools ---
   git
@@ -79,12 +68,6 @@
   libffi.dev
   devenv
   home-manager
-
-  # --- Audio & Video ---
-  pamixer
-  pavucontrol
-  mangohud
-  protonup
 
   # --- Productivity & Notes ---
   todoist-electron
@@ -96,13 +79,9 @@
   spotify
 
   # --- Desktop & UI ---
-  hyprshot
-  qogir-icon-theme
-  gedit
   cowsay
   cmatrix
   cbonsai
-
  ];
 
  fonts.packages = with pkgs; [
