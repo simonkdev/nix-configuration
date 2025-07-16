@@ -44,6 +44,15 @@
      dbus.enable = true;  
   };
 
+ environment.gnome.excludePackages = with pkgs; [
+   totem
+   decibels
+   nautilus
+   evince
+   papers
+   simplescan
+ ];
+
  environment.systemPackages = with pkgs; [
   # --- Media & Photography ---
   digikam

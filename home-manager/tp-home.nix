@@ -44,10 +44,10 @@
         cd ~
     '')
     (pkgs.writeShellScriptBin "homeconf" ''
-       nano /home/simonkdev/nixsys/home-manager/home.nix
+       nano /home/simonkdev/nixsys/home-manager/tp-home.nix
      '')
     (pkgs.writeShellScriptBin "sysconf" ''
-       nano /home/simonkdev/nixsys/nixos/configuration.nix
+       nano /home/simonkdev/nixsys/nixos/tp-config.nix
      '')
     (pkgs.writeShellScriptBin "kittyconf" ''
        nano /home/simonkdev/nixsys/home-manager/kitty.nix
