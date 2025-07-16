@@ -94,6 +94,7 @@
   unison
   p7zip
   virtiofsd
+  onlyoffice-bin
 
   # --- Development Tools ---
   git
@@ -128,8 +129,6 @@
   cbonsai
 
  ];
-
-programs.onlyoffice.enable = true;
 
  fonts.packages = with pkgs; [
    nerd-fonts.fira-code
