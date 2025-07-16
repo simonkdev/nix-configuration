@@ -8,8 +8,9 @@
     ];
   };
 
-  programs.dconf = {
-    enable = true;
+  programs.dconf.profiles.user.databases = [
+   {
+    lockAll = true;
     settings = {
       "org/gnome/TextEditor" = { style-scheme = "stylix"; };
 
@@ -195,6 +196,7 @@
         toggle-quick-settings   = [];
       };
       "org/gnome/shell/world-clocks" = { locations = []; };
+     ];
     };
   };
 }
