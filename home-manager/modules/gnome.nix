@@ -1,13 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  programs.gnome = {
-    enable = true;
-    extensions = [
-      "user-theme@gnome-shell-extensions.gcampax.github.com"
-    ];
-  };
-
   dconf = {
     enable = true;
     settings = {
