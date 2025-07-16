@@ -197,6 +197,6 @@
       };
       "org/gnome/shell/world-clocks" = { locations = []; };
     };
-   ];
   };
+  ];
 }
