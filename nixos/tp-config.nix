@@ -93,6 +93,7 @@
   libffi.dev
   devenv
   home-manager
+  processing
 
   # --- Productivity & Notes ---
   todoist-electron
