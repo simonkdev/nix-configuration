@@ -81,11 +81,31 @@
   programs.home-manager.enable = true;
  
   xdg.desktopEntries = {
-   cups.noDisplay = true;
-   ktelnetservice6.noDisplay = true;
-   nixos-manual.noDisplay = true;
-   thunar-bulk-rename.noDisplay = true;
-   thunar-settings.noDisplay = true;
+   cups = {
+    name = "NOT INTENDED";
+    type = "Application";
+    noDisplay = true;
+   };
+   ktelnetservice6 = {
+    name = "NOT INTENDED";
+    type = "Application";
+    noDisplay = true;
+   };
+   nixos-manual= {
+    name = "NOT INTENDED";
+    type = "Application";
+    noDisplay = true;
+   };
+   thunar-bulk-rename= {
+    name = "NOT INTENDED";
+    type = "Application";
+    noDisplay = true;
+   };   
+   thunar-settings= {
+    name = "NOT INTENDED";
+    type = "Application";
+    noDisplay = true;
+   };
   };
 
   programs.vscode = {
