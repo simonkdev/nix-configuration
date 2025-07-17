@@ -13,7 +13,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager, winapps }:
+  outputs = { self, nixpkgs, stylix, home-manager }:
   let                                     # Variables for the outputs
     system = "x86_64-linux";
     
