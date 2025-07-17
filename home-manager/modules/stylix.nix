@@ -18,9 +18,9 @@
       };
       
       fonts.sizes = {
-       applications = 12;
-       terminal = 12;
-       desktop = 12;
+       applications = 9;
+       terminal = 9;
+       desktop = 9;
       };
 
   };
