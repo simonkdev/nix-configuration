@@ -80,6 +80,14 @@
   programs.wofi.enable = true;
   programs.home-manager.enable = true;
  
+  xdg.desktopEntries = {
+   cups.noDisplay = true;
+   ktelnetservice6.noDisplay = true;
+   nixos-manual.noDisplay = true;
+   thunar-bulk-rename.noDisplay = true;
+   thunar-settings.noDisplay = true;
+  };
+
   programs.vscode = {
      enable = true;
      profiles.default.extensions = with pkgs.vscode-extensions; [
