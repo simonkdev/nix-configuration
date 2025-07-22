@@ -79,6 +79,7 @@
   libffi.dev
   devenv
   home-manager
+  isoimagewriter
 
   # --- Audio & Video ---
   pamixer

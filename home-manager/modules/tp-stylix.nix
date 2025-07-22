@@ -3,8 +3,8 @@
  {
   stylix = { 
       enable = true;
-      image = ~/nixsys/wallpapers/Mandalorian.jpg;
-      base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
+      image = ~/nixsys/wallpapers/nix-magenta-blue-1920x1080.png;
+      base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
    ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
       
       targets = {
@@ -18,9 +18,9 @@
       };
       
       fonts.sizes = {
-       applications = 9;
-       terminal = 9;
-       desktop = 9;
+       applications = 12;
+       terminal = 12;
+       desktop = 12;
       };
 
   };

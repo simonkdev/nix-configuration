@@ -8,7 +8,7 @@
 
   imports = [
    ~/nixsys/home-manager/modules/kitty.nix
-   ~/nixsys/home-manager/modules/stylix.nix
+   ~/nixsys/home-manager/modules/tp-stylix.nix
    ~/nixsys/home-manager/modules/gnome.nix
   ];
   

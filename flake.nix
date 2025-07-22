@@ -7,17 +7,13 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };      
-    winapps = {
-        url = "github:winapps-org/winapps";
-        inputs.nixpkgs.follows = "nixpkgs";
-    };
     stylix = {
       url = "github:nix-community/stylix/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager, winapps }:
+  outputs = { self, nixpkgs, stylix, home-manager }:
   let                                     # Variables for the outputs
     system = "x86_64-linux";
     
@@ -39,15 +35,8 @@
      modules = [
      stylix.nixosModules.stylix
      ./nixos/configuration.nix            # Config for configuration "main" -> you can do multiple
-     (
-      {
-        environment.systemPackages = [
-           winapps.packages."${system}".winapps
-           winapps.packages."${system}".winapps-launcher
-        ];
-      }
-     )
      ];
+
     };
     thinkpad = nixpkgs.lib.nixosSystem {
     specialArgs = {inherit system; };
@@ -56,10 +45,13 @@
      stylix.nixosModules.stylix
      /home/simonkdev/nixsys/nixos/tp-config.nix
     ];
+
     };
+
    };
 
   homeConfigurations = {
+
     main = home-manager.lib.homeManagerConfiguration {
      inherit pkgs;
      modules = [
@@ -67,6 +59,7 @@
       ./home-manager/home.nix
      ];
     };
+
     thinkpad = home-manager.lib.homeManagerConfiguration {
      inherit pkgs;
      modules = [
