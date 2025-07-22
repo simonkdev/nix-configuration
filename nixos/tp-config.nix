@@ -84,6 +84,7 @@
   ntfs3g
   p7zip
   onlyoffice-desktopeditors
+  unison
 
   # --- Development Tools ---
   git
