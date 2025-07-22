@@ -140,7 +140,7 @@
        "scm.inputFontSize"= 11.142857142857142;
        "screencastMode.fontSize"= 48.0;
        "terminal.integrated.fontSize" = 12.0;
-       "workbench.colorTheme" = "Gruvbox Dark Hard";
+       "workbench.colorTheme" = lib.mkForce "Gruvbox Dark Hard";
     };
  };
 
