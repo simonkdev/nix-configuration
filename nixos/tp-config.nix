@@ -94,6 +94,7 @@
   devenv
   home-manager
   processing
+  zulu24
 
   # --- Productivity & Notes ---
   todoist-electron
