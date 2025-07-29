@@ -143,8 +143,19 @@
        "workbench.colorTheme" = lib.mkForce "Gruvbox Dark Hard";
      
     programs.yazi.enable = true;
+    
+    xdg.configFile."yazi/plugins/open_vscode.yazi".text = ''
+    #!/usr/bin/env bash
 
+    entry="$1"
 
+    if [ -d "$entry" ]; then
+      code "$entry"
+    else
+      code "$entry"
+    fi
+  '';
+ 
     };
  };
 
