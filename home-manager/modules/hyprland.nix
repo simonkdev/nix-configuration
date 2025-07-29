@@ -143,7 +143,7 @@ bind = [
 "$mod, Q, exec, $term"
 "$mod, C, killactive"
 "$mod, M, exit"
-"$mod, E, exec, thunar"
+"$mod, E, exec, hyprctl dispatch exec '[float] kitty --class yazi -e yazi'"
 "$mod, V, togglefloating"
 "$mod, R, exec, $launcher"
 "$mod, F, fullscreen"
