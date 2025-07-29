@@ -155,7 +155,7 @@
           run = pkgs.stdenv.mkDerivation {
             name = "yazi-open-code";
             builder = ./open_vscode.sh; # will generate script
-          } // name; # Just use string run
+          }  # Just use string run
           desc = "Open current entry in VSCode";
          }
        ];
