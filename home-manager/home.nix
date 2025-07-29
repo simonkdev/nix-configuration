@@ -141,6 +141,10 @@
        "screencastMode.fontSize"= 48.0;
        "terminal.integrated.fontSize" = 12.0;
        "workbench.colorTheme" = lib.mkForce "Gruvbox Dark Hard";
+     
+    programs.yazi.enable = true;
+
+
     };
  };
 
