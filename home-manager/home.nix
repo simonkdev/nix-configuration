@@ -142,25 +142,41 @@
        "terminal.integrated.fontSize" = 12.0;
        "workbench.colorTheme" = lib.mkForce "Gruvbox Dark Hard";
      
-    programs.yazi.enable = true;
-    
-    xdg.configFile."yazi/plugins/open_vscode.yazi".text = ''
+    programs.yazi = {
+       enable = true;
+       settings = {
+         mgr = { };
+       };
+
+       keymap = {
+         mgr.prepend_keymap = [
+        {
+          on = [ "v" ];
+          run = pkgs.stdenv.mkDerivation {
+            name = "yazi-open-code";
+            builder = ./open_vscode.sh; # will generate script
+          } // name; # Just use string run
+          desc = "Open current entry in VSCode";
+         }
+       ];
+     };
+   };
+
+  # Provide the script via embed config file
+  xdg.configFile."yazi/plugins/open_vscode.yazi".text = ''
     #!/usr/bin/env bash
-
     entry="$1"
-
     if [ -d "$entry" ]; then
       code "$entry"
     else
       code "$entry"
     fi
   '';
-    
-    xdg.configFile."yazi/yazi.toml".text = ''
-    [keymap.normal]
-    x = { exec = "open_vscode" }
+
+  home.activation.makeScriptsExecutable = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    chmod +x ${config.xdg.configHome}/yazi/plugins/open_vscode.yazi
   '';
- 
+    
     };
  };
 
