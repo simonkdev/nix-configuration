@@ -224,6 +224,11 @@ windowrule = [
 "roundingpower [10.0], class:wofi"
 "float, class:pavucontrol"
 ];
+
+windowrulev2 = [
+"size 960 540, class:yazi"
+];
+
 layerrule = [
 "noanim, wofi"
 ];
