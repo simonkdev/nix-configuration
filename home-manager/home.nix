@@ -155,6 +155,11 @@
       code "$entry"
     fi
   '';
+    
+    xdg.configFile."yazi/yazi.toml".text = ''
+    [keymap.normal]
+    v = { exec = "open_vscode" }
+  '';
  
     };
  };
