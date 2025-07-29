@@ -36,20 +36,6 @@
       options = [ "rwx" "uid=1000" "gid=100" ];
     };
 
-  fileSystems."/home/simonkdev/k1nas/Fotos" = {
-    device = "//192.168.2.138/Public/02_SKP";
-    fsType = "cifs";
-    options = [
-      "credentials=/home/simonkdev/.smbcredentials"
-      "uid=1000"
-      "gid=100"
-      "vers=3.0"
-      "iocharset=utf8"
-      "nofail"
-      "_netdev"
-    ];
-  };
-
   fileSystems."/home/simonkdev/k1nas/Obsidian" = {
     device = "//192.168.2.138/Public/Simon_Obsidian";
     fsType = "cifs";

@@ -84,6 +84,7 @@
   ntfs3g
   p7zip
   onlyoffice-desktopeditors
+  unison
 
   # --- Development Tools ---
   git
@@ -94,6 +95,7 @@
   devenv
   home-manager
   processing
+  zulu24
 
   # --- Productivity & Notes ---
   todoist-electron

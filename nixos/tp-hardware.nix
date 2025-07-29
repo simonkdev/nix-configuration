@@ -24,6 +24,20 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+  fileSystems."/home/simonkdev/k1nas/Obsidian" = {
+    device = "//192.168.2.138/Public/Simon_Obsidian";
+    fsType = "cifs";
+    options = [
+      "credentials=/home/simonkdev/.smbcredentials"
+      "uid=1000"
+      "gid=100"
+      "vers=3.0"
+      "iocharset=utf8"
+      "nofail"
+      "_netdev"
+    ];
+  };
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
