@@ -158,7 +158,7 @@
     
     xdg.configFile."yazi/yazi.toml".text = ''
     [keymap.normal]
-    v = { exec = "open_vscode" }
+    x = { exec = "open_vscode" }
   '';
  
     };
