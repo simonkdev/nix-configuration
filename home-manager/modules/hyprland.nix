@@ -146,6 +146,7 @@ bind = [
 "$mod, E, exec, hyprctl dispatch exec '[float] kitty --class yazi -e yazi'"
 "$mod, V, togglefloating"
 "$mod, R, exec, $launcher"
+"$mod, T, exec, thunar"
 "$mod, F, fullscreen"
 "$mod, S, exec, discord"
 "$mod, X, exec, firefox"
