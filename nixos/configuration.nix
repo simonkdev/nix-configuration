@@ -26,6 +26,7 @@
    firefox.enable = true;
    hyprland.enable = true;
    localsend.enable = true;
+   yazi.enable = true;
    thunar = { 
      enable = true;
      plugins = with pkgs.xfce; [ thunar-volman ];
