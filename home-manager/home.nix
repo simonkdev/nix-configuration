@@ -142,6 +142,7 @@
        "terminal.integrated.fontSize" = 12.0;
        "workbench.colorTheme" = lib.mkForce "Gruvbox Dark Hard";
    };
+   };
      
     programs.yazi = {
        enable = true;
