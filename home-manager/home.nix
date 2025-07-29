@@ -147,7 +147,6 @@
     programs.yazi = {
        enable = true;
     };
- };
 
 
 
