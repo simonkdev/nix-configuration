@@ -107,6 +107,7 @@
   discord
   spotify
   ani-cli
+  mov-cli
 
   # --- Desktop & UI ---
   cowsay
