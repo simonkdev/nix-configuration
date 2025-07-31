@@ -8,14 +8,14 @@
       search-light
   ];
 
-#  programs.gnome-shell = {
-#    enable = true;
+  programs.gnome-shell = {
+    enable = true;
 #    extensions = with pkgs.gnomeExtensions; [
 #      tiling-assistant
 #      blur-my-shell
 #      dock-from-dash
 #      ];
-#  };
+  };
   dconf = {
     enable = true;
     settings = {
