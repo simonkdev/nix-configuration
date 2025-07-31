@@ -85,6 +85,7 @@
   p7zip
   onlyoffice-desktopeditors
   unison
+  yazi
 
   # --- Development Tools ---
   git
@@ -105,6 +106,7 @@
   # --- Communication / Media  ---
   discord
   spotify
+  ani-cli
 
   # --- Desktop & UI ---
   cowsay
