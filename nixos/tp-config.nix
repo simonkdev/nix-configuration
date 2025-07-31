@@ -110,6 +110,7 @@
   cowsay
   cmatrix
   cbonsai
+  pipes
  ];
 
  fonts.packages = with pkgs; [
