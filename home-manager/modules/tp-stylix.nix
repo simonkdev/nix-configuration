@@ -3,7 +3,7 @@
  {
   stylix = { 
       enable = true;
-      image = ~/nixsys/wallpapers/nix-magenta-blue-1920x1080.png;
+      image = ~/nixsys/wallpapers/dominik-mayer-17.jpg;
       base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
    ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
       
