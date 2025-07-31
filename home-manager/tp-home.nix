@@ -52,6 +52,9 @@
     (pkgs.writeShellScriptBin "kittyconf" ''
        nano /home/simonkdev/nixsys/home-manager/kitty.nix
      '')
+    (pkgs.writeShellScriptBin "gnomeconf" ''
+       nano /home/simonkdev/nixsys/home-manager/modules/gnome.nix
+     '')
 
 
 
