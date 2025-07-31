@@ -67,13 +67,6 @@
         translate  = true;
       };
 
-      "org/gnome/desktop/background" = {
-        color-shading-type = "solid";
-        picture-options    = "zoom";
-        picture-uri        = "file:///nix/store/jf0vckmr8z01h81q42gjs5xiv6ybgr29-nix-magenta-blue-1920x1080.png";
-        picture-uri-dark   = "file:///nix/store/jf0vckmr8z01h81q42gjs5xiv6ybgr29-nix-magenta-blue-1920x1080.png";
-      };
-
       "org/gnome/desktop/break-reminders/eyesight" = { play-sound = true; };
 
       "org/gnome/desktop/break-reminders/movement" = {
