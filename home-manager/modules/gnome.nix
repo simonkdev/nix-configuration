@@ -1,14 +1,21 @@
 { config, lib, pkgs, ... }:
 
 {
-  programs.gnome-shell = {
-    enable = true;
-    extensions = with pkgs.gnomeExtensions; [
+  home.packages = with pkgs.gnomeExtensions; [
       tiling-assistant
       blur-my-shell
       dock-from-dash
-      ];
-  };
+      search-light
+  ];
+
+#  programs.gnome-shell = {
+#    enable = true;
+#    extensions = with pkgs.gnomeExtensions; [
+#      tiling-assistant
+#      blur-my-shell
+#      dock-from-dash
+#      ];
+#  };
   dconf = {
     enable = true;
     settings = {
