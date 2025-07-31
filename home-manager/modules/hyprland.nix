@@ -143,9 +143,10 @@ bind = [
 "$mod, Q, exec, $term"
 "$mod, C, killactive"
 "$mod, M, exit"
-"$mod, E, exec, thunar"
+"$mod, E, exec, hyprctl dispatch exec '[float] kitty --class yazi -e yazi'"
 "$mod, V, togglefloating"
 "$mod, R, exec, $launcher"
+"$mod, T, exec, thunar"
 "$mod, F, fullscreen"
 "$mod, S, exec, discord"
 "$mod, X, exec, firefox"
@@ -224,6 +225,11 @@ windowrule = [
 "roundingpower [10.0], class:wofi"
 "float, class:pavucontrol"
 ];
+
+windowrulev2 = [
+"size 960 540, class:yazi"
+];
+
 layerrule = [
 "noanim, wofi"
 ];
