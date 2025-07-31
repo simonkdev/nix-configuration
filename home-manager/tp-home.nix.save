@@ -14,12 +14,10 @@
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
+  
+
   home.packages = [
 
-    pkgs.gnomeExtensions.tiling-assistant
-    pkgs.gnomeExtensions.blur-my-shell
-    pkgs.gnomeExtensions.dock-from-dash
-    pkgs.gnomeExtensions.search-light
     pkgs.hello
     pkgs.wl-clipboard
     pkgs.wireplumber
