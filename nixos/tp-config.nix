@@ -86,6 +86,7 @@
   onlyoffice-desktopeditors
   unison
   yazi
+  davinci-resolve
 
   # --- Development Tools ---
   git
