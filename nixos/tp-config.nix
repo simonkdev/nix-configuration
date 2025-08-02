@@ -116,7 +116,7 @@
   discord
   spotify
   ani-cli
-  mov-cli
+  shotcut
 
   # --- Desktop & UI ---
   cowsay
