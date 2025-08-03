@@ -22,6 +22,7 @@
     playerctl
     brightnessctl
     upower
+    polkit_gnome
 
 
     (writeShellScriptBin "homeswitch" ''
@@ -72,7 +73,7 @@
   programs.home-manager.enable = true;
 
   #services.polkit-gnome.enable = true;
-  services.desktopManager.gnome.polkit-gnome-authentication-agent.enable = true;
+  #services.desktopManager.gnome.polkit-gnome-authentication-agent.enable = true;
  
   programs.vscode = {
      enable = true;
