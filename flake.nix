@@ -11,9 +11,10 @@
       url = "github:nix-community/stylix/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager }:
+  outputs = { self, nixpkgs, stylix, home-manager, unstable }:
   let                                     # Variables for the outputs
     system = "x86_64-linux";
     

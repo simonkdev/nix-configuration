@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, unstable, ... }:
 
 {
   imports =
@@ -81,7 +81,9 @@
   gnome-terminal
   gnome-tour
  ];
-
+ environment.systemPackages = [
+  unstable.rapidraw
+ ];
  environment.systemPackages = with pkgs; [
 
   # --- Networking & Connectivity ---
