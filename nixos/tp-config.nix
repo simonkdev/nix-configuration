@@ -81,9 +81,7 @@
   gnome-terminal
   gnome-tour
  ];
- environment.systemPackages = [
-  unstable.rapidraw
- ];
+ 
  environment.systemPackages = with pkgs; [
 
   # --- Networking & Connectivity ---
@@ -133,6 +131,8 @@
   cmatrix
   cbonsai
   pipes-rs
+ ] ++ [
+  unstable.rapidraw
  ];
 
  fonts.packages = with pkgs; [
