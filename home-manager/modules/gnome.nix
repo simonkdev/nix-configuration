@@ -179,7 +179,7 @@
       sidebar-size = 300;
       sort-method = "name";
       sort-type = "ascending";
-      window-size = [ -1 -1 ];
+      window-size = [ 812 504 ];
     };
     "org/gnome/file-roller/listing" = {
       list-mode = "as-folder";
