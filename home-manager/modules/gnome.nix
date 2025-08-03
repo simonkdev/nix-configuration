@@ -115,9 +115,6 @@
 
     "org/gnome/desktop/interface" = {
       color-scheme = lib.mkForce "prefer-dark";
-      cursor-size = 16;
-      cursor-theme = "Bibata-Modern-Ice";
-      document-font-name = "DejaVu Serif 11";
       enable-hot-corners = true;
       font-name = "DejaVu Sans 12";
       gtk-theme = "adw-gtk3";
