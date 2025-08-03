@@ -18,13 +18,19 @@
   let                                     # Variables for the outputs
     system = "x86_64-linux";
     
-    pkgs = import nixpkgs {
-       inherit system;                    # Build for x86_64-linux
+    unpkgs = import unstable { inherit system; };
 
+    rapidrawOverlay = final: prev: {
+      rapidraw = unpkgs.rapidraw;
+    };
+
+    pkgs = import nixpkgs {
+       inherit system;                    # Build for x86_64-linux  
        config = {
         allowUnfree = true;
        };
-    unpkgs = import unstable { inherit system; };
+       overlays = [ rapidrawOverlay ];
+
     };
   in
   {

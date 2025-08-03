@@ -125,14 +125,13 @@
   kdePackages.kdenlive
   gimp3
   vlc
+  rapidraw
 
   # --- Desktop & UI ---
   cowsay
   cmatrix
   cbonsai
   pipes-rs
- ] ++ [
-  unpkgs.rapidraw
  ];
 
  fonts.packages = with pkgs; [
