@@ -44,7 +44,7 @@
 #     polkit-gnome.enable = true;
      gnome.polkit-gnome-authentication-agent.enable = true;
   };
-  };
+ 
 
   hardware.graphics = {
     enable = true;
