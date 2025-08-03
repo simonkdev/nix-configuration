@@ -356,7 +356,7 @@
     };
 
     "org/gtk/settings/color-chooser" = {
-      selected-color = [ true 0.38431372549 0.62745098039 0.91764705882 1.0 ];
+      selected-color = [ 0.38431372549 0.62745098039 0.91764705882 1.0 ];
     };
 
     "org/gtk/settings/file-chooser" = {
