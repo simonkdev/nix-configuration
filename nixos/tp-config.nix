@@ -39,6 +39,7 @@
      pulseaudio.enable = false; # Enable Audio
      udisks2.enable = true;
      dbus.enable = true;  
+     polkit-gnome.enable = true;
   };
 
   hardware.graphics = {
@@ -95,7 +96,7 @@
   onlyoffice-desktopeditors
   unison
   yazi
- 
+
   # --- Development Tools ---
   git
   gh
