@@ -36,7 +36,6 @@
      enable = true;
      displayManager.gdm.enable = true;
      desktopManager.gnome.enable = true;
-     desktopManager.gnome.polkit-gnome-authentication-agent.enable = true;
      };
      printing.enable = true; # Enable Printing
      pulseaudio.enable = false; # Enable Audio
@@ -101,7 +100,6 @@
   onlyoffice-desktopeditors
   unison
   yazi
-  polkit_gnome
 
   # --- Development Tools ---
   git
