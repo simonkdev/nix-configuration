@@ -8,9 +8,7 @@
       /home/simonkdev/nixsys/nixos/modules/networking.nix
       /home/simonkdev/nixsys/nixos/modules/tp-misc.nix
       /home/simonkdev/nixsys/nixos/modules/tp-boot.nix
-      "${unpkgs.path}/nixos/modules/misc/nixpkgs/read-only.nix"
     ];
-    nixpkgs.pkgs = pkgs;
 
   users.users.simonkdev = {
    isNormalUser = true;
