@@ -19,8 +19,6 @@
   dconf = {
     enable = true;
     settings = {
-      {
-  dconf.settings = {
     "org/gnome/Console" = {
       last-window-maximised = false;
       last-window-size = [812 504];
@@ -354,8 +352,6 @@
       window-position          = [35 32];
       window-size              = [1310 982];
     };
-  };
-}
     };
   };
 }
