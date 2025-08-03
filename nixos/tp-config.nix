@@ -118,6 +118,7 @@
   ani-cli
   kdePackages.kdenlive
   gimp3
+  vlc
 
   # --- Desktop & UI ---
   cowsay
