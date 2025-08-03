@@ -117,6 +117,7 @@
   spotify
   ani-cli
   shotcut
+  kdePackages.kdenlive
 
   # --- Desktop & UI ---
   cowsay
