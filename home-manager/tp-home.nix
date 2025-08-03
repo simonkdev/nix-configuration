@@ -22,7 +22,7 @@
     playerctl
     brightnessctl
     upower
-    polkit_gnome
+    #polkit_gnome
 
 
     (writeShellScriptBin "homeswitch" ''
