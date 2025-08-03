@@ -6,7 +6,7 @@
       /home/simonkdev/nixsys/nixos/tp-hardware.nix
       /home/simonkdev/nixsys/nixos/modules/stylix.nix
       /home/simonkdev/nixsys/nixos/modules/networking.nix
-      /home/simonkdev/nixsys/nixos/modules/misc.nix
+      /home/simonkdev/nixsys/nixos/modules/tp-misc.nix
       /home/simonkdev/nixsys/nixos/modules/tp-boot.nix
     ];
 
