@@ -42,7 +42,7 @@
 
     "org/gnome/control-center" = {
       last-panel = "applications";
-      window-state = [980 640 false];
+      window-state = [980 640 0];
     };
 
     "org/gnome/desktop/a11y/magnifier" = {
