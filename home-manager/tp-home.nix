@@ -72,7 +72,7 @@
   programs.wofi.enable = true;
   programs.home-manager.enable = true;
 
-  services.polkit-gnome.enable = true;
+  #services.polkit-gnome.enable = true;
   #services.desktopManager.gnome.polkit-gnome-authentication-agent.enable = true;
  
   programs.vscode = {
