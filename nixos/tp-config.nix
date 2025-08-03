@@ -1,4 +1,4 @@
-{ config, lib, pkgs, unstable, ... }:
+{ config, lib, pkgs, unpkgs, ... }:
 
 {
   imports =
@@ -132,7 +132,7 @@
   cbonsai
   pipes-rs
  ] ++ [
-  unstable.rapidraw
+  unpkgs.rapidraw
  ];
 
  fonts.packages = with pkgs; [

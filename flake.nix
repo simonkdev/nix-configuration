@@ -24,7 +24,7 @@
        config = {
         allowUnfree = true;
        };
-
+    unpkgs = import unstable { inherit system; };
     };
   in
   {
@@ -40,7 +40,7 @@
 
     };
     thinkpad = nixpkgs.lib.nixosSystem {
-    specialArgs = {inherit system unstable; };
+    specialArgs = {inherit system unpkgs; };
 
      modules = [
      stylix.nixosModules.stylix
