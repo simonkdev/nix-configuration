@@ -90,13 +90,6 @@
       translate = true;
     };
 
-    "org/gnome/desktop/background" = {
-      color-shading-type = "solid";
-      picture-options = "zoom";
-      picture-uri = "file:///nix/store/xhl96ggmf2vz619d9xhlsa2g2h0jaivc-dominik-mayer-17.jpg";
-      picture-uri-dark = "file:///nix/store/xhl96ggmf2vz619d9xhlsa2g2h0jaivc-dominik-mayer-17.jpg";
-    };
-
     "org/gnome/desktop/break-reminders/eyesight" = {
       play-sound = true;
     };
@@ -265,7 +258,7 @@
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
       binding = "<Super>a";
-      command = "kitty -e bash -c \"sudo yazi\"";
+      command = "kitty -e bash -c \"yazi\"";
       name = "yazi-launch";
     };
 
