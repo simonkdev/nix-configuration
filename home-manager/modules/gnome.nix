@@ -296,7 +296,7 @@
         { cups.desktop = { position = 14; }; }
         { nixos-manual.desktop = { position = 15; }; }
         { nnn.desktop = { position = 16; }; }
-        { processing.desktop = { position = 17; }; };
+        { processing.desktop = { position = 17; }; }
         { protonvpn-app.desktop            = { position = 18; }; }
         { thunar-volman-settings.desktop   = { position = 19; }; }
         { org.gnome.TextEditor.desktop     = { position = 20; }; }
