@@ -24,7 +24,7 @@
    localsend.enable = true;
    thunar = { 
      enable = true;
-     plugins = with pkgs.xfce; [ thunar-volman ];
+     plugins = with pkgs.xfce; [ thunar-volman tumbler ];
    };
   };
 
