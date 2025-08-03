@@ -109,6 +109,7 @@
 
     "org/gnome/desktop/input-sources" = {
       mru-sources = [];
+      sources = [ (mkTuple [ "xkb" "de" ])  ];
       xkb-options = [];
     };
 
