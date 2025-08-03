@@ -33,7 +33,7 @@
   services = { 
      gvfs.enable = true;
      xserver = {
-     layout = "de";
+     xkb.layout = "de";
      enable = true;
      displayManager.gdm.enable = true;
      desktopManager.gnome.enable = true;
