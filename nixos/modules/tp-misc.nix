@@ -23,8 +23,6 @@
        allowUnsupportedSystem = true;
     };
 
-    security.polkit.enable = true;
-
     time.timeZone = "Europe/Berlin";
 
     i18n = { 
