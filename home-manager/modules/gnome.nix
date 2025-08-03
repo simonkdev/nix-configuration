@@ -352,7 +352,7 @@
 
     "org/gtk/gtk4/settings/color-chooser" = {
       custom-colors  = [ [0.0 0.0 0.0 0.0] [0.0 0.0 0.0 0.25] [1.0 1.0 1.0 0.0] ];
-      selected-color = [ true 0.0 0.0 0.0 0.0 ];
+      selected-color = [ 0.0 0.0 0.0 0.0 ]; # Remove 'true'
     };
 
     "org/gtk/settings/color-chooser" = {
