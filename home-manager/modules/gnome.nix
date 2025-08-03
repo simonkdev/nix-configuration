@@ -279,8 +279,32 @@
 
     "org/gnome/shell" = {
       app-picker-layout = [
-        { Altus.desktop       = { position = 0; }; org.gnome.clocks.desktop         = { position = 1; }; org.gnome.Settings.desktop      = { position = 2; }; org.gnome.Snapshot.desktop      = { position = 3; }; Utilities                        = { position = 4; }; System                           = { position = 5; }; org.gnome.Console.desktop       = { position = 6; }; org.gnome.Decibels.desktop      = { position = 7; }; btop.desktop                     = { position = 8; }; thunar-bulk-rename.desktop       = { position = 9; }; org.gnome.Calculator.desktop    = { position = 10; }; org.gnome.Extensions.desktop     = { position = 11; }; org.gnome.Nautilus.desktop       = { position = 12; }; gimp.desktop                     = { position = 13; }; cups.desktop                     = { position = 14; }; nixos-manual.desktop             = { position = 15; }; nnn.desktop                      = { position = 16; }; processing.desktop               = { position = 17; }; protonvpn-app.desktop            = { position = 18; }; thunar-volman-settings.desktop   = { position = 19; }; org.gnome.TextEditor.desktop     = { position = 20; }; thunar-settings.desktop          = { position = 21; }; unison.desktop                   = { position = 22; }; vlc.desktop                      = { position = 23; }; }
-        { xterm.desktop = { position = 0; }; yazi.desktop = { position = 1; }; }
+        { Altus.desktop = { position = 0; }; }
+        { org.gnome.clocks.desk = { position = 1; }; }
+        { org.gnome.Settings.desktop = { position = 2; }; }
+        { org.gnome.Snapshot.desktop = { position = 3; }; }
+        { Utilities = { position = 4; }; }
+        { System = { position = 5; }; }
+        { org.gnome.Console.desktop = { position = 6; }; }
+        { org.gnome.Decibels.desktop = { position = 7; }; }
+        { btop.desktop = { position = 8; }; }
+        { thunar-bulk-rename.desktop = { position = 9; }; }
+        { org.gnome.Calculator.desktop = { position = 10; }; }
+        { org.gnome.Extensions.desktop = { position = 11; }; }
+        { org.gnome.Nautilus.desktop = { position = 12; }; }
+        { gimp.desktop = { position = 13; }; }
+        { cups.desktop = { position = 14; }; }
+        { nixos-manual.desktop = { position = 15; }; }
+        { nnn.desktop = { position = 16; }; }
+        { processing.desktop = { position = 17; }; };
+        { protonvpn-app.desktop            = { position = 18; }; }
+        { thunar-volman-settings.desktop   = { position = 19; }; }
+        { org.gnome.TextEditor.desktop     = { position = 20; }; }
+        { thunar-settings.desktop          = { position = 21; }; }
+        { unison.desktop                   = { position = 22; }; }
+        { vlc.desktop                      = { position = 23; }; }
+        { xterm.desktop                    = { position = 24; }; }
+        { yazi.desktop                     = { position = 25; }; }
       ];
       command-history              = [ "thunar" "vsc" ];
       disabled-extensions          = [ "dock-from-dash@fthx" ];
