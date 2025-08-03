@@ -28,6 +28,7 @@
     pkgs.python3
     pkgs.python3Packages.pip
     pkgs.python3Packages.virtualenv
+    #pkgs.polkit_gnome
 
     (pkgs.writeShellScriptBin "homeswitch" ''
         cd ~/nixsys
@@ -80,7 +81,7 @@
   programs.wofi.enable = true;
   programs.home-manager.enable = true;
 
-  services.desktopManager.gnome.polkit-gnome-authentication-agent.enable = true;
+ #  services.desktopManager.gnome.polkit-gnome-authentication-agent.enable = true;
  
   xdg.desktopEntries = {
    cups = {
