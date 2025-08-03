@@ -31,7 +31,7 @@
 
    nixosConfigurations = {
     main = nixpkgs.lib.nixosSystem {      # configuration "main" starts here letsgooo
-     specialArgs = {inherit system; };
+     specialArgs = {inherit system unstable; };
      
      modules = [
      stylix.nixosModules.stylix
@@ -40,7 +40,7 @@
 
     };
     thinkpad = nixpkgs.lib.nixosSystem {
-    specialArgs = {inherit system; };
+    specialArgs = {inherit system unstable; };
 
      modules = [
      stylix.nixosModules.stylix
