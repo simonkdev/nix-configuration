@@ -116,8 +116,8 @@
   discord
   spotify
   ani-cli
-  shotcut
   kdePackages.kdenlive
+  gimp3
 
   # --- Desktop & UI ---
   cowsay
