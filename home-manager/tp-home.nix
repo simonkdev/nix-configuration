@@ -70,6 +70,8 @@
   programs.btop.enable = true;
   programs.wofi.enable = true;
   programs.home-manager.enable = true;
+
+  services.polkit-gnome.enable = true;
  
   programs.vscode = {
      enable = true;

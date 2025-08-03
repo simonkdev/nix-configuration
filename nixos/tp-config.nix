@@ -42,7 +42,7 @@
      udisks2.enable = true;
      dbus.enable = true;  
 #     polkit-gnome.enable = true;
-     gnome.polkit-gnome-authentication-agent.enable = true;
+#     gnome.polkit-gnome-authentication-agent.enable = true;
   };
  
 
