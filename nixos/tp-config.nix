@@ -8,7 +8,7 @@
       /home/simonkdev/nixsys/nixos/modules/networking.nix
       /home/simonkdev/nixsys/nixos/modules/tp-misc.nix
       /home/simonkdev/nixsys/nixos/modules/tp-boot.nix
-      "${pkgs.path}/nixos/modules/misc/nixpkgs/read-only.nix"
+      "${unpkgs.path}/nixos/modules/misc/nixpkgs/read-only.nix"
     ];
     nixpkgs.pkgs = pkgs;
 
