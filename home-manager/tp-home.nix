@@ -14,25 +14,17 @@
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
-  home.packages = [
+  home.packages = with pkgs; [
+    hello
+    wl-clipboard
+    wireplumber
+    cava
+    playerctl
+    brightnessctl
+    upower
 
-    pkgs.gnomeExtensions.tiling-assistant
-    pkgs.gnomeExtensions.blur-my-shell
-    pkgs.gnomeExtensions.dock-from-dash
-    pkgs.gnomeExtensions.search-light
-    pkgs.hello
-    pkgs.wl-clipboard
-    pkgs.wireplumber
-    pkgs.cava
-    pkgs.playerctl
-    pkgs.brightnessctl
-    pkgs.upower
-    pkgs.python3
-    pkgs.python3Packages.pip
-    pkgs.python3Packages.virtualenv
-    pkgs.polkit_gnome
 
-    (pkgs.writeShellScriptBin "homeswitch" ''
+    (writeShellScriptBin "homeswitch" ''
         cd ~/nixsys
         git add .
         git commit -m "rebuilt"
@@ -40,7 +32,7 @@
         home-manager switch --impure --flake /home/simonkdev/nixsys/#thinkpad
         cd ~
     '')
-    (pkgs.writeShellScriptBin "nixswitch" ''
+    (writeShellScriptBin "nixswitch" ''
         cd ~/nixsys
         git add .
         git commit -m "rebuilt system"
@@ -48,16 +40,16 @@
         sudo nixos-rebuild switch --impure --flake /home/simonkdev/nixsys/#thinkpad
         cd ~
     '')
-    (pkgs.writeShellScriptBin "homeconf" ''
+    (writeShellScriptBin "homeconf" ''
        nano /home/simonkdev/nixsys/home-manager/tp-home.nix
      '')
-    (pkgs.writeShellScriptBin "sysconf" ''
+    (writeShellScriptBin "sysconf" ''
        nano /home/simonkdev/nixsys/nixos/tp-config.nix
      '')
-    (pkgs.writeShellScriptBin "kittyconf" ''
+    (writeShellScriptBin "kittyconf" ''
        nano /home/simonkdev/nixsys/home-manager/kitty.nix
      '')
-    (pkgs.writeShellScriptBin "gnomeconf" ''
+    (writeShellScriptBin "gnomeconf" ''
        nano /home/simonkdev/nixsys/home-manager/modules/gnome.nix
      '')
 
