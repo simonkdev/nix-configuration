@@ -34,8 +34,9 @@
         allowUnfree = true;
        };
        overlays = [ rapidrawOverlay ];
-
     };
+
+    extraSpecialArgs = { inherit inputs system; };
   in
   {
 
@@ -72,7 +73,7 @@
     };
 
     thinkpad = home-manager.lib.homeManagerConfiguration {
-     inherit pkgs inputs;
+     inherit extraSpecialArgs;
      modules = [
       stylix.homeModules.stylix
       /home/simonkdev/nixsys/home-manager/tp-home.nix
