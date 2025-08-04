@@ -18,7 +18,7 @@
     unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager, unstable, nix4nvchad }:
+  outputs = { self, nixpkgs, stylix, home-manager, unstable, ... }@inputs:
   let                                     # Variables for the outputs
     system = "x86_64-linux";
     
@@ -54,7 +54,6 @@
 
      modules = [
      stylix.nixosModules.stylix
-     nix4nvchad.packages.${system}.default
      /home/simonkdev/nixsys/nixos/tp-config.nix
     ];
 
@@ -75,6 +74,7 @@
     thinkpad = home-manager.lib.homeManagerConfiguration {
      inherit pkgs;
      modules = [
+      inputs.nix4nvchad.homeManagerModules.default
       stylix.homeModules.stylix
       /home/simonkdev/nixsys/home-manager/tp-home.nix
      ];
