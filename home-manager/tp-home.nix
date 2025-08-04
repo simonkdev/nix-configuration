@@ -54,6 +54,9 @@
     (writeShellScriptBin "gnomeconf" ''
        nano /home/simonkdev/nixsys/home-manager/modules/gnome.nix
      '')
+    (writeShellScriptBin "bsedlogin" ''
+       ssh webadmin@46.252.195.82
+     '')
 
 
 
