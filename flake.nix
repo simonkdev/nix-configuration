@@ -73,7 +73,7 @@
     };
 
     thinkpad = home-manager.lib.homeManagerConfiguration {
-     inherit extraSpecialArgs;
+     inherit extraSpecialArgs pkgs;
      modules = [
       stylix.homeModules.stylix
       /home/simonkdev/nixsys/home-manager/tp-home.nix
