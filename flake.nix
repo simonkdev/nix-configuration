@@ -28,12 +28,16 @@
       rapidraw = unpkgs.rapidraw;
     };
 
+    nvchadOverlay = final: prev: {
+      nvchad = inputs.nix4nvchad.packages."${system}".nvchad;
+    };
+
     pkgs = import nixpkgs {
        inherit system;                    # Build for x86_64-linux  
        config = {
         allowUnfree = true;
        };
-       overlays = [ rapidrawOverlay ];
+       overlays = [ rapidrawOverlay nvchadOverlay];
     };
 
     extraSpecialArgs = { inherit inputs system pkgs; };

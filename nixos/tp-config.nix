@@ -10,14 +10,6 @@
       /home/simonkdev/nixsys/nixos/modules/tp-boot.nix
     ];
 
-    nixpkgs = { 
-    overlays = [
-      (final: prev: {
-        nvchad = inputs.nix4nvchad.packages."${pkgs.system}".nvchad;
-      })
-    ];
-  };
-
   users.users.simonkdev = {
    isNormalUser = true;
    extraGroups = [ "wheel" "docker" "networkmanager" "storage" "plugdev" "camera" "kvm" "libvirtd"]; # Enable ‘sudo’ for the user.
