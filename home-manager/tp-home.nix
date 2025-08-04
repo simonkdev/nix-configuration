@@ -10,7 +10,7 @@
    ~/nixsys/home-manager/modules/kitty.nix
    ~/nixsys/home-manager/modules/tp-stylix.nix
    ~/nixsys/home-manager/modules/gnome.nix
-   inputs.nix4nvchad.homeManagerModules.nvchad
+   inputs.nix4nvchad.homeManagerModules.default
   ];
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
