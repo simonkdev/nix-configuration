@@ -74,7 +74,6 @@
     thinkpad = home-manager.lib.homeManagerConfiguration {
      inherit pkgs;
      modules = [
-      inputs.nix4nvchad.homeManagerModules.default
       stylix.homeModules.stylix
       /home/simonkdev/nixsys/home-manager/tp-home.nix
      ];
