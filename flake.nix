@@ -51,7 +51,7 @@
 
     };
     thinkpad = nixpkgs.lib.nixosSystem {
-    specialArgs = {inherit system pkgs; };
+    specialArgs = {inherit system pkgs inputs; };
 
      modules = [
      stylix.nixosModules.stylix

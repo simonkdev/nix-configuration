@@ -1,4 +1,4 @@
-{ config, lib, pkgs, unpkgs, ... }:
+{ config, lib, pkgs, unpkgs, inputs, ... }:
 
 {
   imports =
@@ -9,6 +9,14 @@
       /home/simonkdev/nixsys/nixos/modules/tp-misc.nix
       /home/simonkdev/nixsys/nixos/modules/tp-boot.nix
     ];
+
+    nixpkgs = { 
+    overlays = [
+      (final: prev: {
+        nvchad = inputs.nix4nvchad.packages."${pkgs.system}".nvchad;
+      })
+    ];
+  };
 
   users.users.simonkdev = {
    isNormalUser = true;
