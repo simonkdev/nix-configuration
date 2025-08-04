@@ -55,7 +55,7 @@
 
     };
     thinkpad = nixpkgs.lib.nixosSystem {
-    specialArgs = {inherit system pkgs inputs; };
+    specialArgs = {inherit system pkgs; };
 
      modules = [
      stylix.nixosModules.stylix
@@ -77,7 +77,7 @@
     };
 
     thinkpad = home-manager.lib.homeManagerConfiguration {
-     inherit extraSpecialArgs pkgs;
+     inherit pkgs;
      modules = [
       stylix.homeModules.stylix
       /home/simonkdev/nixsys/home-manager/tp-home.nix
