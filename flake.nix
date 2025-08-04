@@ -54,7 +54,7 @@
 
      modules = [
      stylix.nixosModules.stylix
-     nix4nvchad.packages.${system}.nvchad
+     nix4nvchad.packages.${system}.default
      /home/simonkdev/nixsys/nixos/tp-config.nix
     ];
 
