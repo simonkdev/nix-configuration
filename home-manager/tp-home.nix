@@ -71,6 +71,7 @@
   programs.btop.enable = true;
   programs.wofi.enable = true;
   programs.home-manager.enable = true;
+  programs.nvchad.enable = true;
 
   #services.polkit-gnome.enable = true;
   #services.desktopManager.gnome.polkit-gnome-authentication-agent.enable = true;
