@@ -112,7 +112,7 @@
   processing
   zulu24
   mysql-workbench
-  nvchad
+  pkgs.nvchad
 
   # --- Productivity & Notes ---
   todoist-electron
