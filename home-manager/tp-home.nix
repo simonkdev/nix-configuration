@@ -10,8 +10,9 @@
    ~/nixsys/home-manager/modules/kitty.nix
    ~/nixsys/home-manager/modules/tp-stylix.nix
    ~/nixsys/home-manager/modules/gnome.nix
-   inputs.nix4nvchad.homeManagerModules.default
+   inputs.nix4nvchad.homeManagerModule
   ];
+  programs.nvchad.enable = true;
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
@@ -72,8 +73,6 @@
   programs.btop.enable = true;
   programs.wofi.enable = true;
   programs.home-manager.enable = true;
-  programs.nvchad.enable = true;
-
   #services.polkit-gnome.enable = true;
   #services.desktopManager.gnome.polkit-gnome-authentication-agent.enable = true;
  
