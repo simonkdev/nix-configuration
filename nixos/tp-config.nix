@@ -42,8 +42,6 @@
      pulseaudio.enable = false; # Enable Audio
      udisks2.enable = true;
      dbus.enable = true;  
-#     polkit-gnome.enable = true;
-#     gnome.polkit-gnome-authentication-agent.enable = true;
   };
  
 
@@ -125,7 +123,6 @@
   kdePackages.kdenlive
   gimp3
   vlc
-  rapidraw
 
   # --- Desktop & UI ---
   cowsay
