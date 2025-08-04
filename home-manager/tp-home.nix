@@ -10,7 +10,7 @@
    ~/nixsys/home-manager/modules/kitty.nix
    ~/nixsys/home-manager/modules/tp-stylix.nix
    ~/nixsys/home-manager/modules/gnome.nix
-   ~/nixsys/home-manager/modules/nvim.nix
+#   ~/nixsys/home-manager/modules/nvim.nix
   ];
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
