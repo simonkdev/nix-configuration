@@ -110,6 +110,7 @@
   home-manager
   processing
   zulu24
+  mysql-workbench
 
   # --- Productivity & Notes ---
   todoist-electron
