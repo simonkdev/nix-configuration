@@ -16,7 +16,7 @@
    packages = with pkgs; [
    tree
    kitty
-   pkgs.nvchad
+#   pkgs.nvchad
    ];
   };
 
