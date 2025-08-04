@@ -36,7 +36,7 @@
        overlays = [ rapidrawOverlay ];
     };
 
-    extraSpecialArgs = { inherit inputs system; };
+    extraSpecialArgs = { inherit inputs system pkgs; };
   in
   {
 
