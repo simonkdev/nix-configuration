@@ -113,6 +113,7 @@
   zulu24
   mysql-workbench
   pkgs.nvchad
+  sshfs
 
   # --- Productivity & Notes ---
   todoist-electron
