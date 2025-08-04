@@ -112,7 +112,7 @@
   processing
   zulu24
   mysql-workbench
-  pkgs.nvchad
+#  pkgs.nvchad
   sshfs
 
   # --- Productivity & Notes ---
