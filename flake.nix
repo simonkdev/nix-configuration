@@ -28,16 +28,12 @@
       rapidraw = unpkgs.rapidraw;
     };
 
-    nvchadOverlay = final: prev: {
-      nvchad = inputs.nix4nvchad.packages."${system}".nvchad;
-    };
-
     pkgs = import nixpkgs {
        inherit system;                    # Build for x86_64-linux  
        config = {
         allowUnfree = true;
        };
-       overlays = [ rapidrawOverlay nvchadOverlay];
+       overlays = [ rapidrawOverlay ];
     };
 
     extraSpecialArgs = { inherit inputs system pkgs; };
@@ -55,7 +51,7 @@
 
     };
     thinkpad = nixpkgs.lib.nixosSystem {
-    specialArgs = {inherit system pkgs; };
+    specialArgs = {inherit system pkgs inputs; };
 
      modules = [
      stylix.nixosModules.stylix
@@ -77,7 +73,7 @@
     };
 
     thinkpad = home-manager.lib.homeManagerConfiguration {
-     inherit pkgs;
+     inherit extraSpecialArgs pkgs;
      modules = [
       stylix.homeModules.stylix
       /home/simonkdev/nixsys/home-manager/tp-home.nix
