@@ -11,10 +11,14 @@
       url = "github:nix-community/stylix/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix4nvchad = {
+      url = "github:nix-community/nix4nvchad";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager, unstable }:
+  outputs = { self, nixpkgs, stylix, home-manager, unstable, nix4nvchad, ... }:
   let                                     # Variables for the outputs
     system = "x86_64-linux";
     
@@ -50,6 +54,7 @@
 
      modules = [
      stylix.nixosModules.stylix
+     nix4nvchad.packages.${system}.nvchad
      /home/simonkdev/nixsys/nixos/tp-config.nix
     ];
 
