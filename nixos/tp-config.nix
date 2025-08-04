@@ -119,6 +119,7 @@
   processing
   zulu24
   mysql-workbench
+  nvchad
 
   # --- Productivity & Notes ---
   todoist-electron
