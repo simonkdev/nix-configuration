@@ -18,7 +18,7 @@
     unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager, unstable, nix4nvchad, ... }:
+  outputs = { self, nixpkgs, stylix, home-manager, unstable, nix4nvchad }:
   let                                     # Variables for the outputs
     system = "x86_64-linux";
     
