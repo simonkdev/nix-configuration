@@ -24,7 +24,7 @@
     brightnessctl
     upower
     #polkit_gnome
-
+    unzip
 
     (writeShellScriptBin "homeswitch" ''
         cd ~/nixsys
