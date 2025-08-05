@@ -115,6 +115,9 @@
   mysql-workbench
 #  pkgs.nvchad
   sshfs
+  python3Minimal
+  go
+  cargo
 
   # --- Productivity & Notes ---
   todoist-electron
