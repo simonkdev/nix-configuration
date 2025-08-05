@@ -23,6 +23,7 @@
   programs = { 
    firefox.enable = true;
    localsend.enable = true;
+   npm.enable = true;
    thunar = { 
      enable = true;
      plugins = with pkgs.xfce; [ thunar-volman tumbler ];
