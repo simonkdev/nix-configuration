@@ -98,7 +98,7 @@
 
   programs.neovim.enable = true;
   home.file.".config/nvim" = {
-      source = /home/simonkdev/nixsys/home-manager/modules/doom-nvim;
+      source = /home/simonkdev/nixsys/home-manager/modules/starter;
       recursive = true;
       force = true;
   };
