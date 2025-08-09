@@ -163,5 +163,5 @@ in
        enable = true;
     };
 
-    home.file."~/.config/fastfetch/config.jsonc".source = /home/simonkdev/nixsys/home-manager/modules/fastfetch/os.jsonc;
+    home.file."/home/simonkdev/.config/fastfetch/config.jsonc".source = /home/simonkdev/nixsys/home-manager/modules/fastfetch/os.jsonc;
 }
