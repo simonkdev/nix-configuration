@@ -37,7 +37,7 @@
 
     "cpu": {
       "interval": 10,
-      "format": " {}%",
+      "format": "CPU: {}%",
       "max-length": 10,
       "on-click": "",
     },
