@@ -148,10 +148,10 @@
        enable = true;
     };
 
-    programs.hyprpanel = {
-      enable = true;
-      systemd.enable = true;
-    };
+    #programs.hyprpanel = {
+    #  enable = true;
+    #  systemd.enable = true;
+    #};
 
 
 
