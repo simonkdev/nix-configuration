@@ -61,7 +61,7 @@
   homeConfigurations = {
 
     main = home-manager.lib.homeManagerConfiguration {
-     inherit extraSpecialArgs;
+     inherit extraSpecialArgs pkgs;
      modules = [
       stylix.homeModules.stylix
       ./home-manager/home.nix
