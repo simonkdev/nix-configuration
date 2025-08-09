@@ -3,7 +3,7 @@
  {
   stylix = { 
       enable = true;
-      image = ~/nixsys/wallpapers/Mandalorian.jpg;
+      image = ~/nixsys/wallpapers/wallpaper.png;
       base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
    ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
       
