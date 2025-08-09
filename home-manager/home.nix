@@ -106,6 +106,9 @@
     type = "Application";
     noDisplay = true;
    };
+   RapidRaw = {
+      exec = "GDK_BACKEND=x11 GDK_GL=disable rapidraw";
+   };
   };
 
   programs.vscode = {
