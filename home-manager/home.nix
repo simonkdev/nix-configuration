@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, unpkgs, ... }:
 
 {
   home.username = "simonkdev";
@@ -25,6 +25,7 @@
     pkgs.playerctl
     pkgs.brightnessctl
     pkgs.upower
+    unpkgs.rapidraw
     
     (pkgs.writeShellScriptBin "homeswitch" ''
         cd ~/nixsys
