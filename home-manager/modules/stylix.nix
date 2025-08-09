@@ -4,7 +4,7 @@
   stylix = { 
       enable = true;
       image = ~/nixsys/wallpapers/Mandalorian.jpg;
-      base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
+      base16Scheme = "${pkgs.base16-schemes}/share/themes/darktooth.yaml";
    ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
       
       targets = {
