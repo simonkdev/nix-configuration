@@ -12,3 +12,4 @@ home.file."/home/simonkdev/.config/waybar/style.css" = {
   source = /home/simonkdev/nixsys/home-manager/modules/waybar/style.css;
 };
 
+}
