@@ -11,7 +11,7 @@
     "tray",
     "custom/cava-internal"
   ],
-  "modules-center": ["clock"],
+  "modules-center": ["clock", "hypr/window"],
   "modules-right": [
     "temperature",
     "memory",
@@ -92,18 +92,7 @@
     "interval": 5,
     "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
   },
-  "custom/cava-internal": {
-    "exec": "sh ~/.config/waybar/Cava.sh",
-    "format": "{}",
-    "tooltip": false,
-    "on-click": "swaymsg reload & pkill waybar & waybar",
-    "layer": "below",
-    "output": "all"
-  },
-  "sway/mode": {
-    "format": "<span style=\"italic\">{}</span>"
-  },
-  "sway/window": {
+  "hypr/window": {
     "format": "~ {app_id}"
   },
   "idle_inhibitor": {
