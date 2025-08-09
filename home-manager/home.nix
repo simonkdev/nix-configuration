@@ -25,6 +25,9 @@
     pkgs.playerctl
     pkgs.brightnessctl
     pkgs.upower
+   (pkgs.writeShellScriptBin "rapidraw" ''
+    GDK_BACKEND=x11 GDK_GL=disable rapidraw
+   '')
     unpkgs.rapidraw
     pkgs.font-awesome
         
@@ -59,9 +62,7 @@
     (pkgs.writeShellScriptBin "waybarconf" ''
        nano /home/simonkdev/nixsys/home-manager/waybar.nix
      '')
-    (pkgs.writeShellScriptBin "rapidraw" ''
-    GDK_BACKEND=x11 GDK_GL=disable rapidraw
-   '')
+
 
 
   ];
