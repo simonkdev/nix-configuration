@@ -163,14 +163,5 @@ in
        enable = true;
     };
 
-    home.file."~/.local/share/applications/rapidraw.desktop".text = ''
-      [Desktop Entry]
-      Name=Rapidraw
-      Exec=GDK_BACKEND=x11 GDK_GL=disable rapidraw
-      Type=Application
-      Terminal=false
-      Icon=rapidraw
-      Categories=Graphics;Viewer;
-   '';
-
+    home.file."~/.config/fastfetch/config.toml".source = /home/simonkdev/nixsys/home-manager/modules/fastfetch/fastfetch-config.toml;
 }
