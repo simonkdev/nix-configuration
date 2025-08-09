@@ -116,7 +116,7 @@ size = 3;
 passes = 3;
 "ignore_opacity" = true;
 brightness = "1.0";
-vibrancy = "1.0";
+vibrancy = "0.0";
 
 }; ## blurend
 }; ## decorationend
