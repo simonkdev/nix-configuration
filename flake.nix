@@ -32,7 +32,7 @@
        overlays = [ ];
     };
 
-    extraSpecialArgs = { inherit inputs system pkgs; };
+    extraSpecialArgs = { inherit inputs system pkgs unpkgs; };
   in
   {
 
@@ -61,7 +61,7 @@
   homeConfigurations = {
 
     main = home-manager.lib.homeManagerConfiguration {
-     inherit unpkgs;
+     inherit extraSpecialArgs;
      modules = [
       stylix.homeModules.stylix
       ./home-manager/home.nix
