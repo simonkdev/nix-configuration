@@ -37,6 +37,7 @@ in
     pkgs.playerctl
     pkgs.brightnessctl
     pkgs.upower
+    rapidraw
     pkgs.font-awesome
         
     (pkgs.writeShellScriptBin "homeswitch" ''
