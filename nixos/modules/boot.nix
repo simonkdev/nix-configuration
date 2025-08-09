@@ -8,7 +8,7 @@
      #systemd-boot.enable = true;
      #efi.canTouchEfiVariables = true;
      grub = {
-      device = nodev
+      device = nodev;
       enable = true;
       efiSupport = true;
       useOSProber = true;
