@@ -8,23 +8,14 @@
   "modules-left": [
     "custom/launcher",
     "hyprland/workspaces",
-    "custom/swap",
     "tray",
-    "hypr/mode",
-    "custom/cava-internal",
-    "mpd#2",
-    "mpd#3",
-    "mpd#4",
-    "mpd"
+    "custom/cava-internal"
   ],
   "modules-center": ["clock"],
   "modules-right": [
-    "backlight",
-    "pulseaudio",
-    "custom/keyboard-layout",
     "temperature",
     "memory",
-    "battery",
+    "pulseaudio",
     "network",
     "custom/power"
   ],
