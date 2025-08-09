@@ -5,7 +5,7 @@
   home.homeDirectory = "/home/simonkdev";
   
   ## This directory is ~/nixsys/home-manager :)
-
+  
   imports = [
    ~/nixsys/home-manager/modules/kitty.nix
    ~/nixsys/home-manager/modules/tp-stylix.nix
@@ -95,14 +95,5 @@
        adpyke.codesnap
     ];
  };
-
-  programs.neovim.enable = true;
-  home.file.".config/nvim" = {
-      source = /home/simonkdev/nixsys/home-manager/modules/starter;
-      recursive = true;
-      force = true;
-  };
-
-
 
 }
