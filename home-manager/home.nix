@@ -107,7 +107,7 @@
     noDisplay = true;
    };
    RapidRaw = {
-      name = "Photo Editor";
+      name = "RapidRaw";
       exec = "GDK_BACKEND=x11 GDK_GL=disable rapidraw";
    };
   };
