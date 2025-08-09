@@ -93,7 +93,7 @@
     "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
   },
   "custom/cava-internal": {
-    "exec": "sh ~/.config/waybar/scripts/Cava.sh",
+    "exec": "sh ~/.config/waybar/Cava.sh",
     "format": "{}",
     "tooltip": false,
     "on-click": "swaymsg reload & pkill waybar & waybar",
