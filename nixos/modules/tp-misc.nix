@@ -13,7 +13,6 @@
 
     services.touchegg = {
       enable = true;
-      enableGestures = true;
       enablePalmDetection = true;
      };
 
