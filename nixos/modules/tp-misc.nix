@@ -11,6 +11,12 @@
      };
     }; 
 
+    services.touchegg = {
+      enable = true;
+      enableGestures = true;
+      enablePalmDetection = true;
+     };
+
     system.stateVersion = "25.05"; # Just dont change it.
 
     nix.settings = {
