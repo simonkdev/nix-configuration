@@ -25,9 +25,6 @@
     pkgs.playerctl
     pkgs.brightnessctl
     pkgs.upower
-    pkgs.python3
-    pkgs.python3Packages.pip
-    pkgs.python3Packages.virtualenv
     
     (pkgs.writeShellScriptBin "homeswitch" ''
         cd ~/nixsys
@@ -143,13 +140,18 @@
        "scm.inputFontSize"= 11.142857142857142;
        "screencastMode.fontSize"= 48.0;
        "terminal.integrated.fontSize" = 12.0;
-       "workbench.colorTheme" = lib.mkForce "Gruvbox Dark Hard";
+       "workbench.colorTheme" = lib.mkForce "Dracula Theme";
    };
    };
      
     programs.yazi = {
        enable = true;
     };
+
+    programs.hyprpanel = {
+      enable = true;
+      systemd.enable = true;
+    }
 
 
 
