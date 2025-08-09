@@ -4,12 +4,10 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      /home/simonkdev/nixsys/nixos/modules/virtualisation.nix
       /home/simonkdev/nixsys/nixos/modules/stylix.nix
       /home/simonkdev/nixsys/nixos/modules/networking.nix
       /home/simonkdev/nixsys/nixos/modules/misc.nix
       /home/simonkdev/nixsys/nixos/modules/graphics.nix
-      /home/simonkdev/nixsys/nixos/modules/gaming.nix
       /home/simonkdev/nixsys/nixos/modules/boot.nix
     ];
 
