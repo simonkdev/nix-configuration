@@ -12,7 +12,7 @@
       enable = true;
       efiSupport = true;
       useOSProber = true;
-     }
+     };
      };
      
      kernelPackages = pkgs.linuxPackages_zen; # Use latest kernel Package
