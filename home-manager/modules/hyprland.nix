@@ -115,7 +115,7 @@ enabled = true;
 size = 3;
 passes = 3;
 "ignore_opacity" = true;
-brightness = "1.5";
+brightness = "1.2";
 vibrancy = "1.0";
 
 }; ## blurend
