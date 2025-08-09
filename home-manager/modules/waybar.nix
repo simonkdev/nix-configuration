@@ -12,7 +12,7 @@ home.file."/home/simonkdev/.config/waybar/style.css" = {
   source = lib.mkForce /home/simonkdev/nixsys/home-manager/modules/waybar/style.css;
 };
 home.file."/home/simonkdev/.config/waybar/Cava.sh" = {
-  source = /home/simonkdev/nixsys/home-manager/modules/waybar/scripts/Cava.sh;
+  source = /home/simonkdev/nixsys/home-manager/modules/waybar/Cava.sh;
 };
 
 }
