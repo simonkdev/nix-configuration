@@ -11,7 +11,7 @@
     "tray",
     "custom/cava-internal"
   ],
-  "modules-center": ["clock", "hypr/window"],
+  "modules-center": ["clock", "hyprland/window"],
   "modules-right": [
     "temperature",
     "memory",
@@ -92,7 +92,7 @@
     "interval": 5,
     "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
   },
-  "hypr/window": {
+  "hyprland/window": {
     "format": "~ {app_id}"
   },
   "idle_inhibitor": {
