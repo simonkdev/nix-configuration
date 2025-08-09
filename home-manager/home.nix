@@ -4,7 +4,7 @@ let
   rapidraw = unpkgs.rapidraw.overrideAttrs (oldAttrs: rec {
     # After building, override the desktop file Exec command
     postInstall = oldAttrs.postInstall or "" + ''
-      substituteInPlace $out/share/applications/RapidRaw.desktop --replace \
+      substituteInPlace $out/share/applications/RapidRAW.desktop --replace \
         'Exec=rapidraw' \
         'Exec=GDK_BACKEND=x11 GDK_GL=disable rapidraw'
     '';
@@ -37,7 +37,6 @@ in
     pkgs.playerctl
     pkgs.brightnessctl
     pkgs.upower
-    unpkgs.rapidraw
     pkgs.font-awesome
         
     (pkgs.writeShellScriptBin "homeswitch" ''
