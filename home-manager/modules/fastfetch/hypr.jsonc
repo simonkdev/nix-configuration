@@ -12,6 +12,7 @@
     	"source": "/home/simonkdev/nixsys/home-manager/modules/fastfetch/images/nixos-mascot.png",
     	"type": "kitty",
     	"height": 18,
+        "width": 18,
     	"padding": {
     		"top": 2
     	}
