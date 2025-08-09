@@ -39,6 +39,7 @@ in
     pkgs.upower
     rapidraw
     pkgs.font-awesome
+    pkgs.pipes-rs
         
     (pkgs.writeShellScriptBin "homeswitch" ''
         cd ~/nixsys
