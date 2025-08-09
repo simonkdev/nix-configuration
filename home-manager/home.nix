@@ -119,10 +119,6 @@ in
     type = "Application";
     noDisplay = true;
    };
-   photo_editor = {
-      name = "Lightroom";
-      exec = "GDK_BACKEND=x11 GDK_GL=disable rapidraw";
-   };
   };
 
   programs.vscode = {
