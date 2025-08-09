@@ -14,17 +14,46 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/92d0820f-d212-4ee7-a73d-7f22634912d5";
+    { device = "/dev/disk/by-uuid/ad75d468-8073-4101-9123-4353f0a38818";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/E9F9-3929";
+    { device = "/dev/disk/by-uuid/DC23-39A8";
       fsType = "vfat";
-      options = [ "fmask=0022" "dmask=0022" ];
+      options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  swapDevices = [ ];
+  fileSystems."/home/simonkdev/external/l" =
+    { device = "/dev/disk/by-uuid/CA084DA8084D947B";
+      fsType = "ntfs-3g";
+      options = [ "rwx" "uid=1000" "gid=100" ];
+    };
+ 
+  fileSystems."/home/simonkdev/external/s" =
+    { device = "/dev/disk/by-uuid/9E2A72262A71FB99";
+      fsType = "ntfs-3g";
+      options = [ "rwx" "uid=1000" "gid=100" ];
+    };
+
+  fileSystems."/home/simonkdev/k1nas/Obsidian" = {
+    device = "//192.168.2.138/Public/Simon_Obsidian";
+    fsType = "cifs";
+    options = [
+      "credentials=/home/simonkdev/.smbcredentials"
+      "uid=1000"
+      "gid=100"
+      "vers=3.0"
+      "iocharset=utf8"
+      "nofail"
+      "_netdev"
+    ];
+  };
+
+
+  swapDevices =
+    [ { device = "/dev/disk/by-uuid/67025277-dc72-435f-b315-8ce5923913af"; }
+    ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's

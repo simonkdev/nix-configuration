@@ -94,7 +94,7 @@ dwindle = {
 
 general = {
 
-"border_size" = 0;
+"border_size" = 1;
 "gaps_in" = 3;
 "gaps_out" = 8;
 "allow_tearing" = false;
@@ -105,17 +105,17 @@ decoration = {
 
 rounding = 6;
 "rounding_power" = "3.0";
-"active_opacity" = "0.85";
-"inactive_opacity" = "0.7";
+"active_opacity" = "1.0";
+"inactive_opacity" = "1.0";
 "fullscreen_opacity" = "1.0";
 
 blur = {
 
 enabled = true;
 size = 3;
-passes = 5;
+passes = 3;
 "ignore_opacity" = true;
-brightness = "2.0";
+brightness = "3.0";
 vibrancy = "0.5";
 
 }; ## blurend
@@ -140,7 +140,7 @@ bind = [
 
 #### Simple binds
 
-"$mod, Q, exec, $term"
+"$mod, Q, exec, kitty"
 "$mod, C, killactive"
 "$mod, M, exit"
 "$mod, E, exec, hyprctl dispatch exec '[float] kitty --class yazi -e yazi'"
@@ -220,7 +220,7 @@ bindel = [
 #########################
 
 windowrule = [
-"opacity [2.0 2.0], class:kitty"
+#"opacity [2.0 2.0], class:kitty"
 "rounding [12], class:wofi"
 "roundingpower [10.0], class:wofi"
 "float, class:pavucontrol"
