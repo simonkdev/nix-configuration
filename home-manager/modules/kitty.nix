@@ -11,7 +11,7 @@
   
   settings = {
      "enable_audio_bell" = "no";
-     "background_opacity" = lib.mkForce "0.8";
+     "background_opacity" = lib.mkForce "0.7";
      "confirm_os_window_close" = 0;
   };
 
