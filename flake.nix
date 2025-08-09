@@ -24,16 +24,12 @@
     
     unpkgs = import unstable { inherit system; };
 
-    rapidrawOverlay = final: prev: {
-      rapidraw = unpkgs.rapidraw;
-    };
-
     pkgs = import nixpkgs {
        inherit system;                    # Build for x86_64-linux  
        config = {
         allowUnfree = true;
        };
-       overlays = [ rapidrawOverlay ];
+       overlays = [ ];
     };
 
     extraSpecialArgs = { inherit inputs system pkgs; };
@@ -65,7 +61,7 @@
   homeConfigurations = {
 
     main = home-manager.lib.homeManagerConfiguration {
-     inherit pkgs;
+     inherit unpkgs;
      modules = [
       stylix.homeModules.stylix
       ./home-manager/home.nix
