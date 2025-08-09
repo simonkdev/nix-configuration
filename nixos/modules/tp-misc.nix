@@ -13,7 +13,6 @@
 
     services.touchegg = {
       enable = true;
-      enablePalmDetection = true;
      };
 
     system.stateVersion = "25.05"; # Just dont change it.
