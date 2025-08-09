@@ -156,6 +156,7 @@
     programs.hyprpanel = {
       enable = true;
       systemd.enable = true;
+      settings = builtins.fromJSON (builtins.readFile /home/simonkdev/.config/hyprpanel/hyprpanel.json);
     };
 
 
