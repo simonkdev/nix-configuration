@@ -125,6 +125,7 @@
        arrterian.nix-env-selector       
        jdinhlife.gruvbox 
        adpyke.codesnap
+       dracula-theme.theme-dracula
     ];
     profiles.default.userSettings = {
        "chat.editor.fontFamily"= "DejaVu Sans Mono";
