@@ -1,5 +1,17 @@
 { config, lib, pkgs, unpkgs, ... }:
 
+let
+  rapidraw = unpkgs.rapidraw.overrideAttrs (oldAttrs: rec {
+    # After building, override the desktop file Exec command
+    postInstall = oldAttrs.postInstall or "" + ''
+      substituteInPlace $out/share/applications/RapidRaw.desktop --replace \
+        'Exec=rapidraw' \
+        'Exec=GDK_BACKEND=x11 GDK_GL=disable rapidraw'
+    '';
+  });
+in
+
+
 {
   home.username = "simonkdev";
   home.homeDirectory = "/home/simonkdev";
