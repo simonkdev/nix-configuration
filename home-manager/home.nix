@@ -25,9 +25,6 @@
     pkgs.playerctl
     pkgs.brightnessctl
     pkgs.upower
-   (pkgs.writeShellScriptBin "rapidraw" ''
-    GDK_BACKEND=x11 GDK_GL=disable rapidraw
-   '')
     unpkgs.rapidraw
     pkgs.font-awesome
         
@@ -110,8 +107,8 @@
     type = "Application";
     noDisplay = true;
    };
-   RapidRaw = {
-      name = "RapidRaw";
+   photo_editor = {
+      name = "Lightroom";
       exec = "GDK_BACKEND=x11 GDK_GL=disable rapidraw";
    };
   };
