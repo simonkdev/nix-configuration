@@ -26,7 +26,8 @@
     pkgs.brightnessctl
     pkgs.upower
     unpkgs.rapidraw
-    
+    pkgs.font-awesome
+        
     (pkgs.writeShellScriptBin "homeswitch" ''
         cd ~/nixsys
         git add .
