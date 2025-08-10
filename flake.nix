@@ -48,7 +48,7 @@
 
         modules = [
           stylix.nixosModules.stylix
-          ./nixos/main-config.nix # Config for configuration "main" -> you can do multiple
+          ./nixos/configs/main-config.nix # Config for configuration "main" -> you can do multiple
         ];
       };
       thinkpad = nixpkgs.lib.nixosSystem {
@@ -56,7 +56,7 @@
 
         modules = [
           stylix.nixosModules.stylix
-          .nixos/tp-config.nix
+          .nixos/configs/tp-config.nix
         ];
       };
     };
