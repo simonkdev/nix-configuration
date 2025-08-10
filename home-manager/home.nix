@@ -164,8 +164,9 @@ in
       
   programs.wofi = {
    enable = true;
-   style = home.file."/home/simonkdev/nixsys/home-manager/modules/style.css";
-   config = home.file."/home/simonkdev/nixsys/home-manager/modules/wofi/config";
   };
+   home.file."/home/simonkdev/.config/wofi/style.css".source = "/home/simonkdev/nixsys/home-manager/modules/style.css";
+   home.file."/home/simonkdev/.config/wofi/config".source = "/home/simonkdev/nixsys/home-manager/modules/wofi/config";
+  
 
 }
