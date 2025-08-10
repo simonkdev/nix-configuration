@@ -62,6 +62,7 @@ window {
 #input * {
     border: none;
     outline: none;
+    color: ${config.lib.stylix.colors.withHashtag.base0C};
 }
 
 #input:focus {
