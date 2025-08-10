@@ -19,7 +19,7 @@ in
    ~/nixsys/home-manager/modules/hyprland.nix
    ~/nixsys/home-manager/modules/kitty.nix
    ~/nixsys/home-manager/modules/waybar.nix
-   ~/nixsys/home-manager/modules/wofi.nix
+   ~/nixsys/home-manager/modules/wofi/wofi.nix
    ~/nixsys/home-manager/modules/stylix.nix
   ];
   
@@ -160,13 +160,6 @@ in
     };
 
     home.file."/home/simonkdev/.config/fastfetch/config.jsonc".source = /home/simonkdev/nixsys/home-manager/modules/fastfetch/hypr.jsonc;
-
-      
-  programs.wofi = {
-   enable = true;
-  };
-   home.file."/home/simonkdev/.config/wofi/style.css".source = lib.mkForce "/home/simonkdev/nixsys/home-manager/modules/wofi/style.css";
-   home.file."/home/simonkdev/.config/wofi/config".source = "/home/simonkdev/nixsys/home-manager/modules/wofi/config";
   
 
 }
