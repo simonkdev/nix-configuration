@@ -32,6 +32,7 @@
     unpkgs.rapidraw
     pkgs.font-awesome
     pkgs.pipes-rs
+    pkgs.gimp3
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
