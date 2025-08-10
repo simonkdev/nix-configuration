@@ -91,7 +91,7 @@ window {
     border-radius: 20px;
     background-color:transparent;
 }
-   ''
+   '';
   };
    home.file."/home/simonkdev/.config/wofi/config".source = "/home/simonkdev/nixsys/home-manager/modules/wofi/config";
 
