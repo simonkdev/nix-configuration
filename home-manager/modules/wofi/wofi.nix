@@ -25,7 +25,7 @@ window {
     all:unset;
     padding: 20px;
     border-radius: 0px;
-    background-color: alpha(${config.lib.stylix.colors.withHashtag.base00})
+    background-color: alpha(${config.lib.stylix.colors.withHashtag.base00}, 0.5)
 }
 #inner-box {
     margin: 2px;
@@ -47,12 +47,15 @@ window {
     margin-top:20px;
     padding: 20px;
     border: none;
+    color: ${config.lib.stylix.colors.withHashtag.base05};
     outline: none;
     box-shadow: 1px 1px 5px rgba(0,0,0, .5);
     border-radius:10;
+    background-color: alpha(${config.lib.stylix.colors.withHashtag.base01}, 0.2);
 }
 #input image {
     border: none;
+    color: ${config.lib.stylix.colors.withHashtag.base09};
     padding-right:10px;
 }
 #input * {
@@ -70,11 +73,13 @@ window {
     margin: 5px;
     border: none;
     outline: none;
+    color: ${config.lib.stylix.colors.withHashtag.base05};
 }
 #text {
     margin: 5px;
     border: none;
     outline: none;
+    color: ${config.lib.stylix.colors.withHashtag.base05};
 }
 #entry {
     border: none;
@@ -83,13 +88,19 @@ window {
 }
 #entry arrow {
     border: none;
-
+    color: ${config.lib.stylix.colors.withHashtag.base08};
 }
 #entry:selected {
     box-shadow: 1px 1px 5px rgba(255,255,255, .03);
     border: none;
     border-radius: 20px;
     background-color:transparent;
+}
+#entry:selected #text {
+    color: ${config.lib.stylix.colors.withHashtag.base0C};
+}
+#entry:drop(active) {
+    background-color: ${config.lib.stylix.colors.withHashtag.base0C};
 }
    '';
   };
