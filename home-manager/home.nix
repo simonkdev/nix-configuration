@@ -161,4 +161,12 @@ in
     };
 
     home.file."/home/simonkdev/.config/fastfetch/config.jsonc".source = /home/simonkdev/nixsys/home-manager/modules/fastfetch/hypr.jsonc;
+
+      
+  programs.wofi = {
+   enable = true;
+   style = home.file."/home/simonkdev/nixsys/home-manager/modules/style.css";
+   config = home.file."/home/simonkdev/nixsys/home-manager/modules/wofi/config";
+  };
+
 }
