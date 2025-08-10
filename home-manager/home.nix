@@ -30,7 +30,6 @@
     pkgs.font-awesome
     pkgs.pipes-rs
 
-  ] + [
 
     (pkgs.writeShellScriptBin "homeswitch" ''
         cd ~/nixsys
