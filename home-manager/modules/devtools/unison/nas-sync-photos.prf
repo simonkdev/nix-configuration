@@ -1,0 +1,20 @@
+# ~/.unison/nas-sync.prf
+
+# roots (as before)
+root = /home/simonkdev/k1nas/Fotos
+root = /home/simonkdev/external/l/02_SKP
+
+# automatic, batched operation
+auto = true
+batch = true
+
+# keep copies of conflicting files instead of stopping
+copyonconflict = true
+fastcheck = false
+
+# (optional) choose your own suffix for conflict copies
+# backupprefix = Conflict_
+# backupsuffix = _LOCAL
+
+# logging
+logfile = /home/simonkdev/.unison/nas-sync.log

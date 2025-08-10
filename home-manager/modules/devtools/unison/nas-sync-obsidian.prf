@@ -1,0 +1,23 @@
+# ~/.unison/nas-sync.prf
+
+# roots (as before)
+root = /home/simonkdev/k1nas/Obsidian
+root = /home/simonkdev/Documents/07-Obsidian
+
+# automatic, batched operation
+auto = true
+batch = true
+
+prefer = newer
+
+# Ignore permission bits so Unison never skips perms-changed files
+perms = 0
+# Use fastcheck (size+time) rather than full hash–this often treats mtime updates as content)
+fastcheck = true
+
+# (optional) choose your own suffix for conflict copies
+backupprefix = Conflict_
+backupsuffix = _LOCAL$VERSION
+
+# logging
+logfile = /home/simonkdev/.unison/nas-sync.log
