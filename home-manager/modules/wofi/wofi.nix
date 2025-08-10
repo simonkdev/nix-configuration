@@ -48,7 +48,7 @@ window {
     margin-top:20px;
     padding: 20px;
     border: none;
-    color: ${config.lib.stylix.colors.withHashtag.base05};
+    color: ${config.lib.stylix.colors.withHashtag.base0C};
     outline: none;
     box-shadow: 1px 1px 5px rgba(0,0,0, .5);
     border-radius:10;
