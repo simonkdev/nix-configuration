@@ -20,7 +20,7 @@ in
    ~/nixsys/home-manager/modules/kitty.nix
    ~/nixsys/home-manager/modules/waybar.nix
    ~/nixsys/home-manager/modules/wofi/wofi.nix
-   ~/nixsys/home-manager/modules/stylix.nix
+   ./modules/stylix.nix
   ];
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
