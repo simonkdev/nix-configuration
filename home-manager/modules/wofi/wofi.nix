@@ -25,6 +25,8 @@ window {
     all:unset;
     padding: 20px;
     border-radius: 4px;
+    background-color: alpha(${config.lib.stylix.colors.withHashtag.base00}, 0.5)
+
 }
 #inner-box {
     margin: 2px;
@@ -84,6 +86,7 @@ window {
     border: none;
     margin: 5px;
     padding: 10px;
+    color: ${config.lib.stylix.colors.withHashtag.base06};
 }
 #entry arrow {
     border: none;
