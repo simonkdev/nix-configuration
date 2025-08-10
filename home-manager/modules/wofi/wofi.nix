@@ -25,8 +25,8 @@ window {
     all:unset;
     padding: 20px;
     border-radius: 4px;
+    border: 2px solid ${config.lib.stylix.colors.withHashtag.base0C};
     background-color: alpha(${config.lib.stylix.colors.withHashtag.base01}, 0.7)
-
 }
 #inner-box {
     margin: 2px;
