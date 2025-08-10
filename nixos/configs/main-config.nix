@@ -6,11 +6,11 @@
 }: {
   imports = [
     ./main-config.nix
-    ./modules/misc/stylix.nix
-    ./modules/devtools/networking.nix
-    ./modules/misc/misc.nix
-    ./modules/devtools/graphics.nix
-    ./modules/boot/boot.nix
+    ../modules/misc/stylix.nix
+    ../modules/devtools/networking.nix
+    ../modules/misc/misc.nix
+    ../modules/devtools/graphics.nix
+    ../modules/boot/boot.nix
   ];
 
   users.users.simonkdev = {
