@@ -47,7 +47,7 @@ window {
     margin-right:20px;
     margin-top:20px;
     padding: 20px;
-    border: none;
+    border: 2px solid ${config.lib.stylix.colors.withHashtag.base01};
     color: ${config.lib.stylix.colors.withHashtag.base0C};
     outline: none;
     box-shadow: 1px 1px 5px rgba(0,0,0, .5);
