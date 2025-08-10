@@ -1,5 +1,4 @@
 { config, lib, pkgs, unpkgs, ... }:
-
 let
   rapidraw = unpkgs.rapidraw.overrideAttrs (oldAttrs: rec {
     # After building, override the desktop file Exec command
@@ -10,8 +9,6 @@ let
     '';
   });
 in
-
-
 {
   home.username = "simonkdev";
   home.homeDirectory = "/home/simonkdev";
