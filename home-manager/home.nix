@@ -7,12 +7,12 @@
   ## This directory is ~/nixsys/home-manager :)
 
   imports = [
-   ./modules/hyprland.nix
-   ./modules/kitty.nix
-   ./modules/waybar.nix
+   ./modules/desktops/hyprland.nix
+   ./modules/devtools/kitty.nix
+   ./modules/waybar/waybar.nix
    ./modules/wofi/wofi.nix
-   ./modules/stylix.nix
-   ./modules/vscode.nix
+   ./modules/stylix/stylix.nix
+   ./modules/devtools/vscode.nix
   ];
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
@@ -79,8 +79,6 @@
   programs.btop.enable = true;
   programs.home-manager.enable = true;
 
- #  services.desktopManager.gnome.polkit-gnome-authentication-agent.enable = true;
- 
   xdg.desktopEntries = {
    cups = {
     name = "NOT INTENDED";

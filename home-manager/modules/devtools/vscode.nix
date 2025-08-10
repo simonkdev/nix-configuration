@@ -17,6 +17,7 @@ programs.vscode = {
        jdinhlife.gruvbox 
        adpyke.codesnap
        dracula-theme.theme-dracula
+       kamadorueda.alejandra
     ];
     profiles.default.userSettings = {
        "chat.editor.fontFamily"= "DejaVu Sans Mono";
