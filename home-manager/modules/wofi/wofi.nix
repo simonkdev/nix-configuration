@@ -104,6 +104,10 @@ window {
 #entry:drop(active) {
     background-color: ${config.lib.stylix.colors.withHashtag.base0C};
 }
+#entry:nth-child(even),
+#entry:nth-child(odd) {
+background-color: transparent;
+}
    '';
   };
    home.file."/home/simonkdev/.config/wofi/config".source = "/home/simonkdev/nixsys/home-manager/modules/wofi/config";
