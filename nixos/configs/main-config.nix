@@ -5,7 +5,7 @@
   ...
 }: {
   imports = [
-    ./main-config.nix
+    ./main-hardware.nix
     ../modules/misc/stylix.nix
     ../modules/devtools/networking.nix
     ../modules/misc/misc.nix
