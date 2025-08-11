@@ -11,6 +11,7 @@
    ./modules/stylix/tp-stylix.nix
    ./modules/desktops/gnome.nix
 #   ~/nixsys/home-manager/modules/nvim.nix
+   ./modules/devtools/vscode.nixs
   ];
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
@@ -23,7 +24,6 @@
     playerctl
     brightnessctl
     upower
-    #polkit_gnome
     unzip
 
     (writeShellScriptBin "homeswitch" ''
@@ -77,23 +77,10 @@
   programs.btop.enable = true;
   programs.wofi.enable = true;
   programs.home-manager.enable = true;
+  programs.yazi.enable = true;
 
-  programs.vscode = {
-     enable = true;
-     profiles.default.extensions = with pkgs.vscode-extensions; [
-       catppuccin.catppuccin-vsc
-       catppuccin.catppuccin-vsc-icons
-       esbenp.prettier-vscode
-       vscjava.vscode-java-pack
-       github.copilot-chat
-       github.copilot
-       ms-python.python
-       ms-python.vscode-pylance
-       jnoortheen.nix-ide
-       arrterian.nix-env-selector       
-       jdinhlife.gruvbox 
-       adpyke.codesnap
-    ];
- };
+  home.file."/home/simonkdev/.unison/nas-sync-obsidian.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-obsidian.prf;
+  home.file."/home/simonkdev/.unison/nas-sync-photos.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-photos.prf;
+  home.file."/home/simonkdev/.smbcredentials".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/.smbcredentials;
 
 }
