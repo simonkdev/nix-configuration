@@ -12,7 +12,7 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
-  boot.initrd.availableKernelModules = ["xhci_pci" "nvme" "usb_storage" "sd_mod"];
+  boot.initrd.availableKernelModules = ["xhci_pci" "ahci" "usbhid" "nvme" "usb_storage" "sd_mod"];
   boot.initrd.kernelModules = [];
   boot.kernelModules = ["kvm-intel"];
   boot.extraModulePackages = [];
@@ -29,7 +29,7 @@
   };
 
   fileSystems."/home/simonkdev/k1nas/Obsidian" = {
-    device = "//192.168.2.138/Public/Simon_Obsidian";
+    device = "//192.168.2.138/public/Simon_Obsidian";
     fsType = "cifs";
     options = [
       "credentials=/home/simonkdev/.smbcredentials"
