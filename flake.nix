@@ -56,7 +56,7 @@
 
         modules = [
           stylix.nixosModules.stylix
-          .nixos/configs/tp-config.nix
+          ./nixos/configs/tp-config.nix
         ];
       };
     };
