@@ -14,8 +14,7 @@
     ./modules/stylix/tp-stylix.nix
     ./modules/desktops/gnome.nix
     #   ~/nixsys/home-manager/modules/nvim.nix
-    ./modules/devtools/vscode.nix
-    #./modules/devtools/tpcode.nix
+    /home/simonkdev/nixsys/home-manager/modules/devtools/vscode.nix
   ];
 
   home.stateVersion = "25.05"; # Please read the comment before changing.
@@ -81,9 +80,39 @@
   programs.home-manager.enable = true;
   programs.yazi.enable = true;
 
-  #tpcode.enable = false;
-
   home.file."/home/simonkdev/.unison/nas-sync-obsidian.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-obsidian.prf;
   home.file."/home/simonkdev/.unison/nas-sync-photos.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-photos.prf;
   home.file."/home/simonkdev/.smbcredentials".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/.smbcredentials;
+
+  programs.vscode = {
+    enable = true;
+    profiles.default.extensions = with pkgs.vscode-extensions; [
+      catppuccin.catppuccin-vsc
+      catppuccin.catppuccin-vsc-icons
+      esbenp.prettier-vscode
+      vscjava.vscode-java-pack
+      github.copilot-chat
+      github.copilot
+      ms-python.python
+      ms-python.vscode-pylance
+      jnoortheen.nix-ide
+      arrterian.nix-env-selector
+      jdinhlife.gruvbox
+      adpyke.codesnap
+      dracula-theme.theme-dracula
+      kamadorueda.alejandra
+    ];
+    profiles.default.userSettings = {
+      "chat.editor.fontFamily" = "DejaVu Sans Mono";
+      "debug.console.fontFamily" = "DejaVu Sans Mono";
+      "editor.fontFamily" = "DejaVu Sans Mono";
+      "editor.inlayHints.fontFamily" = "DejaVu Sans Mono";
+      "editor.inlineSuggest.fontFamily" = "DejaVu Sans Mono";
+      "markdown.preview.fontFamily" = "DejaVu Sans";
+      "scm.inputFontFamily" = "DejaVu Sans Mono";
+      "chat.editor.fontSize" = lib.mkForce 16.0;
+      "editor.fontSize" = lib.mkForce 16.0;
+      "workbench.colorTheme" = lib.mkForce "Cattpuccin Macchiato";
+    };
+  };
 }
