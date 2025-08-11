@@ -5,13 +5,6 @@
   unpkgs,
   ...
 }: {
-  imports = [
-    ./tpcode.nix
-  ];
-
-  options = {
-    tpcode.enable = lib.mkEnableOption "enables tpcode";
-  };
 
   programs.vscode = {
     enable = true;

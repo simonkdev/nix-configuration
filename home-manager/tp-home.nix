@@ -12,6 +12,7 @@
    ./modules/desktops/gnome.nix
 #   ~/nixsys/home-manager/modules/nvim.nix
    ./modules/devtools/vscode.nix
+   ./modules/devtools/tpcode.nix
   ];
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
@@ -79,7 +80,7 @@
   programs.home-manager.enable = true;
   programs.yazi.enable = true;
 
-  vscode.tpcode.enable = true;
+  tpcode.enable = true;
 
   home.file."/home/simonkdev/.unison/nas-sync-obsidian.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-obsidian.prf;
   home.file."/home/simonkdev/.unison/nas-sync-photos.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-photos.prf;
