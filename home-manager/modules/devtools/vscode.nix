@@ -31,6 +31,9 @@
       "editor.inlineSuggest.fontFamily" = "DejaVu Sans Mono";
       "markdown.preview.fontFamily" = "DejaVu Sans";
       "scm.inputFontFamily" = "DejaVu Sans Mono";
+      "chat.editor.fontSize" = lib.mkForce 12.0;
+      "editor.fontSize" = lib.mkForce 12.0;
+      "workbench.colorTheme" = lib.mkForce "Dracula Theme";
     };
   };
 }

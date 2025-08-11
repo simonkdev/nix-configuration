@@ -17,7 +17,6 @@
     ./modules/wofi/wofi.nix
     ./modules/stylix/stylix.nix
     ./modules/devtools/vscode.nix
-    ./modules/devtools/maincode.nix
   ];
 
   home.stateVersion = "25.05"; # Please read the comment before changing.
