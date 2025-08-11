@@ -11,7 +11,7 @@
    ./modules/stylix/tp-stylix.nix
    ./modules/desktops/gnome.nix
 #   ~/nixsys/home-manager/modules/nvim.nix
-   ./modules/devtools/vscode.nixs
+   ./modules/devtools/vscode.nix
   ];
   
   home.stateVersion = "25.05"; # Please read the comment before changing.
