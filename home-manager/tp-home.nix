@@ -1,20 +1,23 @@
-{ inputs, config, pkgs, ... }:
-
 {
+  inputs,
+  config,
+  pkgs,
+  ...
+}: {
   home.username = "simonkdev";
   home.homeDirectory = "/home/simonkdev";
-  
+
   ## This directory is ~/nixsys/home-manager :)
-  
+
   imports = [
-   ./modules/devtools/kitty.nix
-   ./modules/stylix/tp-stylix.nix
-   ./modules/desktops/gnome.nix
-#   ~/nixsys/home-manager/modules/nvim.nix
-   ./modules/devtools/vscode.nix
-   ./modules/devtools/tpcode.nix
+    ./modules/devtools/kitty.nix
+    ./modules/stylix/tp-stylix.nix
+    ./modules/desktops/gnome.nix
+    #   ~/nixsys/home-manager/modules/nvim.nix
+    ./modules/devtools/vscode.nix
+    #./modules/devtools/tpcode.nix
   ];
-  
+
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
   home.packages = with pkgs; [
@@ -28,62 +31,59 @@
     unzip
 
     (writeShellScriptBin "homeswitch" ''
-        cd ~/nixsys
-        git add .
-        git commit -m "rebuilt"
-        git push
-        home-manager switch --impure --flake /home/simonkdev/nixsys/#thinkpad
-        cd ~
+      cd ~/nixsys
+      git add .
+      git commit -m "rebuilt"
+      git push
+      home-manager switch --impure --flake /home/simonkdev/nixsys/#thinkpad
+      cd ~
     '')
     (writeShellScriptBin "nixswitch" ''
-        cd ~/nixsys
-        git add .
-        git commit -m "rebuilt system"
-        git push
-        sudo nixos-rebuild switch --impure --flake /home/simonkdev/nixsys/#thinkpad
-        cd ~
+      cd ~/nixsys
+      git add .
+      git commit -m "rebuilt system"
+      git push
+      sudo nixos-rebuild switch --impure --flake /home/simonkdev/nixsys/#thinkpad
+      cd ~
     '')
     (writeShellScriptBin "homeconf" ''
-       nano /home/simonkdev/nixsys/home-manager/tp-home.nix
-     '')
+      nano /home/simonkdev/nixsys/home-manager/tp-home.nix
+    '')
     (writeShellScriptBin "sysconf" ''
-       nano /home/simonkdev/nixsys/nixos/tp-config.nix
-     '')
+      nano /home/simonkdev/nixsys/nixos/tp-config.nix
+    '')
     (writeShellScriptBin "kittyconf" ''
-       nano /home/simonkdev/nixsys/home-manager/kitty.nix
-     '')
+      nano /home/simonkdev/nixsys/home-manager/kitty.nix
+    '')
     (writeShellScriptBin "gnomeconf" ''
-       nano /home/simonkdev/nixsys/home-manager/modules/gnome.nix
-     '')
+      nano /home/simonkdev/nixsys/home-manager/modules/gnome.nix
+    '')
     (writeShellScriptBin "bsedlogin" ''
-       ssh webadmin@46.252.195.82
-     '')
+      ssh webadmin@46.252.195.82
+    '')
     (writeShellScriptBin "bsedmount" ''
-       sudo sshfs webadmin@46.252.195.82:/home/webadmin/FleetManager ~/Documents/02-Projects/BSED/Fleet-Manager -o allow_other
-     '')
-
-
+      sudo sshfs webadmin@46.252.195.82:/home/webadmin/FleetManager ~/Documents/02-Projects/BSED/Fleet-Manager -o allow_other
+    '')
   ];
 
   home.sessionVariables = {
-     EDITOR = "nano";
-     WLR_NO_HARDWARE_CURSORS=1;
-     MOZ_ENABLE_WAYLAND = "1";
-     LIBVA_DRIVER_NAME = "nvidia";
-     EGL_PLATFORM = "wayland";
-     GDK_SCALE = "1";
-     QT_SCALE_FACTOR = "1";
+    EDITOR = "nano";
+    WLR_NO_HARDWARE_CURSORS = 1;
+    MOZ_ENABLE_WAYLAND = "1";
+    LIBVA_DRIVER_NAME = "nvidia";
+    EGL_PLATFORM = "wayland";
+    GDK_SCALE = "1";
+    QT_SCALE_FACTOR = "1";
   };
-  
+
   programs.btop.enable = true;
   programs.wofi.enable = true;
   programs.home-manager.enable = true;
   programs.yazi.enable = true;
 
-  tpcode.enable = true;
+  #tpcode.enable = false;
 
   home.file."/home/simonkdev/.unison/nas-sync-obsidian.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-obsidian.prf;
   home.file."/home/simonkdev/.unison/nas-sync-photos.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-photos.prf;
   home.file."/home/simonkdev/.smbcredentials".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/.smbcredentials;
-
 }
