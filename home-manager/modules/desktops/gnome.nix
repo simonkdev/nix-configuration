@@ -4,17 +4,18 @@
   home.packages = with pkgs.gnomeExtensions; [
       tiling-assistant
       blur-my-shell
-      dock-from-dash
+      dash-to-dock
       search-light
   ];
 
   programs.gnome-shell = {
     enable = true;
-#    extensions = with pkgs.gnomeExtensions; [
-#      tiling-assistant
-#      blur-my-shell
-#      dock-from-dash
-#      ];
+    extensions = with pkgs.gnomeExtensions; [
+      tiling-assistant
+      blur-my-shell
+      dash-to-dock
+      search-light
+      ];
   };
   dconf = {
     enable = true;

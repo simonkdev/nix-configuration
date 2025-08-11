@@ -7,9 +7,9 @@
   ## This directory is ~/nixsys/home-manager :)
   
   imports = [
-   ~/nixsys/home-manager/modules/kitty.nix
-   ~/nixsys/home-manager/modules/tp-stylix.nix
-   ~/nixsys/home-manager/modules/gnome.nix
+   ./modules/devtools/kitty.nix
+   ./modules/stylix/tp-stylix.nix
+   ./modules/desktops/gnome.nix
 #   ~/nixsys/home-manager/modules/nvim.nix
   ];
   

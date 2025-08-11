@@ -11,7 +11,7 @@
      
      kernelPackages = pkgs.linuxPackages_zen; # Use latest kernel Package
 
-     supportedFilesystems = [ "ntfs" "apfs"];
+     supportedFilesystems = [ "ntfs"];
 
 #     kernelParams = [ "i915.modeset=1" "intel=iommu=on"];
   }; 

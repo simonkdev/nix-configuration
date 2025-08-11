@@ -7,7 +7,7 @@
   ...
 }: {
   imports = [
-    ./tp-hardware.nix
+    /etc/nixos/hardware-configuration.nix
     ../modules/misc/stylix.nix
     ../modules/devtools/networking.nix
     ../modules/misc/tp-misc.nix
