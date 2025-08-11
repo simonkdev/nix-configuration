@@ -11,10 +11,6 @@
      };
     }; 
 
-    services.touchegg = {
-      enable = true;
-     };
-
     system.stateVersion = "25.05"; # Just dont change it.
 
     nix.settings = {
