@@ -61,7 +61,7 @@
       ssh webadmin@46.252.195.82
     '')
     (writeShellScriptBin "bsedmount" ''
-      sudo sshfs webadmin@46.252.195.82:/home/webadmin/FleetManager ~/Documents/02-Projects/BSED/fleetmanager -o allow_other
+      sudo sshfs webadmin@46.252.195.82:/home/webadmin/FleetManager ~/Documents/02-BSED/fleetmanager -o allow_other
     '')
   ];
 
