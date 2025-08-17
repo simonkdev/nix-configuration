@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -11,11 +12,6 @@
       url = "github:nix-community/stylix/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix4nvchad = {
-      url = "github:nix-community/nix4nvchad";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
   outputs = {
@@ -32,11 +28,8 @@
     unpkgs = import unstable {inherit system;};
 
     pkgs = import nixpkgs {
-      inherit system; # Build for x86_64-linux
-      config = {
-        allowUnfree = true;
-      };
-      overlays = [];
+      inherit system;
+      config = {allowUnfree = true;};
     };
 
     extraSpecialArgs = {inherit inputs system pkgs unpkgs;};
@@ -52,7 +45,7 @@
         ];
       };
       thinkpad = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit system pkgs inputs;};
+        specialArgs = {inherit system;};
 
         modules = [
           stylix.nixosModules.stylix

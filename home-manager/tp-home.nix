@@ -22,17 +22,18 @@
 
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
-  home.packages = with pkgs; [
-    hello
-    wl-clipboard
-    wireplumber
-    cava
-    playerctl
-    brightnessctl
-    upower
-    unzip
+  home.packages = [
+    pkgs.hello
+    pkgs.wl-clipboard
+    pkgs.wireplumber
+    pkgs.cava
+    pkgs.playerctl
+    pkgs.brightnessctl
+    pkgs.upower
+    pkgs.unzip
+    unpkgs.rapidraw
 
-    (writeShellScriptBin "homeswitch" ''
+    (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
       git add .
       git commit -m "rebuilt"
@@ -40,7 +41,7 @@
       home-manager switch --impure --flake /home/simonkdev/nixsys/#thinkpad
       cd ~
     '')
-    (writeShellScriptBin "nixswitch" ''
+    (pkgs.writeShellScriptBin "nixswitch" ''
       cd ~/nixsys
       git add .
       git commit -m "rebuilt system"
@@ -48,22 +49,22 @@
       sudo nixos-rebuild switch --impure --flake /home/simonkdev/nixsys/#thinkpad
       cd ~
     '')
-    (writeShellScriptBin "homeconf" ''
+    (pkgs.writeShellScriptBin "homeconf" ''
       nano /home/simonkdev/nixsys/home-manager/tp-home.nix
     '')
-    (writeShellScriptBin "sysconf" ''
+    (pkgs.writeShellScriptBin "sysconf" ''
       nano /home/simonkdev/nixsys/nixos/tp-config.nix
     '')
-    (writeShellScriptBin "kittyconf" ''
+    (pkgs.writeShellScriptBin "kittyconf" ''
       nano /home/simonkdev/nixsys/home-manager/kitty.nix
     '')
-    (writeShellScriptBin "gnomeconf" ''
+    (pkgs.writeShellScriptBin "gnomeconf" ''
       nano /home/simonkdev/nixsys/home-manager/modules/gnome.nix
     '')
-    (writeShellScriptBin "bsedlogin" ''
+    (pkgs.writeShellScriptBin "bsedlogin" ''
       ssh webadmin@46.252.195.82
     '')
-    (writeShellScriptBin "bsedmount" ''
+    (pkgs.writeShellScriptBin "bsedmount" ''
       sudo sshfs webadmin@46.252.195.82:/home/webadmin/FleetManager ~/Documents/02-BSED/fleetmanager -o allow_other
     '')
   ];
