@@ -14,6 +14,9 @@
     ./modules/devtools/kitty.nix
     ./modules/stylix/tp-stylix.nix
     ./modules/desktops/gnome.nix
+    ./modules/waybar/waybar.nix
+    ./modules/wofi/wofi.nix
+    ./modules/desktops/hyprland.nix
     #   ~/nixsys/home-manager/modules/nvim.nix
   ];
 
