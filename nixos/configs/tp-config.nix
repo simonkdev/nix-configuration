@@ -28,6 +28,8 @@
     firefox.enable = true;
     localsend.enable = true;
     npm.enable = true;
+    yazi.enable = true;
+    hyprland.enable = true;
     thunar = {
       enable = true;
       plugins = with pkgs.xfce; [thunar-volman tumbler];
@@ -132,8 +134,12 @@
     kdePackages.kdenlive
     gimp3
     vlc
+    pamixer
+    pavucontrol
 
     # --- Desktop & UI ---
+    hyprshot
+    qogir-icon-theme
     cowsay
     cmatrix
     cbonsai
