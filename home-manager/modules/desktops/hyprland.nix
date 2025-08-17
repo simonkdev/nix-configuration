@@ -192,6 +192,7 @@
         "rounding [12], class:wofi"
         "roundingpower [10.0], class:wofi"
         "float, class:pavucontrol"
+        "float, class:thunar"
       ];
 
       windowrulev2 = [
