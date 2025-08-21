@@ -54,7 +54,7 @@
       nano /home/simonkdev/nixsys/home-manager/tp-home.nix
     '')
     (pkgs.writeShellScriptBin "sysconf" ''
-      nano /home/simonkdev/nixsys/nixos/tp-config.nix
+      nano /home/simonkdev/nixsys/nixos/configs/tp-config.nix
     '')
     (pkgs.writeShellScriptBin "kittyconf" ''
       nano /home/simonkdev/nixsys/home-manager/kitty.nix
