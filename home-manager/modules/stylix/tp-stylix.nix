@@ -12,6 +12,7 @@
 
     targets = {
       btop.enable = true;
+      firefox.enable = true;
     };
 
     cursor = {
