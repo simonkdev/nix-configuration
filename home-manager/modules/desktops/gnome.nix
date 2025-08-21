@@ -9,12 +9,10 @@
     blur-my-shell
     dash-to-dock
     search-light
-    desktop-icons-ng-ding
     desktop-clock
-    open-bar
-    topicons-plus
     edit-desktop-files
-    dynamic-calendar-and-clocks-icons
+    add-to-desktop
+    gtk4-desktop-icons-ng-ding
   ];
 
   programs.gnome-shell = {
