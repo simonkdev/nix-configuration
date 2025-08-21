@@ -16,7 +16,7 @@
 
   users.users.simonkdev = {
     isNormalUser = true;
-    extraGroups = ["wheel" "docker" "networkmanager" "storage" "plugdev" "camera" "kvm" "libvirtd"]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel" "docker" "networkmanager" "storage" "plugdev" "camera" "kvm" "libvirtd" "dialout"]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       tree
       kitty
