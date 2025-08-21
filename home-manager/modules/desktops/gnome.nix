@@ -402,18 +402,8 @@
         create-initial-widget = false;
         prefs-visible-page = "";
         update-notifier-project-version = 14;
-        widgets = lib.hm.gvariant.mkVariant [
-          (lib.hm.gvariant.mkDict [
-            {
-              name = "38824b70-97c3-42fb-8be5-2171cdd0d4dd";
-              value = lib.hm.gvariant.mkDict [
-                {
-                  name = "enabled";
-                  value = true;
-                }
-              ];
-            }
-          ])
+        widgets = [
+          "38824b70-97c3-42fb-8be5-2171cdd0d4dd" = {enabled = true;};
         ];
       };
 
