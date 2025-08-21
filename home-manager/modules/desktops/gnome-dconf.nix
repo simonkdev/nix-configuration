@@ -99,6 +99,7 @@ with lib.hm.gvariant; {
 
     "org/gnome/desktop/interface" = {
       clock-show-seconds = true;
+      color-scheme = lib.mkForce "prefer-dark";
       enable-hot-corners = false;
       icon-theme = "Qogir";
       show-battery-percentage = true;
