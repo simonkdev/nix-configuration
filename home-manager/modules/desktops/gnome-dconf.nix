@@ -371,7 +371,7 @@ with lib.hm.gvariant; {
     "org/gnome/shell/extensions/azclock/widget-data/38824b70-97c3-42fb-8be5-2171cdd0d4dd" = {
       anchor-point = "Top_Right";
       background-color = "rgba(0, 0, 0, .6)";
-      elements= mkTuple ["{'d4d1e99f-fe00-4520-bcf2-1c6e1e63b434': <{'enabled': <true>}>}"];
+      elements = mkTuple ["{'d4d1e99f-fe00-4520-bcf2-1c6e1e63b434': <{'enabled': <true>}>}"];
       location = mkTuple [1920 48];
       name = "Weather Widget";
       show-background = false;
@@ -391,7 +391,7 @@ with lib.hm.gvariant; {
     };
 
     "org/gnome/shell/extensions/blur-my-shell" = {
-      pipelines= "{'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.73999999999999999>, 'unscaled_radius': <14>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}}"
+      pipelines = "{'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.73999999999999999>, 'unscaled_radius': <14>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}}";
       settings-version = 2;
     };
 
@@ -530,8 +530,7 @@ with lib.hm.gvariant; {
     "org/gnome/shell/extensions/tiling-assistant" = {
       focus-hint-color = "rgb(53,132,228)";
       last-version-installed = 52;
-      overridden-settings= "{'org.gnome.mutter.edge-tiling': <false>}";
-
+      overridden-settings = "{'org.gnome.mutter.edge-tiling': <false>}";
     };
 
     "org/gnome/shell/extensions/user-theme" = {
