@@ -100,15 +100,8 @@ with lib.hm.gvariant; {
 
     "org/gnome/desktop/interface" = {
       clock-show-seconds = true;
-      color-scheme = "prefer-dark";
-      cursor-size = 16;
-      cursor-theme = "Bibata-Modern-Ice";
-      document-font-name = "DejaVu Serif  11";
       enable-hot-corners = false;
-      font-name = "DejaVu Sans 12";
-      gtk-theme = "adw-gtk3";
       icon-theme = "Qogir";
-      monospace-font-name = "DejaVu Sans Mono 12";
       show-battery-percentage = true;
     };
 
