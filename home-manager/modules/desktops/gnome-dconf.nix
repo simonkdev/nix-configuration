@@ -358,13 +358,11 @@ with lib.hm.gvariant; {
       create-initial-widget = false;
       prefs-visible-page = "";
       update-notifier-project-version = 14;
-      widgets = mkTuple ["{'38824b70-97c3-42fb-8be5-2171cdd0d4dd': <{'enabled': <true>}>}"];
     };
 
     "org/gnome/shell/extensions/azclock/widget-data/38824b70-97c3-42fb-8be5-2171cdd0d4dd" = {
       anchor-point = "Top_Right";
       background-color = "rgba(0, 0, 0, .6)";
-      elements = mkTuple ["{'d4d1e99f-fe00-4520-bcf2-1c6e1e63b434': <{'enabled': <true>}>}"];
       location = mkTuple [1920 48];
       name = "Weather Widget";
       show-background = false;
