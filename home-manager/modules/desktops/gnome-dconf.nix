@@ -372,7 +372,6 @@ with lib.hm.gvariant; {
     "org/gnome/shell/extensions/azclock/widget-data/38824b70-97c3-42fb-8be5-2171cdd0d4dd/element-data/d4d1e99f-fe00-4520-bcf2-1c6e1e63b434" = {
       current-weather-icon-type = "Full_Color";
       element-type = "Weather_Element";
-      locations = [(mkVariant [(mkUint32 2) (mkVariant ["Munich" "EDMO" true [(mkTuple [0.8392124761828427 0.19693131144892936])] [(mkTuple [0.8403760348352696 0.20216729920491233])]])])];
       name = "Weather Forecast";
       polling-interval = 300;
       show-current-apparent-temp = true;
