@@ -13,6 +13,8 @@
     edit-desktop-files
     add-to-desktop
     gtk4-desktop-icons-ng-ding
+    advanced-weather-companion
+    openweather-refined
   ];
 
   programs.gnome-shell = {
