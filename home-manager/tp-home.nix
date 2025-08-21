@@ -33,8 +33,6 @@
     pkgs.upower
     pkgs.unzip
     unpkgs.rapidraw
-    pkgs.putty
-    pkgs.minicom
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
