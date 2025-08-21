@@ -402,9 +402,7 @@
         create-initial-widget = false;
         prefs-visible-page = "";
         update-notifier-project-version = 14;
-        widgets = [
-          "38824b70-97c3-42fb-8be5-2171cdd0d4dd" = {enabled = true;};
-        ];
+        widgets."38824b70-97c3-42fb-8be5-2171cdd0d4dd".enabled = true;
       };
 
       "org/gnome/shell/extensions/azclock/widget-data/38824b70-97c3-42fb-8be5-2171cdd0d4dd" = {
