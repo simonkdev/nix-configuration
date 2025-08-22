@@ -33,7 +33,7 @@
     pkgs.upower
     pkgs.unzip
     unpkgs.rapidraw
-    pkgs.moonlight-embedded
+    pkgs.moonlight-qt
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
