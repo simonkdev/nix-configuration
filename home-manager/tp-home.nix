@@ -69,6 +69,11 @@
     (pkgs.writeShellScriptBin "bsedmount" ''
       sudo sshfs webadmin@46.252.195.82:/home/webadmin/FleetManager ~/Documents/02-BSED/fleetmanager -o allow_other
     '')
+    (pkgs.writeShellScriptBin "sshman" ''
+      cd /nixsys/home-manager/modules/ssh_manager/
+      devenv shell
+      python hlbm.py
+    '')
   ];
 
   home.sessionVariables = {
