@@ -70,7 +70,7 @@
       sudo sshfs webadmin@46.252.195.82:/home/webadmin/FleetManager ~/Documents/02-BSED/fleetmanager -o allow_other
     '')
     (pkgs.writeShellScriptBin "sshman" ''
-      cd /nixsys/home-manager/modules/devtools/ssh_manager/
+      cd /home/simonkdev/nixsys/home-manager/modules/devtools/ssh_manager/
       devenv shell
       python hlbm.py
     '')
