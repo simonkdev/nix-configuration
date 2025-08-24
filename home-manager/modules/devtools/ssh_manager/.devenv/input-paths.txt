@@ -1,5 +1,0 @@
-/home/simonkdev/nixsys/home-manager/modules/devtools/ssh_manager/.devenv/flake.json
-/home/simonkdev/nixsys/home-manager/modules/devtools/ssh_manager/.devenv.flake.nix
-/home/simonkdev/nixsys/home-manager/modules/devtools/ssh_manager/devenv.lock
-/home/simonkdev/nixsys/home-manager/modules/devtools/ssh_manager/devenv.nix
-/home/simonkdev/nixsys/home-manager/modules/devtools/ssh_manager/devenv.yaml
