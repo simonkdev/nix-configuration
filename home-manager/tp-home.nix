@@ -34,7 +34,7 @@
     pkgs.unzip
     unpkgs.rapidraw
     pkgs.moonlight-qt
-    pkgs.vesktop
+    pkgs.vencord
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
