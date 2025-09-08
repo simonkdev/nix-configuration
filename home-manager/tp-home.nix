@@ -112,6 +112,7 @@
       adpyke.codesnap
       dracula-theme.theme-dracula
       kamadorueda.alejandra
+      ms-toolsai.jupyter
     ];
     profiles.default.userSettings = {
       "chat.editor.fontFamily" = "DejaVu Sans Mono";
