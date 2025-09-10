@@ -46,7 +46,7 @@ window#waybar.hidden {
   /* padding-left: 10px; */
   /* padding-right: 10px; */
   color: #64727d;
-  font-family: monospace;
+  font-family: JetBrainsMono Nerd Font;
 }
 
 #clock,
