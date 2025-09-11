@@ -89,7 +89,7 @@ window#waybar.hidden {
 #workspaces {
   margin: 0 4px;
   border-radius: 7.8px;
-  background-color: #1f253000;
+  background-color: transparent;
 }
 
 #cpu {
