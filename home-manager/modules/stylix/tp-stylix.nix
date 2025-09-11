@@ -7,7 +7,7 @@
   stylix = {
     enable = true;
     image = ~/nixsys/wallpapers/wallpaper.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-hard.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
 
     targets = {
