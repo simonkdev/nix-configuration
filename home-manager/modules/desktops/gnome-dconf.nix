@@ -70,13 +70,6 @@ with lib.hm.gvariant; {
       translate = true;
     };
 
-    "org/gnome/desktop/background" = {
-      color-shading-type = "solid";
-      picture-options = "zoom";
-      picture-uri = "file:///nix/store/2xdmgicyzf5cx94z43p7jzszzijfyh9x-wallpaper.png";
-      picture-uri-dark = "file:///nix/store/2xdmgicyzf5cx94z43p7jzszzijfyh9x-wallpaper.png";
-    };
-
     "org/gnome/desktop/break-reminders/eyesight" = {
       play-sound = true;
     };
