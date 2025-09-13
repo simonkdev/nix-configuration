@@ -6,7 +6,7 @@
 }: {
   stylix = {
     enable = true;
-    image = ~/nixsys/wallpapers/gruv-porsche.png;
+    image = ~/nixsys/wallpapers/wallp-lake.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
 
