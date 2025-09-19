@@ -17,6 +17,7 @@
     gtk4-desktop-icons-ng-ding
     advanced-weather-companion
     openweather-refined
+    hide-top-bar
   ];
 
   programs.gnome-shell = {
