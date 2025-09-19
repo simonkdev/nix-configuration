@@ -32,8 +32,9 @@
     enable = true;
 
     iconTheme = {
-      name = "Qogir";
-      package = pkgs.qogir-icon-theme;
+      name = "Gruvbox";
+      package = pkgs.gruvbox-plus-icons;
+      ## quogir + pkgs.qogir-icon-theme
     };
   };
 }
