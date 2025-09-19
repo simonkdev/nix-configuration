@@ -32,8 +32,8 @@
     enable = true;
 
     iconTheme = {
-      name = "Gruvbox";
-      package = pkgs.gruvbox-plus-icons;
+      name = lib.mkForce "Gruvbox";
+      package = lib.mkForce pkgs.gruvbox-plus-icons;
       ## quogir + pkgs.qogir-icon-theme
     };
   };
