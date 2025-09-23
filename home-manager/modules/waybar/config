@@ -35,10 +35,6 @@
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
-    "battery": {
-        "format":"🔋 {}%"
-    },
-
     "cpu": {
       "interval": 10,
       "format": "CPU: {}%",
