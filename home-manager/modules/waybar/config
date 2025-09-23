@@ -6,7 +6,7 @@
     "margin-bottom": 0,
     "margin-right": 10,
     "spacing": 5, 
-    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather", "battery"],
+    "modules-left": ["battery", "custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather"],
     "modules-center": ["custom/spotify", "hyprland/window"],
     "modules-right": ["tray", "pulseaudio", "network", "clock", "custom/power-menu"],
     "hyprland/workspaces": {
@@ -33,6 +33,10 @@
         "format": "<span color='#bf616a'> </span>{:%d.%m - %H:%M}",
         "format-alt": "<span color='#bf616a'> </span>{:%I:%M %p}",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "battery": {
+        "format":"🔋 {}%"
     },
 
     "cpu": {
