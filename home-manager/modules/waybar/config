@@ -6,7 +6,7 @@
     "margin-bottom": 0,
     "margin-right": 10,
     "spacing": 5, 
-    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather", "battery"],
     "modules-center": ["custom/spotify", "hyprland/window"],
     "modules-right": ["tray", "pulseaudio", "network", "clock", "custom/power-menu"],
     "hyprland/workspaces": {
