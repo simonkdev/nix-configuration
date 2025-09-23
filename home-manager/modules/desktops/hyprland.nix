@@ -40,7 +40,7 @@
       monitor = [
         "DP-1, preferred, 1920x0@75, 1.0"
         #"eDP-1, preferred, 0x0@144, 1"
-        "eDP-1, disable"
+        "eDP-1, preferred, auto, 1, mirror, DP-1"
       ];
 
       bezier = [
