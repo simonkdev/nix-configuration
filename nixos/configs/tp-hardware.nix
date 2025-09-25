@@ -29,7 +29,7 @@
   };
 
   fileSystems."/home/simonkdev/k1nas/Obsidian" = {
-    device = "//192.168.2.138/public/Simon_Obsidian";
+    device = "//192.168.2.44/public/Simon_Obsidian";
     fsType = "cifs";
     options = [
       "credentials=/home/simonkdev/.smbcredentials"
