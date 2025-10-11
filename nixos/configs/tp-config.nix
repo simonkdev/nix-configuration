@@ -56,6 +56,7 @@
     enable = true;
     extraPackages = with pkgs; [
       vaapiIntel
+      intel-vaapi-driver
       intel-media-driver
       intel-media-sdk
     ];
