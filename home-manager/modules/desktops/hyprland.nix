@@ -38,9 +38,9 @@
       #############################
 
       monitor = [
-        "DP-1, preferred, 3044x1440@165, 1.0"
+        "DP-1, preferred, 3044x1440@120, 1.0"
         #"eDP-1, preferred, 0x0@144, 1"
-        "eDP-1, preferred, auto, 1, mirror, DP-1"
+        "eDP-1, preferred, 0x0@60, 1"
       ];
 
       bezier = [
