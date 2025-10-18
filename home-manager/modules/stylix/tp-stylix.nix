@@ -6,7 +6,7 @@
 }: {
   stylix = {
     enable = true;
-    image = ~/nixsys/wallpapers/dark-souls-uw.png;
+    image = ~/nixsys/wallpapers/porsche-tokyo-uw.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
 
