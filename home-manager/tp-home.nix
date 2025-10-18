@@ -34,6 +34,7 @@
     pkgs.unzip
     unpkgs.rapidraw
     pkgs.moonlight-qt
+    pkgs.quick-webapps
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
