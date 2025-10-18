@@ -290,8 +290,8 @@ with lib.hm.gvariant; {
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>q";
-      command = "kitty";
-      name = "kitty-launch";
+      command = "kgx";
+      name = "terminal-launch";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
