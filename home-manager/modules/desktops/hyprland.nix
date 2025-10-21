@@ -76,8 +76,8 @@
       ];
 
       dwindle = {
-        pseudotile = false;
-        "preserve_split" = true;
+        pseudotile = true;
+        "preserve_split" = false;
       };
 
       general = {
