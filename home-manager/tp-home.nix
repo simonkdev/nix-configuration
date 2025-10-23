@@ -33,6 +33,7 @@
     pkgs.upower
     pkgs.unzip
     unpkgs.rapidraw
+    unpkgs.winboat
     pkgs.moonlight-qt
     pkgs.quick-webapps
 
