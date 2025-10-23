@@ -12,6 +12,7 @@
     ../modules/devtools/networking.nix
     ../modules/misc/tp-misc.nix
     ../modules/boot/tp-boot.nix
+    ../modules/devtools/virtualisation.nix
   ];
 
   users.users.simonkdev = {
