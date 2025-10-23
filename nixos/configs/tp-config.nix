@@ -24,8 +24,6 @@
     ];
   };
 
-  virtualisation.waydroid.enable = true;
-
   programs = {
     firefox.enable = true;
     localsend.enable = true;
