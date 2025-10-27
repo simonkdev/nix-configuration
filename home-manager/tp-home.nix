@@ -12,7 +12,7 @@
   ## This directory is ~/nixsys/home-manager :)
 
   imports = [
-    ./modules/desktops/kde-plasma.nix
+    ##./modules/desktops/kde-plasma.nix
     ./modules/devtools/kitty.nix
     ./modules/stylix/tp-stylix.nix
     ./modules/desktops/gnome.nix
