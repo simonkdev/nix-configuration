@@ -323,8 +323,8 @@ with lib.hm.gvariant; {
     "org/gnome/shell" = {
       app-picker-layout = [["Altus.desktop"] ["org.gnome.clocks.desktop"] ["org.gnome.Settings.desktop"] ["org.gnome.Snapshot.desktop"] ["Utilities"] ["System"] ["org.gnome.Console.desktop"] ["org.gnome.Decibels.desktop"] ["btop.desktop"] ["thunar-bulk-rename.desktop"] ["org.gnome.Calculator.desktop"] ["org.gnome.Extensions.desktop"] ["org.gnome.Nautilus.desktop"] ["gimp.desktop"] ["cups.desktop"] ["nixos-manual.desktop"] ["nnn.desktop"] ["processing.desktop"] ["protonvpn-app.desktop"] ["thunar-volman-settings.desktop"] ["org.gnome.TextEditor.desktop"] ["thunar-settings.desktop"] ["unison.desktop"] ["vlc.desktop"] ["xterm.desktop"] ["yazi.desktop"]];
       command-history = ["thunar" "vsc"];
-      disabled-extensions = ["dock-from-dash@fthx" "advanced-weather@sanjai.com"];
-      enabled-extensions = ["user-theme@gnome-shell-extensions.gcampax.github.com" "blur-my-shell@aunetx" "dash-to-dock@micxgx.gmail.com" "lockscreen-extension@pratap.fastmail.fm" "search-light@icedman.github.com" "tiling-assistant@leleat-on-github" "gtk4-ding@smedius.gitlab.com" "editdesktopfiles@dannflower" "add-to-desktop@tommimon.github.com" "azclock@azclock.gitlab.com"];
+      disabled-extensions = ["dock-from-dash@fthx" "advanced-weather@sanjai.com" "gtk4-ding@smedius.gitlab.com" "editdesktopfiles@dannflower" "add-to-desktop@tommimon.github.com"];
+      enabled-extensions = ["user-theme@gnome-shell-extensions.gcampax.github.com" "blur-my-shell@aunetx" "dash-to-dock@micxgx.gmail.com" "lockscreen-extension@pratap.fastmail.fm" "search-light@icedman.github.com" "tiling-assistant@leleat-on-github" "azclock@azclock.gitlab.com"];
       favorite-apps = ["firefox.desktop" "code.desktop" "kitty.desktop" "todoist.desktop" "thunar.desktop" "spotify.desktop" "LocalSend.desktop" "onlyoffice-desktopeditors.desktop" "obsidian.desktop" "discord.desktop" "org.kde.kdenlive.desktop"];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "48.1";
