@@ -16,7 +16,7 @@
     add-to-desktop
     gtk4-desktop-icons-ng-ding
     advanced-weather-companion
-    openweather-refined
+    rounded-window-corners-reborn
   ];
 
   programs.gnome-shell = {
