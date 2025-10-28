@@ -4,11 +4,11 @@
   pkgs,
   ...
 }: {
-  ## bathory, gorgoroth, khold, mayhem,
+  ## bathory, gorgoroth, khold, mayhem, immortal
   stylix = {
     enable = true;
     image = ~/nixsys/wallpapers/switch-uw.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-immortal.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-khold.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
 
     targets = {

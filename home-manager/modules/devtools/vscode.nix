@@ -22,7 +22,7 @@
       adpyke.codesnap
       dracula-theme.theme-dracula
       kamadorueda.alejandra
-      scalameta.metals
+      nur.just-black
     ];
     profiles.default.userSettings = {
       "chat.editor.fontFamily" = "DejaVu Sans Mono";
