@@ -14,6 +14,8 @@
     targets = {
       btop.enable = true;
       firefox.enable = true;
+      gnome.enable = true;
+      gtk.enable = true;
     };
 
     cursor = {
