@@ -148,7 +148,7 @@
     pipes-rs
   ];
 
-  home-manager.backupFileExtension = "backup";
+  #home-manager.backupFileExtension = "backup";
 
   fonts.packages = with pkgs; [
     nerd-fonts.fira-code
