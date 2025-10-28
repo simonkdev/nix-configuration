@@ -17,6 +17,7 @@
     gtk4-desktop-icons-ng-ding
     advanced-weather-companion
     rounded-window-corners-reborn
+    unite
   ];
 
   programs.gnome-shell = {
