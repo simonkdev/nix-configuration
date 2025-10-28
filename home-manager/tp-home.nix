@@ -116,6 +116,7 @@
       dracula-theme.theme-dracula
       kamadorueda.alejandra
       ms-toolsai.jupyter
+      nur.just-black
     ];
     profiles.default.userSettings = {
       "chat.editor.fontFamily" = "DejaVu Sans Mono";
@@ -127,7 +128,7 @@
       "scm.inputFontFamily" = "DejaVu Sans Mono";
       "chat.editor.fontSize" = lib.mkForce 16.0;
       "editor.fontSize" = lib.mkForce 16.0;
-      "workbench.colorTheme" = lib.mkForce "Gruvbox Dark Hard";
+      "workbench.colorTheme" = lib.mkForce "Dark Modern";
     };
   };
 }
