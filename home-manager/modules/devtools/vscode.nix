@@ -34,7 +34,7 @@
       "scm.inputFontFamily" = "DejaVu Sans Mono";
       "chat.editor.fontSize" = lib.mkForce 12.0;
       "editor.fontSize" = lib.mkForce 12.0;
-      "workbench.colorTheme" = lib.mkForce "Dracula Theme";
+      "workbench.colorTheme" = lib.mkForce "Dark Modern";
     };
   };
 }
