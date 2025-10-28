@@ -9,6 +9,8 @@
   home.username = "simonkdev";
   home.homeDirectory = "/home/simonkdev";
 
+  home-manager.backupFileExtension = "backup";
+
   ## This directory is ~/nixsys/home-manager :)
 
   imports = [
