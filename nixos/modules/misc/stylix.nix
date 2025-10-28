@@ -10,6 +10,9 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
     polarity = "dark";
     autoEnable = true;
+    targets = {
+      gtk.enable = true;
+    };
   };
 
   console = {
