@@ -36,7 +36,7 @@
 
     iconTheme = {
       name = lib.mkForce "Gruvbox";
-      package = lib.mkForce pkgs.gruvbox-plus-icons;
+      package = lib.mkForce pkgs.la-capitaine-icon-theme;
       ## quogir + pkgs.qogir-icon-theme
     };
   };

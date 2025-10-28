@@ -7,7 +7,7 @@
   stylix = {
     enable = true;
     ##   image = ../wallpapers/wallpaper.jpg;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-khold.yaml";
     polarity = "dark";
     autoEnable = true;
     targets = {
