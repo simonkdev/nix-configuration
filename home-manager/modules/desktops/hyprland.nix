@@ -40,7 +40,7 @@
       monitor = [
         "DP-1, 3044x1440@120.00, 0x0, 1.0"
         #"eDP-1, preferred, 0x0@144, 1"
-        "eDP-1, preferred, 0x0@60, 1"
+        "eDP-1, preferred, auto, 1, mirror, DP-1"
         #"eDP-1, disabled"
       ];
 
