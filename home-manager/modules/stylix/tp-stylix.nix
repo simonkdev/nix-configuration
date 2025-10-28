@@ -8,7 +8,7 @@
   stylix = {
     enable = true;
     image = ~/nixsys/wallpapers/switch-uw.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-burzum.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-gorgoroth.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
 
     targets = {
