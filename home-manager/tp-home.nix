@@ -90,6 +90,8 @@
   programs.btop.enable = true;
   programs.wofi.enable = true;
   programs.home-manager.enable = true;
+  programs.home-manager.backupFileExtension = "backup";
+
   programs.yazi.enable = true;
 
   home.file."/home/simonkdev/.config/fastfetch/config.jsonc".source = /home/simonkdev/nixsys/home-manager/modules/fastfetch/hypr.jsonc;
