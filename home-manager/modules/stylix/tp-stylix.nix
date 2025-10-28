@@ -35,7 +35,7 @@
     enable = true;
 
     iconTheme = {
-      name = lib.mkForce "Gruvbox";
+      name = lib.mkForce "Cosmic";
       package = lib.mkForce pkgs.cosmic-icons;
       ## quogir + pkgs.qogir-icon-theme
     };
