@@ -7,7 +7,7 @@
   ## bathory, gorgoroth, khold, mayhem, immortal
   stylix = {
     enable = true;
-    image = ~/nixsys/wallpapers/garage-ultrawide.png;
+    image = ~/nixsys/wallpapers/sombrero-galaxy-uw.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-khold.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
 

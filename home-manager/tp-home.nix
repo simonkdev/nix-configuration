@@ -90,7 +90,7 @@
   programs.btop.enable = true;
   programs.wofi.enable = true;
   programs.home-manager.enable = true;
-  programs.home-manager.backupFileExtension = "backup";
+  #programs.home-manager.backupFileExtension = "backup";
 
   programs.yazi.enable = true;
 
