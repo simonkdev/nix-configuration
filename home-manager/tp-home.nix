@@ -64,7 +64,7 @@
       nano /home/simonkdev/nixsys/home-manager/kitty.nix
     '')
     (pkgs.writeShellScriptBin "gnomeconf" ''
-      nano /home/simonkdev/nixsys/home-manager/modules/gnome.nix
+      nano /home/simonkdev/nixsys/home-manager/modules/desktops/gnome.nix
     '')
     (pkgs.writeShellScriptBin "bsedlogin" ''
       ssh webadmin@46.252.195.82
