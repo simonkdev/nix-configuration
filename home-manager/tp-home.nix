@@ -38,6 +38,8 @@
     pkgs.moonlight-qt
     pkgs.quick-webapps
 
+    pkgs.spicetify-cli
+
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
       git add .

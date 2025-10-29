@@ -18,6 +18,7 @@
     advanced-weather-companion
     rounded-window-corners-reborn
     unite
+    spotify-controls
   ];
 
   programs.gnome-shell = {
