@@ -43,7 +43,7 @@
       git add .
       git commit -m "rebuilt"
       git push
-      home-manager switch --impure --flake /home/simonkdev/nixsys/#thinkpad -b backup
+      home-manager switch -b backup --impure --flake /home/simonkdev/nixsys/#thinkpad
       cd ~
     '')
     (pkgs.writeShellScriptBin "nixswitch" ''
