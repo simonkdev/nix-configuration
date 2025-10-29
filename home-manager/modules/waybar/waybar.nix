@@ -49,6 +49,7 @@
       }
 
       #workspaces button.active {
+        border: none;
         border-bottom: none;
         color: #6a92d7;
       }
