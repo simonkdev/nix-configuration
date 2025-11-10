@@ -43,6 +43,8 @@
       git add .
       git commit -m "rebuilt"
       git push
+      rm -rf /home/simonkdev/.config/gtk-3.0/gtk.css.backup
+      rm -rf /home/simonkdev/.config/gtk-4.0/gtk.css.backup
       home-manager switch -b backup --impure --flake /home/simonkdev/nixsys/#thinkpad
       cd ~
     '')
