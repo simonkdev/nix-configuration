@@ -37,7 +37,7 @@
     pkgs.moonlight-qt
     pkgs.quick-webapps
     pkgs.peaclock
-    pkgs.valent
+    pkgs.libsForQt5.kdeconnect-kde
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
