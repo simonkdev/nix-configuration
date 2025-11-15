@@ -19,7 +19,6 @@
     rounded-window-corners-reborn
     unite
     spotify-controls
-    gsconnect
   ];
 
   programs.gnome-shell = {

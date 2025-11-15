@@ -95,7 +95,7 @@
   #programs.home-manager.backupFileExtension = "backup";
 
   services.kdeconnect.enable = true;
-  services.kdeconnect.package = pkgs.kdePackages.kdeconnect-kde;
+  services.kdeconnect.package = pkgs.valent;
   programs.yazi.enable = true;
 
   home.file."/home/simonkdev/.config/fastfetch/config.jsonc".source = /home/simonkdev/nixsys/home-manager/modules/fastfetch/hypr.jsonc;
