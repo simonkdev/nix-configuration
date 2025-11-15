@@ -37,7 +37,6 @@
     pkgs.moonlight-qt
     pkgs.quick-webapps
     pkgs.peaclock
-    pkgs.libsForQt5.kdeconnect-kde
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
@@ -95,6 +94,8 @@
   programs.home-manager.enable = true;
   #programs.home-manager.backupFileExtension = "backup";
 
+  programs.kdeconnect.enable = true;
+  services.kdeconnect.enable = true;
   programs.yazi.enable = true;
 
   home.file."/home/simonkdev/.config/fastfetch/config.jsonc".source = /home/simonkdev/nixsys/home-manager/modules/fastfetch/hypr.jsonc;
