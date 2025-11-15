@@ -94,7 +94,6 @@
   programs.home-manager.enable = true;
   #programs.home-manager.backupFileExtension = "backup";
 
-  programs.kdeconnect.enable = true;
   services.kdeconnect.enable = true;
   programs.yazi.enable = true;
 
