@@ -37,6 +37,7 @@
     pkgs.moonlight-qt
     pkgs.quick-webapps
     pkgs.peaclock
+    pkgs.valent
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
