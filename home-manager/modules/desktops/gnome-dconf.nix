@@ -325,7 +325,21 @@ with lib.hm.gvariant; {
       command-history = ["thunar" "vsc"];
       disabled-extensions = ["dock-from-dash@fthx" "advanced-weather@sanjai.com" "gtk4-ding@smedius.gitlab.com" "editdesktopfiles@dannflower" "add-to-desktop@tommimon.github.com"];
       enabled-extensions = ["unite@hardpixel.eu" "user-theme@gnome-shell-extensions.gcampax.github.com" "blur-my-shell@aunetx" "dash-to-dock@micxgx.gmail.com" "lockscreen-extension@pratap.fastmail.fm" "search-light@icedman.github.com" "tiling-assistant@leleat-on-github" "azclock@azclock.gitlab.com" "spotify-controls@Sonath21"];
-      favorite-apps = ["firefox.desktop" "code.desktop" "org.gnome.Console.desktop" "todoist.desktop" "thunar.desktop" "spotify.desktop" "LocalSend.desktop" "onlyoffice-desktopeditors.desktop" "obsidian.desktop" "discord.desktop" "org.kde.kdenlive.desktop"];
+      #favorite-apps = ["firefox.desktop" "code.desktop" "org.gnome.Console.desktop" "todoist.desktop" "thunar.desktop" "spotify.desktop" "LocalSend.desktop" "onlyoffice-desktopeditors.desktop" "obsidian.desktop" "discord.desktop" "org.kde.kdenlive.desktop"];
+      favorite-apps = [
+        "firefox.desktop"
+        "code.desktop"
+        "org.gnome.Console.desktop"
+        "todoist.desktop"
+        "org.gnome.Nautilus.desktop"
+        "spotify.desktop"
+        "LocalSend.desktop"
+        "onlyoffice-desktopeditors.desktop"
+        "obsidian.desktop"
+        "discord.desktop"
+        "org.kde.kdenlive.desktop"
+        "proton-mail.desktop"
+      ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "48.1";
     };
@@ -430,67 +444,6 @@ with lib.hm.gvariant; {
       show-home = false;
       show-trash = false;
       show-volumes = false;
-    };
-
-    "org/gnome/shell/extensions/openbar" = {
-      bg-change = true;
-      bguri = "file:///nix/store/2xdmgicyzf5cx94z43p7jzszzijfyh9x-wallpaper.png";
-      count1 = 239916;
-      count10 = 2441;
-      count11 = 6;
-      count12 = 2;
-      count2 = 62422;
-      count3 = 60145;
-      count4 = 57918;
-      count5 = 42260;
-      count6 = 26322;
-      count7 = 19440;
-      count8 = 7061;
-      count9 = 2669;
-      dark-bguri = "file:///nix/store/2xdmgicyzf5cx94z43p7jzszzijfyh9x-wallpaper.png";
-      dark-palette1 = ["9" "27" "32"];
-      dark-palette10 = ["44" "68" "65"];
-      dark-palette11 = ["20" "76" "164"];
-      dark-palette12 = ["128" "164" "116"];
-      dark-palette2 = ["62" "129" "194"];
-      dark-palette3 = ["35" "67" "86"];
-      dark-palette4 = ["101" "180" "241"];
-      dark-palette5 = ["40" "82" "126"];
-      dark-palette6 = ["79" "109" "132"];
-      dark-palette7 = ["188" "191" "202"];
-      dark-palette8 = ["95" "61" "58"];
-      dark-palette9 = ["184" "71" "67"];
-      default-font = "Sans 12";
-      import-export = false;
-      light-bguri = "file:///nix/store/2xdmgicyzf5cx94z43p7jzszzijfyh9x-wallpaper.png";
-      light-palette1 = ["9" "27" "32"];
-      light-palette10 = ["44" "68" "65"];
-      light-palette11 = ["20" "76" "164"];
-      light-palette12 = ["128" "164" "116"];
-      light-palette2 = ["62" "129" "194"];
-      light-palette3 = ["35" "67" "86"];
-      light-palette4 = ["101" "180" "241"];
-      light-palette5 = ["40" "82" "126"];
-      light-palette6 = ["79" "109" "132"];
-      light-palette7 = ["188" "191" "202"];
-      light-palette8 = ["95" "61" "58"];
-      light-palette9 = ["184" "71" "67"];
-      monitor-height = 1080;
-      monitor-width = 1920;
-      palette1 = ["9" "27" "32"];
-      palette10 = ["44" "68" "65"];
-      palette11 = ["20" "76" "164"];
-      palette12 = ["128" "164" "116"];
-      palette2 = ["62" "129" "194"];
-      palette3 = ["35" "67" "86"];
-      palette4 = ["101" "180" "241"];
-      palette5 = ["40" "82" "126"];
-      palette6 = ["79" "109" "132"];
-      palette7 = ["188" "191" "202"];
-      palette8 = ["95" "61" "58"];
-      palette9 = ["184" "71" "67"];
-      pause-reload = false;
-      reloadstyle = false;
     };
 
     "org/gnome/shell/extensions/search-light" = {

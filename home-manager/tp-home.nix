@@ -38,6 +38,8 @@
     pkgs.quick-webapps
     pkgs.peaclock
     pkgs.protonmail-desktop
+    pkgs.cpufetch
+    pkgs.gpufetch
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
