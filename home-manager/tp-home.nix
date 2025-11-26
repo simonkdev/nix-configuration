@@ -40,6 +40,7 @@
     pkgs.protonmail-desktop
     pkgs.cpufetch
     pkgs.gpufetch
+    pkgs.geeqie
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
