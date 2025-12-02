@@ -42,32 +42,134 @@ with lib.hm.gvariant; {
       mag-factor = 3.0;
     };
 
-    "org/gnome/desktop/app-folders" = {
-      folder-children = ["System" "Utilities" "YaST" "Pardus"];
+    "org/gnome/shell/desktop/app-folders" = {
+      folder-children = [
+        "System"
+        "Utilities"
+        "YaST"
+        "Pardus"
+        "84f377f1-3d98-4412-98bc-472277dbb4b8"
+        "e605986d-c20c-40c7-b3f9-af7847d31e56"
+        "2833acf9-5530-42d6-b98e-7284b91e08be"
+        "bb902576-9939-47bc-8f86-1cf810dd4019"
+        "3f6e8ab9-1e30-4de2-a9eb-5207a6067de4"
+      ];
     };
 
-    "org/gnome/desktop/app-folders/folders/Pardus" = {
+    "org/gnome/shell/desktop/app-folders/folders/2833acf9-5530-42d6-b98e-7284b91e08be" = {
+      apps = ["org.gnome.Settings.desktop" "org.gnome.Extensions.desktop"];
+      name = "Configuration";
+      translate = false;
+    };
+
+    "org/gnome/shell/desktop/app-folders/folders/3f6e8ab9-1e30-4de2-a9eb-5207a6067de4" = {
+      apps = ["virt-manager.desktop" "mysql-workbench.desktop" "processing.desktop" "dev.heppen.webapps.Onshape1985.desktop" "dev.heppen.webapps.desktop"];
+      name = "Dev Stuff";
+      translate = false;
+    };
+
+    "org/gnome/shell/desktop/app-folders/folders/84f377f1-3d98-4412-98bc-472277dbb4b8" = {
+      apps = ["org.geeqie.Geeqie.desktop" "gimp.desktop" "org.gnome.Snapshot.desktop" "RapidRAW.desktop"];
+      name = "Creative";
+      translate = false;
+    };
+
+    "org/gnome/shell/desktop/app-folders/folders/Pardus" = {
       categories = ["X-Pardus-Apps"];
       name = "X-Pardus-Apps.directory";
       translate = true;
     };
 
-    "org/gnome/desktop/app-folders/folders/System" = {
-      apps = ["nm-connection-editor.desktop" "org.gnome.baobab.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.Logs.desktop" "org.gnome.SystemMonitor.desktop"];
+    "org/gnome/shell/desktop/app-folders/folders/System" = {
+      apps = ["org.gnome.baobab.desktop" "org.gnome.DiskUtility.desktop"];
       name = "X-GNOME-Shell-System.directory";
       translate = true;
     };
 
-    "org/gnome/desktop/app-folders/folders/Utilities" = {
-      apps = ["org.gnome.Connections.desktop" "org.gnome.Evince.desktop" "org.gnome.FileRoller.desktop" "org.gnome.font-viewer.desktop" "org.gnome.Loupe.desktop" "org.gnome.seahorse.Application.desktop"];
+    "org/gnome/shell/desktop/app-folders/folders/Utilities" = {
+      apps = ["org.gnome.Connections.desktop" "org.gnome.Evince.desktop" "org.gnome.seahorse.Application.desktop"];
       name = "X-GNOME-Shell-Utilities.directory";
       translate = true;
     };
 
-    "org/gnome/desktop/app-folders/folders/YaST" = {
+    "org/gnome/shell/desktop/app-folders/folders/YaST" = {
       categories = ["X-SuSE-YaST"];
       name = "suse-yast.directory";
       translate = true;
+    };
+
+    "org/gnome/shell/desktop/app-folders/folders/a26ce40c-455a-4e94-9357-10420ba9d486" = {
+      apps = ["org.gnome.Settings.desktop" "org.gnome.Extensions.desktop"];
+      name = "Settinges";
+      translate = false;
+    };
+
+    "org/gnome/shell/desktop/app-folders/folders/bb902576-9939-47bc-8f86-1cf810dd4019" = {
+      apps = ["dev.heppen.webapps.NewQuickWebApp3218.desktop" "com.moonlight_stream.Moonlight.desktop"];
+      name = "Games";
+      translate = false;
+    };
+
+    "org/gnome/shell/desktop/app-folders/folders/d285564f-efe9-411f-bdc5-2a0049d17587" = {
+      apps = [
+        "org.gnome.Decibels.desktop"
+        "org.gnome.clocks.desktop"
+        "btop.desktop"
+        "nixos-manual.desktop"
+        "nnn.desktop"
+        "org.gnome.font-viewer.desktop"
+        "org.gnome.Loupe.desktop"
+        "org.gnome.FileRoller.desktop"
+        "yazi.desktop"
+        "xterm.desktop"
+        "org.pulseaudio.pavucontrol.desktop"
+        "vlc.desktop"
+        "unison.desktop"
+        "thunar-settings.desktop"
+        "thunar-volman-settings.desktop"
+        "RapidRAW.desktop"
+        "org.gnome.Snapshot.desktop"
+        "thunar-bulk-rename.desktop"
+      ];
+      name = "Unnamed Folder";
+      translate = false;
+    };
+
+    "org/gnome/shell/desktop/app-folders/folders/e605986d-c20c-40c7-b3f9-af7847d31e56" = {
+      apps = [
+        "org.kde.kdeconnect.app.desktop"
+        "org.kde.kdeconnect.nonplasma.desktop"
+        "org.kde.kdeconnect-settings.desktop"
+        "org.kde.kdeconnect.sms.desktop"
+        "cups.desktop"
+        "thunar-bulk-rename.desktop"
+        "nnn.desktop"
+        "org.gnome.Decibels.desktop"
+        "btop.desktop"
+        "nixos-manual.desktop"
+        "thunar-settings.desktop"
+        "org.gnome.TextEditor.desktop"
+        "org.pulseaudio.pavucontrol.desktop"
+        "xterm.desktop"
+        "yazi.desktop"
+        "unison.desktop"
+        "thunar-volman-settings.desktop"
+        "org.gnome.FileRoller.desktop"
+        "org.gnome.Loupe.desktop"
+        "org.gnome.font-viewer.desktop"
+        "org.gnome.SystemMonitor.desktop"
+        "nm-connection-editor.desktop"
+        "org.gnome.Logs.desktop"
+        "kitty.desktop"
+        "thunar.desktop"
+        "org.gnome.clocks.desktop"
+        "org.gnome.Calculator.desktop"
+        "vlc.desktop"
+        "protonvpn-app.desktop"
+        "Altus.desktop"
+      ];
+      name = "Utils";
+      translate = false;
     };
 
     "org/gnome/desktop/break-reminders/eyesight" = {
