@@ -423,7 +423,8 @@ with lib.hm.gvariant; {
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = [["Altus.desktop"] ["org.gnome.clocks.desktop"] ["org.gnome.Settings.desktop"] ["org.gnome.Snapshot.desktop"] ["Utilities"] ["System"] ["org.gnome.Console.desktop"] ["org.gnome.Decibels.desktop"] ["btop.desktop"] ["thunar-bulk-rename.desktop"] ["org.gnome.Calculator.desktop"] ["org.gnome.Extensions.desktop"] ["org.gnome.Nautilus.desktop"] ["gimp.desktop"] ["cups.desktop"] ["nixos-manual.desktop"] ["nnn.desktop"] ["processing.desktop"] ["protonvpn-app.desktop"] ["thunar-volman-settings.desktop"] ["org.gnome.TextEditor.desktop"] ["thunar-settings.desktop"] ["unison.desktop"] ["vlc.desktop"] ["xterm.desktop"] ["yazi.desktop"]];
+      app-picker-layout = "[{'3f6e8ab9-1e30-4de2-a9eb-5207a6067de4': <{'position': <0>}>, '2833acf9-5530-42d6-b98e-7284b91e08be': <{'position': <1>}>, 'e605986d-c20c-40c7-b3f9-af7847d31e56': <{'position': <2>}>, '84f377f1-3d98-4412-98bc-472277dbb4b8': <{'position': <3>}>, 'bb902576-9939-47bc-8f86-1cf810dd4019': <{'position': <4>}>}]";
+
       command-history = ["thunar" "vsc"];
       disabled-extensions = ["dock-from-dash@fthx" "advanced-weather@sanjai.com" "gtk4-ding@smedius.gitlab.com" "editdesktopfiles@dannflower" "add-to-desktop@tommimon.github.com"];
       enabled-extensions = ["unite@hardpixel.eu" "user-theme@gnome-shell-extensions.gcampax.github.com" "blur-my-shell@aunetx" "dash-to-dock@micxgx.gmail.com" "lockscreen-extension@pratap.fastmail.fm" "search-light@icedman.github.com" "tiling-assistant@leleat-on-github" "azclock@azclock.gitlab.com" "spotify-controls@Sonath21"];
