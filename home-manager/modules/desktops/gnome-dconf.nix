@@ -194,6 +194,7 @@ with lib.hm.gvariant; {
 
     "org/gnome/desktop/interface" = {
       clock-show-seconds = true;
+      accent-color = "purple";
       color-scheme = lib.mkForce "prefer-dark";
       enable-hot-corners = false;
       show-battery-percentage = true;
@@ -403,7 +404,7 @@ with lib.hm.gvariant; {
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
-      binding = "<Super>e";
+      binding = "<Super>t";
       command = "thunar";
       name = "thunar-launch";
     };
