@@ -26,6 +26,7 @@
   };
 
   programs = {
+    evolution.enable = true;
     kdeconnect.enable = true;
     firefox.enable = true;
     localsend.enable = true;
