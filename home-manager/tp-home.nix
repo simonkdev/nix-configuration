@@ -108,6 +108,7 @@
   home.file."/home/simonkdev/.smbcredentials".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/.smbcredentials;
 
   programs.gnome-terminal.enable = true;
+  programs.gnome-terminal.showMenubar = false;
 
   programs.vscode = {
     enable = true;
