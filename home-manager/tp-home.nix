@@ -107,7 +107,7 @@
   home.file."/home/simonkdev/.unison/nas-sync-photos.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-photos.prf;
   home.file."/home/simonkdev/.smbcredentials".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/.smbcredentials;
 
-  programs.gnome-terminal.enable = true;
+  #programs.gnome-terminal.enable = true;
   programs.gnome-terminal.showMenubar = false;
 
   programs.vscode = {
