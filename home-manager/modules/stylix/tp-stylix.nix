@@ -8,8 +8,8 @@
   stylix = {
     enable = true;
     image = ~/nixsys/wallpapers/win-purple-uw.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-khold.yaml";
-    ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
     targets = {
       btop.enable = true;
