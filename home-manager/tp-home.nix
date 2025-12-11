@@ -41,6 +41,7 @@
     pkgs.cpufetch
     pkgs.gpufetch
     pkgs.geeqie
+    pkgs.openrocket
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
