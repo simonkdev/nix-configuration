@@ -62,6 +62,11 @@
       intel-vaapi-driver
       intel-media-driver
       intel-media-sdk
+      libvdpau
+      vaapiVdpau
+      libva
+      vulkan-loader
+      vulkan-validation-layers
     ];
   };
 
