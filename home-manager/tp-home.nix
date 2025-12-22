@@ -42,6 +42,7 @@
     pkgs.gpufetch
     pkgs.geeqie
     pkgs.openrocket
+    pkgs.libreoffice-fresh
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
