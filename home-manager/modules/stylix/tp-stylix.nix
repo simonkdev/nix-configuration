@@ -35,8 +35,8 @@
     enable = true;
 
     iconTheme = {
-      name = lib.mkForce "Material";
-      package = lib.mkForce pkgs.material-black-colors;
+      name = lib.mkForce "Win";
+      package = lib.mkForce pkgs.windows10-icons;
       #package = lib.mkForce pkgs.cosmic-icons;
       ## quogir + pkgs.qogir-icon-theme
     };
