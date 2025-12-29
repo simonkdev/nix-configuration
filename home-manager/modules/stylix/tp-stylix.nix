@@ -35,8 +35,8 @@
     enable = true;
 
     iconTheme = {
-      name = lib.mkForce "Lib";
-      package = lib.mkForce pkgs.icon-library;
+      name = lib.mkForce "Humane";
+      package = lib.mkForce pkgs.humanity-icon-theme;
       #package = lib.mkForce pkgs.cosmic-icons;
       ## quogir + pkgs.qogir-icon-theme
     };
