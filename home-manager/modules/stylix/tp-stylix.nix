@@ -20,7 +20,7 @@
 
     cursor = {
       package = pkgs.material-cursors;
-      name = "Material";
+      name = "Material-Dark-Plum-Numix";
       size = 16;
     };
 
