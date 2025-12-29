@@ -36,7 +36,7 @@
 
     iconTheme = {
       name = lib.mkForce "Material";
-      package = lib.mkForce pkgs.material-design-icons;
+      package = lib.mkForce pkgs.material-black-colors;
       #package = lib.mkForce pkgs.cosmic-icons;
       ## quogir + pkgs.qogir-icon-theme
     };
