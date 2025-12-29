@@ -19,7 +19,7 @@
     };
 
     cursor = {
-      package = pkgs.phinger-cursors;
+      package = pkgs.whitesur-cursors;
       name = "Bibata-Modern-Ice";
       size = 16;
     };
