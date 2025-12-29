@@ -19,8 +19,8 @@
     };
 
     cursor = {
-      package = pkgs.Bibata-Modern-Ice;
-      name = "Bibata-Modern-Ice";
+      package = pkgs.material-cursors;
+      name = "Material";
       size = 16;
     };
 
