@@ -35,8 +35,9 @@
     enable = true;
 
     iconTheme = {
-      name = lib.mkForce "Cosmic";
-      package = lib.mkForce pkgs.cosmic-icons;
+      name = lib.mkForce "WhiteSur";
+      package = lib.mkForce pkgs.whitesur-icon-theme;
+      #package = lib.mkForce pkgs.cosmic-icons;
       ## quogir + pkgs.qogir-icon-theme
     };
   };
