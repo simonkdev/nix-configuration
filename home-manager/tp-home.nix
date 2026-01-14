@@ -115,7 +115,7 @@
       dots_center = true;
 
       rounding = 10;
-      shadow_passes = 1;
+      shadow_passes = 0;
 
       # outer_color = "rgba(0, 0, 0, 0)";
       # inner_color = "rgba(255, 255, 255, 0.1)";
