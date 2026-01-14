@@ -103,7 +103,7 @@
 
   programs.yazi.enable = true;
 
-  programs.hyprlock.enable
+  programs.hyprlock.enable = true;
 
   home.file."/home/simonkdev/.config/fastfetch/config.jsonc".source = /home/simonkdev/nixsys/home-manager/modules/fastfetch/hypr.jsonc;
 
