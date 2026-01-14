@@ -107,7 +107,7 @@
   programs.hyprlock.settings = {
     input-field = {
       monitor = "";
-      size = [300 55];
+      size = [100 55];
       outline_thickness = 2;
 
       dots_size = 0.2;
