@@ -1,19 +1,19 @@
-{ config, lib, pkgs, ... }:
-
 {
-  
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   boot = {
-     
-     loader = { 
-     systemd-boot.enable = true;
-     efi.canTouchEfiVariables = true;
-     };
-     
-     kernelPackages = pkgs.linuxPackages_zen; # Use latest kernel Package
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
 
-     supportedFilesystems = [ "ntfs"];
+    kernelPackages = pkgs.linuxPackages_zen; # Use latest kernel Package
 
-#     kernelParams = [ "i915.modeset=1" "intel=iommu=on"];
-  }; 
+    supportedFilesystems = ["ntfs"];
 
+    #     kernelParams = [ "i915.modeset=1" "intel=iommu=on"];
+  };
 }
