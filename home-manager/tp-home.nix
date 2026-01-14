@@ -105,18 +105,6 @@
 
   programs.hyprlock.enable = true;
   programs.hyprlock.extraConfig = ''
-        # BACKGROUND
-    background {
-        monitor =
-        #path = screenshot
-        path = /home/justin/Pictures/wal.png
-        #color = $background
-        blur_passes = 2
-        contrast = 1
-        brightness = 0.5
-        vibrancy = 0.2
-        vibrancy_darkness = 0.2
-    }
 
     # GENERAL
     general {
