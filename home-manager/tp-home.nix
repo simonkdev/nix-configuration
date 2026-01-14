@@ -140,7 +140,7 @@
         monitor =
         path = screenshot
         blur_passes = 3
-        blur_size = 3
+        blur_size = 4
         noise = 0.01
         contrast = 1.1
         brightness = 0.8
