@@ -107,7 +107,7 @@
   programs.hyprlock.settings = {
     input-field = {
       monitor = "";
-      size = [100 55];
+      size = "300, 55";
       outline_thickness = 2;
 
       dots_size = 0.2;
@@ -127,7 +127,7 @@
       # fail_color = "rgb(204, 34, 34)";
       fail_text = "<i>$FAIL <b>($ATTEMPTS)</b></i>";
 
-      position = [0 (-200)];
+      position = "0, -200";
       halign = "center";
       valign = "center";
     };
@@ -175,7 +175,6 @@
 
     # Ensure clock updates every second
     general {
-        no_fade_in = false
         grace = 0
     }
 
