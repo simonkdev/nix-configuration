@@ -108,7 +108,7 @@
     input-field = {
       monitor = "";
       size = "300, 55";
-      outline_thickness = 2;
+      outline_thickness = 0;
 
       dots_size = 0.2;
       dots_spacing = 0.2;
