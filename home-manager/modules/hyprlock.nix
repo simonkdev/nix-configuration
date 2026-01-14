@@ -1,0 +1,83 @@
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
+  programs.hyprlock.enable = true;
+  programs.hyprlock.settings = {
+    input-field = {
+      monitor = "";
+      size = "300, 55";
+      outline_thickness = 0;
+
+      dots_size = 0.2;
+      dots_spacing = 0.2;
+      dots_center = true;
+
+      rounding = 10;
+      shadow_passes = 0;
+
+      # outer_color = "rgba(0, 0, 0, 0)";
+      # inner_color = "rgba(255, 255, 255, 0.1)";
+      # font_color = "rgb(200, 200, 200)";
+
+      placeholder_text = "<i><span foreground=\"##ffffff99\">🔒 Enter Password</span></i>";
+      hide_input = false;
+
+      # fail_color = "rgb(204, 34, 34)";
+      fail_text = "<i>$FAIL <b>($ATTEMPTS)</b></i>";
+
+      position = "0, -200";
+      halign = "center";
+      valign = "center";
+    };
+  };
+
+  programs.hyprlock.extraConfig = ''
+
+        # Background with blur
+    background {
+        monitor =
+        path = screenshot
+        blur_passes = 3
+        blur_size = 4
+        noise = 0.01
+        contrast = 1.1
+        brightness = 0.8
+    }
+
+    # Clock (HH:MM:SS)
+    label {
+        monitor =
+        text = $TIME
+        font_size = 96
+        font_family = monospace
+        color = rgba(255,255,255,1.0)
+
+        position = 0, 300
+        halign = center
+        valign = center
+    }
+
+    # Date (optional, below clock)
+    label {
+        monitor =
+        text = cmd[update:1000] date "+%A, %d %B %Y"
+        font_size = 24
+        font_family = monospace
+        color = rgba(200,200,200,1.0)
+
+        position = 0, 220
+        halign = center
+        valign = center
+    }
+
+
+    # Ensure clock updates every second
+    general {
+        grace = 0
+    }
+
+  '';
+}
