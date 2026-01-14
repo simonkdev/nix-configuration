@@ -125,7 +125,7 @@
         font_family = monospace
         color = rgba(255,255,255,1.0)
 
-        position = 0, 100
+        position = 0, 300
         halign = center
         valign = center
     }
@@ -138,7 +138,7 @@
         font_family = monospace
         color = rgba(200,200,200,1.0)
 
-        position = 0, 40
+        position = 0, 240
         halign = center
         valign = center
     }
