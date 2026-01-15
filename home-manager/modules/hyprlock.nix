@@ -75,7 +75,7 @@
         label {
             monitor =
             text = cmd[update:1000] date "+%A, %d %B %Y"
-            font_size = 24
+            font_size = 13
             font_family = monospace
             color = rgba(200,200,200,1.0)
 
