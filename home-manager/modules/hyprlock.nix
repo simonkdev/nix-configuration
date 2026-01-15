@@ -28,7 +28,7 @@
       # fail_color = "rgb(204, 34, 34)";
       fail_text = "<i>$FAIL <b>($ATTEMPTS)</b></i>";
 
-      position = "0, -170";
+      position = "0, -140";
       halign = "center";
       valign = "center";
     };
@@ -42,7 +42,7 @@
         size = 170
         border_size = 2
         border_color = $foreground
-        position = 0, -30
+        position = 0, 0
         halign = center
         valign = center
     }
