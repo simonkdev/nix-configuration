@@ -42,7 +42,7 @@
         size = 170
         border_size = 2
         border_color = $foreground
-        position = 0, -50
+        position = 0, -30
         halign = center
         valign = center
     }
