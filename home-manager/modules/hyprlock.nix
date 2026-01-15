@@ -36,48 +36,59 @@
 
   programs.hyprlock.extraConfig = ''
 
-        # Background with blur
-    background {
+        image {
         monitor =
-        path = screenshot
-        blur_passes = 3
-        blur_size = 4
-        noise = 0.01
-        contrast = 1.1
-        brightness = 0.8
-    }
-
-    # Clock (HH:MM:SS)
-    label {
-        monitor =
-        text = $TIME
-        font_size = 96
-        font_family = monospace
-        color = rgba(255,255,255,1.0)
-
-        position = 0, 330
+        path = /home/simonkdev/nixsys/pfp.jpg
+        size = 100
+        border_size = 2
+        border_color = $foreground
+        position = 0, -100
         halign = center
         valign = center
     }
 
-    # Date (optional, below clock)
-    label {
-        monitor =
-        text = cmd[update:1000] date "+%A, %d %B %Y"
-        font_size = 24
-        font_family = monospace
-        color = rgba(200,200,200,1.0)
+            # Background with blur
+        background {
+            monitor =
+            path = screenshot
+            blur_passes = 3
+            blur_size = 4
+            noise = 0.01
+            contrast = 1.1
+            brightness = 0.8
+        }
 
-        position = 0, 220
-        halign = center
-        valign = center
-    }
+        # Clock (HH:MM:SS)
+        label {
+            monitor =
+            text = $TIME
+            font_size = 96
+            font_family = monospace
+            color = rgba(255,255,255,1.0)
+
+            position = 0, 330
+            halign = center
+            valign = center
+        }
+
+        # Date (optional, below clock)
+        label {
+            monitor =
+            text = cmd[update:1000] date "+%A, %d %B %Y"
+            font_size = 24
+            font_family = monospace
+            color = rgba(200,200,200,1.0)
+
+            position = 0, 220
+            halign = center
+            valign = center
+        }
 
 
-    # Ensure clock updates every second
-    general {
-        grace = 0
-    }
+        # Ensure clock updates every second
+        general {
+            grace = 0
+        }
 
   '';
 }
