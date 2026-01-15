@@ -66,7 +66,7 @@
             font_family = monospace
             color = rgba(255,255,255,1.0)
 
-            position = 0, 330
+            position = 0, 350
             halign = center
             valign = center
         }
