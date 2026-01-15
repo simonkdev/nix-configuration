@@ -62,7 +62,7 @@
         label {
             monitor =
             text = $TIME
-            font_size = 96
+            font_size = 82
             font_family = monospace
             color = rgba(255,255,255,1.0)
 
