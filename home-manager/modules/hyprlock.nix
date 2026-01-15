@@ -39,7 +39,7 @@
         image {
         monitor =
         path = /home/simonkdev/nixsys/pfp.jpg
-        size = 120
+        size = 170
         border_size = 2
         border_color = $foreground
         position = 0, -50
