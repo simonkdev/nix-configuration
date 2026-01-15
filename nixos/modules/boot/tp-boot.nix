@@ -12,7 +12,7 @@
 
     #kernelPackages = pkgs.linuxPackages_zen; # Use latest kernel Package
 
-    boot.kernelPackages = pkgs.linuxPackagesFor (
+    kernelPackages = pkgs.linuxPackagesFor (
       pkgs.linux_zen.override {
         version = "6.17.7";
         src = pkgs.fetchurl {
