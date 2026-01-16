@@ -71,7 +71,6 @@
   };
 
   environment.gnome.excludePackages = with pkgs; [
-    baobab
     cheese
     eog
     epiphany
@@ -88,7 +87,6 @@
     gnome-maps
     gnome-music
     gnome-photos
-    gnome-weather
     gnome-disk-utility
     gnome-connections
     gnome-terminal
