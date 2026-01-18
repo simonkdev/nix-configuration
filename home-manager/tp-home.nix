@@ -43,7 +43,7 @@
     pkgs.gpufetch
     pkgs.geeqie
     pkgs.openrocket
-    pkgs.libreoffice
+    pkgs.signal-desktop-bin
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
