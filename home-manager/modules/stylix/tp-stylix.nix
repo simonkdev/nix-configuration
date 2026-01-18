@@ -40,7 +40,7 @@
       ## quogir + pkgs.qogir-gtk-theme
     };
     iconTheme = {
-      name = lib.mkForce "WhiteSur-Dark";
+      name = lib.mkForce "WhiteSur";
       package = lib.mkForce pkgs.whitesur-icon-theme;
       #package = lib.mkForce pkgs.cosmic-icons;
       ## quogir + pkgs.qogir-icon-theme
