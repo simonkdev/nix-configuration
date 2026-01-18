@@ -427,7 +427,7 @@ with lib.hm.gvariant; {
       app-picker-layout = "[{'3f6e8ab9-1e30-4de2-a9eb-5207a6067de4': <{'position': <0>}>, '2833acf9-5530-42d6-b98e-7284b91e08be': <{'position': <1>}>, 'e605986d-c20c-40c7-b3f9-af7847d31e56': <{'position': <2>}>, '84f377f1-3d98-4412-98bc-472277dbb4b8': <{'position': <3>}>, 'bb902576-9939-47bc-8f86-1cf810dd4019': <{'position': <4>}>}]";
       command-history = ["thunar" "vsc"];
       disabled-extensions = ["dock-from-dash@fthx" "advanced-weather@sanjai.com" "gtk4-ding@smedius.gitlab.com" "editdesktopfiles@dannflower" "add-to-desktop@tommimon.github.com"];
-      enabled-extensions = ["unite@hardpixel.eu" "user-theme@gnome-shell-extensions.gcampax.github.com" "blur-my-shell@aunetx" "dash-to-dock@micxgx.gmail.com" "lockscreen-extension@pratap.fastmail.fm" "search-light@icedman.github.com" "tiling-assistant@leleat-on-github" "azclock@azclock.gitlab.com" "spotify-controls@Sonath21"];
+      enabled-extensions = ["unite@hardpixel.eu" "user-theme@gnome-shell-extensions.gcampax.github.com" "blur-my-shell@aunetx" "dash-to-dock@micxgx.gmail.com" "lockscreen-extension@pratap.fastmail.fm" "search-light@icedman.github.com" "tiling-assistant@leleat-on-github" "azclock@azclock.gitlab.com" "spotify-controls@Sonath21" "advanced-weather@sanjai.com"];
       #favorite-apps = ["firefox.desktop" "code.desktop" "org.gnome.Console.desktop" "todoist.desktop" "thunar.desktop" "spotify.desktop" "LocalSend.desktop" "onlyoffice-desktopeditors.desktop" "obsidian.desktop" "discord.desktop" "org.kde.kdenlive.desktop"];
       favorite-apps = [
         "firefox.desktop"
@@ -441,7 +441,6 @@ with lib.hm.gvariant; {
         "obsidian.desktop"
         "discord.desktop"
         "org.kde.kdenlive.desktop"
-        "proton-mail.desktop"
       ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "48.1";
