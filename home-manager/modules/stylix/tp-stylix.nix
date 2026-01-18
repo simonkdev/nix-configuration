@@ -7,8 +7,7 @@
   ## bathory, gorgoroth, khold, mayhem, immortal
   stylix = {
     enable = true;
-    image = ~/nixsys/wallpapers/aesthetic.jpg;
-    #image = ~/nixsys/wallpapers/porsche-tokyo-uw.png;
+    image = ~/nixsys/wallpapers/porsche-tokyo-uw.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
