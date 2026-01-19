@@ -9,7 +9,6 @@
     profiles = {
       simonkdev = {
         name = "simonkdev";
-        isDefault = true;
         bookmarks = {
           force = true;
           settings = [
