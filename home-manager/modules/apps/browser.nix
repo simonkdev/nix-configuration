@@ -9,8 +9,6 @@
       simonkdev = {
         name = "simonkdev";
         isDefault = true;
-        bookmarks.force = true;
-        bookmarks.configFile = "/home/simonkdev/nixsys/home-manager/modules/apps/librewolf-bookmarks.html";
         # bookmarks = {
         #   force = true;
         #   settings = [
