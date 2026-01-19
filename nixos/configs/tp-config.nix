@@ -27,7 +27,6 @@
 
   programs = {
     kdeconnect.enable = true;
-    firefox.enable = true;
     localsend.enable = true;
     npm.enable = true;
     yazi.enable = true;
