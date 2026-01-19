@@ -20,6 +20,7 @@
     ./modules/wofi/wofi.nix
     ./modules/desktops/hyprland.nix
     ./modules/hyprlock.nix
+    ./modules/apps/browser.nix
     #   ~/nixsys/home-manager/modules/nvim.nix
   ];
 
