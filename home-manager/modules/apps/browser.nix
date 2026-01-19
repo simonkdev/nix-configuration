@@ -10,7 +10,6 @@
       simonkdev = {
         name = "simonkdev";
         isDefault = true;
-        settings = {};
         bookmarks = [
           {
             name = "Learn X in Y minutes";
