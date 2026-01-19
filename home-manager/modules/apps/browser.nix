@@ -5,10 +5,10 @@
 }: {
   programs.librewolf = {
     enable = true;
-    enableGnomeExtensions = true;
     profiles = {
       simonkdev = {
         name = "simonkdev";
+        isDefault = true;
         bookmarks = {
           force = true;
           settings = [
