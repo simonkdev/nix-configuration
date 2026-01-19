@@ -16,6 +16,7 @@
       firefox.enable = true;
       gnome.enable = true;
       gtk.enable = true;
+      librewolf.profileNames = ["simonkdev"];
     };
 
     cursor = {
