@@ -16,27 +16,22 @@
             {
               name = "Learn X in Y minutes";
               url = "https://learnxinyminutes.com/";
-              toolbar = true;
             }
             {
               name = "quickref.me";
               url = "https://quickref.me/";
-              toolbar = true;
             }
             {
               name = "github:simonkdev";
               url = "https://github.com/simonkdev";
-              toolbar = true;
             }
             {
               name = "PVE";
               url = "https://192.168.178.100:8006/";
-              toolbar = true;
             }
             {
               name = "Nix Concepts";
               url = "https://zero-to-nix.com/concepts/";
-              toolbar = true;
             }
             {
               name = "Machine Learning";
