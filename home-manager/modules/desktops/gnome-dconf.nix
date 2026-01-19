@@ -430,7 +430,7 @@ with lib.hm.gvariant; {
       enabled-extensions = ["unite@hardpixel.eu" "user-theme@gnome-shell-extensions.gcampax.github.com" "blur-my-shell@aunetx" "dash-to-dock@micxgx.gmail.com" "lockscreen-extension@pratap.fastmail.fm" "search-light@icedman.github.com" "tiling-assistant@leleat-on-github" "azclock@azclock.gitlab.com" "spotify-controls@Sonath21" "advanced-weather@sanjai.com"];
       #favorite-apps = ["firefox.desktop" "code.desktop" "org.gnome.Console.desktop" "todoist.desktop" "thunar.desktop" "spotify.desktop" "LocalSend.desktop" "onlyoffice-desktopeditors.desktop" "obsidian.desktop" "discord.desktop" "org.kde.kdenlive.desktop"];
       favorite-apps = [
-        "firefox.desktop"
+        "librewolf.desktop"
         "code.desktop"
         "org.gnome.Console.desktop"
         "todoist.desktop"
