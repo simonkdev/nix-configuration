@@ -16,22 +16,27 @@
               name = "Learn X in Y minutes";
               url = "https://learnxinyminutes.com/";
             }
+            "seperator"
             {
               name = "quickref.me";
               url = "https://quickref.me/";
             }
+            "seperator"
             {
               name = "github:simonkdev";
               url = "https://github.com/simonkdev";
             }
+            "seperator"
             {
               name = "PVE";
               url = "https://192.168.178.100:8006/";
             }
+            "seperator"
             {
               name = "Nix Concepts";
               url = "https://zero-to-nix.com/concepts/";
             }
+            "seperator"
             {
               name = "Machine Learning";
               bookmarks = [
@@ -57,6 +62,7 @@
                 }
               ];
             }
+            "seperator"
             {
               name = "github profs / readmes";
               bookmarks = [
