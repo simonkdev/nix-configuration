@@ -45,6 +45,7 @@
     pkgs.geeqie
     pkgs.openrocket
     pkgs.signal-desktop
+    pkgs.ffmpeg
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
@@ -84,6 +85,9 @@
     '')
     (pkgs.writeShellScriptBin "sshman" ''
       /home/simonkdev/nixsys/home-manager/modules/devtools/ssh_manager/hlbm
+    '')
+    (pkgs.writeShellScriptBin "bambuplay" ''
+      ffplay -loglevel quiet -rtsp_transport tcp -fflags nobuffer -i "rtsps://bblp:393d183a@10.5.22.128:322/streaming/live/1" -vf "scale=1920:1080:flags=lanczos,fps=30" -window_title "Bambu Lab X1C Camera"
     '')
   ];
 
