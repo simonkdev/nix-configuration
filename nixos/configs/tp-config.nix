@@ -41,6 +41,7 @@
   security.polkit.enable = true;
 
   services = {
+    fprintd.enable = true;
     gvfs.enable = true;
     xserver = {
       xkb.layout = "de";
