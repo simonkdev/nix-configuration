@@ -199,6 +199,7 @@
         "float, class:org.gnome.Calculator"
         "float, class:org.gnome.clocks"
         "float, class:localsend_app"
+        "float, class:org.gnome.TextEditor"
       ];
 
       windowrulev2 = [
