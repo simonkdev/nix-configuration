@@ -196,7 +196,7 @@
         "float, class:pavucontrol"
         "float, class:thunar"
         "float, class:todoist"
-        "float, class:calculator"
+        "float, class:Calculator"
       ];
 
       windowrulev2 = [
