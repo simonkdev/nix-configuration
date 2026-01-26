@@ -196,7 +196,7 @@
         "float, class:pavucontrol"
         "float, class:thunar"
         "float, class:todoist"
-        "float, class:Calculator"
+        "float, class:org.gnome.Calculator"
       ];
 
       windowrulev2 = [
