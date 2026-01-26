@@ -198,6 +198,7 @@
         "float, class:Todoist"
         "float, class:org.gnome.Calculator"
         "float, class:org.gnome.clocks"
+        "float, class:localsend_app"
       ];
 
       windowrulev2 = [
