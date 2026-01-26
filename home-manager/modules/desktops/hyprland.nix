@@ -197,6 +197,7 @@
         "float, class:thunar"
         "float, class:Todoist"
         "float, class:org.gnome.Calculator"
+        "float, class:org.gnome.clocks"
       ];
 
       windowrulev2 = [
