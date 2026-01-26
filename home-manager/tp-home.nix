@@ -46,7 +46,6 @@
     pkgs.openrocket
     pkgs.signal-desktop
     pkgs.ffmpeg
-    pkgs.bambu-studio
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
