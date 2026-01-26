@@ -195,7 +195,7 @@
         "roundingpower [10.0], class:wofi"
         "float, class:pavucontrol"
         "float, class:thunar"
-        "float, class:todoist"
+        "float, class:Todoist"
         "float, class:org.gnome.Calculator"
       ];
 
