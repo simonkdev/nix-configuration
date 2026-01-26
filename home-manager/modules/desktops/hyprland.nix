@@ -200,6 +200,12 @@
         "float, class:org.gnome.clocks"
         "float, class:localsend_app"
         "float, class:org.gnome.TextEditor"
+        "float, class:org.gnome.Loupe"
+        "float, class:org.gnome.Decibels"
+        "float, class:org.gnome.Weather"
+        "float, class:org.gnome.baobab"
+        "float, class:org.gnome.Snapshot"
+        "float, class:org.gnome.SystemMonitor"
       ];
 
       windowrulev2 = [
