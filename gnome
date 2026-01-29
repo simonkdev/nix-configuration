@@ -256,8 +256,8 @@ name='kitty-launch'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom2]
 binding='<Super>x'
-command='firefox'
-name='firefox-launch'
+command='librefox'
+name='librefox-launch'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom3]
 binding='<Super>e'
