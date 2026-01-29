@@ -399,8 +399,8 @@ with lib.hm.gvariant; {
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
       binding = "<Super>x";
-      command = "firefox";
-      name = "firefox-launch";
+      command = "librewolf";
+      name = "librewolf-launch";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
