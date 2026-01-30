@@ -35,6 +35,12 @@
   gtk = {
     enable = true;
 
+    theme = lib.mkForce {
+      name = lib.mkForce "WhiteSur-dark";
+      package = lib.mkForce pkgs.whitesur-gtk-theme;
+      ## quogir + pkgs.qogir-gtk-theme
+    };
+
     iconTheme = {
       name = lib.mkForce "WhiteSur";
       package = lib.mkForce pkgs.whitesur-icon-theme;
