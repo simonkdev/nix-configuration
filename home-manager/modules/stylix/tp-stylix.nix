@@ -9,7 +9,7 @@
     enable = true;
 
     # Use an existing wallpaper file so ImageMagick can open it during builds
-    image = "/home/simonkdev/nixsys/wallpapers/wallpaper.jpg";
+    image = "/home/simonkdev/nixsys/wallpapers/porsche-tokyo-uw.png";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
