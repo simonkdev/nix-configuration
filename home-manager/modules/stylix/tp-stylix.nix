@@ -9,7 +9,7 @@
     enable = true;
 
     # absolute path avoids Nix treating it like a source derivation
-    image = "../../../wallpapers/porsche-tokyo-uw.png";
+    image = "/home/simonkdev/nixsys/wallpapers/porsche-tokyo-uw.png";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
