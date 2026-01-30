@@ -7,8 +7,9 @@
   ## bathory, gorgoroth, khold, mayhem, immortal
   stylix = {
     enable = true;
+
     # absolute path avoids Nix treating it like a source derivation
-    # image = "/home/simonkdev/nixsys/wallpapers/porsche-tokyo-uw.png";
+    image = "/home/simonkdev/nixsys/wallpapers/porsche-tokyo-uw.png";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
@@ -16,7 +17,7 @@
       btop.enable = true;
       firefox.enable = true;
       gnome.enable = true;
-      gtk.enable = false;
+      gtk.enable = true;
       librewolf.profileNames = ["simonkdev"];
     };
 
@@ -35,14 +36,6 @@
 
   gtk = {
     enable = true;
-
-    # Avoid forcing evaluation of the package/name; use plain values so Nix doesn't try
-    # to treat them as source archives during evaluation.
-    theme = {
-      name = "WhiteSur-dark";
-      package = pkgs.whitesur-gtk-theme;
-      ## quogir + pkgs.qogir-gtk-theme
-    };
 
     iconTheme = {
       name = lib.mkForce "WhiteSur";
