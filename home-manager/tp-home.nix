@@ -46,6 +46,7 @@
     pkgs.openrocket
     pkgs.signal-desktop
     pkgs.ffmpeg
+    pkgs.hyprshade
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
