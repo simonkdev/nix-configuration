@@ -116,6 +116,8 @@
   home.file."/home/simonkdev/.unison/nas-sync-photos.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-photos.prf;
   home.file."/home/simonkdev/.smbcredentials".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/.smbcredentials;
 
+  home.file."/home/simonkdev/.config/hypr/shaders/grayscale.glsl".source = /home/simonkdev/nixsys/home-manager/modules/readmode/grayscale.glsl;
+
   #programs.gnome-terminal.enable = true;
   programs.gnome-terminal.showMenubar = false;
 
