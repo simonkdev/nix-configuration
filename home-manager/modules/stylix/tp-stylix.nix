@@ -8,8 +8,8 @@
   stylix = {
     enable = true;
 
-    # absolute path avoids Nix treating it like a source derivation
-    image = "/home/simonkdev/nixsys/wallpapers/fix-that-uw.png";
+    # Use an existing wallpaper file so ImageMagick can open it during builds
+    image = "/home/simonkdev/nixsys/wallpapers/wallpaper.jpg";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
