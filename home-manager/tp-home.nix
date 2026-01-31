@@ -47,7 +47,7 @@
     pkgs.signal-desktop
     pkgs.ffmpeg
     pkgs.hyprshade
-
+    pkgs.pulseaudioFull
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
       git add .
