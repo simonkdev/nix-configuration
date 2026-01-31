@@ -1,4 +1,4 @@
 [[mgr.append_keymap]]
 on  = "p"
-run = [ "hyprctl hyprpaper preload %h", "hyprctl hyprpaper wallpaper %h" ]
+run = [ "pkill waybar", "hyprctl hyprpaper wallpaper %h" ]
 desc = "Apply image as wallpaper"
