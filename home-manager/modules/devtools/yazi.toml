@@ -1,5 +1,5 @@
 [[opener.set-wallpaper]]
-run = "which hyprctl > /tmp/yazi-path-test"
+run = 'sh -c "env > /tmp/yazi-env"'
 desc = "Set as wallpaper"
 
 
