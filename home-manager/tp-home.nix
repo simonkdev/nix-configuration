@@ -117,10 +117,9 @@
   home.file."/home/simonkdev/.smbcredentials".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/.smbcredentials;
 
   home.file."/home/simonkdev/.config/hypr/shaders/grayscale.glsl".source = /home/simonkdev/nixsys/home-manager/modules/readmode/grayscale.glsl;
-  services.hyprpaper.settings = {
-    preload = "/home/simonkdev/nixsys/wallpapers/fix-that-uw.png";
-    ipc = true;
-  };
+  services.hyprpaper.importantPrefixes = [
+    "preload = /home/simonkdev/nixsys/wallpapers/fix-that-uw.png"
+  ];
 
   #programs.gnome-terminal.enable = true;
   programs.gnome-terminal.showMenubar = false;
