@@ -2,31 +2,32 @@
 
 # Path to shader
 SHADER="$HOME/.config/hypr/shaders/grayscale.glsl"
-THEME="$HOME/.config/quickshell/snes-hub/bar/theme-mode.sh"
-WALLPAPER="$HOME/Pictures/desktop/WP/6.jpg"
-WALLPAPER_DEF="$HOME/Pictures/desktop/l2.png"
+WALLPAPER="$HOME/nixsys/wallpapers/porsche-tokyo-uw.png"
+WALLPAPER_DEF="$HOME/nixsys/wallpapers/gruv-wallpaper.png"
 
 # Check active shader
 if hyprshade current | grep -q "grayscale"; then
     # Deactivate and Reload
     hyprshade off
     hyprctl reload
-    brightnessctl set 60%
-    swww img "$WALLPAPER_DEF" --transition-type none
-    qs -c snes-hub
-    
-    
+    brightnessctl set 100%
 
+
+    hyprctl hyprpaper preload "$WALLPAPER"
+    hyprctl hyprpaper wallpaper ",$WALLPAPER"
+    waybar
+    
 else
     # ACTIVATES
     hyprshade on "$SHADER"
-    pkill qs
-    "$THEME" light
-    swww img "$WALLPAPER" --transition-type none
+
+    pkill waybar
+    hyprctl hyprpaper preload "$WALLPAPER_DEF"
+    hyprctl hyprpaper wallpaper ",$WALLPAPER_DEF"
+    
     brightnessctl set 37% 
     # Force E-ink visuals: No animations, no shadows, thin black borders
     hyprctl keyword animations:enabled 0
-    hyprctl keyword decoration:drop_shadow 0
     # hyprctl keyword decoration:blur:enabled 0
     hyprctl keyword decoration:rounding 0
     hyprctl keyword general:gaps_in 0

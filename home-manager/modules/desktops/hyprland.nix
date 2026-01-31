@@ -127,6 +127,7 @@
         "$mod, P, exec, hyprshot -m output -m DP-1 -o ~/screenshots"
         "$mod, P, exec, GDK_BACKEND=x11 GDK_GL=disable rapidraw"
         "$mod, Y, exec, hyprlock"
+        "$mod, H, exec, bash /home/simonkdev/nixsys/home-manager/modules/readmode/reading_mode.sh"
 
         #### Move windows with arrow keys
 
