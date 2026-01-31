@@ -100,6 +100,7 @@
     EGL_PLATFORM = "wayland";
     GDK_SCALE = "1";
     QT_SCALE_FACTOR = "1";
+    WALLP = config.stylix.image;
   };
 
   programs.btop.enable = true;
