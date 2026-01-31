@@ -1,5 +1,5 @@
 [[opener.set-wallpaper]]
-run = 'sh -c "env > /tmp/yazi-env"'
+run = 'sh -c "/usr/bin/hyprctl hyprpaper preload %s; sleep 0.1; /usr/bin/hyprctl hyprpaper wallpaper ,%s"'
 desc = "Set as wallpaper"
 
 
