@@ -19,10 +19,7 @@
       gnome.enable = true;
       gtk.enable = true;
       librewolf.profileNames = ["simonkdev"];
-      swaync = {
-        enable = true;
-        colors.enable = true;
-      };
+      swaync.enable = true;
     };
 
     cursor = {

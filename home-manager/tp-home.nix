@@ -120,6 +120,8 @@
 
   home.file."/home/simonkdev/.config/hypr/shaders/grayscale.glsl".source = /home/simonkdev/nixsys/home-manager/modules/readmode/grayscale.glsl;
 
+  home.file."/home/simonkdev/.config/yazi/keymap.toml".source = /home/simonkdev/nixsys/home-manager/modules/devtools/yazi-keymap.toml;
+
   #programs.gnome-terminal.enable = true;
   programs.gnome-terminal.showMenubar = false;
 
