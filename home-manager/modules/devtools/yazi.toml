@@ -1,3 +1,8 @@
 [[opener.set-wallpaper]]
-run  = "hyprctl hyprpaper reload ,%s"
+run  = 'sh -c "hyprctl hyprpaper preload %s && hyprctl hyprpaper wallpaper ,%s"'
 desc = "Set as wallpaper"
+
+
+[[open.prepend_rules]]
+mime = "image/*"
+use  = [ "set-wallpaper", "open" ]  
