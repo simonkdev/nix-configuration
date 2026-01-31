@@ -6,3 +6,9 @@ desc = "Set as wallpaper"
 [[open.prepend_rules]]
 mime = "image/*"
 use  = [ "set-wallpaper", "open" ]
+
+[[mgr.prepend_keymap]]
+on   = "<C-w>"
+for  = "linux"
+run  = "shell -- hyprctl hyprpaper reload ,%h"
+desc = "Set hovered file as wallpaper"
