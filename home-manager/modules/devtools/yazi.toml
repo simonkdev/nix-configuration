@@ -1,5 +1,5 @@
 [[opener.set-wallpaper]]
-run  = "hyprctl hyprpaper reload ,%s1"
+run  = "hyprctl hyprpaper reload ,%h"
 for  = "linux"
 desc = "Set as wallpaper"
 
