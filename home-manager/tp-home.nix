@@ -48,6 +48,8 @@
     pkgs.ffmpeg
     pkgs.hyprshade
     pkgs.pulseaudioFull
+    pkgs.swaynotificationcenter
+
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
       git add .
