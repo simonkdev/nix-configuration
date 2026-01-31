@@ -1,4 +1,8 @@
-[mgr]
-prepend_keymap = [
-{ on = "p", run = [ "shell -- hyprctl hyprpaper preload '%h'", "shell -- hyprctl hyprpaper wallpaper ', %h'" ], desc = "Multiple commands with `c`" }
-]
+[[opener.set-wallpaper]]
+run  = "hyprctl hyprpaper reload ,%s1"
+for  = "linux"
+desc = "Set as wallpaper"
+
+[[open.prepend_rules]]
+mime = "image/*"
+use  = [ "set-wallpaper", "open" ]
