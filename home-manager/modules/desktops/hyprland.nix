@@ -129,6 +129,7 @@
         "$mod, Y, exec, hyprlock"
         "$mod, H, exec, bash /home/simonkdev/nixsys/home-manager/modules/readmode/reading_mode.sh"
         "$mod, N, exec, swaync-client -t"
+        "$mod, L, exec, swaync-client -d"
 
         #### Move windows with arrow keys
 
