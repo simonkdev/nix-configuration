@@ -185,7 +185,7 @@
       bindel = [
         # ThinkPad T480s / common XF86 multimedia keys
         # Brightness
-        ", XF86MonBrightnessUp, <<exec, brightnessctl set +10%"
+        ", XF86MonBrightnessUp, exec, brightnessctl set +10%"
         ", XF86MonBrightnessDown, exec, brightnessctl set 10%-"
 
         # Volume
