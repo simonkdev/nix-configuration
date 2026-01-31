@@ -1,5 +1,5 @@
 [[opener.set-wallpaper]]
-run  = 'sh -c "hyprctl hyprpaper preload %s && hyprctl hyprpaper wallpaper ,%s"'
+run = "which hyprctl > /tmp/yazi-path-test"
 desc = "Set as wallpaper"
 
 
