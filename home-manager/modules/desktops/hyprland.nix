@@ -128,6 +128,7 @@
         "$mod, P, exec, GDK_BACKEND=x11 GDK_GL=disable rapidraw"
         "$mod, Y, exec, hyprlock"
         "$mod, H, exec, bash /home/simonkdev/nixsys/home-manager/modules/readmode/reading_mode.sh"
+        "$mod, L, exec, swaync -t"
 
         #### Move windows with arrow keys
 
