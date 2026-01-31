@@ -183,7 +183,23 @@
       ]; ## endbindms
 
       bindel = [
-        #### Multimediakeys TO DO
+        # ThinkPad T480s / common XF86 multimedia keys
+        # Brightness
+        "XF86MonBrightnessUp, exec, brightnessctl set +10%"
+        "XF86MonBrightnessDown, exec, brightnessctl set 10%-"
+
+        # Volume
+        "XF86AudioRaiseVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ +5%"
+        "XF86AudioLowerVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -5%"
+        "XF86AudioMute, exec, pactl set-sink-mute @DEFAULT_SINK@ toggle"
+
+        # Microphone
+        "XF86AudioMicMute, exec, pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+
+        # Media controls (playerctl is commonly available and works with most players)
+        "XF86AudioPlay, exec, playerctl play-pause"
+        "XF86AudioNext, exec, playerctl next"
+        "XF86AudioPrev, exec, playerctl previous"
       ];
 
       #########################
