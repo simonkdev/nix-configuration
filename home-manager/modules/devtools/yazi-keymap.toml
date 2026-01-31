@@ -1,4 +1,4 @@
-[[mgr.prepend_keymap]]
-on  = "p"
-run = [ "pkill waybar", "hyprctl hyprpaper wallpaper %h" ]
-desc = "Apply image as wallpaper"
+[mgr]
+prepend_keymap = [
+{ on = "p", run = [ "pkill waybar", "pkill waybar" ], desc = "Multiple commands with `c`" }
+]
