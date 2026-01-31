@@ -47,6 +47,7 @@
     pkgs.signal-desktop
     pkgs.ffmpeg
     pkgs.hyprshade
+    pkgs.qgis
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
