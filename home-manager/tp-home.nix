@@ -119,6 +119,7 @@
   home.file."/home/simonkdev/.config/hypr/shaders/grayscale.glsl".source = /home/simonkdev/nixsys/home-manager/modules/readmode/grayscale.glsl;
   services.hyprpaper.settings = {
     preload = "/home/simonkdev/nixsys/wallpapers/fix-that-uw.png";
+    ipc = true;
   };
 
   #programs.gnome-terminal.enable = true;
