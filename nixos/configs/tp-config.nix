@@ -40,6 +40,17 @@
 
   security.polkit.enable = true;
 
+  virtualisation.docker = {
+    enable = true;
+    enableOnBoot = false;
+  };
+
+  virtualisation.vmVariant = {
+    virtualisation.qemu.options = [
+      "-netdev user,id=net0,hostfwd=tcp::8096-:8096"
+    ];
+  };
+
   services = {
     fprintd = {
       enable = true;
