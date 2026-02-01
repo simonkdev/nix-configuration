@@ -4,6 +4,7 @@
   pkgs,
   unpkgs,
   inputs,
+  modulesPath,
   ...
 }: {
   imports = [
@@ -14,6 +15,7 @@
     ../modules/boot/tp-boot.nix
     ../modules/devtools/virtualisation.nix
     ../modules/gaming/gaming.nix
+    (modulesPath + "/virtualisation/qemu-vm.nix")
   ];
 
   users.users.simonkdev = {
