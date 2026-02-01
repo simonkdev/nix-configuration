@@ -42,7 +42,7 @@
 
   virtualisation.docker = {
     enable = true;
-    enableOnBoot = false;
+    enableOnBoot = lib.mkForce false;
   };
 
   virtualisation.vmVariant = {
