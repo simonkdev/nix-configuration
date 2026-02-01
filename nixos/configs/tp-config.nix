@@ -45,7 +45,7 @@
     enableOnBoot = lib.mkForce false;
   };
 
-  virtualisation.forwardPorts = [
+  virtualisation.virtualisation.forwardPorts = [
     {
       from = "host";
       host.port = 8096;
