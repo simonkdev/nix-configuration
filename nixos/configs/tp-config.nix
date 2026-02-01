@@ -44,16 +44,14 @@
     enable = true;
     enableOnBoot = lib.mkForce false;
   };
-  virtualisation.vmVariant = {
-    forwardPorts = [
-      {
-        from = "host";
-        host.port = 8096;
-        guest.port = 8096;
-        protocol = "tcp";
-      }
-    ];
-  };
+
+  virtualisation.forwardPorts = [
+    {
+      from = "host";
+      host.port = 8096;
+      guest.port = 8096;
+    }
+  ];
 
   networking.firewall.allowedTCPPorts = [8096];
 
