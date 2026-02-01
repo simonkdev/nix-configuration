@@ -46,8 +46,13 @@
   };
 
   virtualisation.vmVariant = {
-    virtualisation.qemu.options = [
-      "-netdev user,id=net0,hostfwd=tcp::8096-:8096"
+    virtualisation.forwardPorts = [
+      {
+        from = "host";
+        host.port = 8096;
+        guest.port = 8096;
+        protocol = "tcp";
+      }
     ];
   };
 
