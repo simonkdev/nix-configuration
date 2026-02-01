@@ -51,6 +51,8 @@
     ];
   };
 
+  networking.firewall.allowedTCPPorts = [8096];
+
   services = {
     fprintd = {
       enable = true;
