@@ -1,5 +1,5 @@
 [[opener.set-wallpaper]]
-run = "bash /home/simonkdev/nixsys/home-manager/modules/devtools/set-wallp.sh %s1"
+run = "bash /home/simonkdev/nixsys/home-manager/modules/devtools/set-wallp.sh %h"
 desc = "Set as wallpaper"
 
 
