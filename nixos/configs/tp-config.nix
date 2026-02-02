@@ -46,10 +46,10 @@
     enableOnBoot = lib.mkForce false;
   };
 
-  virtualisation.qemu.networkingOptions = lib.mkForce [
-    "-device e1000,netdev=net0"
-    "-netdev user,id=net0,hostfwd=tcp:127.0.0.1:8096-:8096,\${QEMU_NET_OPTS:+,$QEMU_NET_OPTS}"
-  ];
+  # virtualisation.qemu.networkingOptions = lib.mkForce [
+  #   "-device e1000,netdev=net0"
+  #   "-netdev user,id=net0,hostfwd=tcp:127.0.0.1:8096-:8096,\${QEMU_NET_OPTS:+,$QEMU_NET_OPTS}"
+  # ];
 
   networking.firewall.allowedTCPPorts = [
     8096

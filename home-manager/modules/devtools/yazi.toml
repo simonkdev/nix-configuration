@@ -1,5 +1,5 @@
 [[opener.set-wallpaper]]
-run = 'sh -c "hyprctl hyprpaper preload %s && sleep 0.5 && hyprctl hyprpaper wallpaper ,%s"'
+run = 'sh -c "bash /home/simonkdev/nixsys/home-manager/modules/devtools/set-wallp.sh %s"'
 desc = "Set as wallpaper"
 
 
