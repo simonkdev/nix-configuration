@@ -49,6 +49,7 @@
     pkgs.hyprshade
     pkgs.pulseaudioFull
     pkgs.swaynotificationcenter
+    pkgs.firefox-bin
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
