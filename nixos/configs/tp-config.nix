@@ -74,6 +74,7 @@
     pulseaudio.enable = false; # Enable Audio
     udisks2.enable = true;
     dbus.enable = true;
+    tailscale.enable = true;
   };
 
   hardware.graphics = {
