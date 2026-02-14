@@ -50,6 +50,7 @@
     pkgs.pulseaudioFull
     pkgs.swaynotificationcenter
     pkgs.firefox-bin
+    pkgs.bluetui
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
