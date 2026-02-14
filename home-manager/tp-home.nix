@@ -51,6 +51,7 @@
     pkgs.swaynotificationcenter
     pkgs.firefox-bin
     pkgs.bluetui
+    pkgs.calibre
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
