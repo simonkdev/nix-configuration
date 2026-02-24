@@ -39,7 +39,6 @@
     pkgs.moonlight-qt
     pkgs.quick-webapps
     pkgs.peaclock
-    pkgs.protonmail-desktop
     pkgs.cpufetch
     pkgs.gpufetch
     pkgs.geeqie
@@ -130,7 +129,7 @@
 
   programs.vscode = {
     enable = true;
-    profiles.default.extensions = with pkgs.vscode-extensions; [
+    profiles.default.extensions = with unpkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
       catppuccin.catppuccin-vsc-icons
       esbenp.prettier-vscode
