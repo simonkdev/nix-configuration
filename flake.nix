@@ -29,7 +29,10 @@
     # Variables for the outputs
     system = "x86_64-linux";
 
-    unpkgs = import unstable {inherit system;};
+    unpkgs = import unstable {
+      inherit system;
+      config = {allowUnfree = true;};
+    };
 
     pkgs = import nixpkgs {
       inherit system;
