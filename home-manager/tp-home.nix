@@ -146,6 +146,7 @@
       dracula-theme.theme-dracula
       kamadorueda.alejandra
       ms-toolsai.jupyter
+      anthropic.claude-code
     ];
     profiles.default.userSettings = {
       "chat.editor.fontFamily" = "DejaVu Sans Mono";
