@@ -52,8 +52,6 @@
     pkgs.bluetui
     pkgs.calibre
 
-    unpkgs.claude-code-bin
-
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
       git add .
