@@ -51,6 +51,7 @@
     pkgs.firefox-bin
     pkgs.bluetui
     pkgs.calibre
+    pkgs.bambu-studio
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
