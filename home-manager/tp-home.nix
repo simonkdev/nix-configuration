@@ -51,7 +51,6 @@
     pkgs.firefox-bin
     pkgs.bluetui
     pkgs.calibre
-    pkgs.bambu-studio
     pkgs.nufraw-thumbnailer
 
     (pkgs.writeShellScriptBin "homeswitch" ''
