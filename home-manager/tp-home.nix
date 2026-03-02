@@ -52,6 +52,7 @@
     pkgs.bluetui
     pkgs.calibre
     pkgs.nufraw-thumbnailer
+    pkgs.remmina
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
@@ -124,6 +125,8 @@
   home.file."/home/simonkdev/.config/hypr/shaders/grayscale.glsl".source = /home/simonkdev/nixsys/home-manager/modules/readmode/grayscale.glsl;
 
   home.file."/home/simonkdev/.config/yazi/yazi.toml".source = /home/simonkdev/nixsys/home-manager/modules/devtools/yazi.toml;
+
+  home.file."/usr/share/thumbnailers/ufraw.thumbnailer".source = /home/simonkdev/nixsys/home-manager/modules/devtools/ufraw.thumbnailer;
 
   #programs.gnome-terminal.enable = true;
   programs.gnome-terminal.showMenubar = false;
