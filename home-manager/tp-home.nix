@@ -53,6 +53,7 @@
     pkgs.calibre
     pkgs.nufraw-thumbnailer
     pkgs.remmina
+    pkgs.arduino-ide
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
