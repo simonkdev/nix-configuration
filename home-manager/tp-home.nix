@@ -12,7 +12,7 @@
   ## This directory is ~/nixsys/home-manager :)
 
   imports = [
-    ##./modules/desktops/kde-plasma.nix
+    ./modules/devtools/vscode.nix
     ./modules/devtools/kitty.nix
     ./modules/stylix/tp-stylix.nix
     ./modules/desktops/gnome.nix
@@ -144,43 +144,43 @@
   #programs.gnome-terminal.enable = true;
   programs.gnome-terminal.showMenubar = false;
 
-  programs.vscode = {
-    enable = true;
-    profiles.default.extensions = with unpkgs.vscode-extensions; [
-      catppuccin.catppuccin-vsc
-      catppuccin.catppuccin-vsc-icons
-      esbenp.prettier-vscode
-      vscjava.vscode-java-pack
-      github.copilot-chat
-      github.copilot
-      ms-python.python
-      ms-python.vscode-pylance
-      jnoortheen.nix-ide
-      arrterian.nix-env-selector
-      jdinhlife.gruvbox
-      adpyke.codesnap
-      dracula-theme.theme-dracula
-      kamadorueda.alejandra
-      ms-toolsai.jupyter
-      ms-toolsai.jupyter
-      continue.continue
-    ];
-    profiles.default.userSettings = {
-      "chat.editor.fontFamily" = "DejaVu Sans Mono";
-      "debug.console.fontFamily" = "DejaVu Sans Mono";
-      "editor.fontFamily" = "DejaVu Sans Mono";
-      "editor.inlayHints.fontFamily" = "DejaVu Sans Mono";
-      "editor.inlineSuggest.fontFamily" = "DejaVu Sans Mono";
-      "markdown.preview.fontFamily" = "DejaVu Sans";
-      "scm.inputFontFamily" = "DejaVu Sans Mono";
-      "chat.editor.fontSize" = lib.mkForce 16.0;
-      "editor.fontSize" = lib.mkForce 16.0;
-      "workbench.colorTheme" = lib.mkForce "Catppuccin Mocha";
-      "github.copilot.enable" = ''        {"*": false,
-            "plaintext": false,
-            "markdown": false,
-            "scminput": false
-          }'';
-    };
-  };
+  # programs.vscode = {
+  #   enable = true;
+  #   profiles.default.extensions = with unpkgs.vscode-extensions; [
+  #     catppuccin.catppuccin-vsc
+  #     catppuccin.catppuccin-vsc-icons
+  #     esbenp.prettier-vscode
+  #     vscjava.vscode-java-pack
+  #     github.copilot-chat
+  #     github.copilot
+  #     ms-python.python
+  #     ms-python.vscode-pylance
+  #     jnoortheen.nix-ide
+  #     arrterian.nix-env-selector
+  #     jdinhlife.gruvbox
+  #     adpyke.codesnap
+  #     dracula-theme.theme-dracula
+  #     kamadorueda.alejandra
+  #     ms-toolsai.jupyter
+  #     ms-toolsai.jupyter
+  #     continue.continue
+  #   ];
+  #   profiles.default.userSettings = {
+  #     "chat.editor.fontFamily" = "DejaVu Sans Mono";
+  #     "debug.console.fontFamily" = "DejaVu Sans Mono";
+  #     "editor.fontFamily" = "DejaVu Sans Mono";
+  #     "editor.inlayHints.fontFamily" = "DejaVu Sans Mono";
+  #     "editor.inlineSuggest.fontFamily" = "DejaVu Sans Mono";
+  #     "markdown.preview.fontFamily" = "DejaVu Sans";
+  #     "scm.inputFontFamily" = "DejaVu Sans Mono";
+  #     "chat.editor.fontSize" = lib.mkForce 16.0;
+  #     "editor.fontSize" = lib.mkForce 16.0;
+  #     "workbench.colorTheme" = lib.mkForce "Catppuccin Mocha";
+  #     "github.copilot.enable" = ''        {"*": false,
+  #           "plaintext": false,
+  #           "markdown": false,
+  #           "scminput": false
+  #         }'';
+  #   };
+  # };
 }

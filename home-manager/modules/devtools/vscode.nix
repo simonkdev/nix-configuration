@@ -7,7 +7,7 @@
 }: {
   programs.vscode = {
     enable = true;
-    profiles.default.extensions = with pkgs.vscode-extensions; [
+    profiles.default.extensions = with unpkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
       catppuccin.catppuccin-vsc-icons
       esbenp.prettier-vscode
@@ -22,6 +22,9 @@
       adpyke.codesnap
       dracula-theme.theme-dracula
       kamadorueda.alejandra
+      ms-toolsai.jupyter
+      ms-toolsai.jupyter
+      continue.continue
     ];
     profiles.default.userSettings = {
       "chat.editor.fontFamily" = "DejaVu Sans Mono";
@@ -31,9 +34,14 @@
       "editor.inlineSuggest.fontFamily" = "DejaVu Sans Mono";
       "markdown.preview.fontFamily" = "DejaVu Sans";
       "scm.inputFontFamily" = "DejaVu Sans Mono";
-      "chat.editor.fontSize" = lib.mkForce 12.0;
-      "editor.fontSize" = lib.mkForce 12.0;
-      "workbench.colorTheme" = lib.mkForce "Dark Modern";
+      "chat.editor.fontSize" = lib.mkForce 16.0;
+      "editor.fontSize" = lib.mkForce 16.0;
+      "workbench.colorTheme" = lib.mkForce "Catppuccin Mocha";
+      "github.copilot.enable" = ''        {"*": false,
+            "plaintext": false,
+            "markdown": false,
+            "scminput": false
+          }'';
     };
   };
 }
