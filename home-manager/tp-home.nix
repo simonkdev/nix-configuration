@@ -27,34 +27,44 @@
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
   home.packages = [
-    pkgs.hello
+    # System- und Hardware-Tools
+    pkgs.brightnessctl
+    pkgs.upower
+    pkgs.cpufetch
+    pkgs.gpufetch
+    pkgs.hyprshade
+
+    # Audio & Video
     pkgs.wl-clipboard
     pkgs.wireplumber
     pkgs.cava
     pkgs.playerctl
-    pkgs.brightnessctl
-    pkgs.upower
-    pkgs.unzip
-    unpkgs.rapidraw
-    pkgs.moonlight-qt
-    pkgs.quick-webapps
-    pkgs.peaclock
-    pkgs.cpufetch
-    pkgs.gpufetch
-    pkgs.geeqie
-    pkgs.openrocket
-    pkgs.signal-desktop
-    pkgs.ffmpeg
-    pkgs.hyprshade
     pkgs.pulseaudioFull
+    pkgs.ffmpeg
+    pkgs.moonlight-qt
     pkgs.swaynotificationcenter
-    pkgs.firefox-bin
-    pkgs.bluetui
-    pkgs.calibre
-    pkgs.nufraw-thumbnailer
-    pkgs.remmina
-    pkgs.arduino-ide
 
+    # Netzwerk & Remote-Tools
+    pkgs.signal-desktop
+    pkgs.remmina
+    pkgs.bluetui
+
+    # Produktivität & Büro
+    pkgs.unzip
+    pkgs.calibre
+    pkgs.firefox-bin
+    pkgs.quick-webapps
+
+    # Grafik & Medien
+    pkgs.geeqie
+    pkgs.nufraw-thumbnailer
+    pkgs.rapidraw
+
+    # Entwicklung & Skripte
+    pkgs.arduino-ide
+    pkgs.openrocket
+
+    # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
       git add .
@@ -97,6 +107,9 @@
     (pkgs.writeShellScriptBin "bambuplay" ''
       ffplay -loglevel quiet -rtsp_transport tcp -fflags nobuffer -i "rtsps://bblp:c89f6baf@10.5.22.128:322/streaming/live/1" -vf "scale=1920:1080:flags=lanczos,fps=30" -window_title "Bambu Lab X1C Camera"
     '')
+
+    # Sonstiges / Nischenanwendungen
+    pkgs.peaclock
   ];
 
   home.sessionVariables = {
