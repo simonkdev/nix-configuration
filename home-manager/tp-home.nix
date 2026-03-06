@@ -58,7 +58,6 @@
     # Grafik & Medien
     pkgs.geeqie
     pkgs.nufraw-thumbnailer
-    unpkgs.rapidraw
 
     # Entwicklung & Skripte
     pkgs.arduino-ide
