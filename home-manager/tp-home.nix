@@ -151,6 +151,7 @@
       kamadorueda.alejandra
       ms-toolsai.jupyter
       saoudrizwan.claude-dev
+      ms-toolsai.jupyter
     ];
     profiles.default.userSettings = {
       "chat.editor.fontFamily" = "DejaVu Sans Mono";
