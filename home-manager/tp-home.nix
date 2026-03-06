@@ -150,8 +150,8 @@
       dracula-theme.theme-dracula
       kamadorueda.alejandra
       ms-toolsai.jupyter
-      saoudrizwan.claude-dev
       ms-toolsai.jupyter
+      continue.continue
     ];
     profiles.default.userSettings = {
       "chat.editor.fontFamily" = "DejaVu Sans Mono";
