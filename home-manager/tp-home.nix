@@ -58,7 +58,6 @@
     # Grafik & Medien
     pkgs.geeqie
     pkgs.nufraw-thumbnailer
-    pkgs.linux-wallpaperengine
 
     # Entwicklung & Skripte
     pkgs.arduino-ide

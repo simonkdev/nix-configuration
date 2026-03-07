@@ -56,6 +56,7 @@
   ];
 
   services = {
+    linux-wallpaperengine.enable = true;
     fprintd = {
       enable = true;
       tod = {
