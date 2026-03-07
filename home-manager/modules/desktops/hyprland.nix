@@ -30,10 +30,6 @@
         "kb_layout" = "de";
       }; ## endinput
 
-      gestures = {
-        "workspace_swipe" = true;
-      }; ## endgestures
-
       #############################
       ####### LOOK AND FEEL #######
       #############################
