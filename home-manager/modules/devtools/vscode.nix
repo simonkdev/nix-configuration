@@ -37,7 +37,7 @@
       "scm.inputFontFamily" = "DejaVu Sans Mono";
       "chat.editor.fontSize" = lib.mkForce 16.0;
       "editor.fontSize" = lib.mkForce 16.0;
-      "workbench.colorTheme" = lib.mkForce "Catppuccin Mocha";
+      "workbench.colorTheme" = lib.mkForce "Ayu Mirage Bordered";
       "github.copilot.enable" = ''        {"*": false,
             "plaintext": false,
             "markdown": false,
