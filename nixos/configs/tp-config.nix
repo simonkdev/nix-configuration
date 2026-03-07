@@ -56,7 +56,7 @@
   ];
 
   services = {
-    linux-wallpaperengine.enable = true;
+    #linux-wallpaperengine.enable = true;
     gvfs.enable = true;
     xserver = {
       xkb.layout = "de";
