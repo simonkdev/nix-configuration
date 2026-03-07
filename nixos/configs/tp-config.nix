@@ -56,7 +56,7 @@
   ];
 
   services = {
-    linux-wallpaperengine.enable = true;
+    #linux-wallpaperengine.enable = true;
     gvfs.enable = true;
     xserver = {
       xkb.layout = "de";
@@ -74,12 +74,10 @@
   hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
-      vaapiIntel
       intel-vaapi-driver
       intel-media-driver
-      intel-media-sdk
       libvdpau
-      vaapiVdpau
+      libva-vdpau-driver
       libva
       vulkan-loader
       vulkan-validation-layers
@@ -137,12 +135,10 @@
     devenv
     home-manager
     processing
-    zulu24
     mysql-workbench
     #  pkgs.nvchad
     sshfs
     python3Minimal
-    go
     cargo
     qemu
 

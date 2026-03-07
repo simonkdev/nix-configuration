@@ -14,6 +14,8 @@
     ## ashes, brewer, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
     targets = {
+      qt.platform = "gnome"; # or "qt5ct", "kde", etc.
+      #qt.enable = false;
       btop.enable = true;
       firefox.enable = true;
       gnome.enable = true;
