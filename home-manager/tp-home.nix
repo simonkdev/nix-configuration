@@ -33,6 +33,7 @@
     pkgs.cpufetch
     pkgs.gpufetch
     pkgs.hyprshade
+    pkgs.linux-wallpaperengine
 
     # Audio & Video
     pkgs.wl-clipboard
