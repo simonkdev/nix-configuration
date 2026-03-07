@@ -25,6 +25,7 @@
       ms-toolsai.jupyter
       ms-toolsai.jupyter
       continue.continue
+      teabyii.ayu
     ];
     profiles.default.userSettings = {
       "chat.editor.fontFamily" = "DejaVu Sans Mono";
