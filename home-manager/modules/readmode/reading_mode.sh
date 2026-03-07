@@ -2,7 +2,7 @@
 
 # Path to shader
 SHADER="$HOME/.config/hypr/shaders/grayscale.glsl"
-WALLPAPER="$HOME/nixsys/wallpapers/porsche-tokyo-uw.png"
+WALLPAPER="$HOME/nixsys/wallpapers/blue_death_star.jpg"
 WALLPAPER_DEF="$HOME/nixsys/wallpapers/gruv-wallpaper.png"
 
 # Check active shader
