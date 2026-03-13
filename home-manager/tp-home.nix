@@ -64,7 +64,6 @@
     pkgs.arduino-ide
     pkgs.openrocket
     pkgs.putty
-    pkgs.zlib
 
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
