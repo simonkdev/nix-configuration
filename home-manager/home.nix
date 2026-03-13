@@ -33,6 +33,7 @@
     pkgs.font-awesome
     pkgs.pipes-rs
     pkgs.gimp3
+    pkgs.zlib
 
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys

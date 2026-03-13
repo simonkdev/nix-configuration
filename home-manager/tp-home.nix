@@ -64,6 +64,7 @@
     pkgs.arduino-ide
     pkgs.openrocket
     pkgs.putty
+    pkgs.zlib
 
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
@@ -146,7 +147,7 @@
   #programs.gnome-terminal.enable = true;
   programs.gnome-terminal.showMenubar = false;
 
-   programs.vscode = {
+  programs.vscode = {
     enable = true;
     profiles.default.extensions = with unpkgs.vscode-extensions; [
       catppuccin.catppuccin-vsc
