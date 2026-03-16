@@ -71,6 +71,8 @@
     tailscale.enable = true;
   };
 
+  services.desktopManager.plasma6.enable = true;
+
   hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
