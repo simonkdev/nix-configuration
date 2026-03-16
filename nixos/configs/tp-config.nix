@@ -60,14 +60,14 @@
     xserver = {
       xkb.layout = "de";
       enable = true;
-      displayManager.gdm.enable = true;
-      desktopManager.gnome.enable = true;
     };
     printing.enable = true; # Enable Printing
     pulseaudio.enable = false; # Enable Audio
     udisks2.enable = true;
     dbus.enable = true;
     tailscale.enable = true;
+    displayManager.gdm.enable = true;
+    desktopManager.gnome.enable = true;
   };
 
   services.desktopManager.plasma6.enable = true;
