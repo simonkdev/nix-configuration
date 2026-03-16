@@ -65,6 +65,7 @@
     pkgs.openrocket
     pkgs.putty
     pkgs.zlib
+    pkgs.whitesur-kde
 
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
