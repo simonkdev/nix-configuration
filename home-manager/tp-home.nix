@@ -14,7 +14,7 @@
   imports = [
     #./modules/devtools/vscode.nix
     ./modules/devtools/kitty.nix
-    #./modules/stylix/tp-stylix.nix
+    ./modules/stylix/tp-stylix.nix
     ./modules/desktops/gnome.nix
     ./modules/waybar/waybar.nix
     ./modules/wofi/wofi.nix
