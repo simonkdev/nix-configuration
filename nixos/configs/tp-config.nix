@@ -55,8 +55,6 @@
     8096
   ];
 
-  networking.nftables.enable = true;
-
   services = {
     gvfs.enable = true;
     xserver = {
@@ -73,7 +71,6 @@
   };
 
   services.desktopManager.plasma6.enable = true;
-  virtualisation.waydroid.enable = true;
 
   hardware.graphics = {
     enable = true;
