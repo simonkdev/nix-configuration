@@ -71,7 +71,7 @@
   };
 
   services.desktopManager.plasma6.enable = true;
-  #virtualisation.waydroid.enable = true;
+  virtualisation.waydroid.enable = true;
 
   hardware.graphics = {
     enable = true;
@@ -143,7 +143,6 @@
     python3Minimal
     cargo
     qemu
-    waydroid
 
     # --- Productivity & Notes ---
     todoist-electron
