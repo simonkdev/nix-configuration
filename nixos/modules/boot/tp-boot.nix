@@ -12,7 +12,7 @@
 
     kernelPackages = pkgs.linuxPackages_zen; # Use latest kernel Package
 
-    boot.extraModprobeConfig = ''
+    extraModprobeConfig = ''
       options ip_tables
       options iptable_filter
       options iptable_nat
