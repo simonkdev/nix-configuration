@@ -12,6 +12,13 @@
 
     kernelPackages = pkgs.linuxPackages_zen; # Use latest kernel Package
 
+    boot.extraModprobeConfig = ''
+      options ip_tables
+      options iptable_filter
+      options iptable_nat
+      options iptable_mangle
+    '';
+
     # kernelPackages = pkgs.linuxPackagesFor (
     #   pkgs.linux_zen.override {
     #     version = "6.17.7";
