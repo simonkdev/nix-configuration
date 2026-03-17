@@ -143,6 +143,7 @@
     python3Minimal
     cargo
     qemu
+    iptables
 
     # --- Productivity & Notes ---
     todoist-electron
