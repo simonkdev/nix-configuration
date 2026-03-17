@@ -144,6 +144,7 @@
     cargo
     qemu
     iptables
+    firewalld
 
     # --- Productivity & Notes ---
     todoist-electron
