@@ -12,12 +12,7 @@
 
     kernelPackages = pkgs.linuxPackages_zen; # Use latest kernel Package
 
-    extraModprobeConfig = ''
-      options ip_tables
-      options iptable_filter
-      options iptable_nat
-      options iptable_mangle
-    '';
+    kernelModules = ["ip_tables" "iptable_filter" "iptable_nat" "iptable_mangle"];
 
     # kernelPackages = pkgs.linuxPackagesFor (
     #   pkgs.linux_zen.override {
