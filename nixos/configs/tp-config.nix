@@ -55,6 +55,8 @@
     8096
   ];
 
+  networking.firewall.enabled = true;
+
   services = {
     gvfs.enable = true;
     xserver = {
