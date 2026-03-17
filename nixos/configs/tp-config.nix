@@ -55,7 +55,7 @@
     8096
   ];
 
-  networking.firewall.enabled = true;
+  networking.nftables.enable = false;
 
   services = {
     gvfs.enable = true;
