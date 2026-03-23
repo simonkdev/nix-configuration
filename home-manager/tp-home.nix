@@ -55,6 +55,7 @@
     pkgs.calibre
     pkgs.firefox-bin
     pkgs.quick-webapps
+    pkgs.saber
 
     # Grafik & Medien
     pkgs.geeqie
