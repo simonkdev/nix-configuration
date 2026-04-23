@@ -172,7 +172,7 @@
       }
 
       #pulseaudio {
-        color: ${config.lib.stylix.colors.withHashtag.base05};
+        color: ${config.lib.stylix.colors.withHashtag.base09};
       }
 
       #backlight {
@@ -180,7 +180,7 @@
       }
 
       #clock {
-        color: ${config.lib.stylix.colors.withHashtag.base09};
+        color: ${config.lib.stylix.colors.withHashtag.base05};
       }
 
       #battery {
