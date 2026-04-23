@@ -49,7 +49,7 @@
           margin-left:20px;
           margin-right:20px;
           margin-top:20px;
-          padding: 0px;
+          padding: 20px;
           border: 2px solid ${config.lib.stylix.colors.withHashtag.base01};
           color: ${config.lib.stylix.colors.withHashtag.base0C};
           outline: none;
