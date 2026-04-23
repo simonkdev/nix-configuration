@@ -25,7 +25,7 @@
       }
 
       window#waybar {
-        color: ${config.lib.stylix.colors.withHashtag.base08};
+        color: ${config.lib.stylix.colors.base08};
         transition-property: background-color;
         transition-duration: 0.5s;
         border-top: 8px transparent;
@@ -40,7 +40,7 @@
 
       #workspaces button {
         padding: 0 5px;
-        color: ${config.lib.stylix.colors.withHashtag.base06};
+        color: ${config.lib.stylix.colors.base06};
         background-color: transparent;
         box-shadow: inset 0 -3px transparent;
         border: none;
@@ -48,19 +48,19 @@
       }
 
       #workspaces button.focused {
-        color: ${config.lib.stylix.colors.withHashtag.base0E};
+        color: ${config.lib.stylix.colors.base0E};
       }
 
       #workspaces button.active {
-        color: ${config.lib.stylix.colors.withHashtag.base0B};
+        color: ${config.lib.stylix.colors.base0B};
       }
 
       #workspaces button.urgent {
-        background-color: ${config.lib.stylix.colors.withHashtag.base08};
+        background-color: ${config.lib.stylix.colors.base08};
       }
 
       #window {
-        color: ${config.lib.stylix.colors.withHashtag.base05};
+        color: ${config.lib.stylix.colors.base05};
         font-family: JetBrainsMono Nerd Font;
       }
 
@@ -94,7 +94,7 @@
       #custom-weather.snowyIcyNight,
       #custom-weather.default {
         padding: 0 10px;
-        color: ${config.lib.stylix.colors.withHashtag.base0F};
+        color: ${config.lib.stylix.colors.base0F};
         border-radius: 9.5px;
         background-color: transparent;
       }
@@ -107,12 +107,12 @@
       }
 
       #cpu {
-        color: ${config.lib.stylix.colors.withHashtag.base0A};
+        color: ${config.lib.stylix.colors.base0A};
         background-color: transparent;
       }
 
       #memory {
-        color: ${config.lib.stylix.colors.withHashtag.base0C};
+        color: ${config.lib.stylix.colors.base0C};
         background-color: transparent;
       }
 
@@ -125,40 +125,40 @@
 
       #custom-launcher {
         background-color: transparent;
-        color: ${config.lib.stylix.colors.withHashtag.base0B};
+        color: ${config.lib.stylix.colors.base0B};
         border-radius: 7.5px;
         padding: 0 3px;
       }
 
       #custom-weather.severe {
-        color: ${config.lib.stylix.colors.withHashtag.base0F};
+        color: ${config.lib.stylix.colors.base0F};
       }
 
       #custom-weather.sunnyDay {
-        color: ${config.lib.stylix.colors.withHashtag.base09};
+        color: ${config.lib.stylix.colors.base09};
       }
 
       #custom-weather.clearNight {
-        color: ${config.lib.stylix.colors.withHashtag.base06};
+        color: ${config.lib.stylix.colors.base06};
       }
 
       #custom-weather.cloudyFoggyDay,
       #custom-weather.cloudyFoggyNight {
-        color: ${config.lib.stylix.colors.withHashtag.base09};
+        color: ${config.lib.stylix.colors.base09};
       }
 
       #custom-weather.rainyDay,
       #custom-weather.rainyNight {
-        color: ${config.lib.stylix.colors.withHashtag.base0C};
+        color: ${config.lib.stylix.colors.base0C};
       }
 
       #custom-weather.showyIcyDay,
       #custom-weather.snowyIcyNight {
-        color: ${config.lib.stylix.colors.withHashtag.base09};
+        color: ${config.lib.stylix.colors.base09};
       }
 
       #custom-weather.default {
-        color: ${config.lib.stylix.colors.withHashtag.base0F};
+        color: ${config.lib.stylix.colors.base0F};
       }
 
       /* If workspaces is the leftmost module, omit left margin */
@@ -172,36 +172,36 @@
       }
 
       #pulseaudio {
-        color: ${config.lib.stylix.colors.withHashtag.base05};
+        color: ${config.lib.stylix.colors.base05};
       }
 
       #backlight {
-        color: ${config.lib.stylix.colors.withHashtag.base0C};
+        color: ${config.lib.stylix.colors.base0C};
       }
 
       #clock {
-        color: ${config.lib.stylix.colors.withHashtag.base05};
+        color: ${config.lib.stylix.colors.base05};
       }
 
       #battery {
-        color: ${config.lib.stylix.colors.withHashtag.base0F};
+        color: ${config.lib.stylix.colors.base0F};
       }
 
       #battery.charging,
       #battery.full,
       #battery.plugged {
-        color: ${config.lib.stylix.colors.withHashtag.base0A};
+        color: ${config.lib.stylix.colors.base0A};
       }
 
       @keyframes blink {
         to {
-          background-color: ${config.lib.stylix.colors.withHashtag.base01};
-          color: ${config.lib.stylix.colors.withHashtag.base06};
+          background-color: ${config.lib.stylix.colors.base01};
+          color: ${config.lib.stylix.colors.base06};
         }
       }
 
       #battery.critical:not(.charging) {
-        color: ${config.lib.stylix.colors.withHashtag.base08};
+        color: ${config.lib.stylix.colors.base08};
         animation-name: blink;
         animation-duration: 0.5s;
         animation-timing-function: linear;
@@ -210,49 +210,49 @@
       }
 
       label:focus {
-        background-color: ${config.lib.stylix.colors.withHashtag.base00};
+        background-color: ${config.lib.stylix.colors.base00};
       }
 
       #disk {
-        background-color: ${config.lib.stylix.colors.withHashtag.base09};
+        background-color: ${config.lib.stylix.colors.base09};
       }
 
       #bluetooth {
-        color: ${config.lib.stylix.colors.withHashtag.base05};
+        color: ${config.lib.stylix.colors.base05};
       }
 
       #bluetooth.disconnected {
-        color: ${config.lib.stylix.colors.withHashtag.base08};
+        color: ${config.lib.stylix.colors.base08};
       }
 
       #network {
-        color: ${config.lib.stylix.colors.withHashtag.base0F};
+        color: ${config.lib.stylix.colors.base0F};
       }
 
       #network.disconnected {
-        color: ${config.lib.stylix.colors.withHashtag.base08};
+        color: ${config.lib.stylix.colors.base08};
       }
 
       #custom-media {
-        background-color: ${config.lib.stylix.colors.withHashtag.base0A};
-        color: ${config.lib.stylix.colors.withHashtag.base00};
+        background-color: ${config.lib.stylix.colors.base0A};
+        color: ${config.lib.stylix.colors.base00};
         min-width: 100px;
       }
 
       #custom-media.custom-spotify {
-        background-color: ${config.lib.stylix.colors.withHashtag.base0A};
+        background-color: ${config.lib.stylix.colors.base0A};
       }
 
       #custom-media.custom-vlc {
-        background-color: ${config.lib.stylix.colors.withHashtag.base0B};
+        background-color: ${config.lib.stylix.colors.base0B};
       }
 
       #temperature {
-        background-color: ${config.lib.stylix.colors.withHashtag.base0F};
+        background-color: ${config.lib.stylix.colors.base0F};
       }
 
       #temperature.critical {
-        background-color: ${config.lib.stylix.colors.withHashtag.base08};
+        background-color: ${config.lib.stylix.colors.base08};
       }
 
       #tray > .passive {
@@ -261,45 +261,45 @@
 
       #tray > .needs-attention {
         -gtk-icon-effect: highlight;
-        background-color: ${config.lib.stylix.colors.withHashtag.base08};
+        background-color: ${config.lib.stylix.colors.base08};
       }
 
       #idle_inhibitor {
-        background-color: ${config.lib.stylix.colors.withHashtag.base01};
+        background-color: ${config.lib.stylix.colors.base01};
       }
 
       #idle_inhibitor.activated {
-        background-color: ${config.lib.stylix.colors.withHashtag.base0F};
-        color: ${config.lib.stylix.colors.withHashtag.base00};
+        background-color: ${config.lib.stylix.colors.base0F};
+        color: ${config.lib.stylix.colors.base00};
       }
 
       #mpd {
-        color: ${config.lib.stylix.colors.withHashtag.base00};
+        color: ${config.lib.stylix.colors.base00};
       }
 
       #mpd.disconnected {
-        color: ${config.lib.stylix.colors.withHashtag.base08};
+        color: ${config.lib.stylix.colors.base08};
       }
 
       #mpd.stopped {
-        color: ${config.lib.stylix.colors.withHashtag.base05};
+        color: ${config.lib.stylix.colors.base05};
       }
 
       #mpd.paused {
-        color: ${config.lib.stylix.colors.withHashtag.base0A};
+        color: ${config.lib.stylix.colors.base0A};
       }
 
       #language {
-        background: ${config.lib.stylix.colors.withHashtag.base0A};
-        color: ${config.lib.stylix.colors.withHashtag.base00};
+        background: ${config.lib.stylix.colors.base0A};
+        color: ${config.lib.stylix.colors.base00};
         padding: 0 5px;
         margin: 0 5px;
         min-width: 16px;
       }
 
       #keyboard-state {
-        background: ${config.lib.stylix.colors.withHashtag.base0B};
-        color: ${config.lib.stylix.colors.withHashtag.base00};
+        background: ${config.lib.stylix.colors.base0B};
+        color: ${config.lib.stylix.colors.base00};
         padding: 0 0px;
         margin: 0 5px;
         min-width: 16px;
@@ -310,13 +310,13 @@
       }
 
       #keyboard-state > label.locked {
-        background: rgba(${config.lib.stylix.colors.withHashtag.base00}, 0.2);
+        background: rgba(${config.lib.stylix.colors.base00}, 0.2);
       }
 
       #custom-spotify {
         padding: 0 10px;
         margin: 0 4px;
-        color: ${config.lib.stylix.colors.withHashtag.base0F};
+        color: ${config.lib.stylix.colors.base0F};
       }
   '';
 }
