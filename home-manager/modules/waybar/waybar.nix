@@ -310,7 +310,7 @@
       }
 
       #keyboard-state > label.locked {
-        background: rgba(${config.lib.stylix.colors.withHashtag.base00}, 0.2);
+        background: ${config.lib.stylix.colors.withHashtag.base00};
       }
 
       #custom-spotify {
