@@ -7,144 +7,96 @@
   programs.wofi = {
     enable = true;
     style = ''
-      @keyframes fadeIn {
-           0% { opacity: 0; }
-           100% { opacity: 1; }
-         }
+      /* Rofi Colors - Monokai Theme */
+      * {
+        background: ${config.lib.stylix.colors.withHashtag.base00};
+        foreground: ${config.lib.stylix.colors.withHashtag.base05};
+        selected: ${config.lib.stylix.colors.withHashtag.base0A};
+        urgent: ${config.lib.stylix.colors.withHashtag.base08};
+        active: ${config.lib.stylix.colors.withHashtag.base0B};
+        normal: ${config.lib.stylix.colors.withHashtag.base05};
+      }
 
-         * {
-           all: unset;
-           font-family: 'CodeNewRoman Nerd Font Mono', monospace;
-           font-size: 18px;
-           outline: none;
-           border: none;
-           text-shadow: none;
-           background-color: ${config.lib.stylix.colors.withHashtag.base00};
-         }
+      /* General Styling */
+      configuration {
+        modi: "window,drun,run";
+        font: "CodeNewRoman Nerd Font Mono 18";
+        padding: 4;
+        fixed-num-columns: true;
+        fixed-width: true;
+        hide-scrollbar: true;
+        urgent-enabled: true;
+        cycle: true;
+        sidebar-mode: true;
+        show-icons: true;
+      }
 
-         window {
-           background-color: alpha(${config.lib.stylix.colors.withHashtag.base08}, 1);
-           color: ${config.lib.stylix.colors.withHashtag.base0B};
-           all: unset;
-           padding: 0px;
-           border-radius: 4px;
-         }
+      /* Main Window */
+      window {
+        background: ${config.lib.stylix.colors.withHashtag.base00};
+        border: 3px solid ${config.lib.stylix.colors.withHashtag.base01};
+        border-radius: 8px;
+        padding: 10px;
+      }
 
-         #inner-box {
-           margin: 2px;
-           padding: 10px;
-           border: none;
-         }
+      /* Entries */
+      element {
+        padding: 8px;
+        margin: 2px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+      }
 
-         #outer-box {
-           border: none;
-         }
+      element selected {
+        background: ${config.lib.stylix.colors.withHashtag.base0A};
+        color: ${config.lib.stylix.colors.withHashtag.base00};
+        border: 1px solid ${config.lib.stylix.colors.withHashtag.base0A};
+      }
 
-         #scroll {
-           margin: 0px;
-           padding: 0px;
-           border: none;
-         }
+      element urgent {
+        background: ${config.lib.stylix.colors.withHashtag.base08};
+        color: ${config.lib.stylix.colors.withHashtag.base00};
+      }
 
-         #input {
-           all: unset;
-           margin-left: 20px;
-           margin-right: 20px;
-           margin-top: 20px;
-           padding: 20px;
-           border: 2px solid ${config.lib.stylix.colors.withHashtag.base01};
-           color: ${config.lib.stylix.colors.withHashtag.base0C};
-           outline: none;
-           box-shadow: 1px 1px 5px rgba(0,0,0,.5);
-           border-radius: 10px;
-           background-color: alpha(${config.lib.stylix.colors.withHashtag.base01}, 0.2);
-         }
+      element active {
+        color: ${config.lib.stylix.colors.withHashtag.base0B};
+      }
 
-         #input image {
-           border: none;
-           color: ${config.lib.stylix.colors.withHashtag.base09};
-           padding-right: 10px;
-         }
+      /* Prompt */
+      prompt {
+        background: ${config.lib.stylix.colors.withHashtag.base00};
+        color: ${config.lib.stylix.colors.withHashtag.base05};
+        padding: 8px;
+      }
 
-         #input * {
-           border: none;
-           outline: none;
-           color: ${config.lib.stylix.colors.withHashtag.base0C};
-         }
+      /* Entry */
+      entry {
+        background: ${config.lib.stylix.colors.withHashtag.base01};
+        color: ${config.lib.stylix.colors.withHashtag.base05};
+        border: 1px solid ${config.lib.stylix.colors.withHashtag.base01};
+        border-radius: 4px;
+        padding: 8px;
+      }
 
-         #input:focus {
-           outline: none;
-           border: none;
-           border-radius: 10px;
-         }
+      entry:selected {
+        background: ${config.lib.stylix.colors.withHashtag.base0A};
+        color: ${config.lib.stylix.colors.withHashtag.base00};
+      }
 
-         #text {
-           margin: 5px;
-           border: none;
-           outline: none;
-           color: ${config.lib.stylix.colors.withHashtag.base05};
-         }
+      /* Mode Switcher */
+      mode-switcher {
+        background: ${config.lib.stylix.colors.withHashtag.base01};
+        color: ${config.lib.stylix.colors.withHashtag.base05};
+        border: 1px solid ${config.lib.stylix.colors.withHashtag.base01};
+        border-radius: 4px;
+        padding: 4px;
+      }
 
-         #entry {
-           border: none;
-           margin: 5px;
-           padding: 0px;
-           color: ${config.lib.stylix.colors.withHashtag.base06};
-         }
-
-         #entry arrow {
-           border: none;
-           color: ${config.lib.stylix.colors.withHashtag.base08};
-         }
-
-         #entry:selected {
-           box-shadow: 1px 1px 5px rgba(255,255,255,.03);
-           border: 2px solid ${config.lib.stylix.colors.withHashtag.base0C};
-           border-radius: 0px;
-           background-color: transparent;
-         }
-
-         #entry:selected #text {
-           color: ${config.lib.stylix.colors.withHashtag.base0C};
-         }
-
-         #entry:drop(active) {
-           background-color: ${config.lib.stylix.colors.withHashtag.base0C};
-         }
-
-         #entry:nth-child(even),
-         #entry:nth-child(odd) {
-           background-color: transparent;
-         }
-
-         /* FRBFStudios/rofi-specific styling */
-         element {
-           background-color: ${config.lib.stylix.colors.withHashtag.base00};
-           color: ${config.lib.stylix.colors.withHashtag.base05};
-         }
-
-         element selected {
-           background-color: ${config.lib.stylix.colors.withHashtag.base0A};
-           color: ${config.lib.stylix.colors.withHashtag.base00};
-           padding: 0 8px;
-         }
-
-         element urgent {
-           background-color: ${config.lib.stylix.colors.withHashtag.base08};
-           color: ${config.lib.stylix.colors.withHashtag.base00};
-         }
-
-         mode-switcher {
-           padding: 0 8px;
-         }
-
-         prompt {
-           padding: 0 8px;
-         }
-
-         entry {
-           padding: 0 8px;
-         }   '';
+      mode-switcher:selected {
+        background: ${config.lib.stylix.colors.withHashtag.base0A};
+        color: ${config.lib.stylix.colors.withHashtag.base00};
+      }
+    '';
   };
   home.file."/home/simonkdev/.config/wofi/config".source = "/home/simonkdev/nixsys/home-manager/modules/wofi/config";
 }
