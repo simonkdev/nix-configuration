@@ -10,7 +10,7 @@
 
     # Use an existing wallpaper file so ImageMagick can open it during builds
     image = /home/simonkdev/nixsys/wallpapers/wp11803867-aesthetic-clouds-computer-wallpapers.jpg;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catpuccin-frappe.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-frappe.yaml";
     ## ashes, brewer, ayu-mirage, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
     targets = {
