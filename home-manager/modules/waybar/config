@@ -10,17 +10,17 @@
     "modules-center": ["custom/spotify", "hyprland/window"],
     "modules-right": ["tray", "pulseaudio", "network", "clock", "custom/power-menu"],
     "hyprland/workspaces": {
-      "format": "{icon}",
+      "format": "{id}",
       "on-click": "activate",
       "format-icons": {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
-        "5": "5",
-        "urgent": "!!",
-        "active": "",
-        "default": ""
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "urgent": "",
+        "active": "",
+        "default": ""
       }
     },
     "hyprland/window": {
