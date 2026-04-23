@@ -23,6 +23,7 @@
       gtk.enable = true;
       librewolf.profileNames = ["simonkdev"];
       swaync.enable = true;
+      micro.enable = true;
     };
 
     cursor = {
