@@ -68,7 +68,7 @@
     pkgs.zlib
     pkgs.whitesur-kde
     pkgs.bambu-studio
-    pkgs.micro
+    pkgs.kakoune
 
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
