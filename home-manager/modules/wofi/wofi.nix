@@ -42,7 +42,7 @@
       }
 
       #entry:nth-child() {
-        color: transparent
+        color: ${config.lib.stylix.colors.withHashtag.base00}; /* Base1 color */
       }
 
       #entry:nth-child(even),
