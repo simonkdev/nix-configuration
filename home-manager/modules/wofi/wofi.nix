@@ -45,6 +45,11 @@
         color: ${config.lib.stylix.colors.withHashtag.base07}; /* Base1 color */
       }
 
+      #entry:nth-child(even),
+      #entry:nth-child(odd) {
+        background-color: transparent;
+      }
+
       #entry:selected {
         border: 2px solid ${config.lib.stylix.colors.withHashtag.base0C}; /* Highlight color */
       }
