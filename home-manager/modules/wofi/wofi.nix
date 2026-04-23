@@ -28,12 +28,12 @@
           background-color: alpha(${config.lib.stylix.colors.withHashtag.base08}, 1);
           color: ${config.lib.stylix.colors.withHashtag.base0B};
           all:unset;
-          padding: 20px;
+          padding: 0px;
           border-radius: 4px;
       }
       #inner-box {
           margin: 2px;
-          padding: 5px
+          padding: 0px
           border: none;
       }
       #outer-box {
@@ -41,7 +41,7 @@
       }
       #scroll {
           margin: 0px;
-          padding: 30px;
+          padding: 0px;
           border: none;
       }
       #input {
