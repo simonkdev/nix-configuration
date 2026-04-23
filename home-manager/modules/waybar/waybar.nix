@@ -107,7 +107,7 @@
       }
 
       #cpu {
-        color: ${config.lib.stylix.colors.withHashtag.base0A};
+        color: ${config.lib.stylix.colors.withHashtag.base0B};
         background-color: transparent;
       }
 
