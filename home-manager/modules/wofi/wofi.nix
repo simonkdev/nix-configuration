@@ -7,94 +7,45 @@
   programs.wofi = {
     enable = true;
     style = ''
-      /* Rofi Colors - Monokai Theme */
+      /* Monokai Color Scheme */
+
       * {
-        background: ${config.lib.stylix.colors.withHashtag.base00};
-        foreground: ${config.lib.stylix.colors.withHashtag.base05};
-        selected: ${config.lib.stylix.colors.withHashtag.base0A};
-        urgent: ${config.lib.stylix.colors.withHashtag.base08};
-        active: ${config.lib.stylix.colors.withHashtag.base0B};
-        normal: ${config.lib.stylix.colors.withHashtag.base05};
+        font-family: 'CodeNewRoman Nerd Font Mono', monospace;
       }
 
-      /* General Styling */
-      configuration {
-        modi: "window,drun,run";
-        font: "CodeNewRoman Nerd Font Mono 18";
-        padding: 4;
-        fixed-num-columns: true;
-        fixed-width: true;
-        hide-scrollbar: true;
-        urgent-enabled: true;
-        cycle: true;
-        sidebar-mode: true;
-        show-icons: true;
-      }
-
-      /* Main Window */
       window {
-        background: ${config.lib.stylix.colors.withHashtag.base00};
-        border: 3px solid ${config.lib.stylix.colors.withHashtag.base01};
-        border-radius: 8px;
-        padding: 10px;
+        border: 1px solid ${config.lib.stylix.colors.withHashtag.base0C}; /* Highlight color */
       }
 
-      /* Entries */
-      element {
-        padding: 8px;
-        margin: 2px;
-        border-radius: 4px;
-        border: 1px solid transparent;
+      #input {
+        margin-bottom: 15px;
+        padding: 3px;
+        border-radius: 5px;
+        border: none;
+        color: ${config.lib.stylix.colors.withHashtag.base0C}; /* Highlight color */
       }
 
-      element selected {
-        background: ${config.lib.stylix.colors.withHashtag.base0A};
-        color: ${config.lib.stylix.colors.withHashtag.base00};
-        border: 1px solid ${config.lib.stylix.colors.withHashtag.base0A};
+      #inner-box {
+        background-color: ${config.lib.stylix.colors.withHashtag.base01}; /* Base3 color */
       }
 
-      element urgent {
-        background: ${config.lib.stylix.colors.withHashtag.base08};
-        color: ${config.lib.stylix.colors.withHashtag.base00};
+      #outer-box {
+        margin: 1px;
+        padding: 15px;
+        background-color: ${config.lib.stylix.colors.withHashtag.base00}; /* Base0 color */
       }
 
-      element active {
-        color: ${config.lib.stylix.colors.withHashtag.base0B};
+      #text {
+        padding: 5px;
+        color: ${config.lib.stylix.colors.withHashtag.base0C}; /* Highlight color */
       }
 
-      /* Prompt */
-      prompt {
-        background: ${config.lib.stylix.colors.withHashtag.base00};
-        color: ${config.lib.stylix.colors.withHashtag.base05};
-        padding: 8px;
+      #entry:nth-child() {
+        color: ${config.lib.stylix.colors.withHashtag.base07}; /* Base1 color */
       }
 
-      /* Entry */
-      entry {
-        background: ${config.lib.stylix.colors.withHashtag.base01};
-        color: ${config.lib.stylix.colors.withHashtag.base05};
-        border: 1px solid ${config.lib.stylix.colors.withHashtag.base01};
-        border-radius: 4px;
-        padding: 8px;
-      }
-
-      entry:selected {
-        background: ${config.lib.stylix.colors.withHashtag.base0A};
-        color: ${config.lib.stylix.colors.withHashtag.base00};
-      }
-
-      /* Mode Switcher */
-      mode-switcher {
-        background: ${config.lib.stylix.colors.withHashtag.base01};
-        color: ${config.lib.stylix.colors.withHashtag.base05};
-        border: 1px solid ${config.lib.stylix.colors.withHashtag.base01};
-        border-radius: 4px;
-        padding: 4px;
-      }
-
-      mode-switcher:selected {
-        background: ${config.lib.stylix.colors.withHashtag.base0A};
-        color: ${config.lib.stylix.colors.withHashtag.base00};
+      #entry:selected {
+        border: 2px solid ${config.lib.stylix.colors.withHashtag.base0C}; /* Highlight color */
       }
     '';
   };
