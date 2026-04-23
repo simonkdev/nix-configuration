@@ -9,7 +9,7 @@
     enable = true;
 
     # Use an existing wallpaper file so ImageMagick can open it during builds
-    image = /home/simonkdev/nixsys/wallpapers/wp11803867-aesthetic-clouds-computer-wallpapers.jpg;
+    image = /home/simonkdev/nixsys/wallpapers/obi-wan-vs-vader-uw.jpg;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
     ## ashes, brewer, ayu-mirage, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
