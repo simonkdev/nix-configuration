@@ -27,7 +27,7 @@
       }
 
       #inner-box {
-        background-color: ${config.lib.stylix.colors.withHashtag.base01}; /* Base3 color */
+        background-color: ${config.lib.stylix.colors.withHashtag.base00}; /* Base3 color */
       }
 
       #outer-box {
@@ -42,7 +42,8 @@
       }
 
       #entry:nth-child() {
-        color: ${config.lib.stylix.colors.withHashtag.base00}; /* Base1 color */
+        color: ${config.lib.stylix.colors.withHashtag.base01}; /* Base1 color */
+        background-color: transparent;
       }
 
       #entry:nth-child(even),
