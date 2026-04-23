@@ -92,7 +92,7 @@
       #custom-weather.snowyIcyNight,
       #custom-weather.default {
         padding: 0 10px;
-        color: ${config.lib.stylix.colors.base07};
+        color: ${config.lib.stylix.colors.base0F};
         border-radius: 9.5px;
         background-color: transparent;
       }
@@ -156,7 +156,7 @@
       }
 
       #custom-weather.default {
-        color: ${config.lib.stylix.colors.base07};
+        color: ${config.lib.stylix.colors.base0F};
       }
 
       /* If workspaces is the leftmost module, omit left margin */
@@ -182,7 +182,7 @@
       }
 
       #battery {
-        color: ${config.lib.stylix.colors.base07};
+        color: ${config.lib.stylix.colors.base0F};
       }
 
       #battery.charging,
@@ -267,7 +267,7 @@
       }
 
       #idle_inhibitor.activated {
-        background-color: ${config.lib.stylix.colors.base07};
+        background-color: ${config.lib.stylix.colors.base0F};
         color: ${config.lib.stylix.colors.base00};
       }
 
@@ -314,7 +314,7 @@
       #custom-spotify {
         padding: 0 10px;
         margin: 0 4px;
-        color: ${config.lib.stylix.colors.base07};
+        color: ${config.lib.stylix.colors.base0F};
       }
   '';
 }
