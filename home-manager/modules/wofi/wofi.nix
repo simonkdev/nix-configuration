@@ -21,7 +21,7 @@
           outline: none;
           border: none;
           text-shadow:none;
-          background-color:transparent;
+          background-color: ${config.lib.stylix.colors.withHashtag.base00};
       }
 
       window {
