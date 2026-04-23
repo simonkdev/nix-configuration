@@ -180,7 +180,7 @@
       }
 
       #clock {
-        color: ${config.lib.stylix.colors.withHashtag.base05};
+        color: ${config.lib.stylix.colors.withHashtag.base04};
       }
 
       #battery {
