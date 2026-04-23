@@ -60,7 +60,7 @@
       }
 
       #window {
-        color: ${config.lib.stylix.colors.withHashtag.base05};
+        color: ${config.lib.stylix.colors.withHashtag.base04};
         font-family: JetBrainsMono Nerd Font;
       }
 
@@ -180,7 +180,7 @@
       }
 
       #clock {
-        color: ${config.lib.stylix.colors.withHashtag.base04};
+        color: ${config.lib.stylix.colors.withHashtag.base09};
       }
 
       #battery {
