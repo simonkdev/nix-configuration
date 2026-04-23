@@ -33,7 +33,7 @@
       }
       #inner-box {
           margin: 2px;
-          padding: 0px
+          padding: 10px
           border: none;
       }
       #outer-box {
