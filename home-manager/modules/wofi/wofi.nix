@@ -25,6 +25,7 @@
       }
 
       window {
+          background-color: ${config.lib.stylix.colors.withHashtag.base08};
           all:unset;
           padding: 20px;
           border-radius: 4px;

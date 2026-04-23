@@ -8,7 +8,7 @@
     "spacing": 5, 
     "modules-left": ["custom/launcher", "battery", "cpu", "memory", "hyprland/workspaces", "custom/weather"],
     "modules-center": ["custom/spotify", "hyprland/window"],
-    "modules-right": ["tray", "pulseaudio", "network", "clock", "custom/power-menu"],
+    "modules-right": ["tray", "pulseaudio", "clock", "custom/power-menu"],
     "hyprland/workspaces": {
       "format": "{id}",
       "on-click": "activate",
