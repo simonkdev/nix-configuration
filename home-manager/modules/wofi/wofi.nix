@@ -26,6 +26,7 @@
 
       window {
           background-color: alpha(${config.lib.stylix.colors.withHashtag.base08}, 1);
+          color: ${config.lib.stylix.colors.withHashtag.base0B};
           all:unset;
           padding: 20px;
           border-radius: 4px;
