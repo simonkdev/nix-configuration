@@ -15,7 +15,7 @@
   # home.file."/home/simonkdev/.config/waybar/style.css" = {
   #   source = lib.mkForce /home/simonkdev/nixsys/home-manager/modules/waybar/style.css;
   # };
-  home.file."/home/simonkdev/.config/waybar/style.css".text = ''
+  home.file."/home/simonkdev/.config/waybar/style.css".text = lib.mkForce ''
     /* `otf-font-awesome` is required to be installed for icons */
       * {
         font-family: JetBrainsMono Nerd Font;
