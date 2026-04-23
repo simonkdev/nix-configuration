@@ -11,6 +11,7 @@
 
       * {
         font-family: 'CodeNewRoman Nerd Font Mono', monospace;
+        font-size: 15px;
       }
 
       window {
