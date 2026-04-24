@@ -29,7 +29,7 @@
         transition-property: background-color;
         transition-duration: 0.5s;
         border-top: 8px transparent;
-        border-radius: 8px;
+        border-radius: 0px;
         transition-duration: 0.5s;
         margin: 5px 16px;
       }
