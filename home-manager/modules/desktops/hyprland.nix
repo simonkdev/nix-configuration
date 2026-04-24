@@ -79,7 +79,7 @@
 
       general = {
         "border_size" = 1;
-        "col.active_border" = lib.mkForce "${config.lib.stylix.colors.base01}";
+        "col.active_border" = lib.mkForce "${config.lib.stylix.colors.base0B}";
         "col.inactive_border" = lib.mkForce "${config.lib.stylix.colors.base00}";
         "gaps_in" = 3;
         "gaps_out" = 8;
