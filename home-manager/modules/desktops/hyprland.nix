@@ -230,9 +230,9 @@
         "size 960 540, class:yazi"
       ];
 
-      layerrule = [
-        "noanim, wofi"
-      ];
+      # layerrule = [
+      #   "noanim, wofi"
+      # ];
 
       #env = [
       #"LIBVA_DRIVER_NAME,nvidia"
