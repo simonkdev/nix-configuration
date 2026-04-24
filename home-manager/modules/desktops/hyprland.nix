@@ -78,8 +78,8 @@
 
       general = {
         "border_size" = 1;
-        "col.active_border" = "${config.lib.stylix.colors.withHashtag.base01}";
-        "col.inactive_border" = "${config.lib.stylix.colors.withHashtag.base00}";
+        "col.active_border" = lib.mkForce "${config.lib.stylix.colors.withHashtag.base01}";
+        "col.inactive_border" = lib.mkForce "${config.lib.stylix.colors.withHashtag.base00}";
         "gaps_in" = 3;
         "gaps_out" = 8;
         "allow_tearing" = false;
