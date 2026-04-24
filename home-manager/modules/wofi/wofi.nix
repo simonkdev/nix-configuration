@@ -15,7 +15,7 @@
       }
 
       window {
-        border: 1px solid ${config.lib.stylix.colors.withHashtag.base0C}; /* Highlight color */
+        border: 1px solid ${config.lib.stylix.colors.withHashtag.base0A}; /* Highlight color */
       }
 
       #input {
@@ -52,7 +52,7 @@
       }
 
       #entry:selected {
-        border: 2px solid ${config.lib.stylix.colors.withHashtag.base0C}; /* Highlight color */
+        border: 2px solid ${config.lib.stylix.colors.withHashtag.base0A}; /* Highlight color */
       }
     '';
   };
