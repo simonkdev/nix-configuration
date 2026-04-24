@@ -78,6 +78,7 @@
 
       general = {
         "border_size" = 1;
+        "border_color" = "${config.lib.stylix.colors.withHashtag.base01}";
         "gaps_in" = 3;
         "gaps_out" = 8;
         "allow_tearing" = false;
