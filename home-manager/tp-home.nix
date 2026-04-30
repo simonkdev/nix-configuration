@@ -49,6 +49,7 @@
     pkgs.signal-desktop
     pkgs.remmina
     pkgs.bluetui
+    pkgs.networkmanager_dmenu
 
     # Produktivität & Büro
     pkgs.unzip
