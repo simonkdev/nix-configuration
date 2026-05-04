@@ -8,7 +8,7 @@
     "spacing": 5, 
     "modules-left": ["custom/launcher", "battery", "cpu", "memory", "hyprland/workspaces", "custom/weather"],
     "modules-center": ["custom/spotify", "hyprland/window"],
-    "modules-right": ["tray", "pulseaudio", "clock", "custom/power-menu"],
+    "modules-right": ["tray",  "custom/network", "pulseaudio", "clock", "custom/power-menu"],
     "hyprland/workspaces": {
       "format": "{id}",
       "on-click": "activate",
@@ -54,10 +54,10 @@
         "on-click": ""
     },
     "network": {
-        "format-wifi": "直 {signalStrength}%",
-        "format-ethernet": " wired",
+        "format-wifi": "{signalStrength}%",
+        "format-ethernet": "",
         "on-click": "bash ~/.config/waybar/scripts/rofi-wifi-menu.sh",
-        "format-disconnected": "Disconnected  "
+        "format-disconnected": ""
     },
 
     "pulseaudio": {
@@ -84,5 +84,10 @@
     "custom/launcher": {
         "format": " <span color='#6a92d7'> </span>",
         "on-click": "wofi --show drun"
+    },
+
+    "custom/network": {
+        "format": "{icon}",
+        "on-click": "networkmanager_dmenu"
     }
 }

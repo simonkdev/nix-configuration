@@ -256,7 +256,7 @@
       }
 
       #tray > .passive {
-        -gtk-icon-effect: dim;
+        color: ${config.lib.stylix.colors.withHashtag.base06};
       }
 
       #tray > .needs-attention {
