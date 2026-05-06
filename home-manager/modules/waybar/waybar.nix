@@ -72,7 +72,7 @@
       #temperature,
       #backlight,
       #network,
-      #pulseaudio,
+      #pulseo,
       #custom-media,
       #tray,
       #mode,
