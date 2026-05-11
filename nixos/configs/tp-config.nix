@@ -123,6 +123,7 @@
     lshw
     ntfs3g
     p7zip
+    onlyoffice-desktopeditors
     unison
     yazi
 
