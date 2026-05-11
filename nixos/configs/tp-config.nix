@@ -14,7 +14,7 @@
     ../modules/misc/tp-misc.nix
     ../modules/boot/tp-boot.nix
     ../modules/devtools/virtualisation.nix
-    ../modules/gaming/gaming.nix
+    #../modules/gaming/gaming.nix
   ];
 
   users.users.simonkdev = {
