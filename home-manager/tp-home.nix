@@ -57,6 +57,7 @@
     pkgs.firefox-bin
     pkgs.quick-webapps
     pkgs.saber
+    pkgs.onlyoffice-desktopeditors
 
     # Grafik & Medien
     pkgs.geeqie
