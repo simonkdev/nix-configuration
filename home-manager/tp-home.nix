@@ -68,8 +68,8 @@
     pkgs.putty
     pkgs.zlib
     pkgs.whitesur-kde
-    pkgs.bambu-studio
     pkgs.kakoune
+    pkgs.bottles
 
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
