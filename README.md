@@ -1,4 +1,4 @@
-#### Welcome to my NixOS / Home Manager config! 
+## Welcome to my NixOS / Home Manager config! 
 
 Installation:
 
