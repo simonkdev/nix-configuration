@@ -1,3 +1,5 @@
+#### Welcome to my NixOS / Home Manager config! 
+
 Installation:
 
 cloning the flake into ~/nixsys and 
@@ -19,3 +21,4 @@ This will:
 - configure a docker VM for winapps
 - execute the only necessary imperative command for ProtonGE installation
 
+More information can be found in the Github wiki :)
