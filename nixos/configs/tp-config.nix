@@ -68,16 +68,22 @@
     tailscale.enable = true;
     displayManager.gdm = {
       enable = true;
-      extraConfig = {
-        daemon = {
-          AutomaticLoginEnable = false;
-          XrandrCommands = [
-            "xrandr --output DP-1 --auto --right-of eDP-1"
-          ];
-        };
-      };
     };
     desktopManager.gnome.enable = true;
+  };
+
+  systemd.services.applyUserMonitorSettings = let
+    username = "simon";
+    gdmConfigDir = "/var/lib/gdm/seat0/config";
+  in {
+    description = "Apply user monitor settings to GDM login screen";
+    after = ["network.target" "systemd-user-sessions.service" "display-manager.service"];
+    wantedBy = ["multi-user.target"];
+
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.bash}/bin/bash -c 'mkdir -p ${gdmConfigDir} && [ \"/home/${username}/.config/monitors.xml\" -ef \"${gdmConfigDir}/monitors.xml\" ] || cp /home/${username}/.config/monitors.xml ${gdmConfigDir}/monitors.xml && chown gdm:gdm ${gdmConfigDir}/monitors.xml'";
+    };
   };
 
   services.desktopManager.plasma6.enable = true;
