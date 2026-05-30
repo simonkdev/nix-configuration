@@ -73,7 +73,7 @@
   };
 
   systemd.services.applyUserMonitorSettings = let
-    username = "simon";
+    username = "simonkdev";
     gdmConfigDir = "/var/lib/gdm/seat0/config";
   in {
     description = "Apply user monitor settings to GDM login screen";
