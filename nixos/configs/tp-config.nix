@@ -66,7 +66,17 @@
     udisks2.enable = true;
     dbus.enable = true;
     tailscale.enable = true;
-    displayManager.gdm.enable = true;
+    displayManager.gdm = {
+      enable = true;
+      extraConfig = {
+        daemon = {
+          AutomaticLoginEnable = false;
+          XrandrCommands = [
+            "xrandr --output DP-1 --auto --right-of eDP-1"
+          ];
+        };
+      };
+    };
     desktopManager.gnome.enable = true;
   };
 
