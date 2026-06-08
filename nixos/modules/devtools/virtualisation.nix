@@ -7,7 +7,7 @@
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
   virtualisation.docker = {
-    package = pkgs.docker_29;
+    package = lib.mkForce pkgs.docker_29;
     enable = true;
     enableOnBoot = true;
   };
