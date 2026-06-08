@@ -42,6 +42,7 @@
   security.polkit.enable = true;
 
   virtualisation.docker = {
+    package = pkgs.docker_29;
     enable = true;
     enableOnBoot = lib.mkForce false;
   };
