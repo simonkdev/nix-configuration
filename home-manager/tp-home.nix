@@ -73,6 +73,7 @@
     pkgs.bottles
     pkgs.zed-editor
     unpkgs.mistral-vibe
+    pkgs.claude-code
 
     pkgs.nil
     pkgs.nixd
