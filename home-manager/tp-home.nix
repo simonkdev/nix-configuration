@@ -71,6 +71,7 @@
     pkgs.whitesur-kde
     pkgs.kakoune
     pkgs.bottles
+    pkgs.zed-editor
 
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
