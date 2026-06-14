@@ -73,6 +73,9 @@
     pkgs.bottles
     pkgs.zed-editor
 
+    pkgs.nil
+    pkgs.nixd
+
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
       cd ~/nixsys
