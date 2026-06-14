@@ -74,6 +74,7 @@
     pkgs.zed-editor
     unpkgs.mistral-vibe
     pkgs.claude-code
+    unpkgs.codex
 
     pkgs.nil
     pkgs.nixd
