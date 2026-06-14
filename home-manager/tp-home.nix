@@ -72,6 +72,7 @@
     pkgs.kakoune
     pkgs.bottles
     pkgs.zed-editor
+    pkgs.mistral-vibe
 
     pkgs.nil
     pkgs.nixd
