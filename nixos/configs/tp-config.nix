@@ -82,7 +82,6 @@
         pkgs.epson-escpr
         pkgs.epson-escpr2
       ];
-      ensureDefaultPrinter = true;
     };
     pulseaudio.enable = false; # Enable Audio
     udisks2.enable = true;
