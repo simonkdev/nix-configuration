@@ -175,6 +175,7 @@
     vlc
     pamixer
     pavucontrol
+    epson-escpr2
 
     # --- Desktop & UI ---
     hyprshot
