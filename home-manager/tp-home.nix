@@ -5,7 +5,8 @@
   unpkgs,
   lib,
   ...
-}: {
+}:
+{
   home.username = "simonkdev";
   home.homeDirectory = "/home/simonkdev";
 
@@ -56,7 +57,7 @@
     pkgs.calibre
     pkgs.firefox-bin
     pkgs.quick-webapps
-    pkgs.saber
+    # pkgs.saber
     pkgs.onlyoffice-desktopeditors
 
     # Grafik & Medien
@@ -146,17 +147,24 @@
 
   programs.yazi.enable = true;
 
-  home.file."/home/simonkdev/.config/fastfetch/config.jsonc".source = /home/simonkdev/nixsys/home-manager/modules/fastfetch/hypr.jsonc;
+  home.file."/home/simonkdev/.config/fastfetch/config.jsonc".source =
+    /home/simonkdev/nixsys/home-manager/modules/fastfetch/hypr.jsonc;
 
-  home.file."/home/simonkdev/.unison/nas-sync-obsidian.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-obsidian.prf;
-  home.file."/home/simonkdev/.unison/nas-sync-photos.prf".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-photos.prf;
-  home.file."/home/simonkdev/.smbcredentials".source = /home/simonkdev/nixsys/home-manager/modules/devtools/unison/.smbcredentials;
+  home.file."/home/simonkdev/.unison/nas-sync-obsidian.prf".source =
+    /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-obsidian.prf;
+  home.file."/home/simonkdev/.unison/nas-sync-photos.prf".source =
+    /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-photos.prf;
+  home.file."/home/simonkdev/.smbcredentials".source =
+    /home/simonkdev/nixsys/home-manager/modules/devtools/unison/.smbcredentials;
 
-  home.file."/home/simonkdev/.config/hypr/shaders/grayscale.glsl".source = /home/simonkdev/nixsys/home-manager/modules/readmode/grayscale.glsl;
+  home.file."/home/simonkdev/.config/hypr/shaders/grayscale.glsl".source =
+    /home/simonkdev/nixsys/home-manager/modules/readmode/grayscale.glsl;
 
-  home.file."/home/simonkdev/.config/yazi/yazi.toml".source = /home/simonkdev/nixsys/home-manager/modules/devtools/yazi.toml;
+  home.file."/home/simonkdev/.config/yazi/yazi.toml".source =
+    /home/simonkdev/nixsys/home-manager/modules/devtools/yazi.toml;
 
-  home.file."/usr/share/thumbnailers/ufraw.thumbnailer".source = /home/simonkdev/nixsys/home-manager/modules/devtools/ufraw.thumbnailer;
+  home.file."/usr/share/thumbnailers/ufraw.thumbnailer".source =
+    /home/simonkdev/nixsys/home-manager/modules/devtools/ufraw.thumbnailer;
 
   #programs.gnome-terminal.enable = true;
   programs.gnome-terminal.showMenubar = false;
@@ -194,7 +202,8 @@
       "chat.editor.fontSize" = lib.mkForce 16.0;
       "editor.fontSize" = lib.mkForce 16.0;
       "workbench.colorTheme" = lib.mkForce "Gruvbox Dark Hard";
-      "github.copilot.enable" = ''        {"*": false,
+      "github.copilot.enable" = ''
+        {"*": false,
             "plaintext": false,
             "markdown": false,
             "scminput": false
