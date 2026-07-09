@@ -73,6 +73,8 @@
     pkgs.kakoune
     pkgs.bottles
     pkgs.zed-editor
+    pkgs.flatpak
+    pkgs.gnome-software
     unpkgs.mistral-vibe
     pkgs.claude-code
     unpkgs.codex
