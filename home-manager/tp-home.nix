@@ -75,6 +75,7 @@
     pkgs.qt6.qtwebengine
     pkgs.nil
     pkgs.nixd
+    unpkgs.lufus
 
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
