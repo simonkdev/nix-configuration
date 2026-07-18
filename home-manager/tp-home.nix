@@ -76,7 +76,7 @@
     unpkgs.mistral-vibe
     pkgs.claude-code
     unpkgs.codex
-
+    pkgs.qt6.qtwebengine
     pkgs.nil
     pkgs.nixd
 
