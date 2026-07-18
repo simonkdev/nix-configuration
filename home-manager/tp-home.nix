@@ -44,7 +44,6 @@
     pkgs.pulseaudioFull
     pkgs.ffmpeg
     pkgs.moonlight-qt
-    pkgs.swaynotificationcenter
 
     # Netzwerk & Remote-Tools
     pkgs.signal-desktop
@@ -71,10 +70,7 @@
     pkgs.zlib
     pkgs.whitesur-kde
     pkgs.kakoune
-    pkgs.bottles
     pkgs.zed-editor
-    unpkgs.mistral-vibe
-    pkgs.claude-code
     unpkgs.codex
     pkgs.qt6.qtwebengine
     pkgs.nil
