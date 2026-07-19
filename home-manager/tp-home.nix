@@ -76,6 +76,7 @@
     pkgs.nil
     pkgs.nixd
     unpkgs.lufus
+    pkgs.platformio-core
 
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
@@ -173,6 +174,7 @@
       catppuccin.catppuccin-vsc-icons
       esbenp.prettier-vscode
       vscjava.vscode-java-pack
+      ms-vscode.cpptools
       github.copilot-chat
       github.copilot
       ms-python.python
@@ -185,9 +187,9 @@
       kamadorueda.alejandra
       ms-toolsai.jupyter
       ms-toolsai.jupyter
-      continue.continue
       teabyii.ayu
       platformio.platformio-vscode-ide
+      arcticicestudio.nord-visual-studio-code
     ];
     profiles.default.userSettings = {
       "chat.editor.fontFamily" = "DejaVu Sans Mono";
