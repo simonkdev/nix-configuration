@@ -34,7 +34,6 @@
     pkgs.cpufetch
     pkgs.gpufetch
     pkgs.hyprshade
-    pkgs.linux-wallpaperengine
 
     # Audio & Video
     pkgs.wl-clipboard
@@ -56,7 +55,6 @@
     pkgs.calibre
     pkgs.firefox-bin
     pkgs.quick-webapps
-    # pkgs.saber
     pkgs.onlyoffice-desktopeditors
 
     # Grafik & Medien
@@ -66,10 +64,7 @@
     # Entwicklung & Skripte
     pkgs.arduino-ide
     pkgs.openrocket
-    pkgs.putty
     pkgs.zlib
-    pkgs.whitesur-kde
-    pkgs.kakoune
     pkgs.zed-editor
     unpkgs.codex
     pkgs.qt6.qtwebengine
@@ -77,6 +72,8 @@
     pkgs.nixd
     unpkgs.lufus
     pkgs.platformio-core
+
+    pkgs.python3
 
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
@@ -116,12 +113,6 @@
     (pkgs.writeShellScriptBin "bsedmount" ''
       sudo sshfs webadmin@46.252.195.82:/home/webadmin/FleetManager ~/Documents/02-BSED/fleetmanager -o allow_other
     '')
-    (pkgs.writeShellScriptBin "sshman" ''
-      /home/simonkdev/nixsys/home-manager/modules/devtools/ssh_manager/hlbm
-    '')
-    (pkgs.writeShellScriptBin "bambuplay" ''
-      ffplay -loglevel quiet -rtsp_transport tcp -fflags nobuffer -i "rtsps://bblp:c89f6baf@10.5.22.128:322/streaming/live/1" -vf "scale=1920:1080:flags=lanczos,fps=30" -window_title "Bambu Lab X1C Camera"
-    '')
 
     # Sonstiges / Nischenanwendungen
     pkgs.peaclock
@@ -138,11 +129,8 @@
   };
 
   programs.btop.enable = true;
-
   programs.wofi.enable = true;
-
   programs.home-manager.enable = true;
-
   programs.yazi.enable = true;
 
   home.file."/home/simonkdev/.config/fastfetch/config.jsonc".source =
@@ -154,17 +142,13 @@
     /home/simonkdev/nixsys/home-manager/modules/devtools/unison/nas-sync-photos.prf;
   home.file."/home/simonkdev/.smbcredentials".source =
     /home/simonkdev/nixsys/home-manager/modules/devtools/unison/.smbcredentials;
-
   home.file."/home/simonkdev/.config/hypr/shaders/grayscale.glsl".source =
     /home/simonkdev/nixsys/home-manager/modules/readmode/grayscale.glsl;
-
   home.file."/home/simonkdev/.config/yazi/yazi.toml".source =
     /home/simonkdev/nixsys/home-manager/modules/devtools/yazi.toml;
-
   home.file."/usr/share/thumbnailers/ufraw.thumbnailer".source =
     /home/simonkdev/nixsys/home-manager/modules/devtools/ufraw.thumbnailer;
 
-  #programs.gnome-terminal.enable = true;
   programs.gnome-terminal.showMenubar = false;
 
   programs.vscode = {
