@@ -187,6 +187,7 @@
       ms-toolsai.jupyter
       continue.continue
       teabyii.ayu
+      platformio.platformio-vscode-ide
     ];
     profiles.default.userSettings = {
       "chat.editor.fontFamily" = "DejaVu Sans Mono";
@@ -198,7 +199,7 @@
       "scm.inputFontFamily" = "DejaVu Sans Mono";
       "chat.editor.fontSize" = lib.mkForce 16.0;
       "editor.fontSize" = lib.mkForce 16.0;
-      "workbench.colorTheme" = lib.mkForce "Gruvbox Dark Hard";
+      "workbench.colorTheme" = lib.mkForce "Nord";
       "github.copilot.enable" = ''
         {"*": false,
             "plaintext": false,
