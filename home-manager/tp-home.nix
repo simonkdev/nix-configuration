@@ -117,6 +117,7 @@
 
     # Sonstiges / Nischenanwendungen
     pkgs.peaclock
+    pkgs.kdePackages.breeze-gtk
   ];
 
   home.sessionVariables = {
@@ -128,6 +129,10 @@
     GDK_SCALE = "1";
     QT_SCALE_FACTOR = "1";
   };
+
+  services.xserver.desktopManager.plasma5.sessionEnv = [
+    "GTK_THEME=Breeze"
+  ];
 
   programs.btop.enable = true;
   programs.wofi.enable = true;

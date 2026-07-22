@@ -38,8 +38,4 @@
     };
 
   };
-  gtk = {
-    enable = true;
-    theme.package = lib.mkForce pkgs.kdePackages.breeze-gtk;
-  };
 }
