@@ -36,5 +36,10 @@
       terminal = 10;
       desktop = 10;
     };
+
+    gtk = {
+      enable = true;
+      theme.package = pkgs.breeze-gtk;
+    };
   };
 }
