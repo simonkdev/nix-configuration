@@ -90,7 +90,7 @@
     tailscale.enable = true;
     displayManager.sddm = lib.mkForce {
       enable = true; # themes are in /run/current-system/sw/share/sddm/themes by default
-      theme = "maya";
+      theme = "maldives";
     };
   };
 
