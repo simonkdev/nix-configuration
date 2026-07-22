@@ -89,11 +89,15 @@
     dbus.enable = true;
     tailscale.enable = true;
     displayManager.sddm = lib.mkForce {
-      enable = true;
-      settings = {
-        Theme = {
-          Current = "breeze";
-        };
+      enable = true; # themes are in /run/current-system/sw/share/sddm/themes by default
+      theme = "breeze";
+      themePackage = pkgs.sddm-kde-theme-breeze.overrideAttrs (old: {
+            postInstall = ''
+              ${old.postInstall or ""}
+              cp ${../../wallpapers/obi-wan-vs-vader-uw.jpg} $out/share/sddm/themes/breeze/background.png
+            '';
+          });
+
       };
     };
   };
