@@ -88,10 +88,10 @@
     udisks2.enable = true;
     dbus.enable = true;
     tailscale.enable = true;
-    displayManager.gdm = {
+    displayManager.sddm = {
       enable = true;
     };
-    desktopManager.gnome.enable = true;
+    desktopManager.gnome.enable = false;
   };
 
   systemd.services.applyUserMonitorSettings =

@@ -11,7 +11,7 @@
     polarity = "dark";
     autoEnable = true;
     targets = {
-      gtk.enable = true;
+      gtk.enable = false;
     };
   };
 
