@@ -15,11 +15,11 @@
     ## ashes, brewer, ayu-mirage, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
     targets = {
-      qt.platform = "kde"; # or "qt5ct", "kde", etc.
+      qt.platform = "qtct"; # or "qt5ct", "kde", etc.
       qt.enable = true;
       btop.enable = true;
       firefox.enable = true;
-      kde.enable = false;
+      kde.enable = true;
       librewolf.profileNames = [ "simonkdev" ];
       swaync.enable = true;
       micro.enable = true;
