@@ -19,8 +19,8 @@
     # Optional: Inject custom background image
     installPhase = oldAttrs.installPhase + ''
       chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
-      cp ${./relative/path/to/your-custom-background.png} \
-        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/your-custom-background.png
+      cp ${/home/simonkdev/nixsys/wallpapers/obi-wan-vs-vader-uw.jpg} \
+        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/obi-wan-vs-vader-uw.png
     '';
   });
 in
