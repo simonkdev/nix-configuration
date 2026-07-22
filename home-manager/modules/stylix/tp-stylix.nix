@@ -24,6 +24,7 @@
       librewolf.profileNames = ["simonkdev"];
       swaync.enable = true;
       micro.enable = true;
+      sddm.enable = true;
     };
 
     cursor = {
