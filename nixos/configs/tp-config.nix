@@ -10,7 +10,7 @@
 let
   sddm-astronaut =
     (pkgs.sddm-astronaut.override {
-      embeddedTheme = "japanese_aesthetic"; # or any other theme
+      embeddedTheme = "black_hole"; # or any other theme
       themeConfig = {
         # Customize colors and settings
         HeaderTextColor = "${config.lib.stylix.colors.base0A}";
