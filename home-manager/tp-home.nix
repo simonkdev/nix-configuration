@@ -128,7 +128,7 @@
     EGL_PLATFORM = "wayland";
     GDK_SCALE = "1";
     QT_SCALE_FACTOR = "1";
-    GTK_THEME = "Breeze";
+#    GTK_THEME = "Breeze";
   };
 
   programs.btop.enable = true;
