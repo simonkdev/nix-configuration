@@ -15,12 +15,12 @@
 
     targets = {
       qt.platform = "gnome"; # or "qt5ct", "kde", etc.
-      #qt.enable = false;
+      qt.enable = true;
       btop.enable = true;
       firefox.enable = true;
       kde.enable = false;
       gnome.enable = true;
-      gtk.enable = false;
+      gtk.enable = true;
       librewolf.profileNames = ["simonkdev"];
       swaync.enable = true;
       micro.enable = true;
