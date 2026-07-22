@@ -90,14 +90,9 @@
     tailscale.enable = true;
     displayManager.sddm = lib.mkForce {
       enable = true; # themes are in /run/current-system/sw/share/sddm/themes by default
-      theme = "breeze";
+      theme = "maya";
     };
   };
-
-  system.activationScripts.copySddmBackground = ''
-    cp /home/simonkdev/nixsys/wallpapers/obi-wan-vs-vader-uw.png /nix/store/1dqy3ln0vqhjdcxffagyl5mqqkak2jih-breeze-6.5.6/share/wallpapers/Next/contents/images/5120x2880.png
-    chmod 644 /nix/store/1dqy3ln0vqhjdcxffagyl5mqqkak2jih-breeze-6.5.6/share/wallpapers/Next/contents/images/5120x2880.png
-  '';
 
   services.desktopManager.plasma6.enable = true;
 
