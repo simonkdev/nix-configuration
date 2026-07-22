@@ -116,6 +116,7 @@
 
     # Sonstiges / Nischenanwendungen
     pkgs.peaclock
+    pkgs.kdePackages.breeze-gtk
   ];
 
   home.sessionVariables = {
@@ -126,6 +127,7 @@
     EGL_PLATFORM = "wayland";
     GDK_SCALE = "1";
     QT_SCALE_FACTOR = "1";
+    GTK_THEME = "breeze";
   };
 
   programs.btop.enable = true;

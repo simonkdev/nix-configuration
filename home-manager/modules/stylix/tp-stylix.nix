@@ -40,7 +40,7 @@
   };
 
   gtk = {
-    enable = true;
+    enable = false;
 
     iconTheme = {
       name = lib.mkForce "WhiteSur";
