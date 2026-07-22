@@ -15,7 +15,7 @@
 
     targets = {
       qt.platform = "gnome"; # or "qt5ct", "kde", etc.
-      qt.enable = true;
+      #qt.enable = true;
       btop.enable = true;
       firefox.enable = true;
       kde.enable = false;
