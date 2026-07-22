@@ -20,7 +20,7 @@
     installPhase = oldAttrs.installPhase + ''
       chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
       cp ${../../wallpapers/obi-wan-vs-vader-uw.jpg} \
-        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/obi-wan-vs-vader-uw.png
+        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/obi-wan-vs-vader-uw.jpg
     '';
   });
 in
