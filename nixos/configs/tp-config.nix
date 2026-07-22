@@ -191,6 +191,7 @@
     cmatrix
     cbonsai
     pipes-rs
+    elegant-sddm
   ];
 
   #home-manager.backupFileExtension = "backup";
