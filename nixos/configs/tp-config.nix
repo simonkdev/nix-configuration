@@ -12,17 +12,17 @@
     themeConfig = {
       # Customize colors and settings
       HeaderTextColor = "#d5c4a1";
-      Background = "/home/simonkdev/nixsys/wallpapers/obi-wan-vs-vader-uw.jpg";
+      Background = "Backgrounds/obi-wan-vs-vader-uw.jpg";
       # ... other theme configuration options
     };
-  });#.overrideAttrs (oldAttrs: {
+  }).overrideAttrs (oldAttrs: {
     # Optional: Inject custom background image
-    #installPhase = oldAttrs.installPhase + ''
-    #  chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
-    #  cp ${/home/simonkdev/nixsys/wallpapers/obi-wan-vs-vader-uw.jpg} \
-    #    $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/obi-wan-vs-vader-uw.png
-    #'';
-  #});
+    installPhase = oldAttrs.installPhase + ''
+      chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
+      cp ${../../wallpapers/obi-wan-vs-vader-uw.jpg} \
+        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/obi-wan-vs-vader-uw.png
+    '';
+  });
 in
 
 
