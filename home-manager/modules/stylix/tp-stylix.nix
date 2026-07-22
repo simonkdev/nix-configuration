@@ -20,7 +20,7 @@
       firefox.enable = true;
       kde.enable = false;
       gnome.enable = true;
-      gtk.enable = true;
+      gtk.enable = false;
       librewolf.profileNames = ["simonkdev"];
       swaync.enable = true;
       micro.enable = true;
