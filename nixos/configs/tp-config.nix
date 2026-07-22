@@ -97,10 +97,9 @@
               cp ${../../wallpapers/obi-wan-vs-vader-uw.jpg} $out/share/sddm/themes/breeze/background.png
             '';
           });
-
       };
     };
-  };
+
 
   services.desktopManager.plasma6.enable = true;
 
