@@ -12,7 +12,7 @@
     themeConfig = {
       # Customize colors and settings
       HeaderTextColor = "#d5c4a1";
-      #Background = "Backgrounds/obi-wan-vs-vader-uw.jpg";
+      Background = "/home/simonkdev/nixsys/wallpapers/obi-wan-vs-vader-uw.jpg";
       # ... other theme configuration options
     };
   });#.overrideAttrs (oldAttrs: {
