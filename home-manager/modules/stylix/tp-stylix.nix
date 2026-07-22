@@ -37,9 +37,9 @@
       desktop = 10;
     };
 
-    gtk = {
-      enable = true;
-      theme.package = pkgs.kdePackages.breeze-gtk;
-    };
+  };
+  gtk = {
+    enable = true;
+    theme.package = pkgs.kdePackages.breeze-gtk;
   };
 }
