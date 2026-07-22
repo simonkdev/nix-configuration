@@ -7,27 +7,6 @@
   modulesPath,
   ...
 }:
-let
-  sddm-astronaut =
-    (pkgs.sddm-astronaut.override {
-      embeddedTheme = "pixel_sakura_static"; # or any other theme
-      themeConfig = {
-        # Customize colors and settings
-        HeaderTextColor = "${config.lib.stylix.colors.base0A}";
-        Background = "Backgrounds/obi-wan-vs-vader-uw.jpg";
-        # ... other theme configuration options
-      };
-    }).overrideAttrs
-      (oldAttrs: {
-        # Optional: Inject custom background image
-        installPhase = oldAttrs.installPhase + ''
-          chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
-          cp ${../../wallpapers/obi-wan-vs-vader-uw.jpg} \
-            $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/obi-wan-vs-vader-uw.jpg
-        '';
-      });
-in
-
 {
   imports = [
     ./tp-hardware.nix
@@ -111,11 +90,6 @@ in
     tailscale.enable = true;
     displayManager.sddm = lib.mkForce {
       enable = true;
-      package = pkgs.kdePackages.sddm;
-      extraPackages = with pkgs; [
-        kdePackages.qtmultimedia # Required for video backgrounds/audio
-      ];
-      theme = "sddm-astronaut-theme";
     };
   };
 
@@ -216,7 +190,6 @@ in
     cmatrix
     cbonsai
     pipes-rs
-    sddm-astronaut
   ];
 
   #home-manager.backupFileExtension = "backup";
