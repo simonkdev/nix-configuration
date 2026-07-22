@@ -18,7 +18,7 @@
       qt.enable = true;
       btop.enable = true;
       firefox.enable = true;
-      kde.enable = false;
+      kde.enable = true;
       gnome.enable = true;
       gtk.enable = true;
       librewolf.profileNames = ["simonkdev"];
