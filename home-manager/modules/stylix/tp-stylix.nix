@@ -3,25 +3,24 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   ## bathory, gorgoroth, khold, mayhem, immortal
   stylix = {
     enable = true;
 
     # Use an existing wallpaper file so ImageMagick can open it during builds
     image = /home/simonkdev/nixsys/wallpapers/obi-wan-vs-vader-uw.jpg;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
     ## ashes, brewer, ayu-mirage, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
     targets = {
-      qt.platform = "gnome"; # or "qt5ct", "kde", etc.
-      #qt.enable = false;
+      qt.platform = "kde"; # or "qt5ct", "kde", etc.
+      qt.enable = true;
       btop.enable = true;
       firefox.enable = true;
       kde.enable = false;
-      gnome.enable = true;
-      gtk.enable = true;
-      librewolf.profileNames = ["simonkdev"];
+      librewolf.profileNames = [ "simonkdev" ];
       swaync.enable = true;
       micro.enable = true;
     };
@@ -33,20 +32,9 @@
     };
 
     fonts.sizes = {
-      applications = 12;
-      terminal = 12;
-      desktop = 12;
-    };
-  };
-
-  gtk = {
-    enable = true;
-
-    iconTheme = {
-      name = lib.mkForce "WhiteSur";
-      package = lib.mkForce pkgs.whitesur-icon-theme;
-      #package = lib.mkForce pkgs.cosmic-icons;
-      ## quogir + pkgs.qogir-icon-theme
+      applications = 10;
+      terminal = 10;
+      desktop = 10;
     };
   };
 }

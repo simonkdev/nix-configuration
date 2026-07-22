@@ -16,11 +16,12 @@
     #./modules/devtools/vscode.nix
     ./modules/devtools/kitty.nix
     ./modules/stylix/tp-stylix.nix
-    ./modules/desktops/gnome.nix
+    ##./modules/desktops/gnome.nix
     ./modules/waybar/waybar.nix
     ./modules/wofi/wofi.nix
     ./modules/desktops/hyprland.nix
     ./modules/hyprlock.nix
+
     ./modules/apps/browser.nix
     #   ~/nixsys/home-manager/modules/nvim.nix
   ];
@@ -148,8 +149,6 @@
     /home/simonkdev/nixsys/home-manager/modules/devtools/yazi.toml;
   home.file."/usr/share/thumbnailers/ufraw.thumbnailer".source =
     /home/simonkdev/nixsys/home-manager/modules/devtools/ufraw.thumbnailer;
-
-  programs.gnome-terminal.showMenubar = false;
 
   programs.vscode = {
     enable = true;

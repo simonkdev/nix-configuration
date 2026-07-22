@@ -3,7 +3,8 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   stylix = {
     enable = true;
     ##   image = ../wallpapers/wallpaper.jpg;
@@ -11,7 +12,7 @@
     polarity = "dark";
     autoEnable = true;
     targets = {
-      gtk.enable = true;
+      gtk.enable = false;
     };
   };
 
