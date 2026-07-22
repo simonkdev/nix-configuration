@@ -108,7 +108,7 @@ in
     udisks2.enable = true;
     dbus.enable = true;
     tailscale.enable = true;
-    displayManager.sddm = {
+    displayManager.sddm = lib.mkForce {
         enable = true;
         package = pkgs.kdePackages.sddm;
         extraPackages = with pkgs; [
