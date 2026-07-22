@@ -19,7 +19,7 @@
       qt.enable = true;
       btop.enable = true;
       firefox.enable = true;
-      kde.enable = true;
+      kde.enable = false;
       librewolf.profileNames = [ "simonkdev" ];
       swaync.enable = true;
       micro.enable = true;
