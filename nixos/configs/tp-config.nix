@@ -90,6 +90,11 @@
     tailscale.enable = true;
     displayManager.sddm = lib.mkForce {
       enable = true;
+      settings = {
+        Theme = {
+          Current = "breeze";
+        };
+      };
     };
   };
 
