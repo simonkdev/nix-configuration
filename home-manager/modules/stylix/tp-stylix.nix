@@ -39,7 +39,7 @@
 
     gtk = {
       enable = true;
-      theme.package = pkgs.breeze-gtk;
+      theme.package = pkgs.kdePackages.breeze-gtk;
     };
   };
 }
