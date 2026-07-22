@@ -91,15 +91,13 @@
     displayManager.sddm = lib.mkForce {
       enable = true; # themes are in /run/current-system/sw/share/sddm/themes by default
       theme = "breeze";
-      themePackage = pkgs.sddm-kde-theme-breeze.overrideAttrs (old: {
-            postInstall = ''
-              ${old.postInstall or ""}
-              cp ${../../wallpapers/obi-wan-vs-vader-uw.jpg} $out/share/sddm/themes/breeze/background.png
-            '';
-          });
       };
-    };
+  };
 
+    system.activationScripts.copySddmBackground = ''
+      cp /home/simonkdev/nixsys/wallpapers/obi-wan-vs-vader-uw.png /var/lib/sddm/theme/background.png
+      chmod 644 /var/lib/sddm/theme/background.png
+    '';
 
   services.desktopManager.plasma6.enable = true;
 
