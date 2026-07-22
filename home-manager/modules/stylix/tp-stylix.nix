@@ -40,6 +40,6 @@
   };
   gtk = {
     enable = true;
-    theme.package = pkgs.kdePackages.breeze-gtk;
+    theme.package = lib.mkForce pkgs.kdePackages.breeze-gtk;
   };
 }
