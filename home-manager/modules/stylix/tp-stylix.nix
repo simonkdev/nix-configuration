@@ -10,7 +10,7 @@
 
     # Use an existing wallpaper file so ImageMagick can open it during builds
     image = /home/simonkdev/nixsys/wallpapers/obi-wan-vs-vader-uw.jpg;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
     ## ashes, brewer, ayu-mirage, catppuccin-mocha, darktooth, dracula, gruvbox-material-dark-hard, gruvbox-dark-hard, black-metal-khold
 
     targets = {
