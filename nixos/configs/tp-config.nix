@@ -196,6 +196,11 @@
 
   #home-manager.backupFileExtension = "backup";
 
+    services.udev.packages = with pkgs; [ 
+    platformio-core.udev
+    openocd
+  ];
+
   fonts.packages = with pkgs; [
     nerd-fonts.fira-code
     nerd-fonts.droid-sans-mono
