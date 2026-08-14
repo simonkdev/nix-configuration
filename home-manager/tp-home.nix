@@ -119,6 +119,8 @@
 
       Discord &
 
+      sleep 5
+
       cd /home/simonkdev/Documents/experiments/genzai || exit 1
 
       devenv tasks run genzai:autostart
