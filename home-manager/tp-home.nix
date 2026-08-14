@@ -114,6 +114,16 @@
       sudo sshfs webadmin@46.252.195.82:/home/webadmin/FleetManager ~/Documents/02-BSED/fleetmanager -o allow_other
     '')
 
+    (pkgs.writeShellScriptBin "discord-custom-genzai" ''
+      #!/usr/bin/env bash
+
+      Discord &
+
+      cd /home/simonkdev/Documents/experiments/genzai || exit 1
+
+      devenv tasks run genzai:autostart
+    '')
+
     # Sonstiges / Nischenanwendungen
     pkgs.peaclock
     pkgs.kdePackages.breeze-gtk
