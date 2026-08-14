@@ -119,7 +119,7 @@
 
       Discord &
 
-      sleep 5
+      sleep 20
 
       cd /home/simonkdev/Documents/experiments/genzai || exit 1
 
