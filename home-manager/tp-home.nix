@@ -129,6 +129,7 @@
     # Sonstiges / Nischenanwendungen
     pkgs.peaclock
     pkgs.kdePackages.breeze-gtk
+    pkgs.kdePackages.qtstyleplugin-kvantum
   ];
 
   home.sessionVariables = {
