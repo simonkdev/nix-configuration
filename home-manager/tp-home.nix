@@ -54,7 +54,6 @@
     # Produktivität & Büro
     pkgs.unzip
     pkgs.calibre
-    pkgs.firefox-bin
     pkgs.quick-webapps
     pkgs.onlyoffice-desktopeditors
 

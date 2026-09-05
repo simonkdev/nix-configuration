@@ -5,6 +5,7 @@
 }:
 {
   programs.firefox = {
+    package = pkgs.firefox-bin;
     enable = true;
     profiles = {
       simonkdev = {
