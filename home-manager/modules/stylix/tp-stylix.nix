@@ -22,7 +22,7 @@
       kde.enable = true;
       gnome.enable = true;
       gtk.enable = true;
-      librewolf.profileNames = [ "simonkdev" ];
+      firefox.profileNames = [ "simonkdev" ];
       swaync.enable = true;
       micro.enable = true;
     };

@@ -2,8 +2,9 @@
   pkgs,
   lib,
   ...
-}: {
-  programs.librewolf = {
+}:
+{
+  programs.firefox = {
     enable = true;
     profiles = {
       simonkdev = {
