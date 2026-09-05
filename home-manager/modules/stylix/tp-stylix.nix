@@ -39,15 +39,16 @@
       desktop = 12;
     };
 
-    gtk = {
-      enable = lib.mkForce false;
+  };
+  gtk = {
+    enable = lib.mkForce false;
 
-      iconTheme = {
-        name = lib.mkForce "WhiteSur";
-        package = lib.mkForce pkgs.whitesur-icon-theme;
-        #package = lib.mkForce pkgs.cosmic-icons;
-        ## quogir + pkgs.qogir-icon-theme
-      };
+    iconTheme = {
+      name = lib.mkForce "WhiteSur";
+      package = lib.mkForce pkgs.whitesur-icon-theme;
+      #package = lib.mkForce pkgs.cosmic-icons;
+      ## quogir + pkgs.qogir-icon-theme
     };
   };
+
 }
