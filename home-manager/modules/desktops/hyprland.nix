@@ -3,7 +3,8 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   wayland.windowManager.hyprland = {
     enable = true;
 
@@ -29,7 +30,7 @@
 
       input = {
         "kb_layout" = "de";
-      }; ## endinput
+      }; # # endinput
 
       #############################
       ####### LOOK AND FEEL #######
@@ -81,7 +82,7 @@
       general = {
         "border_size" = 1;
         "col.active_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base0A})";
-        "col.inactive_border" = lib.mkForce "${config.lib.stylix.colors.base00}";
+        "col.inactive_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base00})";
         "gaps_in" = 3;
         "gaps_out" = 8;
         "allow_tearing" = false;
@@ -101,8 +102,8 @@
           "ignore_opacity" = true;
           brightness = "1.0";
           vibrancy = "0.0";
-        }; ## blurend
-      }; ## decorationend
+        }; # # blurend
+      }; # # decorationend
 
       ###########################
       ####### KEYBINDINGS #######
@@ -175,14 +176,14 @@
 
         "$mod, mouse_down, workspace, e+1"
         "$mod, mouse_up, workspace, e-1"
-      ]; ## endbinds
+      ]; # # endbinds
 
       bindm = [
         #### Move/Resize Windows with win+mousebuttons
 
         "$mod, mouse:272, movewindow"
         "$mod, mouse:273, resizewindow"
-      ]; ## endbindms
+      ]; # # endbindms
 
       bindel = [
         # ThinkPad T480s / common XF86 multimedia keys
@@ -242,8 +243,8 @@
       #"WLR_NO_HARDWARE_CURSORS,0"
       #"AQ_DRM_DEVICES,/dev/dri/card1"
       #];
-    }; ## endsettings
-  }; ## endhyprland
+    }; # # endsettings
+  }; # # endhyprland
 
   ########################
 }
