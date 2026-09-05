@@ -130,6 +130,8 @@
     pkgs.peaclock
     pkgs.kdePackages.breeze-gtk
     pkgs.kdePackages.qtstyleplugin-kvantum
+    pkgs.qt6Packages.qtstyleplugin-kvantum
+    pkgs.libsForQt5.qtstyleplugin-kvantum
   ];
 
   home.sessionVariables = {
