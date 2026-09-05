@@ -3,7 +3,8 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   stylix = {
     enable = true;
     ##   image = ../wallpapers/wallpaper.jpg;

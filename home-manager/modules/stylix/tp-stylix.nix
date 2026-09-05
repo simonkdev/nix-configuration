@@ -3,7 +3,8 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   ## bathory, gorgoroth, khold, mayhem, immortal
   stylix = {
     enable = true;
@@ -37,7 +38,6 @@
       terminal = 12;
       desktop = 12;
     };
-  };
 
   gtk = {
     enable = lib.mkForce false;

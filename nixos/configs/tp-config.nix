@@ -10,12 +10,10 @@
 {
   imports = [
     ./tp-hardware.nix
-    ../modules/misc/stylix.nix
     ../modules/devtools/networking.nix
     ../modules/misc/tp-misc.nix
     ../modules/boot/tp-boot.nix
     ../modules/devtools/virtualisation.nix
-    #../modules/gaming/gaming.nix
   ];
 
   users.users.simonkdev = {
