@@ -136,7 +136,6 @@
 
   home.sessionVariables = {
     EDITOR = "nano";
-    #NIX_XDG_DESKTOP_PORTAL_DIR = "/run/current-system/sw/share/xdg-desktop-portal/portals";
     WLR_NO_HARDWARE_CURSORS = 1;
     MOZ_ENABLE_WAYLAND = "1";
     LIBVA_DRIVER_NAME = "nvidia";
