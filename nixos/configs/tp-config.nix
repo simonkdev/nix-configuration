@@ -190,11 +190,12 @@
     cbonsai
     pipes-rs
     elegant-sddm
+    kvantum
   ];
 
   #home-manager.backupFileExtension = "backup";
 
-    services.udev.packages = with pkgs; [ 
+  services.udev.packages = with pkgs; [
     platformio-core.udev
     openocd
   ];
@@ -207,8 +208,7 @@
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
-                "librewolf-152.0.2-1"
-              ];
-
+    "librewolf-152.0.2-1"
+  ];
 
 }
