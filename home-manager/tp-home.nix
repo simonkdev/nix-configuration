@@ -178,7 +178,7 @@
   home.file.".config/cosmic/com.system76.CosmicBackground/v1/all".text = ''
     (
         output: "all",
-        source: /home/simonkdev/nixsys/wallpapers/nix-magenta-blue-1920x1080.png,
+        source: /home/simonkdev/nixsys/wallpapers/mountains.jpg,
         filter_by_theme: false,
         rotation_frequency: 900,
         filter_method: Lanczos,
