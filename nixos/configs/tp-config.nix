@@ -102,10 +102,7 @@
     udisks2.enable = true;
     dbus.enable = true;
     tailscale.enable = true;
-    displayManager.sddm = lib.mkForce {
-      enable = true; # themes are in /run/current-system/sw/share/sddm/themes by default
-      theme = "breeze";
-    };
+    services.displayManager.cosmic-greeter.enable
   };
 
   services.desktopManager = {
