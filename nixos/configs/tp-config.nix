@@ -102,7 +102,7 @@
     udisks2.enable = true;
     dbus.enable = true;
     tailscale.enable = true;
-    services.displayManager.cosmic-greeter.enable
+    displayManager.cosmic-greeter.enable = true;
   };
 
   services.desktopManager = {
