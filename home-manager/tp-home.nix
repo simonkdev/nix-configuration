@@ -174,7 +174,8 @@
     /home/simonkdev/nixsys/home-manager/modules/devtools/yazi.toml;
   home.file."/usr/share/thumbnailers/ufraw.thumbnailer".source =
     /home/simonkdev/nixsys/home-manager/modules/devtools/ufraw.thumbnailer;
-
+  home.file."/home/simonkdev/.config/autostart/cosmic.desktop".source =
+    /home/simonkdev/nixsys/home-manager/modules/devtools/cosmic.desktop;
 
   programs.vscode = {
     enable = true;

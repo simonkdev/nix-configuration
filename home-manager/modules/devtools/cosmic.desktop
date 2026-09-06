@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Kill Hyprpaper
+Exec=systemctl stop hyprpaper
