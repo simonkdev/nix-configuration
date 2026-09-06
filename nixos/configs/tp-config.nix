@@ -93,7 +93,7 @@
   };
 
   services.desktopManager = {
-    plasma6.enable = true;
+    # plasma6.enable = true;
     cosmic.enable = true;
   };
 
