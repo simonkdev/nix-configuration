@@ -54,22 +54,20 @@
   xdg.portal = {
     enable = true;
 
-    extraPortals = [
-      pkgs.xdg-desktop-portal-cosmic
-      pkgs.xdg-desktop-portal-gtk
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-cosmic
+      xdg-desktop-portal-gtk
     ];
 
     config = {
       cosmic = {
         default = [ "cosmic" ];
-
-        "org.freedesktop.impl.portal.FileChooser" = [ "cosmic" ];
+        "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
       };
 
       common = {
-        default = [ "cosmic" ];
-
-        "org.freedesktop.impl.portal.FileChooser" = [ "cosmic" ];
+        default = [ "gtk" ];
+        "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
       };
     };
   };
