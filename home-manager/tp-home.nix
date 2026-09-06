@@ -143,17 +143,16 @@
     GDK_SCALE = "1";
     QT_SCALE_FACTOR = "1";
     GTK_THEME = "breeze";
-    QT_STYLE_OVERRIDE = lib.mkForce "";
   };
 
   home.sessionVariablesExtra = ''
     unset QT_STYLE_OVERRIDE
   '';
 
-  home.file.".config/systemd/user/plasma-plasmashell.service.d/override.conf".text = ''
-    [Service]
-    UnsetEnvironment=QT_STYLE_OVERRIDE
-  '';
+  # home.file.".config/systemd/user/plasma-plasmashell.service.d/override.conf".text = ''
+  #   [Service]
+  #   UnsetEnvironment=QT_STYLE_OVERRIDE
+  # '';
 
   programs.btop.enable = true;
   programs.wofi.enable = true;
