@@ -67,7 +67,7 @@
       };
 
       common = {
-        default = [ "gtk" ];
+        default = [ "cosmic" ];
 
         "org.freedesktop.impl.portal.FileChooser" = [ "cosmic" ];
       };
