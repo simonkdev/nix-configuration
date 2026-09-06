@@ -190,7 +190,9 @@
     cbonsai
     pipes-rs
     elegant-sddm
-    kvantum
+    kdePackages.qtstyleplugin-kvantum
+    qt6Packages.qtstyleplugin-kvantum
+    libsForQt5.qtstyleplugin-kvantum
   ];
 
   #home-manager.backupFileExtension = "backup";
