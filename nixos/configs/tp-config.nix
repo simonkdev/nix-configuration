@@ -60,14 +60,9 @@
     ];
 
     config = {
-      cosmic = {
-        default = [ "cosmic" ];
-        "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
-      };
-
       common = {
-        default = [ "gtk" ];
-        "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
+        default = [ "cosmic" ];
+        "org.freedesktop.impl.portal.FileChooser" = [ "cosmic" ];
       };
     };
   };
