@@ -208,9 +208,4 @@
     nerd-fonts.jetbrains-mono
     font-awesome
   ];
-
-  nixpkgs.config.permittedInsecurePackages = [
-    "librewolf-152.0.2-1"
-  ];
-
 }
