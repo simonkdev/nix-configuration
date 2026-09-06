@@ -19,8 +19,8 @@
       qt.enable = true;
       btop.enable = true;
       firefox.enable = true;
-      # kde.enable = true;
-      gnome.enable = true;
+      kde.enable = false;
+      gnome.enable = false;
       gtk.enable = true;
       firefox.profileNames = [ "simonkdev" ];
       swaync.enable = true;
