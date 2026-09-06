@@ -175,6 +175,18 @@
   home.file."/usr/share/thumbnailers/ufraw.thumbnailer".source =
     /home/simonkdev/nixsys/home-manager/modules/devtools/ufraw.thumbnailer;
 
+  home.file.".config/cosmic/com.system76.CosmicBackground/v1/all".text = ''
+    (
+        output: "all",
+        source: "/home/simonkdev/nixsys/wallpapers/nix-magenta-blue-1920x1080.png",
+        filter_by_theme: false,
+        rotation_frequency: 900,
+        filter_method: Lanczos,
+        scaling_mode: Zoom,
+        sampling_method: Alphanumeric,
+    )
+  '';
+
   programs.vscode = {
     enable = true;
     profiles.default.extensions = with unpkgs.vscode-extensions; [
