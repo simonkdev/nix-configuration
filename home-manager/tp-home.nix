@@ -128,6 +128,7 @@
 
     # Sonstiges / Nischenanwendungen
     pkgs.peaclock
+    pkgs.cutecosmic
     # pkgs.kdePackages.breeze-gtk
     # pkgs.kdePackages.qtstyleplugin-kvantum
     # pkgs.qt6Packages.qtstyleplugin-kvantum
@@ -142,6 +143,7 @@
     EGL_PLATFORM = "wayland";
     GDK_SCALE = "1";
     QT_SCALE_FACTOR = "1";
+    QT_QPA_PLATFORMTHEME = "cosmic";
     # GTK_THEME = "breeze";
   };
 
