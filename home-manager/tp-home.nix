@@ -143,7 +143,7 @@
     EGL_PLATFORM = "wayland";
     GDK_SCALE = "1";
     QT_SCALE_FACTOR = "1";
-    QT_QPA_PLATFORMTHEME = "cosmic";
+    QT_QPA_PLATFORMTHEME = lib.mkForce "cosmic";
     # GTK_THEME = "breeze";
   };
 
