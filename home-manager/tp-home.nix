@@ -128,7 +128,7 @@
 
     # Sonstiges / Nischenanwendungen
     pkgs.peaclock
-    pkgs.cutecosmic
+    unpkgs.cutecosmic
     # pkgs.kdePackages.breeze-gtk
     # pkgs.kdePackages.qtstyleplugin-kvantum
     # pkgs.qt6Packages.qtstyleplugin-kvantum
