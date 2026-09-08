@@ -137,13 +137,13 @@
     
     pkgs.cosmic-reader
     unpkgs.cosmic-monitor
-    pkgs.cosmic-ext-applet-sysinfo
-    pkgs.cosmic-workspaces-epoch
-    pkgs.cosmic-calculator
-    pkgs.cosmic-ext-applet-minimon
-    pkgs.cosmic-ext-applet-weather
-    pkgs.cosmic-ext-applet-external-monitor-brightness
-    pkgs.cosmic-ext-applet-privacy-indicator
+    unpkgs.cosmic-ext-applet-sysinfo
+    unpkgs.cosmic-workspaces-epoch
+    unpkgs.cosmic-calculator
+    unpkgs.cosmic-ext-applet-minimon
+    unpkgs.cosmic-ext-applet-weather
+    unpkgs.cosmic-ext-applet-external-monitor-brightness
+    unpkgs.cosmic-ext-applet-privacy-indicator
 
   ];
 
