@@ -139,7 +139,7 @@
     unpkgs.cosmic-monitor
     unpkgs.cosmic-ext-applet-sysinfo
     unpkgs.cosmic-workspaces-epoch
-    pkgs.cosmic-calculator
+    pkgs.cosmic-ext-calculator
     unpkgs.cosmic-ext-applet-minimon
     unpkgs.cosmic-ext-applet-weather
     unpkgs.cosmic-ext-applet-external-monitor-brightness
