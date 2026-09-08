@@ -136,7 +136,7 @@
     # pkgs.libsForQt5.qtstyleplugin-kvantum
     
     pkgs.cosmic-reader
-    pkgs.cosmic-monitor
+    unpkgs.cosmic-monitor
     pkgs.cosmic-ext-applet-sysinfo
     pkgs.cosmic-workspaces-epoch
     pkgs.cosmic-calculator
