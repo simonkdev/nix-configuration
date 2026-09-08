@@ -189,7 +189,6 @@
 
     # --- Communication / Media  ---
     discord
-    spotify
     ani-cli
     kdePackages.kdenlive
     gimp3
