@@ -83,7 +83,7 @@
       rm -rf /home/simonkdev/.config/gtk-3.0/gtk.css.backup
       rm -rf /home/simonkdev/.config/gtk-4.0/gtk.css.backup
       rm -rf /home/simonkdev/.gtkrc-2.0.backup
-      home-manager switch -b backup --impure --flake /home/simonkdev/nixsys/#thinkpad
+      home-manager switch -b depr --impure --flake /home/simonkdev/nixsys/#thinkpad
       cd ~
     '')
     (pkgs.writeShellScriptBin "nixswitch" ''
@@ -133,7 +133,7 @@
     # pkgs.kdePackages.qtstyleplugin-kvantum
     # pkgs.qt6Packages.qtstyleplugin-kvantum
     # pkgs.libsForQt5.qtstyleplugin-kvantum
-    
+
     pkgs.cosmic-reader
     unpkgs.cosmic-monitor
     unpkgs.cosmic-ext-applet-sysinfo

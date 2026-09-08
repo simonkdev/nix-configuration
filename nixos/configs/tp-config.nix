@@ -210,7 +210,7 @@
     libsForQt5.qtstyleplugin-kvantum
   ];
 
-  home-manager.backupFileExtension = "depr";
+  #home-manager.backupFileExtension = "depr";
 
   services.udev.packages = with pkgs; [
     platformio-core.udev
