@@ -134,6 +134,17 @@
     # pkgs.kdePackages.qtstyleplugin-kvantum
     # pkgs.qt6Packages.qtstyleplugin-kvantum
     # pkgs.libsForQt5.qtstyleplugin-kvantum
+    
+    pkgs.cosmic-reader
+    pkgs.cosmic-monitor
+    pkgs.cosmic-ext-applet-sysinfo
+    pkgs.cosmic-workspaces-epoch
+    pkgs.cosmic-calculator
+    pkgs.cosmic-ext-applet-minimon
+    pkgs.cosmic-ext-applet-weather
+    pkgs.cosmic-ext-applet-external-monitor-brightness
+    pkgs.cosmic-ext-applet-privacy-indicator
+
   ];
 
   home.sessionVariables = {
