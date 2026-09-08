@@ -9,7 +9,7 @@
 {
   home.username = "simonkdev";
   home.homeDirectory = "/home/simonkdev";
-
+  home-manager.backupCommand = 'rm';
   ## This directory is ~/nixsys/home-manager :)
 
   imports = [
