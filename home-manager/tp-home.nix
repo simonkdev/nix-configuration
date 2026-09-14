@@ -34,6 +34,7 @@
     pkgs.cpufetch
     pkgs.gpufetch
     pkgs.hyprshade
+    pkgs.networkmanager-openvpn
 
     # Audio & Video
     pkgs.wl-clipboard
@@ -45,7 +46,6 @@
     pkgs.moonlight-qt
 
     # Netzwerk & Remote-Tools
-    pkgs.signal-desktop
     pkgs.remmina
     pkgs.bluetui
     pkgs.networkmanager_dmenu
