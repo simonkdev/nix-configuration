@@ -34,7 +34,6 @@
     pkgs.cpufetch
     pkgs.gpufetch
     pkgs.hyprshade
-    pkgs.networkmanager-openvpn
 
     # Audio & Video
     pkgs.wl-clipboard

@@ -163,6 +163,7 @@
     p7zip
     unison
     yazi
+    networkmanager-openvpn
 
     # --- Development Tools ---
     git
