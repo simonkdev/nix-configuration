@@ -72,7 +72,7 @@
     pkgs.platformio-core
 
     pkgs.python3
-    pkgs.chatgpt
+    unpkgs.chatgpt
 
     # Benutzerdefinierte Skripte
     (pkgs.writeShellScriptBin "homeswitch" ''
